@@ -8,7 +8,22 @@
       "label": ""
     },
     "properties": {},
-    "children": [],
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": "Hello"
+        },
+        "properties": {
+          "name": "hello",
+          "inputParams": [],
+          "outputParams": []
+        },
+        "children": [],
+        "id": "c940ce2f-2a94-4faf-8954-ce9bab4b7736",
+        "type": "action"
+      }
+    ],
     "id": "2b8fa6d1-e192-4e4b-a3ae-c523dbda65f9"
   }
 ]
