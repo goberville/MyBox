@@ -3,10 +3,10 @@
     "version": "0.0.1"
   },
   {
-    "homeUrl": "",
-    "description": "",
+    "homeUrl": "C:\\Users\\pascal2\\OneDrive\\Documents\\MaquetteV1\\MyBox\\bt",
+    "description": "Projet my box",
     "actionLibraries": {
-      "google": false
+      "google": true
     }
   }
 ]
