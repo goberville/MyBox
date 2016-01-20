@@ -12,16 +12,39 @@
       {
         "activated": true,
         "metadata": {
-          "label": "Hello"
+          "label": ""
         },
-        "properties": {
-          "name": "hello",
-          "inputParams": [],
-          "outputParams": []
-        },
-        "children": [],
-        "id": "c940ce2f-2a94-4faf-8954-ce9bab4b7736",
-        "type": "action"
+        "properties": {},
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Hello"
+            },
+            "properties": {
+              "name": "hello",
+              "inputParams": [
+                {
+                  "key": "name",
+                  "type": "entityKnowledge",
+                  "value": "name"
+                }
+              ],
+              "outputParams": [
+                {
+                  "key": "name",
+                  "type": "entityKnowledge",
+                  "value": "name"
+                }
+              ]
+            },
+            "children": [],
+            "id": "c940ce2f-2a94-4faf-8954-ce9bab4b7736",
+            "type": "action"
+          }
+        ],
+        "id": "2d142ecc-ea62-48e8-8286-b45d084b6a26",
+        "type": "sequence"
       }
     ],
     "id": "2b8fa6d1-e192-4e4b-a3ae-c523dbda65f9"
