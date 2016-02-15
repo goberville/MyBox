@@ -19,75 +19,88 @@
           {
             "activated": true,
             "metadata": {
-              "label": "Hello"
-            },
-            "properties": {
-              "name": "hello",
-              "inputParams": [
-                {
-                  "key": "name",
-                  "type": "entityKnowledge",
-                  "value": "name"
-                }
-              ],
-              "outputParams": [
-                {
-                  "key": "name",
-                  "type": "entityKnowledge",
-                  "value": "name"
-                }
-              ]
-            },
-            "children": [],
-            "id": "c940ce2f-2a94-4faf-8954-ce9bab4b7736",
-            "type": "action"
-          },
-          {
-            "activated": true,
-            "metadata": {
               "label": ""
             },
             "properties": {
-              "op1": {
-                "type": "entityKnowledge",
-                "value": "capteurPCuisine"
-              },
-              "op2": {
-                "type": "integer",
-                "value": "1"
-              },
-              "op": "=="
+              "active": "false"
             },
             "children": [
               {
                 "activated": true,
                 "metadata": {
-                  "label": "Alerte"
+                  "label": ""
                 },
                 "properties": {
-                  "name": "alert",
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "capteurPCuisine"
+                  },
+                  "op2": {
+                    "type": "integer",
+                    "value": "1"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": "Alerte"
+                    },
+                    "properties": {
+                      "name": "alert",
+                      "inputParams": [
+                        {
+                          "key": "prenom",
+                          "type": "entityKnowledge",
+                          "value": "prenom"
+                        }
+                      ],
+                      "outputParams": [
+                        {
+                          "key": "prenom",
+                          "type": "entityKnowledge",
+                          "value": "prenom"
+                        }
+                      ]
+                    },
+                    "children": [],
+                    "id": "8776685d-93f8-4bb7-a314-446c321dd5f0",
+                    "type": "action"
+                  }
+                ],
+                "id": "111e367a-bf8c-426e-b6a8-73230a7280ff",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": "Hello"
+                },
+                "properties": {
+                  "name": "hello",
                   "inputParams": [
                     {
-                      "key": "prenom",
+                      "key": "name",
                       "type": "entityKnowledge",
-                      "value": "prenom"
+                      "value": "name"
                     }
                   ],
                   "outputParams": [
                     {
-                      "key": "prenom",
+                      "key": "name",
                       "type": "entityKnowledge",
-                      "value": "prenom"
+                      "value": "name"
                     }
                   ]
                 },
                 "children": [],
-                "id": "8776685d-93f8-4bb7-a314-446c321dd5f0",
+                "id": "c940ce2f-2a94-4faf-8954-ce9bab4b7736",
                 "type": "action"
               }
             ],
-            "id": "111e367a-bf8c-426e-b6a8-73230a7280ff",
-            "type": "condition"
+            "id": "87154095-dba1-4072-835f-262143ddb617",
+            "type": "priority"
           }
         ],
         "id": "2d142ecc-ea62-48e8-8286-b45d084b6a26",
