@@ -8,7 +8,35 @@
       "label": ""
     },
     "properties": {},
-    "children": [],
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": ""
+        },
+        "properties": {},
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/boxinit.bt"
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "ce99d3cf-5952-47a0-8b4e-387f8be25025",
+            "type": "embedded"
+          }
+        ],
+        "id": "dfb3a4d1-e007-418f-bcfc-53869404d4dc",
+        "type": "sequence"
+      }
+    ],
     "id": "25d980b2-00b2-402e-8475-55fb8fbe142c"
   }
 ]
