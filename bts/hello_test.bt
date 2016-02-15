@@ -49,7 +49,7 @@
             },
             "properties": {
               "op1": {
-                "type": "globalKnowledge",
+                "type": "entityKnowledge",
                 "value": "capteurPCuisine"
               },
               "op2": {
