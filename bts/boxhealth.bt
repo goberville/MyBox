@@ -31,6 +31,75 @@
             "children": [],
             "id": "ce99d3cf-5952-47a0-8b4e-387f8be25025",
             "type": "embedded"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "boolean",
+                "value": "false"
+              },
+              "op2": {
+                "type": "boolean",
+                "value": "true"
+              },
+              "op": "=="
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "TimeChanged",
+                          "inputParams": [
+                            {
+                              "key": "Time",
+                              "type": "entityKnowledge",
+                              "value": "Time"
+                            }
+                          ],
+                          "outputParams": [
+                            {
+                              "key": "Time",
+                              "type": "entityKnowledge",
+                              "value": "Time"
+                            }
+                          ]
+                        },
+                        "children": [],
+                        "id": "ff8bf8fe-f568-4cb5-a2a9-d814b49fc9c8",
+                        "type": "action"
+                      }
+                    ],
+                    "id": "89c4452f-e027-4bd7-baf9-33529ce6fc0d",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "1c11037e-d73f-45ec-b2b8-129ff0e33df3",
+                "type": "success"
+              }
+            ],
+            "id": "5d94a33b-7d77-45b4-b3f5-2d16760e4d5c",
+            "type": "until"
           }
         ],
         "id": "dfb3a4d1-e007-418f-bcfc-53869404d4dc",
