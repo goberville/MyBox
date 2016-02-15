@@ -88,6 +88,22 @@
                         "children": [],
                         "id": "ff8bf8fe-f568-4cb5-a2a9-d814b49fc9c8",
                         "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "behavior": {
+                            "type": "uriPath",
+                            "value": "bts/retrievedevices.bt"
+                          },
+                          "inputParams": []
+                        },
+                        "children": [],
+                        "id": "82507245-fe59-4ace-9729-cccf0f63a043",
+                        "type": "embedded"
                       }
                     ],
                     "id": "89c4452f-e027-4bd7-baf9-33529ce6fc0d",
