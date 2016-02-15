@@ -50,7 +50,7 @@
             "properties": {
               "op1": {
                 "type": "globalKnowledge",
-                "value": "CapteurPCusine"
+                "value": "capteurPCuisine"
               },
               "op2": {
                 "type": "integer",
