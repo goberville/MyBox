@@ -41,6 +41,53 @@
             "children": [],
             "id": "c940ce2f-2a94-4faf-8954-ce9bab4b7736",
             "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "globalKnowledge",
+                "value": "CapteurPCusine"
+              },
+              "op2": {
+                "type": "integer",
+                "value": "1"
+              },
+              "op": "=="
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": "Alerte"
+                },
+                "properties": {
+                  "name": "alert",
+                  "inputParams": [
+                    {
+                      "key": "prenom",
+                      "type": "entityKnowledge",
+                      "value": "prenom"
+                    }
+                  ],
+                  "outputParams": [
+                    {
+                      "key": "prenom",
+                      "type": "entityKnowledge",
+                      "value": "prenom"
+                    }
+                  ]
+                },
+                "children": [],
+                "id": "8776685d-93f8-4bb7-a314-446c321dd5f0",
+                "type": "action"
+              }
+            ],
+            "id": "111e367a-bf8c-426e-b6a8-73230a7280ff",
+            "type": "condition"
           }
         ],
         "id": "2d142ecc-ea62-48e8-8286-b45d084b6a26",
