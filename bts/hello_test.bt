@@ -37,9 +37,9 @@
                   },
                   "op2": {
                     "type": "integer",
-                    "value": "1"
+                    "value": "0"
                   },
-                  "op": "=="
+                  "op": ">"
                 },
                 "children": [
                   {
