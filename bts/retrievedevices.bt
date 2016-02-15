@@ -14,58 +14,301 @@
         "metadata": {
           "label": ""
         },
-        "properties": {
-          "statusCondition": "failsIfAnyFails",
-          "retryPolicy": "propagateToRunning"
-        },
+        "properties": {},
         "children": [
           {
             "activated": true,
             "metadata": {
-              "label": "Retrieve capteur presence"
+              "label": ""
             },
             "properties": {
-              "name": "",
-              "inputParams": [],
-              "outputParams": []
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/boxinit.bt"
+              },
+              "inputParams": []
             },
             "children": [],
-            "id": "43c95480-acd6-4350-855d-c8bb38bafd2e",
-            "type": "action"
+            "id": "ce99d3cf-5952-47a0-8b4e-387f8be25025",
+            "type": "embedded"
           },
           {
             "activated": true,
             "metadata": {
-              "label": "retrieve capteur temperature"
+              "label": ""
             },
             "properties": {
-              "name": "",
-              "inputParams": [],
-              "outputParams": []
+              "op1": {
+                "type": "boolean",
+                "value": "false"
+              },
+              "op2": {
+                "type": "boolean",
+                "value": "true"
+              },
+              "op": "=="
             },
-            "children": [],
-            "id": "b458475d-0037-4300-97be-aace7f2fb58f",
-            "type": "action"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": "retrieve capteur ouverture"
-            },
-            "properties": {
-              "name": "",
-              "inputParams": [],
-              "outputParams": []
-            },
-            "children": [],
-            "id": "1afd036d-e91b-4530-89c9-032c8170f0a8",
-            "type": "action"
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "TimeChanged",
+                          "inputParams": [
+                            {
+                              "key": "Time",
+                              "type": "entityKnowledge",
+                              "value": "Time"
+                            }
+                          ],
+                          "outputParams": [
+                            {
+                              "key": "Time",
+                              "type": "entityKnowledge",
+                              "value": "Time"
+                            }
+                          ]
+                        },
+                        "children": [],
+                        "id": "ff8bf8fe-f568-4cb5-a2a9-d814b49fc9c8",
+                        "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "behavior": {
+                            "type": "uriPath",
+                            "value": "bts/retrievedevices.bt"
+                          },
+                          "inputParams": []
+                        },
+                        "children": [],
+                        "id": "82507245-fe59-4ace-9729-cccf0f63a043",
+                        "type": "embedded"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": "Check Planning action"
+                        },
+                        "properties": {
+                          "name": "",
+                          "inputParams": [],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "6aced79d-3220-4e18-b7bd-6e605b5c049f",
+                        "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "active": "false"
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Check Reveil"
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op2": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op": "=="
+                            },
+                            "children": [],
+                            "id": "ad31b2e7-41c3-4290-ae39-02877aa4154d",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Check Petit Dej"
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op2": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op": "=="
+                            },
+                            "children": [],
+                            "id": "d0dc13ec-8d6a-4f03-965c-6d0b9a761ca0",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "CheckDouche"
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op2": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op": "=="
+                            },
+                            "children": [],
+                            "id": "8cace618-b9bc-4cf1-b530-f273c2fb447a",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "checkCourse"
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op2": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op": "=="
+                            },
+                            "children": [],
+                            "id": "557f4763-2aae-4658-a020-ce0cc51d298f",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "check Déjeuner"
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op2": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op": "=="
+                            },
+                            "children": [],
+                            "id": "04a082eb-e0f1-44ed-93af-6da1cac1889f",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "check Sieste"
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op2": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op": "=="
+                            },
+                            "children": [],
+                            "id": "2b2b050d-92df-441b-9f91-e8d0cd510c31",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "check Diner"
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op2": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op": "=="
+                            },
+                            "children": [],
+                            "id": "34a7a16d-d826-427a-b5fc-9a0cdf2dd467",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "check coucher"
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op2": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op": "=="
+                            },
+                            "children": [],
+                            "id": "0bb114c8-7487-41cd-832f-bbcc30027914",
+                            "type": "condition"
+                          }
+                        ],
+                        "id": "b64532e5-9edc-4a24-a4c2-33e7197fa9fd",
+                        "type": "priority"
+                      }
+                    ],
+                    "id": "89c4452f-e027-4bd7-baf9-33529ce6fc0d",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "1c11037e-d73f-45ec-b2b8-129ff0e33df3",
+                "type": "success"
+              }
+            ],
+            "id": "5d94a33b-7d77-45b4-b3f5-2d16760e4d5c",
+            "type": "until"
           }
         ],
-        "id": "7229e87c-616c-4556-b75f-aa50a0fa7dbb",
-        "type": "parallel"
+        "id": "dfb3a4d1-e007-418f-bcfc-53869404d4dc",
+        "type": "sequence"
       }
     ],
-    "id": "3d73428d-4e24-41f9-bd56-80a8ccaeed69"
+    "id": "25d980b2-00b2-402e-8475-55fb8fbe142c"
   }
 ]
