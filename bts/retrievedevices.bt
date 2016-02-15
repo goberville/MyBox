@@ -8,7 +8,64 @@
       "label": ""
     },
     "properties": {},
-    "children": [],
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": ""
+        },
+        "properties": {
+          "statusCondition": "failsIfAnyFails",
+          "retryPolicy": "propagateToRunning"
+        },
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Retrieve capteur presence"
+            },
+            "properties": {
+              "name": "",
+              "inputParams": [],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "43c95480-acd6-4350-855d-c8bb38bafd2e",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": "retrieve capteur temperature"
+            },
+            "properties": {
+              "name": "",
+              "inputParams": [],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "b458475d-0037-4300-97be-aace7f2fb58f",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": "retrieve capteur ouverture"
+            },
+            "properties": {
+              "name": "",
+              "inputParams": [],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "1afd036d-e91b-4530-89c9-032c8170f0a8",
+            "type": "action"
+          }
+        ],
+        "id": "7229e87c-616c-4556-b75f-aa50a0fa7dbb",
+        "type": "parallel"
+      }
+    ],
     "id": "3d73428d-4e24-41f9-bd56-80a8ccaeed69"
   }
 ]
