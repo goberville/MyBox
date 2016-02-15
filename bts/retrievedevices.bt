@@ -19,472 +19,60 @@
           {
             "activated": true,
             "metadata": {
-              "label": ""
+              "label": "Hello"
             },
             "properties": {
-              "behavior": {
-                "type": "uriPath",
-                "value": "bts/boxinit.bt"
-              },
-              "inputParams": []
+              "name": "hello",
+              "inputParams": [
+                {
+                  "key": "name",
+                  "type": "entityKnowledge",
+                  "value": "name"
+                }
+              ],
+              "outputParams": [
+                {
+                  "key": "name",
+                  "type": "entityKnowledge",
+                  "value": "name"
+                }
+              ]
             },
             "children": [],
-            "id": "ce99d3cf-5952-47a0-8b4e-387f8be25025",
-            "type": "embedded"
+            "id": "c940ce2f-2a94-4faf-8954-ce9bab4b7736",
+            "type": "action"
           },
           {
             "activated": true,
             "metadata": {
-              "label": ""
+              "label": "toto"
             },
             "properties": {
-              "op1": {
-                "type": "boolean",
-                "value": "false"
-              },
-              "op2": {
-                "type": "boolean",
-                "value": "true"
-              },
-              "op": "=="
+              "name": "toto",
+              "inputParams": [
+                {
+                  "key": "name",
+                  "type": "entityKnowledge",
+                  "value": "name"
+                }
+              ],
+              "outputParams": [
+                {
+                  "key": "name",
+                  "type": "entityKnowledge",
+                  "value": "name"
+                }
+              ]
             },
-            "children": [
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {},
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {},
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "behavior": {
-                            "type": "uriPath",
-                            "value": "bts/retrievedevices.bt"
-                          },
-                          "inputParams": []
-                        },
-                        "children": [],
-                        "id": "82507245-fe59-4ace-9729-cccf0f63a043",
-                        "type": "embedded"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": "Check Planning action"
-                        },
-                        "properties": {
-                          "name": "",
-                          "inputParams": [],
-                          "outputParams": []
-                        },
-                        "children": [],
-                        "id": "6aced79d-3220-4e18-b7bd-6e605b5c049f",
-                        "type": "action"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "active": "false"
-                        },
-                        "children": [
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": "Check Reveil"
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op2": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op": "=="
-                            },
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "op1": {
-                                    "type": "boolean",
-                                    "value": "false"
-                                  },
-                                  "op2": {
-                                    "type": "boolean",
-                                    "value": "true"
-                                  },
-                                  "op": "=="
-                                },
-                                "children": [
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {},
-                                    "children": [
-                                      {
-                                        "activated": true,
-                                        "metadata": {
-                                          "label": ""
-                                        },
-                                        "properties": {
-                                          "active": "false"
-                                        },
-                                        "children": [
-                                          {
-                                            "activated": true,
-                                            "metadata": {
-                                              "label": "CTRL pas reveillé ( Si TimeReveil + 15 mn > Time)"
-                                            },
-                                            "properties": {
-                                              "op1": {
-                                                "type": "boolean",
-                                                "value": "true"
-                                              },
-                                              "op2": {
-                                                "type": "boolean",
-                                                "value": "true"
-                                              },
-                                              "op": "=="
-                                            },
-                                            "children": [
-                                              {
-                                                "activated": true,
-                                                "metadata": {
-                                                  "label": "Si capteur actuel Chambre == 1"
-                                                },
-                                                "properties": {
-                                                  "op1": {
-                                                    "type": "boolean",
-                                                    "value": "true"
-                                                  },
-                                                  "op2": {
-                                                    "type": "boolean",
-                                                    "value": "true"
-                                                  },
-                                                  "op": "=="
-                                                },
-                                                "children": [
-                                                  {
-                                                    "activated": true,
-                                                    "metadata": {
-                                                      "label": "SI Capteur old == Capteur New "
-                                                    },
-                                                    "properties": {
-                                                      "op1": {
-                                                        "type": "boolean",
-                                                        "value": "true"
-                                                      },
-                                                      "op2": {
-                                                        "type": "boolean",
-                                                        "value": "true"
-                                                      },
-                                                      "op": "=="
-                                                    },
-                                                    "children": [
-                                                      {
-                                                        "activated": true,
-                                                        "metadata": {
-                                                          "label": "Alert (Pas reveille)"
-                                                        },
-                                                        "properties": {
-                                                          "name": "",
-                                                          "inputParams": [],
-                                                          "outputParams": []
-                                                        },
-                                                        "children": [],
-                                                        "id": "846e08d1-fb82-4a24-9ff8-04b5ff4e0452",
-                                                        "type": "action"
-                                                      }
-                                                    ],
-                                                    "id": "1b7fa8f4-d9e2-4477-80c5-09c022d8d0e7",
-                                                    "type": "condition"
-                                                  }
-                                                ],
-                                                "id": "0a2de52d-ed94-4620-bea6-01332116106b",
-                                                "type": "condition"
-                                              }
-                                            ],
-                                            "id": "9ac27472-cb63-429e-a890-a87f94ebf491",
-                                            "type": "condition"
-                                          },
-                                          {
-                                            "activated": true,
-                                            "metadata": {
-                                              "label": "Ctrl reveille ( si time-reveil - 15 mn <= time)"
-                                            },
-                                            "properties": {
-                                              "op1": {
-                                                "type": "boolean",
-                                                "value": "true"
-                                              },
-                                              "op2": {
-                                                "type": "boolean",
-                                                "value": "true"
-                                              },
-                                              "op": "=="
-                                            },
-                                            "children": [
-                                              {
-                                                "activated": true,
-                                                "metadata": {
-                                                  "label": "Si new capteur chambre != 1"
-                                                },
-                                                "properties": {
-                                                  "op1": {
-                                                    "type": "boolean",
-                                                    "value": "true"
-                                                  },
-                                                  "op2": {
-                                                    "type": "boolean",
-                                                    "value": "true"
-                                                  },
-                                                  "op": "=="
-                                                },
-                                                "children": [
-                                                  {
-                                                    "activated": true,
-                                                    "metadata": {
-                                                      "label": "SI autre capteur == 1"
-                                                    },
-                                                    "properties": {
-                                                      "op1": {
-                                                        "type": "boolean",
-                                                        "value": "true"
-                                                      },
-                                                      "op2": {
-                                                        "type": "boolean",
-                                                        "value": "true"
-                                                      },
-                                                      "op": "=="
-                                                    },
-                                                    "children": [
-                                                      {
-                                                        "activated": true,
-                                                        "metadata": {
-                                                          "label": ""
-                                                        },
-                                                        "properties": {
-                                                          "destination": "",
-                                                          "op": {
-                                                            "type": "string",
-                                                            "value": ""
-                                                          }
-                                                        },
-                                                        "children": [],
-                                                        "id": "5bec7443-ca5a-430c-b921-c80b6a464865",
-                                                        "type": "set"
-                                                      }
-                                                    ],
-                                                    "id": "ac5f91f2-7442-406f-9e61-e517585d806b",
-                                                    "type": "condition"
-                                                  }
-                                                ],
-                                                "id": "b3aad1f8-49f9-4646-8694-791c05fb7cce",
-                                                "type": "condition"
-                                              }
-                                            ],
-                                            "id": "11aa1649-38ec-49fe-9141-c00253ab60c0",
-                                            "type": "condition"
-                                          }
-                                        ],
-                                        "id": "8cebb87e-017b-4513-8ea9-2f5e063560c8",
-                                        "type": "priority"
-                                      }
-                                    ],
-                                    "id": "b54990bb-63dd-4400-9136-b46883712cbc",
-                                    "type": "success"
-                                  }
-                                ],
-                                "id": "712f1866-622c-40d3-a4bc-4dc7b29ee62f",
-                                "type": "until"
-                              }
-                            ],
-                            "id": "ad31b2e7-41c3-4290-ae39-02877aa4154d",
-                            "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": "Check Petit Dej"
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op2": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op": "=="
-                            },
-                            "children": [],
-                            "id": "d0dc13ec-8d6a-4f03-965c-6d0b9a761ca0",
-                            "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": "CheckDouche"
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op2": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op": "=="
-                            },
-                            "children": [],
-                            "id": "8cace618-b9bc-4cf1-b530-f273c2fb447a",
-                            "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": "checkCourse"
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op2": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op": "=="
-                            },
-                            "children": [],
-                            "id": "557f4763-2aae-4658-a020-ce0cc51d298f",
-                            "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": "check Déjeuner"
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op2": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op": "=="
-                            },
-                            "children": [],
-                            "id": "04a082eb-e0f1-44ed-93af-6da1cac1889f",
-                            "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": "check Sieste"
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op2": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op": "=="
-                            },
-                            "children": [],
-                            "id": "2b2b050d-92df-441b-9f91-e8d0cd510c31",
-                            "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": "check Diner"
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op2": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op": "=="
-                            },
-                            "children": [],
-                            "id": "34a7a16d-d826-427a-b5fc-9a0cdf2dd467",
-                            "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": "check coucher"
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op2": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op": "=="
-                            },
-                            "children": [],
-                            "id": "0bb114c8-7487-41cd-832f-bbcc30027914",
-                            "type": "condition"
-                          }
-                        ],
-                        "id": "b64532e5-9edc-4a24-a4c2-33e7197fa9fd",
-                        "type": "priority"
-                      }
-                    ],
-                    "id": "89c4452f-e027-4bd7-baf9-33529ce6fc0d",
-                    "type": "sequence"
-                  }
-                ],
-                "id": "1c11037e-d73f-45ec-b2b8-129ff0e33df3",
-                "type": "success"
-              }
-            ],
-            "id": "5d94a33b-7d77-45b4-b3f5-2d16760e4d5c",
-            "type": "until"
+            "children": [],
+            "id": "d42a53a9-5da3-47c6-aabf-1cacbac96d19",
+            "type": "action"
           }
         ],
-        "id": "dfb3a4d1-e007-418f-bcfc-53869404d4dc",
+        "id": "2d142ecc-ea62-48e8-8286-b45d084b6a26",
         "type": "sequence"
       }
     ],
-    "id": "25d980b2-00b2-402e-8475-55fb8fbe142c"
+    "id": "2b8fa6d1-e192-4e4b-a3ae-c523dbda65f9"
   }
 ]
