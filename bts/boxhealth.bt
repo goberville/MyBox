@@ -140,9 +140,9 @@
                               "name": "alerte",
                               "inputParams": [
                                 {
-                                  "key": "Message",
+                                  "key": "messageAlerte",
                                   "type": "entityKnowledge",
-                                  "value": "Message"
+                                  "value": "messageAlerte"
                                 }
                               ],
                               "outputParams": []
