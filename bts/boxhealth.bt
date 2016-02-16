@@ -119,41 +119,68 @@
                         "metadata": {
                           "label": ""
                         },
-                        "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "BalerteMessage"
-                          },
-                          "op2": {
-                            "type": "boolean",
-                            "value": "true"
-                          },
-                          "op": "=="
-                        },
+                        "properties": {},
                         "children": [
                           {
                             "activated": true,
                             "metadata": {
-                              "label": "Send message via SigFox"
+                              "label": ""
                             },
                             "properties": {
-                              "name": "alerte",
-                              "inputParams": [
-                                {
-                                  "key": "messageAlerte",
-                                  "type": "entityKnowledge",
-                                  "value": "messageAlerte"
-                                }
-                              ],
-                              "outputParams": []
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "BalerteMessage"
+                              },
+                              "op2": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op": "=="
+                            },
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": "Send message via SigFox"
+                                },
+                                "properties": {
+                                  "name": "alerte",
+                                  "inputParams": [
+                                    {
+                                      "key": "messageAlerte",
+                                      "type": "entityKnowledge",
+                                      "value": "messageAlerte"
+                                    }
+                                  ],
+                                  "outputParams": []
+                                },
+                                "children": [],
+                                "id": "7c16379d-43a7-4437-9cc2-568c485fb844",
+                                "type": "action"
+                              }
+                            ],
+                            "id": "178756ed-4053-4f68-8c23-22f3ffc0a014",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "destination": "BalerteMessage",
+                              "op": {
+                                "type": "boolean",
+                                "value": "false"
+                              }
                             },
                             "children": [],
-                            "id": "7c16379d-43a7-4437-9cc2-568c485fb844",
-                            "type": "action"
+                            "id": "f7aa6488-e344-40e8-a4aa-f1825c95e119",
+                            "type": "set"
                           }
                         ],
-                        "id": "178756ed-4053-4f68-8c23-22f3ffc0a014",
-                        "type": "condition"
+                        "id": "1b3714a6-e2d2-4e75-9fcb-dfd3e120d9e6",
+                        "type": "sequence"
                       }
                     ],
                     "id": "c7b16350-d085-4994-a193-e4b5368f1455",
