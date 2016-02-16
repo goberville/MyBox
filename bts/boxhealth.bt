@@ -61,53 +61,62 @@
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {},
+                    "properties": {
+                      "statusCondition": "failsIfAnyFails",
+                      "retryPolicy": "propagateToRunning"
+                    },
                     "children": [
                       {
                         "activated": true,
                         "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "TimeChanged",
-                          "inputParams": [
-                            {
-                              "key": "Time",
-                              "type": "entityKnowledge",
-                              "value": "Time"
-                            }
-                          ],
-                          "outputParams": [
-                            {
-                              "key": "Time",
-                              "type": "entityKnowledge",
-                              "value": "Time"
-                            }
-                          ]
-                        },
-                        "children": [],
-                        "id": "ff8bf8fe-f568-4cb5-a2a9-d814b49fc9c8",
-                        "type": "action"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
+                          "label": "Check Activité sante"
                         },
                         "properties": {
                           "behavior": {
                             "type": "uriPath",
-                            "value": "bts/retrievedevices.bt"
+                            "value": "bts/checkActivityHealth.bt"
                           },
                           "inputParams": []
                         },
                         "children": [],
-                        "id": "82507245-fe59-4ace-9729-cccf0f63a043",
+                        "id": "3a918560-5441-4aa0-9353-1b69da24f51b",
+                        "type": "embedded"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": "Check Activité  sécurité"
+                        },
+                        "properties": {
+                          "behavior": {
+                            "type": "uriPath",
+                            "value": "bts/checkActivitySecurity.bt"
+                          },
+                          "inputParams": []
+                        },
+                        "children": [],
+                        "id": "774558a1-179b-4e1d-a6e5-c9db74a53110",
+                        "type": "embedded"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": "Check Activité Maintenance"
+                        },
+                        "properties": {
+                          "behavior": {
+                            "type": "uriPath",
+                            "value": "bts/checkActivityMaintenance"
+                          },
+                          "inputParams": []
+                        },
+                        "children": [],
+                        "id": "336d24f9-5028-4442-b692-5806ec635c5f",
                         "type": "embedded"
                       }
                     ],
-                    "id": "89c4452f-e027-4bd7-baf9-33529ce6fc0d",
-                    "type": "sequence"
+                    "id": "c7b16350-d085-4994-a193-e4b5368f1455",
+                    "type": "parallel"
                   }
                 ],
                 "id": "1c11037e-d73f-45ec-b2b8-129ff0e33df3",
