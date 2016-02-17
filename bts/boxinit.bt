@@ -134,7 +134,7 @@
               "label": ""
             },
             "properties": {
-              "destination": "BalerteMessage",
+              "destination": "BoolAlerteMessage",
               "op": {
                 "type": "boolean",
                 "value": "false"
