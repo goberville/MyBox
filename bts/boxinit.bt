@@ -104,11 +104,15 @@
             },
             "properties": {
 <<<<<<< HEAD
+<<<<<<< HEAD
               "op1": {
 =======
               "destination": "BalerteMessage",
               "op": {
 >>>>>>> parent of 87e7ff4... [CRAFT-AI] Update resource: bts/boxinit.bt
+=======
+              "op1": {
+>>>>>>> f4664a1b6cd772d13180a7ef441654bbfc9bbbf0
                 "type": "boolean",
                 "value": "false"
               },
