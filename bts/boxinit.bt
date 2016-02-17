@@ -22,7 +22,7 @@
               "label": ""
             },
             "properties": {
-              "destination": "",
+              "destination": "MessageAlerte",
               "op": {
                 "type": "string",
                 "value": ""
@@ -30,6 +30,22 @@
             },
             "children": [],
             "id": "94010477-ff34-4e90-8ec7-a8a49a151816",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "BoolAlerteMessage ",
+              "op": {
+                "type": "boolean",
+                "value": "false"
+              }
+            },
+            "children": [],
+            "id": "d37dc09f-e4ff-4f68-a7ad-976d82cf5057",
             "type": "set"
           }
         ],
