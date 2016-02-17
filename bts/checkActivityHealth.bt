@@ -19,39 +19,25 @@
           {
             "activated": true,
             "metadata": {
-              "label": "Load Activity"
+              "label": ""
             },
             "properties": {
-              "name": "retrieveActivity",
-              "inputParams": [
-                {
-                  "key": "Time",
-                  "type": "entityKnowledge",
-                  "value": "Time"
-                }
-              ],
-              "outputParams": []
+              "destination": "Activity_Reveil",
+              "op": {
+                "type": "boolean",
+                "value": "false"
+              }
             },
             "children": [],
-            "id": "4019b2b7-13ab-4932-9d2a-183ea5f78104",
-            "type": "action"
+            "id": "d52f18ec-19e6-456a-866f-def1f87601db",
+            "type": "set"
           },
           {
             "activated": true,
             "metadata": {
               "label": ""
             },
-            "properties": {
-              "op1": {
-                "type": "boolean",
-                "value": "false"
-              },
-              "op2": {
-                "type": "boolean",
-                "value": "true"
-              },
-              "op": "=="
-            },
+            "properties": {},
             "children": [
               {
                 "activated": true,
@@ -59,19 +45,59 @@
                   "label": ""
                 },
                 "properties": {
-                  "behavior": {
+                  "op1": {
                     "type": "entityKnowledge",
-                    "value": "ActivityHealth"
+                    "value": "Time"
                   },
-                  "inputParams": []
+                  "op2": {
+                    "type": "entityKnowledge",
+                    "value": "Time_Reveil_Min"
+                  },
+                  "op": "<"
                 },
                 "children": [],
-                "id": "1d629864-b682-49d9-adb4-a38864240595",
-                "type": "embedded"
+                "id": "6ead14dc-a40c-41ac-af64-b563204c119f",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Time"
+                  },
+                  "op2": {
+                    "type": "entityKnowledge",
+                    "value": "Time_Reveil_Max"
+                  },
+                  "op": ">="
+                },
+                "children": [],
+                "id": "116db51d-9bfc-43f1-879e-846ebe35ad46",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Activity_Reveil",
+                  "op": {
+                    "type": "boolean",
+                    "value": "true"
+                  }
+                },
+                "children": [],
+                "id": "773dc485-00b5-40fc-959f-29123924be29",
+                "type": "set"
               }
             ],
-            "id": "84a86447-0ee3-4ada-b6a9-29baa457607b",
-            "type": "until"
+            "id": "c525f434-98a9-42da-82de-e5bb43a6f41a",
+            "type": "sequence"
           }
         ],
         "id": "5fa336b7-59e6-46b2-b733-00bdfff36547",
