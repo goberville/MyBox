@@ -464,10 +464,10 @@
                               "label": ""
                             },
                             "properties": {
-                              "destination": "",
+                              "destination": "BoolAlerteMessage",
                               "op": {
-                                "type": "string",
-                                "value": ""
+                                "type": "boolean",
+                                "value": "true"
                               }
                             },
                             "children": [],
@@ -488,10 +488,10 @@
                       "label": ""
                     },
                     "properties": {
-                      "destination": "",
+                      "destination": "TaskActivityReveil",
                       "op": {
-                        "type": "string",
-                        "value": ""
+                        "type": "integer",
+                        "value": "0"
                       }
                     },
                     "children": [],
@@ -505,18 +505,6 @@
             ],
             "id": "27e244aa-4483-4f07-a42e-efbb2b7d31db",
             "type": "condition"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {
-              "active": "false"
-            },
-            "children": [],
-            "id": "e42080b5-a9ac-46ea-8270-7cc5ea237d35",
-            "type": "priority"
           }
         ],
         "id": "5fa336b7-59e6-46b2-b733-00bdfff36547",
