@@ -425,18 +425,51 @@
                     },
                     "properties": {
                       "op1": {
-                        "type": "boolean",
-                        "value": "true"
+                        "type": "entityKnowledge",
+                        "value": "Check_Reveil"
                       },
                       "op2": {
                         "type": "boolean",
-                        "value": "true"
+                        "value": "false"
                       },
                       "op": "=="
                     },
-                    "children": [],
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "",
+                          "op": {
+                            "type": "string",
+                            "value": ""
+                          }
+                        },
+                        "children": [],
+                        "id": "edc954da-f915-4ba6-88de-ff32436eb58e",
+                        "type": "set"
+                      }
+                    ],
                     "id": "a5c4139c-177f-4175-8acc-a4da87769229",
                     "type": "condition"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "",
+                      "op": {
+                        "type": "string",
+                        "value": ""
+                      }
+                    },
+                    "children": [],
+                    "id": "cae9b064-99d7-421c-a06e-655c4a1ed834",
+                    "type": "set"
                   }
                 ],
                 "id": "68e9f5a2-d034-4740-9fdf-7198d144cc91",
