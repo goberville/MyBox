@@ -123,32 +123,17 @@
                         },
                         "properties": {
                           "op1": {
-                            "type": "boolean",
-                            "value": "true"
+                            "type": "entityKnowledge",
+                            "value": "BoolAlerteMessage"
                           },
                           "op2": {
                             "type": "boolean",
-                            "value": "true"
+                            "value": "false"
                           },
                           "op": "=="
                         },
-                        "children": [
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "name": "",
-                              "inputParams": [],
-                              "outputParams": []
-                            },
-                            "children": [],
-                            "id": "faf584f2-d8a3-48d1-96a3-4bada183614f",
-                            "type": "action"
-                          }
-                        ],
-                        "id": "77fbe5b8-4fa3-47ca-9613-fd12ca638e04",
+                        "children": [],
+                        "id": "5a4f1592-0d56-44ef-850f-469c37f2b9ba",
                         "type": "condition"
                       },
                       {
@@ -156,16 +141,47 @@
                         "metadata": {
                           "label": ""
                         },
-                        "properties": {
-                          "destination": "",
-                          "op": {
-                            "type": "string",
-                            "value": ""
+                        "properties": {},
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Alert - Envoi SigFox"
+                            },
+                            "properties": {
+                              "name": "alerte",
+                              "inputParams": [
+                                {
+                                  "key": "MessageAlerte",
+                                  "type": "entityKnowledge",
+                                  "value": "MessageAlerte"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "faf584f2-d8a3-48d1-96a3-4bada183614f",
+                            "type": "action"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "destination": "BoolAlerteMessage",
+                              "op": {
+                                "type": "boolean",
+                                "value": "false"
+                              }
+                            },
+                            "children": [],
+                            "id": "07c87680-296c-49f5-8b71-b9374d105c8a",
+                            "type": "set"
                           }
-                        },
-                        "children": [],
-                        "id": "07c87680-296c-49f5-8b71-b9374d105c8a",
-                        "type": "set"
+                        ],
+                        "id": "799562c8-f7f2-4c90-b27f-554c3b20dd20",
+                        "type": "sequence"
                       }
                     ],
                     "id": "c9dcc35b-99b2-4eac-bfa7-7c3b2939f173",
