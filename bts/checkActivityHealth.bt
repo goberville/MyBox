@@ -440,16 +440,43 @@
                         "metadata": {
                           "label": ""
                         },
-                        "properties": {
-                          "destination": "",
-                          "op": {
-                            "type": "string",
-                            "value": ""
+                        "properties": {},
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "destination": "MessageAlerte",
+                              "op": {
+                                "type": "string",
+                                "value": "0302020F030303"
+                              }
+                            },
+                            "children": [],
+                            "id": "edc954da-f915-4ba6-88de-ff32436eb58e",
+                            "type": "set"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "destination": "",
+                              "op": {
+                                "type": "string",
+                                "value": ""
+                              }
+                            },
+                            "children": [],
+                            "id": "12243507-d292-437b-9961-732bef6e397f",
+                            "type": "set"
                           }
-                        },
-                        "children": [],
-                        "id": "edc954da-f915-4ba6-88de-ff32436eb58e",
-                        "type": "set"
+                        ],
+                        "id": "ea1ed208-ca73-403c-8297-b1ed67a3260c",
+                        "type": "sequence"
                       }
                     ],
                     "id": "a5c4139c-177f-4175-8acc-a4da87769229",
