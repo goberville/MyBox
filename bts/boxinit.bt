@@ -19,83 +19,114 @@
           {
             "activated": true,
             "metadata": {
-              "label": "Load Activity"
+              "label": "Capteur présence cuisine"
             },
             "properties": {
-              "name": "retrieveActivity",
-              "inputParams": [
-                {
-                  "key": "Time",
-                  "type": "entityKnowledge",
-                  "value": "Time"
-                },
-                {
-                  "key": "NbreMinute",
-                  "type": "entityKnowledge",
-                  "value": "NbreMinute"
-                },
-                {
-                  "key": "Time_Reveil",
-                  "type": "entityKnowledge",
-                  "value": "Time_Reveil"
-                },
-                {
-                  "key": "Time_PetitDejeuner",
-                  "type": "entityKnowledge",
-                  "value": "Time_PetitDejeuner"
-                },
-                {
-                  "key": "Time_Douche",
-                  "type": "entityKnowledge",
-                  "value": "Time_Douche"
-                },
-                {
-                  "key": "Time_Course",
-                  "type": "entityKnowledge",
-                  "value": "Time_Course"
-                },
-                {
-                  "key": "Time_Dejeuner",
-                  "type": "entityKnowledge",
-                  "value": "Time_Dejeuner"
-                },
-                {
-                  "key": "Time_Sieste",
-                  "type": "entityKnowledge",
-                  "value": "Time_Sieste"
-                },
-                {
-                  "key": "Time_Diner",
-                  "type": "entityKnowledge",
-                  "value": "Time_Diner"
-                },
-                {
-                  "key": "Time_Coucher",
-                  "type": "entityKnowledge",
-                  "value": "Time_Coucher"
-                }
-              ],
-              "outputParams": [
-                {
-                  "key": "TimeActivityMin",
-                  "type": "entityKnowledge",
-                  "value": "TimeActivityMin"
-                },
-                {
-                  "key": "TimeActivityMax",
-                  "type": "entityKnowledge",
-                  "value": "TimeActivityMax"
-                },
-                {
-                  "key": "TypeActivityControled",
-                  "type": "entityKnowledge",
-                  "value": "TypeActivityControled"
-                }
-              ]
+              "destination": "current.captCusinieP",
+              "op": {
+                "type": "entityKnowledge",
+                "value": "CaptCuisineP"
+              }
             },
             "children": [],
-            "id": "4019b2b7-13ab-4932-9d2a-183ea5f78104",
-            "type": "action"
+            "id": "af67f2b8-0afc-4d95-bcfd-fdb0348cd465",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Capteur présence Salon"
+            },
+            "properties": {
+              "destination": "current.captSalonP",
+              "op": {
+                "type": "entityKnowledge",
+                "value": "CaptSalonP"
+              }
+            },
+            "children": [],
+            "id": "234987d4-835b-45cc-8b1c-668413888505",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Capteur présence chambre"
+            },
+            "properties": {
+              "destination": "current.captChambreP",
+              "op": {
+                "type": "entityKnowledge",
+                "value": "CaptChambreP"
+              }
+            },
+            "children": [],
+            "id": "3b65383f-90db-47c7-a627-fce08f75118c",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Capteur présence Salle de bain"
+            },
+            "properties": {
+              "destination": "current.captSDBP",
+              "op": {
+                "type": "entityKnowledge",
+                "value": "CaptSDBP"
+              }
+            },
+            "children": [],
+            "id": "d301f379-d53f-4bde-b171-ecc4bb8d8df2",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Capteur présence couloir"
+            },
+            "properties": {
+              "destination": "current.captCouloirP",
+              "op": {
+                "type": "entityKnowledge",
+                "value": "CaptCouloirP"
+              }
+            },
+            "children": [],
+            "id": "b458680d-08fd-44de-98f2-cfdf80e78c28",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Capteur Ouverture Fenetre Salon"
+            },
+            "properties": {
+              "destination": "current.captSalonO",
+              "op": {
+                "type": "entityKnowledge",
+                "value": "CaptSalonO"
+              }
+            },
+            "children": [],
+            "id": "8df8b667-053d-4fad-b093-cdde79e8b4ef",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Capteur ouverture Porte Couloir"
+            },
+            "properties": {
+              "destination": "current.captCouloirO",
+              "op": {
+                "type": "entityKnowledge",
+                "value": "CaptCouloirO"
+              }
+            },
+            "children": [],
+            "id": "b6e38206-2aee-4f89-9749-385fee299945",
+            "type": "set"
           },
           {
             "activated": true,
@@ -103,51 +134,53 @@
               "label": ""
             },
             "properties": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "op1": {
-=======
-              "destination": "BalerteMessage",
+              "destination": "BoolAlerteMessage",
               "op": {
->>>>>>> parent of 87e7ff4... [CRAFT-AI] Update resource: bts/boxinit.bt
-=======
-              "op1": {
->>>>>>> f4664a1b6cd772d13180a7ef441654bbfc9bbbf0
                 "type": "boolean",
                 "value": "false"
-              },
-              "op2": {
-                "type": "boolean",
-                "value": "true"
-              },
-              "op": "=="
-            },
-            "children": [
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "behavior": {
-                    "type": "entityKnowledge",
-                    "value": "TypeActivityControled"
-                  },
-                  "inputParams": []
-                },
-                "children": [],
-                "id": "1d629864-b682-49d9-adb4-a38864240595",
-                "type": "embedded"
               }
-            ],
-            "id": "84a86447-0ee3-4ada-b6a9-29baa457607b",
-            "type": "until"
+            },
+            "children": [],
+            "id": "111fe741-3693-41b7-aed3-ec7cbd35cc83",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "messageAlerte",
+              "op": {
+                "type": "string",
+                "value": ""
+              }
+            },
+            "children": [],
+            "id": "49bbc1e2-87a6-4e4d-8396-7a225e574582",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Nombre de minute Controle Min / Max activté sante"
+            },
+            "properties": {
+              "destination": "NbreMinute",
+              "op": {
+                "type": "real",
+                "value": "900"
+              }
+            },
+            "children": [],
+            "id": "0ec76659-dfa7-4796-8ead-17e1a8fae031",
+            "type": "set"
           }
         ],
-        "id": "5fa336b7-59e6-46b2-b733-00bdfff36547",
+        "id": "b04701eb-8890-43e5-8c7b-c34e89b3f4ff",
         "type": "sequence"
       }
     ],
-    "id": "218463bd-dca2-4d47-a431-6994e66b3533"
+    "id": "8536a707-309a-4713-9e75-b9c92a48f61a"
   }
 ]
