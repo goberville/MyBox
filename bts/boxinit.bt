@@ -159,6 +159,22 @@
             "children": [],
             "id": "49bbc1e2-87a6-4e4d-8396-7a225e574582",
             "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Nombre de minute Controle Min / Max activté sante"
+            },
+            "properties": {
+              "destination": "NbreMinute",
+              "op": {
+                "type": "real",
+                "value": "900"
+              }
+            },
+            "children": [],
+            "id": "0ec76659-dfa7-4796-8ead-17e1a8fae031",
+            "type": "set"
           }
         ],
         "id": "b04701eb-8890-43e5-8c7b-c34e89b3f4ff",
