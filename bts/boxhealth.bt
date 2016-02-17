@@ -106,6 +106,70 @@
                     "children": [],
                     "id": "fe7724c8-ce3f-48d7-adf4-bed6adfca598",
                     "type": "embedded"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "active": "false"
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op2": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op": "=="
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "",
+                              "inputParams": [],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "faf584f2-d8a3-48d1-96a3-4bada183614f",
+                            "type": "action"
+                          }
+                        ],
+                        "id": "77fbe5b8-4fa3-47ca-9613-fd12ca638e04",
+                        "type": "condition"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "",
+                          "op": {
+                            "type": "string",
+                            "value": ""
+                          }
+                        },
+                        "children": [],
+                        "id": "07c87680-296c-49f5-8b71-b9374d105c8a",
+                        "type": "set"
+                      }
+                    ],
+                    "id": "c9dcc35b-99b2-4eac-bfa7-7c3b2939f173",
+                    "type": "priority"
                   }
                 ],
                 "id": "75a0f639-7074-4130-bb28-f3821e60c883",
