@@ -22,62 +22,87 @@
               "label": ""
             },
             "properties": {
-              "destination": "Activity_Reveil",
-              "op": {
-                "type": "boolean",
-                "value": "false"
-              }
+              "active": "false"
             },
-            "children": [],
-            "id": "d52f18ec-19e6-456a-866f-def1f87601db",
-            "type": "set"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {},
             "children": [
               {
                 "activated": true,
                 "metadata": {
                   "label": ""
                 },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "Time"
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "Time"
+                      },
+                      "op2": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Reveil_Min"
+                      },
+                      "op": "<"
+                    },
+                    "children": [],
+                    "id": "6ead14dc-a40c-41ac-af64-b563204c119f",
+                    "type": "condition"
                   },
-                  "op2": {
-                    "type": "entityKnowledge",
-                    "value": "Time_Reveil_Min"
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "Time"
+                      },
+                      "op2": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Reveil_Max"
+                      },
+                      "op": ">="
+                    },
+                    "children": [],
+                    "id": "116db51d-9bfc-43f1-879e-846ebe35ad46",
+                    "type": "condition"
                   },
-                  "op": "<"
-                },
-                "children": [],
-                "id": "6ead14dc-a40c-41ac-af64-b563204c119f",
-                "type": "condition"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "Time"
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "Activity_Reveil",
+                      "op": {
+                        "type": "boolean",
+                        "value": "true"
+                      }
+                    },
+                    "children": [],
+                    "id": "773dc485-00b5-40fc-959f-29123924be29",
+                    "type": "set"
                   },
-                  "op2": {
-                    "type": "entityKnowledge",
-                    "value": "Time_Reveil_Max"
-                  },
-                  "op": ">="
-                },
-                "children": [],
-                "id": "116db51d-9bfc-43f1-879e-846ebe35ad46",
-                "type": "condition"
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "active": "false"
+                    },
+                    "children": [],
+                    "id": "135bb79a-87e9-44d7-852a-16cfa6560229",
+                    "type": "priority"
+                  }
+                ],
+                "id": "c525f434-98a9-42da-82de-e5bb43a6f41a",
+                "type": "sequence"
               },
               {
                 "activated": true,
@@ -88,16 +113,16 @@
                   "destination": "Activity_Reveil",
                   "op": {
                     "type": "boolean",
-                    "value": "true"
+                    "value": "false"
                   }
                 },
                 "children": [],
-                "id": "773dc485-00b5-40fc-959f-29123924be29",
+                "id": "d52f18ec-19e6-456a-866f-def1f87601db",
                 "type": "set"
               }
             ],
-            "id": "c525f434-98a9-42da-82de-e5bb43a6f41a",
-            "type": "sequence"
+            "id": "762308f4-3553-41c2-b34f-1df50a3720cc",
+            "type": "priority"
           },
           {
             "activated": true,
@@ -158,7 +183,7 @@
                   {
                     "activated": true,
                     "metadata": {
-                      "label": "Ctrl si un autre capteur à changer etat ( ctrl mouvement)"
+                      "label": "Ctrl si autre capteur à changé état ( ctrl mouvement)"
                     },
                     "properties": {
                       "statusCondition": "succeedsIfAnySucceeds",
