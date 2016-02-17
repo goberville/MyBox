@@ -98,6 +98,39 @@
             ],
             "id": "c525f434-98a9-42da-82de-e5bb43a6f41a",
             "type": "sequence"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "active": "false"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Activity_Reveil"
+                  },
+                  "op2": {
+                    "type": "boolean",
+                    "value": "false"
+                  },
+                  "op": "=="
+                },
+                "children": [],
+                "id": "58a3d1d0-8183-4ab1-b46f-b941d4be91f6",
+                "type": "condition"
+              }
+            ],
+            "id": "e919678f-dad1-4d71-b8f0-0f9c06f7bd97",
+            "type": "priority"
           }
         ],
         "id": "5fa336b7-59e6-46b2-b733-00bdfff36547",
