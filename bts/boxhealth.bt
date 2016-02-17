@@ -22,31 +22,7 @@
               "label": ""
             },
             "properties": {
-              "behavior": {
-                "type": "uriPath",
-                "value": "bts/boxinit.bt"
-              },
-              "inputParams": []
-            },
-            "children": [],
-            "id": "ce99d3cf-5952-47a0-8b4e-387f8be25025",
-            "type": "embedded"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {
-              "op1": {
-                "type": "boolean",
-                "value": "false"
-              },
-              "op2": {
-                "type": "boolean",
-                "value": "true"
-              },
-              "op": "=="
+              "active": "false"
             },
             "children": [
               {
@@ -54,151 +30,30 @@
                 "metadata": {
                   "label": ""
                 },
-                "properties": {},
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "statusCondition": "failsIfAnyFails",
-                      "retryPolicy": "propagateToRunning"
-                    },
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": "Check Activité sante"
-                        },
-                        "properties": {
-                          "behavior": {
-                            "type": "uriPath",
-                            "value": "bts/checkActivityHealth.bt"
-                          },
-                          "inputParams": []
-                        },
-                        "children": [],
-                        "id": "3a918560-5441-4aa0-9353-1b69da24f51b",
-                        "type": "embedded"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": "Check Activité  sécurité"
-                        },
-                        "properties": {
-                          "behavior": {
-                            "type": "uriPath",
-                            "value": "bts/checkActivitySecurity.bt"
-                          },
-                          "inputParams": []
-                        },
-                        "children": [],
-                        "id": "774558a1-179b-4e1d-a6e5-c9db74a53110",
-                        "type": "embedded"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": "Check Activité Maintenance"
-                        },
-                        "properties": {
-                          "behavior": {
-                            "type": "uriPath",
-                            "value": "bts/checkActivityMaintenance"
-                          },
-                          "inputParams": []
-                        },
-                        "children": [],
-                        "id": "336d24f9-5028-4442-b692-5806ec635c5f",
-                        "type": "embedded"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {},
-                        "children": [
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "entityKnowledge",
-                                "value": "BalerteMessage"
-                              },
-                              "op2": {
-                                "type": "boolean",
-                                "value": "true"
-                              },
-                              "op": "=="
-                            },
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": "Send message via SigFox"
-                                },
-                                "properties": {
-                                  "name": "alerte",
-                                  "inputParams": [
-                                    {
-                                      "key": "messageAlerte",
-                                      "type": "entityKnowledge",
-                                      "value": "messageAlerte"
-                                    }
-                                  ],
-                                  "outputParams": []
-                                },
-                                "children": [],
-                                "id": "7c16379d-43a7-4437-9cc2-568c485fb844",
-                                "type": "action"
-                              }
-                            ],
-                            "id": "178756ed-4053-4f68-8c23-22f3ffc0a014",
-                            "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "destination": "BalerteMessage",
-                              "op": {
-                                "type": "boolean",
-                                "value": "false"
-                              }
-                            },
-                            "children": [],
-                            "id": "f7aa6488-e344-40e8-a4aa-f1825c95e119",
-                            "type": "set"
-                          }
-                        ],
-                        "id": "1b3714a6-e2d2-4e75-9fcb-dfd3e120d9e6",
-                        "type": "sequence"
-                      }
-                    ],
-                    "id": "c7b16350-d085-4994-a193-e4b5368f1455",
-                    "type": "parallel"
-                  }
-                ],
-                "id": "1c11037e-d73f-45ec-b2b8-129ff0e33df3",
-                "type": "success"
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Time"
+                  },
+                  "op2": {
+                    "type": "entityKnowledge",
+                    "value": "Time_Reveil - 900"
+                  },
+                  "op": ">="
+                },
+                "children": [],
+                "id": "2b7498db-cc8b-468e-9247-6ca5d24c502b",
+                "type": "condition"
               }
             ],
-            "id": "5d94a33b-7d77-45b4-b3f5-2d16760e4d5c",
-            "type": "until"
+            "id": "01b4d09f-2ea9-49d7-a936-8a0122934c74",
+            "type": "priority"
           }
         ],
-        "id": "dfb3a4d1-e007-418f-bcfc-53869404d4dc",
+        "id": "850b1858-3207-4e4c-a0be-71e26bb42c6f",
         "type": "sequence"
       }
     ],
-    "id": "25d980b2-00b2-402e-8475-55fb8fbe142c"
+    "id": "218463bd-dca2-4d47-a431-6994e66b3533"
   }
 ]
