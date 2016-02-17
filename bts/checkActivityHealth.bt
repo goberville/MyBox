@@ -28,7 +28,7 @@
               {
                 "activated": true,
                 "metadata": {
-                  "label": ""
+                  "label": "CTRL si Periode Activity Reveil"
                 },
                 "properties": {},
                 "children": [
@@ -96,7 +96,55 @@
                     "properties": {
                       "active": "false"
                     },
-                    "children": [],
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "entityKnowledge",
+                            "value": "TaskActivityReveil"
+                          },
+                          "op2": {
+                            "type": "integer",
+                            "value": "0"
+                          },
+                          "op": "=="
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "destination": "TaskActivityReveil",
+                              "op": {
+                                "type": "integer",
+                                "value": "1"
+                              }
+                            },
+                            "children": [],
+                            "id": "6ca6b7bf-048a-4b2c-a772-6851f9cb4566",
+                            "type": "set"
+                          }
+                        ],
+                        "id": "a4fbe23f-07df-49ad-b730-60b5dbd134d7",
+                        "type": "condition"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {},
+                        "children": [],
+                        "id": "97f748f1-08ff-49e2-a24f-c9caa1566045",
+                        "type": "success"
+                      }
+                    ],
                     "id": "135bb79a-87e9-44d7-852a-16cfa6560229",
                     "type": "priority"
                   }
@@ -109,16 +157,64 @@
                 "metadata": {
                   "label": ""
                 },
-                "properties": {
-                  "destination": "Activity_Reveil",
-                  "op": {
-                    "type": "boolean",
-                    "value": "false"
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "Activity_Reveil",
+                      "op": {
+                        "type": "boolean",
+                        "value": "false"
+                      }
+                    },
+                    "children": [],
+                    "id": "d52f18ec-19e6-456a-866f-def1f87601db",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "TaskActivityReveil"
+                      },
+                      "op2": {
+                        "type": "integer",
+                        "value": "1"
+                      },
+                      "op": "=="
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TaskActivityReveil",
+                          "op": {
+                            "type": "integer",
+                            "value": "2"
+                          }
+                        },
+                        "children": [],
+                        "id": "84876257-f7f0-43f3-83b1-2b300156bd76",
+                        "type": "set"
+                      }
+                    ],
+                    "id": "e12a92b6-23ee-4f96-a981-ba60fac000d8",
+                    "type": "condition"
                   }
-                },
-                "children": [],
-                "id": "d52f18ec-19e6-456a-866f-def1f87601db",
-                "type": "set"
+                ],
+                "id": "6596a64a-9724-4f3c-9576-bf43fe4d8602",
+                "type": "sequence"
               }
             ],
             "id": "762308f4-3553-41c2-b34f-1df50a3720cc",
@@ -156,7 +252,7 @@
               {
                 "activated": true,
                 "metadata": {
-                  "label": ""
+                  "label": "Si Periode Activity Reveil "
                 },
                 "properties": {},
                 "children": [
@@ -296,6 +392,39 @@
               }
             ],
             "id": "e919678f-dad1-4d71-b8f0-0f9c06f7bd97",
+            "type": "priority"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "active": "false"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "TaskActivityReveil"
+                  },
+                  "op2": {
+                    "type": "integer",
+                    "value": "2"
+                  },
+                  "op": "=="
+                },
+                "children": [],
+                "id": "27e244aa-4483-4f07-a42e-efbb2b7d31db",
+                "type": "condition"
+              }
+            ],
+            "id": "e42080b5-a9ac-46ea-8270-7cc5ea237d35",
             "type": "priority"
           }
         ],
