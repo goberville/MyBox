@@ -15,7 +15,28 @@
           "label": ""
         },
         "properties": {},
-        "children": [],
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "Time"
+              },
+              "op2": {
+                "type": "entityKnowledge",
+                "value": "Time_Reveil - 900"
+              },
+              "op": "=="
+            },
+            "children": [],
+            "id": "09d123ea-681d-4a1f-aec3-cccc3733793e",
+            "type": "condition"
+          }
+        ],
         "id": "5fa336b7-59e6-46b2-b733-00bdfff36547",
         "type": "sequence"
       }
