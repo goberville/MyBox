@@ -127,6 +127,91 @@
                 "children": [],
                 "id": "58a3d1d0-8183-4ab1-b46f-b941d4be91f6",
                 "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": "Si capteur chambre à changé d'état"
+                    },
+                    "properties": {
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "current_CaptChambreP"
+                      },
+                      "op2": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptChambreP"
+                      },
+                      "op": "=="
+                    },
+                    "children": [],
+                    "id": "bb67a1d7-3ca9-4c89-9bc0-a1b2a319e0d7",
+                    "type": "condition"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": "Ctrl si un autre capteur à changer etat ( ctrl mouvement)"
+                    },
+                    "properties": {
+                      "statusCondition": "succeedsIfAnySucceeds",
+                      "retryPolicy": "propagateToRunning"
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op2": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op": "=="
+                        },
+                        "children": [],
+                        "id": "7e4bb093-da9d-485c-8cca-3b78336979fc",
+                        "type": "condition"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op2": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op": "=="
+                        },
+                        "children": [],
+                        "id": "cad084cb-ac81-4dd3-a5bb-2db94277b48c",
+                        "type": "condition"
+                      }
+                    ],
+                    "id": "d9e7b00c-9ce2-476a-8bfb-3ffd4e25fe0c",
+                    "type": "parallel"
+                  }
+                ],
+                "id": "04b5e103-c4d5-4646-b173-3c483d91dc04",
+                "type": "sequence"
               }
             ],
             "id": "e919678f-dad1-4d71-b8f0-0f9c06f7bd97",
