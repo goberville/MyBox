@@ -400,7 +400,15 @@
               "label": ""
             },
             "properties": {
-              "active": "false"
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "TaskActivityReveil"
+              },
+              "op2": {
+                "type": "integer",
+                "value": "2"
+              },
+              "op": "=="
             },
             "children": [
               {
@@ -408,22 +416,45 @@
                 "metadata": {
                   "label": ""
                 },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "TaskActivityReveil"
-                  },
-                  "op2": {
-                    "type": "integer",
-                    "value": "2"
-                  },
-                  "op": "=="
-                },
-                "children": [],
-                "id": "27e244aa-4483-4f07-a42e-efbb2b7d31db",
-                "type": "condition"
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "op1": {
+                        "type": "boolean",
+                        "value": "true"
+                      },
+                      "op2": {
+                        "type": "boolean",
+                        "value": "true"
+                      },
+                      "op": "=="
+                    },
+                    "children": [],
+                    "id": "a5c4139c-177f-4175-8acc-a4da87769229",
+                    "type": "condition"
+                  }
+                ],
+                "id": "68e9f5a2-d034-4740-9fdf-7198d144cc91",
+                "type": "sequence"
               }
             ],
+            "id": "27e244aa-4483-4f07-a42e-efbb2b7d31db",
+            "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "active": "false"
+            },
+            "children": [],
             "id": "e42080b5-a9ac-46ea-8270-7cc5ea237d35",
             "type": "priority"
           }
