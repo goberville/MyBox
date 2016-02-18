@@ -60,7 +60,7 @@
                             {
                               "key": "MessageLog",
                               "type": "string",
-                              "value": "passe dans activity reveil min"
+                              "value": "Passe dans activity reveil min"
                             }
                           ],
                           "outputParams": []
