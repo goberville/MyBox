@@ -254,6 +254,26 @@
                       "label": ""
                     },
                     "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Passe activity reveil à 2"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "3276f664-984b-428e-b314-3ff4b37e6498",
+                    "type": "action"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
                       "op1": {
                         "type": "entityKnowledge",
                         "value": "TaskActivityReveil"
@@ -284,26 +304,6 @@
                     ],
                     "id": "e12a92b6-23ee-4f96-a981-ba60fac000d8",
                     "type": "condition"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "name": "Log",
-                      "inputParams": [
-                        {
-                          "key": "MessageLog",
-                          "type": "string",
-                          "value": "Passe activity reveil à 2"
-                        }
-                      ],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "3276f664-984b-428e-b314-3ff4b37e6498",
-                    "type": "action"
                   }
                 ],
                 "id": "6596a64a-9724-4f3c-9576-bf43fe4d8602",
@@ -338,7 +338,28 @@
                   },
                   "op": "=="
                 },
-                "children": [],
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Control pas activity reveil "
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "a02d567f-7795-4001-8552-b4e0d670eda4",
+                    "type": "action"
+                  }
+                ],
                 "id": "58a3d1d0-8183-4ab1-b46f-b941d4be91f6",
                 "type": "condition"
               },
@@ -499,6 +520,26 @@
                     "children": [],
                     "id": "6b31585f-4dd5-4676-bce1-5566fa45e1aa",
                     "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Control ReveilleR OK"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "16d6c5f5-ac02-4de5-8cff-c8a6405f3470",
+                    "type": "action"
                   }
                 ],
                 "id": "04b5e103-c4d5-4646-b173-3c483d91dc04",
@@ -532,6 +573,26 @@
                 },
                 "properties": {},
                 "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Control gestion alerte"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "fecb9570-0811-45a9-a04d-5f155ccbe07e",
+                    "type": "action"
+                  },
                   {
                     "activated": true,
                     "metadata": {
