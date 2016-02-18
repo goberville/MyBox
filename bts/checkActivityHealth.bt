@@ -497,6 +497,86 @@
                     "children": [],
                     "id": "cae9b064-99d7-421c-a06e-655c4a1ed834",
                     "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "current_CaptCuisineP",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptCuisineP"
+                      }
+                    },
+                    "children": [],
+                    "id": "bf3202b2-378b-4745-b258-7640af0a456f",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "current_CaptSalonP",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptSalonP"
+                      }
+                    },
+                    "children": [],
+                    "id": "d6e1b5ab-ae1a-44be-a4ee-eb4821a93238",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "current_CaptSDBP",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptSDBP"
+                      }
+                    },
+                    "children": [],
+                    "id": "6f7c05cb-90f1-46c3-832b-7bdd10bc88b8",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "current_CaptChambreP",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptChambreP"
+                      }
+                    },
+                    "children": [],
+                    "id": "c86a0784-9d21-4e15-afb8-b39f46ff94b3",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "current_CaptCouloirP",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptCouloirP"
+                      }
+                    },
+                    "children": [],
+                    "id": "40d37350-2f85-423c-ad8e-71c1bb0129d7",
+                    "type": "set"
                   }
                 ],
                 "id": "68e9f5a2-d034-4740-9fdf-7198d144cc91",
