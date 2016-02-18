@@ -58,7 +58,7 @@
                           "name": "Log",
                           "inputParams": [
                             {
-                              "key": "message",
+                              "key": "MessageLog",
                               "type": "string",
                               "value": "passe dans activity reveil min"
                             }
@@ -99,7 +99,7 @@
                           "name": "Log",
                           "inputParams": [
                             {
-                              "key": "message",
+                              "key": "MessageLog",
                               "type": "string",
                               "value": "Passe dans activity reveil Max"
                             }
