@@ -300,7 +300,7 @@
                     "type": "set"
                   },
                   {
-                    "activated": true,
+                    "activated": false,
                     "metadata": {
                       "label": ""
                     },
@@ -320,7 +320,7 @@
                     "type": "action"
                   },
                   {
-                    "activated": true,
+                    "activated": false,
                     "metadata": {
                       "label": ""
                     },
@@ -357,7 +357,7 @@
                     "type": "condition"
                   },
                   {
-                    "activated": true,
+                    "activated": false,
                     "metadata": {
                       "label": ""
                     },
@@ -385,7 +385,7 @@
             "type": "priority"
           },
           {
-            "activated": true,
+            "activated": false,
             "metadata": {
               "label": ""
             },
@@ -621,7 +621,7 @@
             "type": "priority"
           },
           {
-            "activated": true,
+            "activated": false,
             "metadata": {
               "label": ""
             },
@@ -641,7 +641,7 @@
             "type": "action"
           },
           {
-            "activated": true,
+            "activated": false,
             "metadata": {
               "label": "SI task activity terminée"
             },
