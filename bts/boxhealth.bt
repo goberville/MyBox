@@ -78,7 +78,7 @@
                   {
                     "activated": true,
                     "metadata": {
-                      "label": "Check Activité Securite"
+                      "label": "Check Activité Securite "
                     },
                     "properties": {
                       "behavior": {
