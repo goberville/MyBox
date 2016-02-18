@@ -144,68 +144,119 @@
                         "metadata": {
                           "label": ""
                         },
-                        "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "TaskActivityReveil"
-                          },
-                          "op2": {
-                            "type": "integer",
-                            "value": "0"
-                          },
-                          "op": "=="
-                        },
+                        "properties": {},
                         "children": [
                           {
                             "activated": true,
                             "metadata": {
                               "label": ""
                             },
-                            "properties": {},
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "on va Passe dans activity reveil qq"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "46a8528f-e27b-4e0b-9a17-3a9797f9f40e",
+                            "type": "action"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "TaskActivityReveil"
+                              },
+                              "op2": {
+                                "type": "integer",
+                                "value": "0"
+                              },
+                              "op": "=="
+                            },
                             "children": [
                               {
                                 "activated": true,
                                 "metadata": {
                                   "label": ""
                                 },
-                                "properties": {
-                                  "destination": "TaskActivityReveil",
-                                  "op": {
-                                    "type": "integer",
-                                    "value": "1"
+                                "properties": {},
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "TaskActivityReveil",
+                                      "op": {
+                                        "type": "integer",
+                                        "value": "1"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "6ca6b7bf-048a-4b2c-a772-6851f9cb4566",
+                                    "type": "set"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "name": "Log",
+                                      "inputParams": [
+                                        {
+                                          "key": "MessageLog",
+                                          "type": "string",
+                                          "value": "Passe activity reveil à 1"
+                                        }
+                                      ],
+                                      "outputParams": []
+                                    },
+                                    "children": [],
+                                    "id": "a94c84ca-eb57-4d7f-a67c-299c0da22597",
+                                    "type": "action"
                                   }
-                                },
-                                "children": [],
-                                "id": "6ca6b7bf-048a-4b2c-a772-6851f9cb4566",
-                                "type": "set"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "name": "Log",
-                                  "inputParams": [
-                                    {
-                                      "key": "MessageLog",
-                                      "type": "string",
-                                      "value": "Passe activity reveil à 1"
-                                    }
-                                  ],
-                                  "outputParams": []
-                                },
-                                "children": [],
-                                "id": "a94c84ca-eb57-4d7f-a67c-299c0da22597",
-                                "type": "action"
+                                ],
+                                "id": "2402a018-729a-478e-b9fc-17589b375d42",
+                                "type": "sequence"
                               }
                             ],
-                            "id": "2402a018-729a-478e-b9fc-17589b375d42",
-                            "type": "sequence"
+                            "id": "a4fbe23f-07df-49ad-b730-60b5dbd134d7",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "on est passe  dans activity reveil qqqq"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "3860a084-0901-468c-886c-9ad6be79e8ec",
+                            "type": "action"
                           }
                         ],
-                        "id": "a4fbe23f-07df-49ad-b730-60b5dbd134d7",
-                        "type": "condition"
+                        "id": "cad36480-7534-4775-ac28-a73f0ae701e9",
+                        "type": "sequence"
                       },
                       {
                         "activated": true,
@@ -259,13 +310,13 @@
                         {
                           "key": "MessageLog",
                           "type": "string",
-                          "value": "Passe activity reveil à 2"
+                          "value": "on va Passe activity reveil à 2"
                         }
                       ],
                       "outputParams": []
                     },
                     "children": [],
-                    "id": "3276f664-984b-428e-b314-3ff4b37e6498",
+                    "id": "94927222-04f7-4ddc-addb-573869cdedae",
                     "type": "action"
                   },
                   {
@@ -304,6 +355,26 @@
                     ],
                     "id": "e12a92b6-23ee-4f96-a981-ba60fac000d8",
                     "type": "condition"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Passe activity reveil à 2"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "3276f664-984b-428e-b314-3ff4b37e6498",
+                    "type": "action"
                   }
                 ],
                 "id": "6596a64a-9724-4f3c-9576-bf43fe4d8602",
@@ -548,6 +619,26 @@
             ],
             "id": "e919678f-dad1-4d71-b8f0-0f9c06f7bd97",
             "type": "priority"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "Log",
+              "inputParams": [
+                {
+                  "key": "MessageLog",
+                  "type": "string",
+                  "value": "On tester si task activity terminée"
+                }
+              ],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "79320583-a380-4a25-804b-e44277233022",
+            "type": "action"
           },
           {
             "activated": true,
