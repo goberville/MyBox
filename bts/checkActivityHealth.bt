@@ -60,7 +60,7 @@
                             {
                               "key": "message",
                               "type": "string",
-                              "value": "passe dans "
+                              "value": "passe dans activity reveil min"
                             }
                           ],
                           "outputParams": []
@@ -89,7 +89,28 @@
                       },
                       "op": "<"
                     },
-                    "children": [],
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "message",
+                              "type": "string",
+                              "value": "Passe dans activity reveil Max"
+                            }
+                          ],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "b9204248-c0d3-41c6-bc3e-d34d60ad65bd",
+                        "type": "action"
+                      }
+                    ],
                     "id": "116db51d-9bfc-43f1-879e-846ebe35ad46",
                     "type": "condition"
                   },
