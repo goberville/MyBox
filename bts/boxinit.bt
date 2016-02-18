@@ -38,7 +38,7 @@
               "label": ""
             },
             "properties": {
-              "destination": "BoolAlerteMessage ",
+              "destination": "BoolAlerteMessage",
               "op": {
                 "type": "boolean",
                 "value": "false"
