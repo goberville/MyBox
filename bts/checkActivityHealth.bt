@@ -46,9 +46,30 @@
                         "type": "entityKnowledge",
                         "value": "Time_Reveil_Min"
                       },
-                      "op": "<"
+                      "op": ">="
                     },
-                    "children": [],
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "message",
+                              "type": "string",
+                              "value": "passe dans "
+                            }
+                          ],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "5a23558b-047f-4dbc-a964-0aae907e596b",
+                        "type": "action"
+                      }
+                    ],
                     "id": "6ead14dc-a40c-41ac-af64-b563204c119f",
                     "type": "condition"
                   },
@@ -66,7 +87,7 @@
                         "type": "entityKnowledge",
                         "value": "Time_Reveil_Max"
                       },
-                      "op": ">="
+                      "op": "<"
                     },
                     "children": [],
                     "id": "116db51d-9bfc-43f1-879e-846ebe35ad46",
