@@ -255,6 +255,22 @@
             "children": [],
             "id": "42322646-a99b-4833-b15a-941641a0b626",
             "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "MessageLog",
+              "op": {
+                "type": "string",
+                "value": ""
+              }
+            },
+            "children": [],
+            "id": "d0afa076-526a-42d5-99c3-d789070e4100",
+            "type": "set"
           }
         ],
         "id": "0188f464-1df0-4a65-93c6-8248d0b29031",
