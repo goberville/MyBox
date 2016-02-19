@@ -41,7 +41,28 @@
                   },
                   "op": "<"
                 },
-                "children": [],
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Pas task reveil"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "50721670-6539-4e1d-8d6f-653bfc22e1ee",
+                    "type": "action"
+                  }
+                ],
                 "id": "6ead14dc-a40c-41ac-af64-b563204c119f",
                 "type": "condition"
               },
@@ -50,18 +71,28 @@
                 "metadata": {
                   "label": ""
                 },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "Time"
-                  },
-                  "op2": {
-                    "type": "entityKnowledge",
-                    "value": "Time_Reveil_Max"
-                  },
-                  "op": ">"
-                },
+                "properties": {},
                 "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Reveille en cours "
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "943a7440-cd43-4365-b5bf-82473100b428",
+                    "type": "action"
+                  },
                   {
                     "activated": true,
                     "metadata": {
@@ -70,13 +101,13 @@
                     "properties": {
                       "op1": {
                         "type": "entityKnowledge",
-                        "value": "TaskActivityReveil"
+                        "value": "Time"
                       },
                       "op2": {
-                        "type": "integer",
-                        "value": "1"
+                        "type": "entityKnowledge",
+                        "value": "Time_Reveil_Max"
                       },
-                      "op": "=="
+                      "op": ">"
                     },
                     "children": [
                       {
@@ -84,55 +115,96 @@
                         "metadata": {
                           "label": ""
                         },
-                        "properties": {},
+                        "properties": {
+                          "op1": {
+                            "type": "entityKnowledge",
+                            "value": "TaskActivityReveil"
+                          },
+                          "op2": {
+                            "type": "integer",
+                            "value": "1"
+                          },
+                          "op": "=="
+                        },
                         "children": [
                           {
                             "activated": true,
                             "metadata": {
                               "label": ""
                             },
-                            "properties": {
-                              "destination": "TaskActivityReveil",
-                              "op": {
-                                "type": "integer",
-                                "value": "2"
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "TaskActivityReveil",
+                                  "op": {
+                                    "type": "integer",
+                                    "value": "2"
+                                  }
+                                },
+                                "children": [],
+                                "id": "84876257-f7f0-43f3-83b1-2b300156bd76",
+                                "type": "set"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "name": "Log",
+                                  "inputParams": [
+                                    {
+                                      "key": "MessageLog",
+                                      "type": "string",
+                                      "value": "Fin activité reveil"
+                                    }
+                                  ],
+                                  "outputParams": []
+                                },
+                                "children": [],
+                                "id": "94927222-04f7-4ddc-addb-573869cdedae",
+                                "type": "action"
                               }
-                            },
-                            "children": [],
-                            "id": "84876257-f7f0-43f3-83b1-2b300156bd76",
-                            "type": "set"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "name": "Log",
-                              "inputParams": [
-                                {
-                                  "key": "MessageLog",
-                                  "type": "string",
-                                  "value": "Fin activité reveil"
-                                }
-                              ],
-                              "outputParams": []
-                            },
-                            "children": [],
-                            "id": "94927222-04f7-4ddc-addb-573869cdedae",
-                            "type": "action"
+                            ],
+                            "id": "aef2b327-c924-4db3-8081-43d02296b200",
+                            "type": "sequence"
                           }
                         ],
-                        "id": "aef2b327-c924-4db3-8081-43d02296b200",
-                        "type": "sequence"
+                        "id": "e12a92b6-23ee-4f96-a981-ba60fac000d8",
+                        "type": "condition"
                       }
                     ],
-                    "id": "e12a92b6-23ee-4f96-a981-ba60fac000d8",
+                    "id": "116db51d-9bfc-43f1-879e-846ebe35ad46",
                     "type": "condition"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Passe dans 2"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "2d8485e2-09f2-47e8-ae0a-dfea9c169828",
+                    "type": "action"
                   }
                 ],
-                "id": "116db51d-9bfc-43f1-879e-846ebe35ad46",
-                "type": "condition"
+                "id": "f88e07dd-842a-48a6-9da8-d8a17f6af053",
+                "type": "sequence"
               },
               {
                 "activated": true,
