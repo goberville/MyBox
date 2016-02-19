@@ -96,22 +96,6 @@
                           "label": ""
                         },
                         "properties": {
-                          "destination": "TaskActivityReveil",
-                          "op": {
-                            "type": "integer",
-                            "value": "1"
-                          }
-                        },
-                        "children": [],
-                        "id": "6ca6b7bf-048a-4b2c-a772-6851f9cb4566",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
                           "name": "Log",
                           "inputParams": [
                             {
@@ -125,6 +109,22 @@
                         "children": [],
                         "id": "a94c84ca-eb57-4d7f-a67c-299c0da22597",
                         "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TaskActivityReveil",
+                          "op": {
+                            "type": "integer",
+                            "value": "1"
+                          }
+                        },
+                        "children": [],
+                        "id": "6ca6b7bf-048a-4b2c-a772-6851f9cb4566",
+                        "type": "set"
                       }
                     ],
                     "id": "2402a018-729a-478e-b9fc-17589b375d42",
@@ -305,26 +305,6 @@
                                     "children": [],
                                     "id": "84876257-f7f0-43f3-83b1-2b300156bd76",
                                     "type": "set"
-                                  },
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "name": "Log",
-                                      "inputParams": [
-                                        {
-                                          "key": "MessageLog",
-                                          "type": "string",
-                                          "value": "Fin activité reveil"
-                                        }
-                                      ],
-                                      "outputParams": []
-                                    },
-                                    "children": [],
-                                    "id": "94927222-04f7-4ddc-addb-573869cdedae",
-                                    "type": "action"
                                   }
                                 ],
                                 "id": "aef2b327-c924-4db3-8081-43d02296b200",
@@ -333,26 +313,6 @@
                             ],
                             "id": "e12a92b6-23ee-4f96-a981-ba60fac000d8",
                             "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "name": "Log",
-                              "inputParams": [
-                                {
-                                  "key": "MessageLog",
-                                  "type": "string",
-                                  "value": "Passe dans 4"
-                                }
-                              ],
-                              "outputParams": []
-                            },
-                            "children": [],
-                            "id": "ceedc298-6db5-4777-98ca-8c8272ff71af",
-                            "type": "action"
                           }
                         ],
                         "id": "869c11fe-876b-48e3-a276-9af0a620dc96",
@@ -361,26 +321,6 @@
                     ],
                     "id": "116db51d-9bfc-43f1-879e-846ebe35ad46",
                     "type": "condition"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "name": "Log",
-                      "inputParams": [
-                        {
-                          "key": "MessageLog",
-                          "type": "string",
-                          "value": "Passe dans 2"
-                        }
-                      ],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "2d8485e2-09f2-47e8-ae0a-dfea9c169828",
-                    "type": "action"
                   }
                 ],
                 "id": "f88e07dd-842a-48a6-9da8-d8a17f6af053",
