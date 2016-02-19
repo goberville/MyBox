@@ -259,6 +259,26 @@
                 "metadata": {
                   "label": ""
                 },
+                "properties": {
+                  "name": "Log",
+                  "inputParams": [
+                    {
+                      "key": "MessageLog",
+                      "type": "string",
+                      "value": "Passe dans loop"
+                    }
+                  ],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "b0c8c827-3e74-4fb4-99d9-12c9e51195f3",
+                "type": "action"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
                 "properties": {},
                 "children": [],
                 "id": "8e4da6a0-6097-4a06-bd70-22570b8105a7",
