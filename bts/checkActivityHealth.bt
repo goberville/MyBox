@@ -47,20 +47,47 @@
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {
-                      "name": "Log",
-                      "inputParams": [
-                        {
-                          "key": "MessageLog",
-                          "type": "string",
-                          "value": "Pas Activité Reveil"
-                        }
-                      ],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "50721670-6539-4e1d-8d6f-653bfc22e1ee",
-                    "type": "action"
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Pas Activité Reveil"
+                            }
+                          ],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "50721670-6539-4e1d-8d6f-653bfc22e1ee",
+                        "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TaskActivityReveil",
+                          "op": {
+                            "type": "integer",
+                            "value": "0"
+                          }
+                        },
+                        "children": [],
+                        "id": "c11472e1-1039-4ec6-998e-aee0d775b00f",
+                        "type": "set"
+                      }
+                    ],
+                    "id": "a27b9425-dbd5-4776-ab29-2c2b65808a2c",
+                    "type": "sequence"
                   }
                 ],
                 "id": "6ead14dc-a40c-41ac-af64-b563204c119f",
@@ -587,70 +614,6 @@
                           "label": ""
                         },
                         "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "Check_Reveil"
-                          },
-                          "op2": {
-                            "type": "boolean",
-                            "value": "false"
-                          },
-                          "op": "=="
-                        },
-                        "children": [
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {},
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "destination": "MessageAlerte",
-                                  "op": {
-                                    "type": "string",
-                                    "value": "0302020F030303"
-                                  }
-                                },
-                                "children": [],
-                                "id": "edc954da-f915-4ba6-88de-ff32436eb58e",
-                                "type": "set"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "destination": "BoolAlerteMessage",
-                                  "op": {
-                                    "type": "boolean",
-                                    "value": "true"
-                                  }
-                                },
-                                "children": [],
-                                "id": "12243507-d292-437b-9961-732bef6e397f",
-                                "type": "set"
-                              }
-                            ],
-                            "id": "ea1ed208-ca73-403c-8297-b1ed67a3260c",
-                            "type": "sequence"
-                          }
-                        ],
-                        "id": "a5c4139c-177f-4175-8acc-a4da87769229",
-                        "type": "condition"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
                           "destination": "TaskActivityReveil",
                           "op": {
                             "type": "integer",
@@ -740,6 +703,70 @@
                         "children": [],
                         "id": "40d37350-2f85-423c-ad8e-71c1bb0129d7",
                         "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "entityKnowledge",
+                            "value": "Check_Reveil"
+                          },
+                          "op2": {
+                            "type": "boolean",
+                            "value": "false"
+                          },
+                          "op": "=="
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "MessageAlerte",
+                                  "op": {
+                                    "type": "string",
+                                    "value": "0302020F030303"
+                                  }
+                                },
+                                "children": [],
+                                "id": "edc954da-f915-4ba6-88de-ff32436eb58e",
+                                "type": "set"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "BoolAlerteMessage",
+                                  "op": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  }
+                                },
+                                "children": [],
+                                "id": "12243507-d292-437b-9961-732bef6e397f",
+                                "type": "set"
+                              }
+                            ],
+                            "id": "ea1ed208-ca73-403c-8297-b1ed67a3260c",
+                            "type": "sequence"
+                          }
+                        ],
+                        "id": "a5c4139c-177f-4175-8acc-a4da87769229",
+                        "type": "condition"
                       }
                     ],
                     "id": "68e9f5a2-d034-4740-9fdf-7198d144cc91",
