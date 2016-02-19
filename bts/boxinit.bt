@@ -271,6 +271,22 @@
             "children": [],
             "id": "d0afa076-526a-42d5-99c3-d789070e4100",
             "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "InitPhase",
+              "op": {
+                "type": "boolean",
+                "value": "true"
+              }
+            },
+            "children": [],
+            "id": "737595f4-a5d5-4d67-ac44-1b63bf858a0e",
+            "type": "set"
           }
         ],
         "id": "0188f464-1df0-4a65-93c6-8248d0b29031",
