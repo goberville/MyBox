@@ -26,7 +26,7 @@
             },
             "children": [
               {
-                "activated": true,
+                "activated": false,
                 "metadata": {
                   "label": "Si pas présent dans la chambre"
                 },
