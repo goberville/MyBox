@@ -121,13 +121,13 @@
                 "properties": {
                   "op1": {
                     "type": "entityKnowledge",
-                    "value": "TaskActivityReveil"
+                    "value": "Time"
                   },
                   "op2": {
-                    "type": "integer",
-                    "value": "0"
+                    "type": "entityKnowledge",
+                    "value": "Time_Reveil_Min"
                   },
-                  "op": "=="
+                  "op": ">="
                 },
                 "children": [
                   {
@@ -143,42 +143,74 @@
                           "label": ""
                         },
                         "properties": {
-                          "name": "Log",
-                          "inputParams": [
-                            {
-                              "key": "MessageLog",
-                              "type": "string",
-                              "value": "Debut Activité Reveil"
-                            }
-                          ],
-                          "outputParams": []
-                        },
-                        "children": [],
-                        "id": "a94c84ca-eb57-4d7f-a67c-299c0da22597",
-                        "type": "action"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "TaskActivityReveil",
-                          "op": {
+                          "op1": {
+                            "type": "entityKnowledge",
+                            "value": "TaskActivityReveil"
+                          },
+                          "op2": {
                             "type": "integer",
-                            "value": "1"
-                          }
+                            "value": "0"
+                          },
+                          "op": "=="
                         },
-                        "children": [],
-                        "id": "6ca6b7bf-048a-4b2c-a772-6851f9cb4566",
-                        "type": "set"
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "name": "Log",
+                                  "inputParams": [
+                                    {
+                                      "key": "MessageLog",
+                                      "type": "string",
+                                      "value": "Debut Activité Reveil"
+                                    }
+                                  ],
+                                  "outputParams": []
+                                },
+                                "children": [],
+                                "id": "a94c84ca-eb57-4d7f-a67c-299c0da22597",
+                                "type": "action"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "TaskActivityReveil",
+                                  "op": {
+                                    "type": "integer",
+                                    "value": "1"
+                                  }
+                                },
+                                "children": [],
+                                "id": "6ca6b7bf-048a-4b2c-a772-6851f9cb4566",
+                                "type": "set"
+                              }
+                            ],
+                            "id": "2402a018-729a-478e-b9fc-17589b375d42",
+                            "type": "sequence"
+                          }
+                        ],
+                        "id": "a4fbe23f-07df-49ad-b730-60b5dbd134d7",
+                        "type": "condition"
                       }
                     ],
-                    "id": "2402a018-729a-478e-b9fc-17589b375d42",
+                    "id": "d9e0881f-a44f-4afe-b9a9-7d493ca31889",
                     "type": "sequence"
                   }
                 ],
-                "id": "a4fbe23f-07df-49ad-b730-60b5dbd134d7",
+                "id": "b9461643-2822-4f4c-9e66-afdb7309900d",
                 "type": "condition"
               },
               {
