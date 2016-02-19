@@ -22,7 +22,7 @@
               "label": "CTRL si Periode Activity Reveil"
             },
             "properties": {
-              "active": "false"
+              "active": "true"
             },
             "children": [
               {
@@ -253,6 +253,16 @@
                 ],
                 "id": "116db51d-9bfc-43f1-879e-846ebe35ad46",
                 "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [],
+                "id": "8e4da6a0-6097-4a06-bd70-22570b8105a7",
+                "type": "success"
               }
             ],
             "id": "3fe0822b-39b0-45b3-ad58-305b85d16c41",
