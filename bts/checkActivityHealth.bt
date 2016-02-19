@@ -142,6 +142,16 @@
                             "metadata": {
                               "label": ""
                             },
+                            "properties": {},
+                            "children": [],
+                            "id": "91619581-4721-4355-99c1-8f09721d3044",
+                            "type": "success"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
                             "properties": {
                               "op1": {
                                 "type": "entityKnowledge",
