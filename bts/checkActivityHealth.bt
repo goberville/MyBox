@@ -464,7 +464,7 @@
                             },
                             "properties": {
                               "statusCondition": "succeedsIfAnySucceeds",
-                              "retryPolicy": "propagateToAll"
+                              "retryPolicy": "propagateToRunning"
                             },
                             "children": [
                               {
