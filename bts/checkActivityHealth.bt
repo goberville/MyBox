@@ -259,26 +259,6 @@
                 "metadata": {
                   "label": ""
                 },
-                "properties": {
-                  "name": "Log",
-                  "inputParams": [
-                    {
-                      "key": "MessageLog",
-                      "type": "string",
-                      "value": "Passe dans loop"
-                    }
-                  ],
-                  "outputParams": []
-                },
-                "children": [],
-                "id": "b0c8c827-3e74-4fb4-99d9-12c9e51195f3",
-                "type": "action"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
                 "properties": {},
                 "children": [],
                 "id": "8e4da6a0-6097-4a06-bd70-22570b8105a7",
@@ -289,7 +269,7 @@
             "type": "priority"
           },
           {
-            "activated": false,
+            "activated": true,
             "metadata": {
               "label": ""
             },
@@ -298,7 +278,7 @@
             },
             "children": [
               {
-                "activated": true,
+                "activated": false,
                 "metadata": {
                   "label": ""
                 },
@@ -752,6 +732,16 @@
                 ],
                 "id": "9cfa8333-163d-4876-8387-7f1bf488c22c",
                 "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [],
+                "id": "b35c573a-b2ef-4a20-9906-8a238b4651d9",
+                "type": "success"
               }
             ],
             "id": "e919678f-dad1-4d71-b8f0-0f9c06f7bd97",
