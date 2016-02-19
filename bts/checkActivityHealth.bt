@@ -53,7 +53,7 @@
                         {
                           "key": "MessageLog",
                           "type": "string",
-                          "value": "Pas task reveil"
+                          "value": "Pas Activité Reveil"
                         }
                       ],
                       "outputParams": []
@@ -139,151 +139,120 @@
                 "metadata": {
                   "label": ""
                 },
-                "properties": {},
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Time"
+                  },
+                  "op2": {
+                    "type": "entityKnowledge",
+                    "value": "Time_Reveil_Max"
+                  },
+                  "op": ">"
+                },
                 "children": [
                   {
                     "activated": true,
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {
-                      "name": "Log",
-                      "inputParams": [
-                        {
-                          "key": "MessageLog",
-                          "type": "string",
-                          "value": "Reveille en cours "
-                        }
-                      ],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "943a7440-cd43-4365-b5bf-82473100b428",
-                    "type": "action"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "op1": {
-                        "type": "entityKnowledge",
-                        "value": "Time"
-                      },
-                      "op2": {
-                        "type": "entityKnowledge",
-                        "value": "Time_Reveil_Max"
-                      },
-                      "op": ">"
-                    },
+                    "properties": {},
                     "children": [
                       {
                         "activated": true,
                         "metadata": {
                           "label": ""
                         },
-                        "properties": {},
+                        "properties": {
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Passe dans 3 task reveil "
+                            }
+                          ],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "7ee892c5-00da-413c-9a61-d90de65df990",
+                        "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "entityKnowledge",
+                            "value": "TaskActivityReveil"
+                          },
+                          "op2": {
+                            "type": "integer",
+                            "value": "1"
+                          },
+                          "op": "=="
+                        },
                         "children": [
                           {
                             "activated": true,
                             "metadata": {
                               "label": ""
                             },
-                            "properties": {
-                              "name": "Log",
-                              "inputParams": [
-                                {
-                                  "key": "MessageLog",
-                                  "type": "string",
-                                  "value": "Passe dans 3 task reveil "
-                                }
-                              ],
-                              "outputParams": []
-                            },
-                            "children": [],
-                            "id": "7ee892c5-00da-413c-9a61-d90de65df990",
-                            "type": "action"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "entityKnowledge",
-                                "value": "TaskActivityReveil"
-                              },
-                              "op2": {
-                                "type": "integer",
-                                "value": "1"
-                              },
-                              "op": "=="
-                            },
+                            "properties": {},
                             "children": [
                               {
                                 "activated": true,
                                 "metadata": {
                                   "label": ""
                                 },
-                                "properties": {},
-                                "children": [
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "name": "Log",
-                                      "inputParams": [
-                                        {
-                                          "key": "MessageLog",
-                                          "type": "string",
-                                          "value": "TaskActivityReveil 1"
-                                        }
-                                      ],
-                                      "outputParams": []
-                                    },
-                                    "children": [],
-                                    "id": "bd0cc0f7-1858-4b69-9a1a-9700b3c7642e",
-                                    "type": "action"
-                                  },
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "destination": "TaskActivityReveil",
-                                      "op": {
-                                        "type": "integer",
-                                        "value": "2"
-                                      }
-                                    },
-                                    "children": [],
-                                    "id": "84876257-f7f0-43f3-83b1-2b300156bd76",
-                                    "type": "set"
+                                "properties": {
+                                  "name": "Log",
+                                  "inputParams": [
+                                    {
+                                      "key": "MessageLog",
+                                      "type": "string",
+                                      "value": "Fin Activité Reveil"
+                                    }
+                                  ],
+                                  "outputParams": []
+                                },
+                                "children": [],
+                                "id": "bd0cc0f7-1858-4b69-9a1a-9700b3c7642e",
+                                "type": "action"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "TaskActivityReveil",
+                                  "op": {
+                                    "type": "integer",
+                                    "value": "2"
                                   }
-                                ],
-                                "id": "aef2b327-c924-4db3-8081-43d02296b200",
-                                "type": "sequence"
+                                },
+                                "children": [],
+                                "id": "84876257-f7f0-43f3-83b1-2b300156bd76",
+                                "type": "set"
                               }
                             ],
-                            "id": "e12a92b6-23ee-4f96-a981-ba60fac000d8",
-                            "type": "condition"
+                            "id": "aef2b327-c924-4db3-8081-43d02296b200",
+                            "type": "sequence"
                           }
                         ],
-                        "id": "869c11fe-876b-48e3-a276-9af0a620dc96",
-                        "type": "sequence"
+                        "id": "e12a92b6-23ee-4f96-a981-ba60fac000d8",
+                        "type": "condition"
                       }
                     ],
-                    "id": "116db51d-9bfc-43f1-879e-846ebe35ad46",
-                    "type": "condition"
+                    "id": "869c11fe-876b-48e3-a276-9af0a620dc96",
+                    "type": "sequence"
                   }
                 ],
-                "id": "f88e07dd-842a-48a6-9da8-d8a17f6af053",
-                "type": "sequence"
+                "id": "116db51d-9bfc-43f1-879e-846ebe35ad46",
+                "type": "condition"
               }
             ],
             "id": "3fe0822b-39b0-45b3-ad58-305b85d16c41",
