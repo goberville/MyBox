@@ -399,168 +399,6 @@
                       {
                         "activated": true,
                         "metadata": {
-                          "label": "Ctrl  autre capteur à changé état"
-                        },
-                        "properties": {
-                          "statusCondition": "succeedsIfAnySucceeds",
-                          "retryPolicy": "propagateToRunning"
-                        },
-                        "children": [
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": "Ctrl changement état capteur cuisine"
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "entityKnowledge",
-                                "value": "current_CaptCuisineP"
-                              },
-                              "op2": {
-                                "type": "entityKnowledge",
-                                "value": "actuator_CaptCuisineP"
-                              },
-                              "op": "!="
-                            },
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "destination": "current_CaptCuisineP",
-                                  "op": {
-                                    "type": "entityKnowledge",
-                                    "value": "actuator_CaptCuisineP"
-                                  }
-                                },
-                                "children": [],
-                                "id": "bf3202b2-378b-4745-b258-7640af0a456f",
-                                "type": "set"
-                              }
-                            ],
-                            "id": "7e4bb093-da9d-485c-8cca-3b78336979fc",
-                            "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": "Ctrl changement état capteur salon"
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "entityKnowledge",
-                                "value": "current_CaptSalonP"
-                              },
-                              "op2": {
-                                "type": "entityKnowledge",
-                                "value": "actuator_CaptSalonP"
-                              },
-                              "op": "!="
-                            },
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "destination": "current_CaptSalonP",
-                                  "op": {
-                                    "type": "entityKnowledge",
-                                    "value": "actuator_CaptSalonP"
-                                  }
-                                },
-                                "children": [],
-                                "id": "d6e1b5ab-ae1a-44be-a4ee-eb4821a93238",
-                                "type": "set"
-                              }
-                            ],
-                            "id": "bc3896fb-bb11-4924-b55d-f2f6a0555e04",
-                            "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": "Ctrl changement état capteur Salle de bain"
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "entityKnowledge",
-                                "value": "current_CaptSDBP"
-                              },
-                              "op2": {
-                                "type": "entityKnowledge",
-                                "value": "actuator_CaptSDBP"
-                              },
-                              "op": "!="
-                            },
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "destination": "current_CaptSDBP",
-                                  "op": {
-                                    "type": "entityKnowledge",
-                                    "value": "actuator_CaptSDBP"
-                                  }
-                                },
-                                "children": [],
-                                "id": "6f7c05cb-90f1-46c3-832b-7bdd10bc88b8",
-                                "type": "set"
-                              }
-                            ],
-                            "id": "7c2a8207-d99f-4be7-b6b5-7fa13336d5a2",
-                            "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": "Ctrl changement état capteur Couloir"
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "entityKnowledge",
-                                "value": "current_CaptCouloirP"
-                              },
-                              "op2": {
-                                "type": "entityKnowledge",
-                                "value": "actuator_CaptCouloirP"
-                              },
-                              "op": "!="
-                            },
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "destination": "current_CaptCouloirP",
-                                  "op": {
-                                    "type": "entityKnowledge",
-                                    "value": "actuator_CaptCouloirP"
-                                  }
-                                },
-                                "children": [],
-                                "id": "40d37350-2f85-423c-ad8e-71c1bb0129d7",
-                                "type": "set"
-                              }
-                            ],
-                            "id": "47e5a2c7-2efa-4cd9-9d60-f2c6f630a08c",
-                            "type": "condition"
-                          }
-                        ],
-                        "id": "d9e7b00c-9ce2-476a-8bfb-3ffd4e25fe0c",
-                        "type": "parallel"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
                           "label": "Check_Reveil"
                         },
                         "properties": {
@@ -589,6 +427,181 @@
                         "children": [],
                         "id": "11825882-4b4f-4952-973b-2a98314f7441",
                         "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "active": "false"
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Ctrl  autre capteur à changé état"
+                            },
+                            "properties": {
+                              "statusCondition": "succeedsIfAnySucceeds",
+                              "retryPolicy": "propagateToAll"
+                            },
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": "Ctrl changement état capteur cuisine"
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptCuisineP"
+                                  },
+                                  "op2": {
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptCuisineP"
+                                  },
+                                  "op": "!="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "current_CaptCuisineP",
+                                      "op": {
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptCuisineP"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "bf3202b2-378b-4745-b258-7640af0a456f",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "7e4bb093-da9d-485c-8cca-3b78336979fc",
+                                "type": "condition"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": "Ctrl changement état capteur salon"
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptSalonP"
+                                  },
+                                  "op2": {
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptSalonP"
+                                  },
+                                  "op": "!="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "current_CaptSalonP",
+                                      "op": {
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptSalonP"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "d6e1b5ab-ae1a-44be-a4ee-eb4821a93238",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "bc3896fb-bb11-4924-b55d-f2f6a0555e04",
+                                "type": "condition"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": "Ctrl changement état capteur Salle de bain"
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptSDBP"
+                                  },
+                                  "op2": {
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptSDBP"
+                                  },
+                                  "op": "!="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "current_CaptSDBP",
+                                      "op": {
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptSDBP"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "6f7c05cb-90f1-46c3-832b-7bdd10bc88b8",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "7c2a8207-d99f-4be7-b6b5-7fa13336d5a2",
+                                "type": "condition"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": "Ctrl changement état capteur Couloir"
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptCouloirP"
+                                  },
+                                  "op2": {
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptCouloirP"
+                                  },
+                                  "op": "!="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "current_CaptCouloirP",
+                                      "op": {
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptCouloirP"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "40d37350-2f85-423c-ad8e-71c1bb0129d7",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "47e5a2c7-2efa-4cd9-9d60-f2c6f630a08c",
+                                "type": "condition"
+                              }
+                            ],
+                            "id": "d9e7b00c-9ce2-476a-8bfb-3ffd4e25fe0c",
+                            "type": "parallel"
+                          }
+                        ],
+                        "id": "5f37b20c-c64c-4c2d-8bd7-adcf5aaa243b",
+                        "type": "priority"
                       },
                       {
                         "activated": true,
