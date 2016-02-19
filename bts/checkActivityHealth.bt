@@ -350,20 +350,47 @@
                             "metadata": {
                               "label": ""
                             },
-                            "properties": {
-                              "name": "Log",
-                              "inputParams": [
-                                {
-                                  "key": "MessageLog",
-                                  "type": "string",
-                                  "value": "Capteur chambre à changer 1 à 0"
-                                }
-                              ],
-                              "outputParams": []
-                            },
-                            "children": [],
-                            "id": "26edc369-fe5b-43b0-a588-00071ee66a04",
-                            "type": "action"
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "name": "Log",
+                                  "inputParams": [
+                                    {
+                                      "key": "MessageLog",
+                                      "type": "string",
+                                      "value": "Capteur chambre à changer 1 à 0"
+                                    }
+                                  ],
+                                  "outputParams": []
+                                },
+                                "children": [],
+                                "id": "26edc369-fe5b-43b0-a588-00071ee66a04",
+                                "type": "action"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "current_CaptChambreP",
+                                  "op": {
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptChambreP"
+                                  }
+                                },
+                                "children": [],
+                                "id": "c86a0784-9d21-4e15-afb8-b39f46ff94b3",
+                                "type": "set"
+                              }
+                            ],
+                            "id": "279526f0-0b2e-4a17-84c0-459acb4189e8",
+                            "type": "sequence"
                           }
                         ],
                         "id": "bb67a1d7-3ca9-4c89-9bc0-a1b2a319e0d7",
@@ -395,7 +422,24 @@
                               },
                               "op": "!="
                             },
-                            "children": [],
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "current_CaptCuisineP",
+                                  "op": {
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptCuisineP"
+                                  }
+                                },
+                                "children": [],
+                                "id": "bf3202b2-378b-4745-b258-7640af0a456f",
+                                "type": "set"
+                              }
+                            ],
                             "id": "7e4bb093-da9d-485c-8cca-3b78336979fc",
                             "type": "condition"
                           },
@@ -415,7 +459,24 @@
                               },
                               "op": "!="
                             },
-                            "children": [],
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "current_CaptSalonP",
+                                  "op": {
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptSalonP"
+                                  }
+                                },
+                                "children": [],
+                                "id": "d6e1b5ab-ae1a-44be-a4ee-eb4821a93238",
+                                "type": "set"
+                              }
+                            ],
                             "id": "bc3896fb-bb11-4924-b55d-f2f6a0555e04",
                             "type": "condition"
                           },
@@ -435,7 +496,24 @@
                               },
                               "op": "!="
                             },
-                            "children": [],
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "current_CaptSDBP",
+                                  "op": {
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptSDBP"
+                                  }
+                                },
+                                "children": [],
+                                "id": "6f7c05cb-90f1-46c3-832b-7bdd10bc88b8",
+                                "type": "set"
+                              }
+                            ],
                             "id": "7c2a8207-d99f-4be7-b6b5-7fa13336d5a2",
                             "type": "condition"
                           },
@@ -455,7 +533,24 @@
                               },
                               "op": "!="
                             },
-                            "children": [],
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "current_CaptCouloirP",
+                                  "op": {
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptCouloirP"
+                                  }
+                                },
+                                "children": [],
+                                "id": "40d37350-2f85-423c-ad8e-71c1bb0129d7",
+                                "type": "set"
+                              }
+                            ],
                             "id": "47e5a2c7-2efa-4cd9-9d60-f2c6f630a08c",
                             "type": "condition"
                           }
@@ -589,95 +684,7 @@
                           "label": ""
                         },
                         "properties": {
-                          "destination": "current_CaptCuisineP",
-                          "op": {
-                            "type": "entityKnowledge",
-                            "value": "actuator_CaptCuisineP"
-                          }
-                        },
-                        "children": [],
-                        "id": "bf3202b2-378b-4745-b258-7640af0a456f",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "current_CaptSalonP",
-                          "op": {
-                            "type": "entityKnowledge",
-                            "value": "actuator_CaptSalonP"
-                          }
-                        },
-                        "children": [],
-                        "id": "d6e1b5ab-ae1a-44be-a4ee-eb4821a93238",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "current_CaptSDBP",
-                          "op": {
-                            "type": "entityKnowledge",
-                            "value": "actuator_CaptSDBP"
-                          }
-                        },
-                        "children": [],
-                        "id": "6f7c05cb-90f1-46c3-832b-7bdd10bc88b8",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "current_CaptChambreP",
-                          "op": {
-                            "type": "entityKnowledge",
-                            "value": "actuator_CaptChambreP"
-                          }
-                        },
-                        "children": [],
-                        "id": "c86a0784-9d21-4e15-afb8-b39f46ff94b3",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "current_CaptCouloirP",
-                          "op": {
-                            "type": "entityKnowledge",
-                            "value": "actuator_CaptCouloirP"
-                          }
-                        },
-                        "children": [],
-                        "id": "40d37350-2f85-423c-ad8e-71c1bb0129d7",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "Check_Reveil"
-                          },
-                          "op2": {
-                            "type": "boolean",
-                            "value": "false"
-                          },
-                          "op": "=="
+                          "active": "false"
                         },
                         "children": [
                           {
@@ -685,47 +692,78 @@
                             "metadata": {
                               "label": ""
                             },
-                            "properties": {},
+                            "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "Check_Reveil"
+                              },
+                              "op2": {
+                                "type": "boolean",
+                                "value": "false"
+                              },
+                              "op": "=="
+                            },
                             "children": [
                               {
                                 "activated": true,
                                 "metadata": {
                                   "label": ""
                                 },
-                                "properties": {
-                                  "destination": "MessageAlerte",
-                                  "op": {
-                                    "type": "string",
-                                    "value": "0302020F030303"
+                                "properties": {},
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "MessageAlerte",
+                                      "op": {
+                                        "type": "string",
+                                        "value": "0302020F030303"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "edc954da-f915-4ba6-88de-ff32436eb58e",
+                                    "type": "set"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "BoolAlerteMessage",
+                                      "op": {
+                                        "type": "boolean",
+                                        "value": "true"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "12243507-d292-437b-9961-732bef6e397f",
+                                    "type": "set"
                                   }
-                                },
-                                "children": [],
-                                "id": "edc954da-f915-4ba6-88de-ff32436eb58e",
-                                "type": "set"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "destination": "BoolAlerteMessage",
-                                  "op": {
-                                    "type": "boolean",
-                                    "value": "true"
-                                  }
-                                },
-                                "children": [],
-                                "id": "12243507-d292-437b-9961-732bef6e397f",
-                                "type": "set"
+                                ],
+                                "id": "ea1ed208-ca73-403c-8297-b1ed67a3260c",
+                                "type": "sequence"
                               }
                             ],
-                            "id": "ea1ed208-ca73-403c-8297-b1ed67a3260c",
-                            "type": "sequence"
+                            "id": "a5c4139c-177f-4175-8acc-a4da87769229",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [],
+                            "id": "b2f47159-1d97-45ae-856b-ac38f55901b0",
+                            "type": "success"
                           }
                         ],
-                        "id": "a5c4139c-177f-4175-8acc-a4da87769229",
-                        "type": "condition"
+                        "id": "132712a5-0a80-4c5e-8c54-21b59935fd52",
+                        "type": "priority"
                       }
                     ],
                     "id": "68e9f5a2-d034-4740-9fdf-7198d144cc91",
