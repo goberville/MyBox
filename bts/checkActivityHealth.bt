@@ -165,7 +165,7 @@
                                     {
                                       "key": "MessageLog",
                                       "type": "string",
-                                      "value": "TaskActivityReveil == 0"
+                                      "value": "TaskActivityReveil 0"
                                     }
                                   ],
                                   "outputParams": []
@@ -213,7 +213,7 @@
                                         {
                                           "key": "MessageLog",
                                           "type": "string",
-                                          "value": "TaskActivityReveil == 1"
+                                          "value": "TaskActivityReveil 1"
                                         }
                                       ],
                                       "outputParams": []
