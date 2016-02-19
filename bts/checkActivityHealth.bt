@@ -128,12 +128,7 @@
                                 {
                                   "key": "MessageLog",
                                   "type": "string",
-                                  "value": "Passe dans 3 task reveil = {TaskActivityReveil}"
-                                },
-                                {
-                                  "key": "TaskActivityReveil",
-                                  "type": "entityKnowledge",
-                                  "value": "TaskActivityReveil"
+                                  "value": "Passe dans 3 task reveil "
                                 }
                               ],
                               "outputParams": []
@@ -147,10 +142,41 @@
                             "metadata": {
                               "label": ""
                             },
-                            "properties": {},
-                            "children": [],
-                            "id": "91619581-4721-4355-99c1-8f09721d3044",
-                            "type": "success"
+                            "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "TaskActivityReveil"
+                              },
+                              "op2": {
+                                "type": "integer",
+                                "value": "0"
+                              },
+                              "op": "=="
+                            },
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "name": "Log",
+                                  "inputParams": [
+                                    {
+                                      "key": "MessageLog",
+                                      "type": "string",
+                                      "value": "TaskActivityReveil == 0"
+                                    }
+                                  ],
+                                  "outputParams": []
+                                },
+                                "children": [],
+                                "id": "58d18083-1728-41b9-a615-1fc669b7ece2",
+                                "type": "action"
+                              }
+                            ],
+                            "id": "13c6171d-ca70-45f3-b9b5-1f40d5cf8ccd",
+                            "type": "condition"
                           },
                           {
                             "activated": true,
@@ -176,6 +202,26 @@
                                 },
                                 "properties": {},
                                 "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "name": "Log",
+                                      "inputParams": [
+                                        {
+                                          "key": "MessageLog",
+                                          "type": "string",
+                                          "value": "TaskActivityReveil == 1"
+                                        }
+                                      ],
+                                      "outputParams": []
+                                    },
+                                    "children": [],
+                                    "id": "bd0cc0f7-1858-4b69-9a1a-9700b3c7642e",
+                                    "type": "action"
+                                  },
                                   {
                                     "activated": true,
                                     "metadata": {
