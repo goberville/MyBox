@@ -305,47 +305,6 @@
             },
             "children": [
               {
-                "activated": false,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "TaskActivityReveil"
-                  },
-                  "op2": {
-                    "type": "integer",
-                    "value": "0"
-                  },
-                  "op": "=="
-                },
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "name": "Log",
-                      "inputParams": [
-                        {
-                          "key": "MessageLog",
-                          "type": "string",
-                          "value": "Control pas activity reveil "
-                        }
-                      ],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "a02d567f-7795-4001-8552-b4e0d670eda4",
-                    "type": "action"
-                  }
-                ],
-                "id": "58a3d1d0-8183-4ab1-b46f-b941d4be91f6",
-                "type": "condition"
-              },
-              {
                 "activated": true,
                 "metadata": {
                   "label": ""
