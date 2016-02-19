@@ -74,7 +74,7 @@
             "type": "action"
           },
           {
-            "activated": false,
+            "activated": true,
             "metadata": {
               "label": ""
             },
@@ -91,7 +91,7 @@
             },
             "children": [
               {
-                "activated": false,
+                "activated": true,
                 "metadata": {
                   "label": ""
                 },
@@ -100,6 +100,22 @@
                   "retryPolicy": "propagateToRunning"
                 },
                 "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": "Check Activité Sante"
+                    },
+                    "properties": {
+                      "behavior": {
+                        "type": "uriPath",
+                        "value": "bts/checkActivityHealth.bt"
+                      },
+                      "inputParams": []
+                    },
+                    "children": [],
+                    "id": "481888e8-31b5-44d9-9a5f-efa1087185e7",
+                    "type": "embedded"
+                  },
                   {
                     "activated": false,
                     "metadata": {
@@ -218,43 +234,6 @@
               }
             ],
             "id": "7be7751a-66dd-48bd-b1d9-1fda3364d5f0",
-            "type": "until"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {
-              "op1": {
-                "type": "boolean",
-                "value": "false"
-              },
-              "op2": {
-                "type": "boolean",
-                "value": "true"
-              },
-              "op": "=="
-            },
-            "children": [
-              {
-                "activated": true,
-                "metadata": {
-                  "label": "Check Activité Sante"
-                },
-                "properties": {
-                  "behavior": {
-                    "type": "uriPath",
-                    "value": "bts/checkActivityHealth.bt"
-                  },
-                  "inputParams": []
-                },
-                "children": [],
-                "id": "481888e8-31b5-44d9-9a5f-efa1087185e7",
-                "type": "embedded"
-              }
-            ],
-            "id": "72ff4449-170e-41ed-8979-edff9f77bc85",
             "type": "until"
           }
         ],
