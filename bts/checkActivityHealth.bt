@@ -22,7 +22,7 @@
               "label": "CTRL si Periode Activity Reveil"
             },
             "properties": {
-              "active": "true"
+              "active": "false"
             },
             "children": [
               {
