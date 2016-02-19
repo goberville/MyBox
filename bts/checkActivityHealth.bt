@@ -207,7 +207,7 @@
             "type": "priority"
           },
           {
-            "activated": true,
+            "activated": false,
             "metadata": {
               "label": ""
             },
