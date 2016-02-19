@@ -499,6 +499,22 @@
                           "label": ""
                         },
                         "properties": {
+                          "destination": "TaskActivityReveil",
+                          "op": {
+                            "type": "integer",
+                            "value": "2"
+                          }
+                        },
+                        "children": [],
+                        "id": "11825882-4b4f-4952-973b-2a98314f7441",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
                           "name": "Log",
                           "inputParams": [
                             {
