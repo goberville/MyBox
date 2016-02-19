@@ -19,18 +19,39 @@
           {
             "activated": true,
             "metadata": {
-              "label": "Init"
+              "label": ""
             },
             "properties": {
-              "behavior": {
-                "type": "uriPath",
-                "value": "bts/boxinit.bt"
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "InitPhase"
               },
-              "inputParams": []
+              "op2": {
+                "type": "boolean",
+                "value": "false"
+              },
+              "op": "=="
             },
-            "children": [],
-            "id": "824c535e-dc08-499b-b7e6-dbf4a1e8c165",
-            "type": "embedded"
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": "Init"
+                },
+                "properties": {
+                  "behavior": {
+                    "type": "uriPath",
+                    "value": "bts/boxinit.bt"
+                  },
+                  "inputParams": []
+                },
+                "children": [],
+                "id": "824c535e-dc08-499b-b7e6-dbf4a1e8c165",
+                "type": "embedded"
+              }
+            ],
+            "id": "780fd3a0-cd8d-49c0-887e-e19356465cd2",
+            "type": "condition"
           },
           {
             "activated": true,
