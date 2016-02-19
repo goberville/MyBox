@@ -19,7 +19,7 @@
           {
             "activated": true,
             "metadata": {
-              "label": ""
+              "label": "CTRL si Periode Activity Reveil"
             },
             "properties": {
               "active": "false"
@@ -28,299 +28,42 @@
               {
                 "activated": true,
                 "metadata": {
-                  "label": "CTRL si Periode Activity Reveil"
+                  "label": ""
                 },
-                "properties": {},
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "op1": {
-                        "type": "entityKnowledge",
-                        "value": "Time"
-                      },
-                      "op2": {
-                        "type": "entityKnowledge",
-                        "value": "Time_Reveil_Min"
-                      },
-                      "op": ">="
-                    },
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "Log",
-                          "inputParams": [
-                            {
-                              "key": "MessageLog",
-                              "type": "string",
-                              "value": "Passe dans activity reveil min"
-                            }
-                          ],
-                          "outputParams": []
-                        },
-                        "children": [],
-                        "id": "5a23558b-047f-4dbc-a964-0aae907e596b",
-                        "type": "action"
-                      }
-                    ],
-                    "id": "6ead14dc-a40c-41ac-af64-b563204c119f",
-                    "type": "condition"
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Time"
                   },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "op1": {
-                        "type": "entityKnowledge",
-                        "value": "Time"
-                      },
-                      "op2": {
-                        "type": "entityKnowledge",
-                        "value": "Time_Reveil_Max"
-                      },
-                      "op": "<"
-                    },
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "Log",
-                          "inputParams": [
-                            {
-                              "key": "MessageLog",
-                              "type": "string",
-                              "value": "Passe dans activity reveil Max"
-                            }
-                          ],
-                          "outputParams": []
-                        },
-                        "children": [],
-                        "id": "b9204248-c0d3-41c6-bc3e-d34d60ad65bd",
-                        "type": "action"
-                      }
-                    ],
-                    "id": "116db51d-9bfc-43f1-879e-846ebe35ad46",
-                    "type": "condition"
+                  "op2": {
+                    "type": "entityKnowledge",
+                    "value": "Time_Reveil_Min"
                   },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "destination": "Activity_Reveil",
-                      "op": {
-                        "type": "boolean",
-                        "value": "true"
-                      }
-                    },
-                    "children": [],
-                    "id": "773dc485-00b5-40fc-959f-29123924be29",
-                    "type": "set"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "active": "false"
-                    },
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {},
-                        "children": [
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "name": "Log",
-                              "inputParams": [
-                                {
-                                  "key": "MessageLog",
-                                  "type": "string",
-                                  "value": "on va Passe dans activity reveil qq"
-                                }
-                              ],
-                              "outputParams": []
-                            },
-                            "children": [],
-                            "id": "46a8528f-e27b-4e0b-9a17-3a9797f9f40e",
-                            "type": "action"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "entityKnowledge",
-                                "value": "TaskActivityReveil"
-                              },
-                              "op2": {
-                                "type": "integer",
-                                "value": "0"
-                              },
-                              "op": "=="
-                            },
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {},
-                                "children": [
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "destination": "TaskActivityReveil",
-                                      "op": {
-                                        "type": "integer",
-                                        "value": "1"
-                                      }
-                                    },
-                                    "children": [],
-                                    "id": "6ca6b7bf-048a-4b2c-a772-6851f9cb4566",
-                                    "type": "set"
-                                  },
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "name": "Log",
-                                      "inputParams": [
-                                        {
-                                          "key": "MessageLog",
-                                          "type": "string",
-                                          "value": "Passe activity reveil à 1"
-                                        }
-                                      ],
-                                      "outputParams": []
-                                    },
-                                    "children": [],
-                                    "id": "a94c84ca-eb57-4d7f-a67c-299c0da22597",
-                                    "type": "action"
-                                  }
-                                ],
-                                "id": "2402a018-729a-478e-b9fc-17589b375d42",
-                                "type": "sequence"
-                              }
-                            ],
-                            "id": "a4fbe23f-07df-49ad-b730-60b5dbd134d7",
-                            "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "name": "Log",
-                              "inputParams": [
-                                {
-                                  "key": "MessageLog",
-                                  "type": "string",
-                                  "value": "on est passe  dans activity reveil qqqq"
-                                }
-                              ],
-                              "outputParams": []
-                            },
-                            "children": [],
-                            "id": "3860a084-0901-468c-886c-9ad6be79e8ec",
-                            "type": "action"
-                          }
-                        ],
-                        "id": "cad36480-7534-4775-ac28-a73f0ae701e9",
-                        "type": "sequence"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {},
-                        "children": [],
-                        "id": "97f748f1-08ff-49e2-a24f-c9caa1566045",
-                        "type": "success"
-                      }
-                    ],
-                    "id": "135bb79a-87e9-44d7-852a-16cfa6560229",
-                    "type": "priority"
-                  }
-                ],
-                "id": "c525f434-98a9-42da-82de-e5bb43a6f41a",
-                "type": "sequence"
+                  "op": "<"
+                },
+                "children": [],
+                "id": "6ead14dc-a40c-41ac-af64-b563204c119f",
+                "type": "condition"
               },
               {
                 "activated": true,
                 "metadata": {
                   "label": ""
                 },
-                "properties": {},
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Time"
+                  },
+                  "op2": {
+                    "type": "entityKnowledge",
+                    "value": "Time_Reveil_Max"
+                  },
+                  "op": ">"
+                },
                 "children": [
                   {
                     "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "destination": "Activity_Reveil",
-                      "op": {
-                        "type": "boolean",
-                        "value": "false"
-                      }
-                    },
-                    "children": [],
-                    "id": "d52f18ec-19e6-456a-866f-def1f87601db",
-                    "type": "set"
-                  },
-                  {
-                    "activated": false,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "name": "Log",
-                      "inputParams": [
-                        {
-                          "key": "MessageLog",
-                          "type": "string",
-                          "value": "on va Passe activity reveil à 2"
-                        }
-                      ],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "94927222-04f7-4ddc-addb-573869cdedae",
-                    "type": "action"
-                  },
-                  {
-                    "activated": false,
                     "metadata": {
                       "label": ""
                     },
@@ -341,51 +84,130 @@
                         "metadata": {
                           "label": ""
                         },
-                        "properties": {
-                          "destination": "TaskActivityReveil",
-                          "op": {
-                            "type": "integer",
-                            "value": "2"
+                        "properties": {},
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "destination": "TaskActivityReveil",
+                              "op": {
+                                "type": "integer",
+                                "value": "2"
+                              }
+                            },
+                            "children": [],
+                            "id": "84876257-f7f0-43f3-83b1-2b300156bd76",
+                            "type": "set"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "Fin activité reveil"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "94927222-04f7-4ddc-addb-573869cdedae",
+                            "type": "action"
                           }
-                        },
-                        "children": [],
-                        "id": "84876257-f7f0-43f3-83b1-2b300156bd76",
-                        "type": "set"
+                        ],
+                        "id": "aef2b327-c924-4db3-8081-43d02296b200",
+                        "type": "sequence"
                       }
                     ],
                     "id": "e12a92b6-23ee-4f96-a981-ba60fac000d8",
                     "type": "condition"
+                  }
+                ],
+                "id": "116db51d-9bfc-43f1-879e-846ebe35ad46",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "TaskActivityReveil"
                   },
+                  "op2": {
+                    "type": "integer",
+                    "value": "0"
+                  },
+                  "op": "=="
+                },
+                "children": [
                   {
-                    "activated": false,
+                    "activated": true,
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {
-                      "name": "Log",
-                      "inputParams": [
-                        {
-                          "key": "MessageLog",
-                          "type": "string",
-                          "value": "Passe activity reveil à 2"
-                        }
-                      ],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "3276f664-984b-428e-b314-3ff4b37e6498",
-                    "type": "action"
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TaskActivityReveil",
+                          "op": {
+                            "type": "integer",
+                            "value": "1"
+                          }
+                        },
+                        "children": [],
+                        "id": "6ca6b7bf-048a-4b2c-a772-6851f9cb4566",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Debut Activité Reveil"
+                            }
+                          ],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "a94c84ca-eb57-4d7f-a67c-299c0da22597",
+                        "type": "action"
+                      }
+                    ],
+                    "id": "2402a018-729a-478e-b9fc-17589b375d42",
+                    "type": "sequence"
                   }
                 ],
-                "id": "6596a64a-9724-4f3c-9576-bf43fe4d8602",
-                "type": "sequence"
+                "id": "a4fbe23f-07df-49ad-b730-60b5dbd134d7",
+                "type": "condition"
               }
             ],
-            "id": "762308f4-3553-41c2-b34f-1df50a3720cc",
+            "id": "3fe0822b-39b0-45b3-ad58-305b85d16c41",
             "type": "priority"
           },
           {
-            "activated": false,
+            "activated": true,
             "metadata": {
               "label": ""
             },
@@ -401,11 +223,11 @@
                 "properties": {
                   "op1": {
                     "type": "entityKnowledge",
-                    "value": "Activity_Reveil"
+                    "value": "TaskActivityReveil"
                   },
                   "op2": {
-                    "type": "boolean",
-                    "value": "false"
+                    "type": "integer",
+                    "value": "0"
                   },
                   "op": "=="
                 },
@@ -437,26 +259,229 @@
               {
                 "activated": true,
                 "metadata": {
-                  "label": "Si Periode Activity Reveil "
+                  "label": ""
                 },
-                "properties": {},
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "TaskActivityReveil"
+                  },
+                  "op2": {
+                    "type": "integer",
+                    "value": "1"
+                  },
+                  "op": "=="
+                },
                 "children": [
                   {
                     "activated": true,
                     "metadata": {
-                      "label": "Si capteur chambre à changé d'état"
+                      "label": "Si Periode Activity Reveil "
                     },
-                    "properties": {
-                      "op1": {
-                        "type": "entityKnowledge",
-                        "value": "current_CaptChambreP"
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": "Si capteur chambre à changé d'état"
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "entityKnowledge",
+                            "value": "current_CaptChambreP"
+                          },
+                          "op2": {
+                            "type": "entityKnowledge",
+                            "value": "actuator_CaptChambreP"
+                          },
+                          "op": "=="
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "Capteur chambre à changer 1 à 0"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "26edc369-fe5b-43b0-a588-00071ee66a04",
+                            "type": "action"
+                          }
+                        ],
+                        "id": "bb67a1d7-3ca9-4c89-9bc0-a1b2a319e0d7",
+                        "type": "condition"
                       },
-                      "op2": {
-                        "type": "entityKnowledge",
-                        "value": "actuator_CaptChambreP"
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": "Ctrl  autre capteur à changé état"
+                        },
+                        "properties": {
+                          "statusCondition": "succeedsIfAnySucceeds",
+                          "retryPolicy": "propagateToRunning"
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Ctrl changement état capteur cuisine"
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "current_CaptCuisineP"
+                              },
+                              "op2": {
+                                "type": "entityKnowledge",
+                                "value": "actuator_CaptCuisineP"
+                              },
+                              "op": "!="
+                            },
+                            "children": [],
+                            "id": "7e4bb093-da9d-485c-8cca-3b78336979fc",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Ctrl changement état capteur salon"
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "current_CaptSalonP"
+                              },
+                              "op2": {
+                                "type": "entityKnowledge",
+                                "value": "actuator_CaptSalonP"
+                              },
+                              "op": "!="
+                            },
+                            "children": [],
+                            "id": "bc3896fb-bb11-4924-b55d-f2f6a0555e04",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Ctrl changement état capteur Salle de bain"
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "current_CaptSDBP"
+                              },
+                              "op2": {
+                                "type": "entityKnowledge",
+                                "value": "actuator_CaptSDBP"
+                              },
+                              "op": "!="
+                            },
+                            "children": [],
+                            "id": "7c2a8207-d99f-4be7-b6b5-7fa13336d5a2",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Ctrl changement état capteur Couloir"
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "current_CaptCouloirP"
+                              },
+                              "op2": {
+                                "type": "entityKnowledge",
+                                "value": "actuator_CaptCouloirP"
+                              },
+                              "op": "!="
+                            },
+                            "children": [],
+                            "id": "47e5a2c7-2efa-4cd9-9d60-f2c6f630a08c",
+                            "type": "condition"
+                          }
+                        ],
+                        "id": "d9e7b00c-9ce2-476a-8bfb-3ffd4e25fe0c",
+                        "type": "parallel"
                       },
-                      "op": "=="
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": "Check_Reveil"
+                        },
+                        "properties": {
+                          "destination": "Check_Reveil",
+                          "op": {
+                            "type": "boolean",
+                            "value": "true"
+                          }
+                        },
+                        "children": [],
+                        "id": "6b31585f-4dd5-4676-bce1-5566fa45e1aa",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Mamie est reveillée"
+                            }
+                          ],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "16d6c5f5-ac02-4de5-8cff-c8a6405f3470",
+                        "type": "action"
+                      }
+                    ],
+                    "id": "04b5e103-c4d5-4646-b173-3c483d91dc04",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "ec1a3593-5e48-4f97-b3af-fea0ea1ad985",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "TaskActivityReveil"
+                  },
+                  "op2": {
+                    "type": "integer",
+                    "value": "2"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": "Gestion alerte "
                     },
+                    "properties": {},
                     "children": [
                       {
                         "activated": true,
@@ -469,388 +494,186 @@
                             {
                               "key": "MessageLog",
                               "type": "string",
-                              "value": "Capteur chambre à changer 1 à 0"
+                              "value": "Control gestion alerte"
                             }
                           ],
                           "outputParams": []
                         },
                         "children": [],
-                        "id": "26edc369-fe5b-43b0-a588-00071ee66a04",
+                        "id": "fecb9570-0811-45a9-a04d-5f155ccbe07e",
                         "type": "action"
-                      }
-                    ],
-                    "id": "bb67a1d7-3ca9-4c89-9bc0-a1b2a319e0d7",
-                    "type": "condition"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": "Ctrl  autre capteur à changé état"
-                    },
-                    "properties": {
-                      "statusCondition": "succeedsIfAnySucceeds",
-                      "retryPolicy": "propagateToRunning"
-                    },
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": "Ctrl changement état capteur cuisine"
-                        },
-                        "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "current_CaptCuisineP"
-                          },
-                          "op2": {
-                            "type": "entityKnowledge",
-                            "value": "actuator_CaptCuisineP"
-                          },
-                          "op": "!="
-                        },
-                        "children": [],
-                        "id": "7e4bb093-da9d-485c-8cca-3b78336979fc",
-                        "type": "condition"
                       },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": "Ctrl changement état capteur salon"
-                        },
-                        "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "current_CaptSalonP"
-                          },
-                          "op2": {
-                            "type": "entityKnowledge",
-                            "value": "actuator_CaptSalonP"
-                          },
-                          "op": "!="
-                        },
-                        "children": [],
-                        "id": "bc3896fb-bb11-4924-b55d-f2f6a0555e04",
-                        "type": "condition"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": "Ctrl changement état capteur Salle de bain"
-                        },
-                        "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "current_CaptSDBP"
-                          },
-                          "op2": {
-                            "type": "entityKnowledge",
-                            "value": "actuator_CaptSDBP"
-                          },
-                          "op": "!="
-                        },
-                        "children": [],
-                        "id": "7c2a8207-d99f-4be7-b6b5-7fa13336d5a2",
-                        "type": "condition"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": "Ctrl changement état capteur Couloir"
-                        },
-                        "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "current_CaptCouloirP"
-                          },
-                          "op2": {
-                            "type": "entityKnowledge",
-                            "value": "actuator_CaptCouloirP"
-                          },
-                          "op": "!="
-                        },
-                        "children": [],
-                        "id": "47e5a2c7-2efa-4cd9-9d60-f2c6f630a08c",
-                        "type": "condition"
-                      }
-                    ],
-                    "id": "d9e7b00c-9ce2-476a-8bfb-3ffd4e25fe0c",
-                    "type": "parallel"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": "Check_Reveil"
-                    },
-                    "properties": {
-                      "destination": "Check_Reveil",
-                      "op": {
-                        "type": "boolean",
-                        "value": "true"
-                      }
-                    },
-                    "children": [],
-                    "id": "6b31585f-4dd5-4676-bce1-5566fa45e1aa",
-                    "type": "set"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "name": "Log",
-                      "inputParams": [
-                        {
-                          "key": "MessageLog",
-                          "type": "string",
-                          "value": "Control ReveilleR OK"
-                        }
-                      ],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "16d6c5f5-ac02-4de5-8cff-c8a6405f3470",
-                    "type": "action"
-                  }
-                ],
-                "id": "04b5e103-c4d5-4646-b173-3c483d91dc04",
-                "type": "sequence"
-              }
-            ],
-            "id": "e919678f-dad1-4d71-b8f0-0f9c06f7bd97",
-            "type": "priority"
-          },
-          {
-            "activated": false,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {
-              "name": "Log",
-              "inputParams": [
-                {
-                  "key": "MessageLog",
-                  "type": "string",
-                  "value": "On tester si task activity terminée"
-                }
-              ],
-              "outputParams": []
-            },
-            "children": [],
-            "id": "79320583-a380-4a25-804b-e44277233022",
-            "type": "action"
-          },
-          {
-            "activated": false,
-            "metadata": {
-              "label": "SI task activity terminée"
-            },
-            "properties": {
-              "op1": {
-                "type": "entityKnowledge",
-                "value": "TaskActivityReveil"
-              },
-              "op2": {
-                "type": "integer",
-                "value": "2"
-              },
-              "op": "=="
-            },
-            "children": [
-              {
-                "activated": true,
-                "metadata": {
-                  "label": "Gestion alerte "
-                },
-                "properties": {},
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "name": "Log",
-                      "inputParams": [
-                        {
-                          "key": "MessageLog",
-                          "type": "string",
-                          "value": "Control gestion alerte"
-                        }
-                      ],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "fecb9570-0811-45a9-a04d-5f155ccbe07e",
-                    "type": "action"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "op1": {
-                        "type": "entityKnowledge",
-                        "value": "Check_Reveil"
-                      },
-                      "op2": {
-                        "type": "boolean",
-                        "value": "false"
-                      },
-                      "op": "=="
-                    },
-                    "children": [
                       {
                         "activated": true,
                         "metadata": {
                           "label": ""
                         },
-                        "properties": {},
+                        "properties": {
+                          "op1": {
+                            "type": "entityKnowledge",
+                            "value": "Check_Reveil"
+                          },
+                          "op2": {
+                            "type": "boolean",
+                            "value": "false"
+                          },
+                          "op": "=="
+                        },
                         "children": [
                           {
                             "activated": true,
                             "metadata": {
                               "label": ""
                             },
-                            "properties": {
-                              "destination": "MessageAlerte",
-                              "op": {
-                                "type": "string",
-                                "value": "0302020F030303"
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "MessageAlerte",
+                                  "op": {
+                                    "type": "string",
+                                    "value": "0302020F030303"
+                                  }
+                                },
+                                "children": [],
+                                "id": "edc954da-f915-4ba6-88de-ff32436eb58e",
+                                "type": "set"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "BoolAlerteMessage",
+                                  "op": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  }
+                                },
+                                "children": [],
+                                "id": "12243507-d292-437b-9961-732bef6e397f",
+                                "type": "set"
                               }
-                            },
-                            "children": [],
-                            "id": "edc954da-f915-4ba6-88de-ff32436eb58e",
-                            "type": "set"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "destination": "BoolAlerteMessage",
-                              "op": {
-                                "type": "boolean",
-                                "value": "true"
-                              }
-                            },
-                            "children": [],
-                            "id": "12243507-d292-437b-9961-732bef6e397f",
-                            "type": "set"
+                            ],
+                            "id": "ea1ed208-ca73-403c-8297-b1ed67a3260c",
+                            "type": "sequence"
                           }
                         ],
-                        "id": "ea1ed208-ca73-403c-8297-b1ed67a3260c",
-                        "type": "sequence"
+                        "id": "a5c4139c-177f-4175-8acc-a4da87769229",
+                        "type": "condition"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TaskActivityReveil",
+                          "op": {
+                            "type": "integer",
+                            "value": "0"
+                          }
+                        },
+                        "children": [],
+                        "id": "cae9b064-99d7-421c-a06e-655c4a1ed834",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "current_CaptCuisineP",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "actuator_CaptCuisineP"
+                          }
+                        },
+                        "children": [],
+                        "id": "bf3202b2-378b-4745-b258-7640af0a456f",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "current_CaptSalonP",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "actuator_CaptSalonP"
+                          }
+                        },
+                        "children": [],
+                        "id": "d6e1b5ab-ae1a-44be-a4ee-eb4821a93238",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "current_CaptSDBP",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "actuator_CaptSDBP"
+                          }
+                        },
+                        "children": [],
+                        "id": "6f7c05cb-90f1-46c3-832b-7bdd10bc88b8",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "current_CaptChambreP",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "actuator_CaptChambreP"
+                          }
+                        },
+                        "children": [],
+                        "id": "c86a0784-9d21-4e15-afb8-b39f46ff94b3",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "current_CaptCouloirP",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "actuator_CaptCouloirP"
+                          }
+                        },
+                        "children": [],
+                        "id": "40d37350-2f85-423c-ad8e-71c1bb0129d7",
+                        "type": "set"
                       }
                     ],
-                    "id": "a5c4139c-177f-4175-8acc-a4da87769229",
-                    "type": "condition"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "destination": "TaskActivityReveil",
-                      "op": {
-                        "type": "integer",
-                        "value": "0"
-                      }
-                    },
-                    "children": [],
-                    "id": "cae9b064-99d7-421c-a06e-655c4a1ed834",
-                    "type": "set"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "destination": "current_CaptCuisineP",
-                      "op": {
-                        "type": "entityKnowledge",
-                        "value": "actuator_CaptCuisineP"
-                      }
-                    },
-                    "children": [],
-                    "id": "bf3202b2-378b-4745-b258-7640af0a456f",
-                    "type": "set"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "destination": "current_CaptSalonP",
-                      "op": {
-                        "type": "entityKnowledge",
-                        "value": "actuator_CaptSalonP"
-                      }
-                    },
-                    "children": [],
-                    "id": "d6e1b5ab-ae1a-44be-a4ee-eb4821a93238",
-                    "type": "set"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "destination": "current_CaptSDBP",
-                      "op": {
-                        "type": "entityKnowledge",
-                        "value": "actuator_CaptSDBP"
-                      }
-                    },
-                    "children": [],
-                    "id": "6f7c05cb-90f1-46c3-832b-7bdd10bc88b8",
-                    "type": "set"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "destination": "current_CaptChambreP",
-                      "op": {
-                        "type": "entityKnowledge",
-                        "value": "actuator_CaptChambreP"
-                      }
-                    },
-                    "children": [],
-                    "id": "c86a0784-9d21-4e15-afb8-b39f46ff94b3",
-                    "type": "set"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "destination": "current_CaptCouloirP",
-                      "op": {
-                        "type": "entityKnowledge",
-                        "value": "actuator_CaptCouloirP"
-                      }
-                    },
-                    "children": [],
-                    "id": "40d37350-2f85-423c-ad8e-71c1bb0129d7",
-                    "type": "set"
+                    "id": "68e9f5a2-d034-4740-9fdf-7198d144cc91",
+                    "type": "sequence"
                   }
                 ],
-                "id": "68e9f5a2-d034-4740-9fdf-7198d144cc91",
-                "type": "sequence"
+                "id": "9cfa8333-163d-4876-8387-7f1bf488c22c",
+                "type": "condition"
               }
             ],
-            "id": "27e244aa-4483-4f07-a42e-efbb2b7d31db",
-            "type": "condition"
+            "id": "e919678f-dad1-4d71-b8f0-0f9c06f7bd97",
+            "type": "priority"
           }
         ],
         "id": "5fa336b7-59e6-46b2-b733-00bdfff36547",
