@@ -28,6 +28,26 @@
               {
                 "activated": true,
                 "metadata": {
+                  "label": "Si pas présent dans la chambre"
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "actuator_CaptChambreP"
+                  },
+                  "op2": {
+                    "type": "integer",
+                    "value": "0"
+                  },
+                  "op": "=="
+                },
+                "children": [],
+                "id": "050350bd-10f3-4f63-beb9-618f15edc495",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
                   "label": ""
                 },
                 "properties": {
@@ -598,6 +618,49 @@
                             ],
                             "id": "d9e7b00c-9ce2-476a-8bfb-3ffd4e25fe0c",
                             "type": "parallel"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Remonte une alerte Problème capteur "
+                            },
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "MessageAlerte",
+                                  "op": {
+                                    "type": "string",
+                                    "value": "0302020F030303"
+                                  }
+                                },
+                                "children": [],
+                                "id": "63963793-9de4-450f-9304-f39bd3d0d1b2",
+                                "type": "set"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "BoolAlerteMessage",
+                                  "op": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  }
+                                },
+                                "children": [],
+                                "id": "279f73a5-e020-4e17-9c41-916c9ef5782f",
+                                "type": "set"
+                              }
+                            ],
+                            "id": "58153512-449e-4742-ae5f-6a40bfa76dfa",
+                            "type": "sequence"
                           }
                         ],
                         "id": "5f37b20c-c64c-4c2d-8bd7-adcf5aaa243b",
