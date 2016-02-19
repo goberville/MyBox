@@ -76,7 +76,7 @@
                     "type": "embedded"
                   },
                   {
-                    "activated": true,
+                    "activated": false,
                     "metadata": {
                       "label": "Check Activité Securite "
                     },
@@ -92,7 +92,7 @@
                     "type": "embedded"
                   },
                   {
-                    "activated": true,
+                    "activated": false,
                     "metadata": {
                       "label": "Check Activite Maintenance"
                     },
