@@ -217,47 +217,6 @@
                               },
                               "op2": {
                                 "type": "integer",
-                                "value": "0"
-                              },
-                              "op": "=="
-                            },
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "name": "Log",
-                                  "inputParams": [
-                                    {
-                                      "key": "MessageLog",
-                                      "type": "string",
-                                      "value": "TaskActivityReveil 0"
-                                    }
-                                  ],
-                                  "outputParams": []
-                                },
-                                "children": [],
-                                "id": "58d18083-1728-41b9-a615-1fc669b7ece2",
-                                "type": "action"
-                              }
-                            ],
-                            "id": "13c6171d-ca70-45f3-b9b5-1f40d5cf8ccd",
-                            "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "entityKnowledge",
-                                "value": "TaskActivityReveil"
-                              },
-                              "op2": {
-                                "type": "integer",
                                 "value": "1"
                               },
                               "op": "=="
