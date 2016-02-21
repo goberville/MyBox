@@ -19,7 +19,7 @@
           {
             "activated": true,
             "metadata": {
-              "label": ""
+              "label": "CTRL si Periode Activity Douche"
             },
             "properties": {
               "active": "false"
@@ -32,14 +32,14 @@
                 },
                 "properties": {
                   "op1": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "entityKnowledge",
+                    "value": "Time"
                   },
                   "op2": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "entityKnowledge",
+                    "value": "Time_Douche_Min"
                   },
-                  "op": "=="
+                  "op": "<"
                 },
                 "children": [
                   {
@@ -69,10 +69,10 @@
                           "label": ""
                         },
                         "properties": {
-                          "destination": "",
+                          "destination": "TaskActivityDouche",
                           "op": {
-                            "type": "string",
-                            "value": ""
+                            "type": "integer",
+                            "value": "0"
                           }
                         },
                         "children": [],
@@ -94,14 +94,14 @@
                 },
                 "properties": {
                   "op1": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "entityKnowledge",
+                    "value": "Time"
                   },
                   "op2": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "entityKnowledge",
+                    "value": "Time_Douche_Min"
                   },
-                  "op": "=="
+                  "op": ">="
                 },
                 "children": [
                   {
@@ -118,12 +118,12 @@
                         },
                         "properties": {
                           "op1": {
-                            "type": "boolean",
-                            "value": "true"
+                            "type": "entityKnowledge",
+                            "value": "TaskActivityDouche"
                           },
                           "op2": {
-                            "type": "boolean",
-                            "value": "true"
+                            "type": "integer",
+                            "value": "0"
                           },
                           "op": "=="
                         },
@@ -141,8 +141,14 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "name": "",
-                                  "inputParams": [],
+                                  "name": "Log",
+                                  "inputParams": [
+                                    {
+                                      "key": "MessageLog",
+                                      "type": "string",
+                                      "value": "Debut Activité Douche"
+                                    }
+                                  ],
                                   "outputParams": []
                                 },
                                 "children": [],
@@ -155,10 +161,10 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "",
+                                  "destination": "TaskActivityDouche",
                                   "op": {
-                                    "type": "string",
-                                    "value": ""
+                                    "type": "integer",
+                                    "value": "1"
                                   }
                                 },
                                 "children": [],
@@ -188,14 +194,14 @@
                 },
                 "properties": {
                   "op1": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "entityKnowledge",
+                    "value": "Time"
                   },
                   "op2": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "entityKnowledge",
+                    "value": "Time_Douche_Max"
                   },
-                  "op": "=="
+                  "op": ">"
                 },
                 "children": [
                   {
@@ -211,8 +217,14 @@
                           "label": ""
                         },
                         "properties": {
-                          "name": "",
-                          "inputParams": [],
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Temps activite Douche terminé"
+                            }
+                          ],
                           "outputParams": []
                         },
                         "children": [],
@@ -249,8 +261,14 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "name": "",
-                                  "inputParams": [],
+                                  "name": "Log",
+                                  "inputParams": [
+                                    {
+                                      "key": "MessageLog",
+                                      "type": "string",
+                                      "value": "Fin Activité Douche"
+                                    }
+                                  ],
                                   "outputParams": []
                                 },
                                 "children": [],
@@ -263,10 +281,10 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "",
+                                  "destination": "TaskActivityReveil",
                                   "op": {
-                                    "type": "string",
-                                    "value": ""
+                                    "type": "integer",
+                                    "value": "2"
                                   }
                                 },
                                 "children": [],
@@ -319,12 +337,12 @@
                 },
                 "properties": {
                   "op1": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "entityKnowledge",
+                    "value": "TaskActivityReveil"
                   },
                   "op2": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "integer",
+                    "value": "1"
                   },
                   "op": "=="
                 },
@@ -339,16 +357,16 @@
                       {
                         "activated": true,
                         "metadata": {
-                          "label": ""
+                          "label": "Si capteur douche à changé d'état"
                         },
                         "properties": {
                           "op1": {
-                            "type": "boolean",
-                            "value": "true"
+                            "type": "entityKnowledge",
+                            "value": "current_CaptSDBP"
                           },
                           "op2": {
-                            "type": "boolean",
-                            "value": "true"
+                            "type": "entityKnowledge",
+                            "value": "actuator_CaptSDBP"
                           },
                           "op": "=="
                         },
@@ -366,8 +384,14 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "name": "",
-                                  "inputParams": [],
+                                  "name": "Log",
+                                  "inputParams": [
+                                    {
+                                      "key": "MessageLog",
+                                      "type": "string",
+                                      "value": "Capteur douche à changer 1 à 0"
+                                    }
+                                  ],
                                   "outputParams": []
                                 },
                                 "children": [],
@@ -380,10 +404,10 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "",
+                                  "destination": "current_CaptSDBP",
                                   "op": {
-                                    "type": "string",
-                                    "value": ""
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptSDBP"
                                   }
                                 },
                                 "children": [],
@@ -404,10 +428,10 @@
                           "label": ""
                         },
                         "properties": {
-                          "destination": "",
+                          "destination": "Check_Douche",
                           "op": {
-                            "type": "string",
-                            "value": ""
+                            "type": "boolean",
+                            "value": "true"
                           }
                         },
                         "children": [],
@@ -420,10 +444,10 @@
                           "label": ""
                         },
                         "properties": {
-                          "destination": "",
+                          "destination": "TaskActivityDouche",
                           "op": {
-                            "type": "string",
-                            "value": ""
+                            "type": "integer",
+                            "value": "2"
                           }
                         },
                         "children": [],
@@ -456,14 +480,14 @@
                                 },
                                 "properties": {
                                   "op1": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptCuisineP"
                                   },
                                   "op2": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptCuisineP"
                                   },
-                                  "op": "=="
+                                  "op": "!="
                                 },
                                 "children": [
                                   {
@@ -472,10 +496,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "current_CaptCuisineP",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptCuisineP"
                                       }
                                     },
                                     "children": [],
@@ -493,14 +517,14 @@
                                 },
                                 "properties": {
                                   "op1": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptSalonP"
                                   },
                                   "op2": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptSalonP"
                                   },
-                                  "op": "=="
+                                  "op": "!="
                                 },
                                 "children": [
                                   {
@@ -509,10 +533,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "current_CaptSalonP",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptSalonP"
                                       }
                                     },
                                     "children": [],
@@ -530,14 +554,14 @@
                                 },
                                 "properties": {
                                   "op1": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptChambreP"
                                   },
                                   "op2": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptChambreP"
                                   },
-                                  "op": "=="
+                                  "op": "!="
                                 },
                                 "children": [
                                   {
@@ -546,10 +570,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "current_CaptChambreP",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptChambreP"
                                       }
                                     },
                                     "children": [],
@@ -567,14 +591,14 @@
                                 },
                                 "properties": {
                                   "op1": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptCouloirP"
                                   },
                                   "op2": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptCouloirP"
                                   },
-                                  "op": "=="
+                                  "op": "!="
                                 },
                                 "children": [
                                   {
@@ -583,10 +607,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "current_CaptCouloirP",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptCouloirP"
                                       }
                                     },
                                     "children": [],
@@ -604,7 +628,7 @@
                           {
                             "activated": true,
                             "metadata": {
-                              "label": ""
+                              "label": "Remonte une alerte Problème capteur "
                             },
                             "properties": {},
                             "children": [
@@ -614,10 +638,10 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "",
+                                  "destination": "MessageAlerte",
                                   "op": {
                                     "type": "string",
-                                    "value": ""
+                                    "value": "0X02020F030303"
                                   }
                                 },
                                 "children": [],
@@ -630,10 +654,10 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "",
+                                  "destination": "BoolAlerteMessage",
                                   "op": {
-                                    "type": "string",
-                                    "value": ""
+                                    "type": "boolean",
+                                    "value": "true"
                                   }
                                 },
                                 "children": [],
@@ -654,8 +678,14 @@
                           "label": ""
                         },
                         "properties": {
-                          "name": "",
-                          "inputParams": [],
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Mamie est douchée"
+                            }
+                          ],
                           "outputParams": []
                         },
                         "children": [],
@@ -677,12 +707,12 @@
                 },
                 "properties": {
                   "op1": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "entityKnowledge",
+                    "value": "TaskActivityDouche"
                   },
                   "op2": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "integer",
+                    "value": "2"
                   },
                   "op": "=="
                 },
@@ -690,7 +720,7 @@
                   {
                     "activated": true,
                     "metadata": {
-                      "label": ""
+                      "label": "Gestion alerte "
                     },
                     "properties": {},
                     "children": [
@@ -700,8 +730,14 @@
                           "label": ""
                         },
                         "properties": {
-                          "name": "",
-                          "inputParams": [],
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Task Douche terminée"
+                            }
+                          ],
                           "outputParams": []
                         },
                         "children": [],
@@ -714,10 +750,10 @@
                           "label": ""
                         },
                         "properties": {
-                          "destination": "",
+                          "destination": "TaskActivityDouche",
                           "op": {
-                            "type": "string",
-                            "value": ""
+                            "type": "integer",
+                            "value": "3"
                           }
                         },
                         "children": [],
@@ -740,12 +776,12 @@
                             },
                             "properties": {
                               "op1": {
-                                "type": "boolean",
-                                "value": "true"
+                                "type": "entityKnowledge",
+                                "value": "Check_Douche"
                               },
                               "op2": {
                                 "type": "boolean",
-                                "value": "true"
+                                "value": "false"
                               },
                               "op": "=="
                             },
@@ -763,10 +799,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "MessageAlerte",
                                       "op": {
                                         "type": "string",
-                                        "value": ""
+                                        "value": "0302020F030303"
                                       }
                                     },
                                     "children": [],
@@ -779,10 +815,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "BoolAlerteMessage",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "boolean",
+                                        "value": "true"
                                       }
                                     },
                                     "children": [],
