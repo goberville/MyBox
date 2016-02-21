@@ -343,12 +343,12 @@
                 },
                 "properties": {
                   "op1": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "entityKnowledge",
+                    "value": "TaskActivityReveil"
                   },
                   "op2": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "integer",
+                    "value": "1"
                   },
                   "op": "=="
                 },
@@ -356,23 +356,23 @@
                   {
                     "activated": true,
                     "metadata": {
-                      "label": ""
+                      "label": "Si Periode Activity Reveil "
                     },
                     "properties": {},
                     "children": [
                       {
                         "activated": true,
                         "metadata": {
-                          "label": ""
+                          "label": "Si capteur chambre à changé d'état"
                         },
                         "properties": {
                           "op1": {
-                            "type": "boolean",
-                            "value": "true"
+                            "type": "entityKnowledge",
+                            "value": "current_CaptChambreP"
                           },
                           "op2": {
-                            "type": "boolean",
-                            "value": "true"
+                            "type": "entityKnowledge",
+                            "value": "actuator_CaptChambreP"
                           },
                           "op": "=="
                         },
@@ -390,8 +390,14 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "name": "",
-                                  "inputParams": [],
+                                  "name": "Log",
+                                  "inputParams": [
+                                    {
+                                      "key": "MessageLog",
+                                      "type": "string",
+                                      "value": "Capteur chambre à changer 1 à 0"
+                                    }
+                                  ],
                                   "outputParams": []
                                 },
                                 "children": [],
@@ -404,10 +410,10 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "",
+                                  "destination": "current_CaptChambreP",
                                   "op": {
-                                    "type": "string",
-                                    "value": ""
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptChambreP"
                                   }
                                 },
                                 "children": [],
@@ -425,13 +431,13 @@
                       {
                         "activated": true,
                         "metadata": {
-                          "label": ""
+                          "label": "Check_Reveil"
                         },
                         "properties": {
-                          "destination": "",
+                          "destination": "Check_Reveil",
                           "op": {
-                            "type": "string",
-                            "value": ""
+                            "type": "boolean",
+                            "value": "true"
                           }
                         },
                         "children": [],
@@ -444,10 +450,10 @@
                           "label": ""
                         },
                         "properties": {
-                          "destination": "",
+                          "destination": "TaskActivityReveil",
                           "op": {
-                            "type": "string",
-                            "value": ""
+                            "type": "integer",
+                            "value": "2"
                           }
                         },
                         "children": [],
@@ -469,25 +475,25 @@
                               "label": ""
                             },
                             "properties": {
-                              "statusCondition": "failsIfAnyFails",
+                              "statusCondition": "succeedsIfAnySucceeds",
                               "retryPolicy": "propagateToRunning"
                             },
                             "children": [
                               {
                                 "activated": true,
                                 "metadata": {
-                                  "label": ""
+                                  "label": "Ctrl changement état capteur cuisine"
                                 },
                                 "properties": {
                                   "op1": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptCuisineP"
                                   },
                                   "op2": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptCuisineP"
                                   },
-                                  "op": "=="
+                                  "op": "!="
                                 },
                                 "children": [
                                   {
@@ -496,10 +502,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "current_CaptCuisineP",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptCuisineP"
                                       }
                                     },
                                     "children": [],
@@ -513,18 +519,18 @@
                               {
                                 "activated": true,
                                 "metadata": {
-                                  "label": ""
+                                  "label": "Ctrl changement état capteur salon"
                                 },
                                 "properties": {
                                   "op1": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptSalonP"
                                   },
                                   "op2": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptSalonP"
                                   },
-                                  "op": "=="
+                                  "op": "!="
                                 },
                                 "children": [
                                   {
@@ -533,10 +539,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "current_CaptSalonP",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptSalonP"
                                       }
                                     },
                                     "children": [],
@@ -550,18 +556,18 @@
                               {
                                 "activated": true,
                                 "metadata": {
-                                  "label": ""
+                                  "label": "Ctrl changement état capteur Salle de bain"
                                 },
                                 "properties": {
                                   "op1": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptSDBP"
                                   },
                                   "op2": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptSDBP"
                                   },
-                                  "op": "=="
+                                  "op": "!="
                                 },
                                 "children": [
                                   {
@@ -570,10 +576,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "current_CaptSDBP",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptSDBP"
                                       }
                                     },
                                     "children": [],
@@ -587,18 +593,18 @@
                               {
                                 "activated": true,
                                 "metadata": {
-                                  "label": ""
+                                  "label": "Ctrl changement état capteur Couloir"
                                 },
                                 "properties": {
                                   "op1": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptCouloirP"
                                   },
                                   "op2": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptCouloirP"
                                   },
-                                  "op": "=="
+                                  "op": "!="
                                 },
                                 "children": [
                                   {
@@ -607,10 +613,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "current_CaptCouloirP",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptCouloirP"
                                       }
                                     },
                                     "children": [],
@@ -628,7 +634,7 @@
                           {
                             "activated": true,
                             "metadata": {
-                              "label": ""
+                              "label": "Remonte une alerte Problème capteur "
                             },
                             "properties": {},
                             "children": [
@@ -638,10 +644,10 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "",
+                                  "destination": "MessageAlerte",
                                   "op": {
                                     "type": "string",
-                                    "value": ""
+                                    "value": "0X02020F030303"
                                   }
                                 },
                                 "children": [],
@@ -654,10 +660,10 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "",
+                                  "destination": "BoolAlerteMessage",
                                   "op": {
-                                    "type": "string",
-                                    "value": ""
+                                    "type": "boolean",
+                                    "value": "true"
                                   }
                                 },
                                 "children": [],
@@ -678,8 +684,14 @@
                           "label": ""
                         },
                         "properties": {
-                          "name": "",
-                          "inputParams": [],
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Mamie est reveillée"
+                            }
+                          ],
                           "outputParams": []
                         },
                         "children": [],
@@ -701,12 +713,12 @@
                 },
                 "properties": {
                   "op1": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "entityKnowledge",
+                    "value": "TaskActivityReveil"
                   },
                   "op2": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "integer",
+                    "value": "2"
                   },
                   "op": "=="
                 },
@@ -714,7 +726,7 @@
                   {
                     "activated": true,
                     "metadata": {
-                      "label": ""
+                      "label": "Gestion alerte "
                     },
                     "properties": {},
                     "children": [
@@ -724,8 +736,14 @@
                           "label": ""
                         },
                         "properties": {
-                          "name": "",
-                          "inputParams": [],
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Task Reveille terminée"
+                            }
+                          ],
                           "outputParams": []
                         },
                         "children": [],
@@ -738,10 +756,10 @@
                           "label": ""
                         },
                         "properties": {
-                          "destination": "",
+                          "destination": "TaskActivityReveil",
                           "op": {
-                            "type": "string",
-                            "value": ""
+                            "type": "integer",
+                            "value": "3"
                           }
                         },
                         "children": [],
@@ -764,12 +782,12 @@
                             },
                             "properties": {
                               "op1": {
-                                "type": "boolean",
-                                "value": "true"
+                                "type": "entityKnowledge",
+                                "value": "Check_Reveil"
                               },
                               "op2": {
                                 "type": "boolean",
-                                "value": "true"
+                                "value": "false"
                               },
                               "op": "=="
                             },
@@ -787,10 +805,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "MessageAlerte",
                                       "op": {
                                         "type": "string",
-                                        "value": ""
+                                        "value": "0302020F030303"
                                       }
                                     },
                                     "children": [],
@@ -803,10 +821,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "BoolAlerteMessage",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "boolean",
+                                        "value": "true"
                                       }
                                     },
                                     "children": [],
