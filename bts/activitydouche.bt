@@ -8,7 +8,836 @@
       "label": ""
     },
     "properties": {},
-    "children": [],
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": ""
+        },
+        "properties": {},
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "active": "false"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op2": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "",
+                          "inputParams": [],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "ae48c36f-0ab9-43e3-baef-bce347d6f970",
+                        "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "",
+                          "op": {
+                            "type": "string",
+                            "value": ""
+                          }
+                        },
+                        "children": [],
+                        "id": "7f4aa5f1-fa99-4752-822d-86e89880981e",
+                        "type": "set"
+                      }
+                    ],
+                    "id": "db8df1df-ca34-4df8-8d27-e9f6a985c015",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "709980df-3bb5-4a4c-a8bd-17ec3ecedcf6",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op2": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op2": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op": "=="
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "name": "",
+                                  "inputParams": [],
+                                  "outputParams": []
+                                },
+                                "children": [],
+                                "id": "a4c1750c-f019-416d-83b5-a7ba99ed1cb1",
+                                "type": "action"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "",
+                                  "op": {
+                                    "type": "string",
+                                    "value": ""
+                                  }
+                                },
+                                "children": [],
+                                "id": "ed6e77b5-f819-4546-a120-61c9e2a8f895",
+                                "type": "set"
+                              }
+                            ],
+                            "id": "86e521a1-a115-4488-a74c-7e336f1e480c",
+                            "type": "sequence"
+                          }
+                        ],
+                        "id": "29e7a4a4-9910-4853-84d3-6e68d0014dee",
+                        "type": "condition"
+                      }
+                    ],
+                    "id": "857bd5d7-36bb-4457-98f9-f2ad26172e3a",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "455ee409-411c-446b-a246-d7c58459d012",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op2": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "",
+                          "inputParams": [],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "e9d62492-caad-4130-a41c-f32326d08d40",
+                        "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op2": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op": "=="
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "name": "",
+                                  "inputParams": [],
+                                  "outputParams": []
+                                },
+                                "children": [],
+                                "id": "bca474d9-676c-4f51-b229-f50de6afda17",
+                                "type": "action"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "",
+                                  "op": {
+                                    "type": "string",
+                                    "value": ""
+                                  }
+                                },
+                                "children": [],
+                                "id": "f3ae77c0-4a09-4cb4-a515-7dada5ea3e10",
+                                "type": "set"
+                              }
+                            ],
+                            "id": "29daa449-0679-41e5-8c4c-9ca3c41e89d7",
+                            "type": "sequence"
+                          }
+                        ],
+                        "id": "4cbf2780-bde5-499e-a7b8-8b3f7eef14a3",
+                        "type": "condition"
+                      }
+                    ],
+                    "id": "e29e91c0-7d38-4339-bb8c-2fec579080fe",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "e964e42a-9f47-405e-9007-524da3108105",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [],
+                "id": "bb9be05a-9edd-4162-9c74-522231191431",
+                "type": "success"
+              }
+            ],
+            "id": "69e1e2b8-03f3-4532-bd73-676e2ebfb489",
+            "type": "priority"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "active": "false"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op2": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op2": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op": "=="
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "name": "",
+                                  "inputParams": [],
+                                  "outputParams": []
+                                },
+                                "children": [],
+                                "id": "f1bd56c2-85b1-4ee8-8ebc-4694ddccf5a1",
+                                "type": "action"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "",
+                                  "op": {
+                                    "type": "string",
+                                    "value": ""
+                                  }
+                                },
+                                "children": [],
+                                "id": "dc8226ff-f5e9-46b2-83c2-10cd840db23a",
+                                "type": "set"
+                              }
+                            ],
+                            "id": "b77895fc-30a0-42e6-af15-b3d576962d39",
+                            "type": "sequence"
+                          }
+                        ],
+                        "id": "42d738eb-1069-4218-98d0-f06b67c244e7",
+                        "type": "condition"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "",
+                          "op": {
+                            "type": "string",
+                            "value": ""
+                          }
+                        },
+                        "children": [],
+                        "id": "e30b912f-7a31-4fcb-9ff3-ad01941754f1",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "",
+                          "op": {
+                            "type": "string",
+                            "value": ""
+                          }
+                        },
+                        "children": [],
+                        "id": "775fc588-5c10-4d2e-9e7c-37e1e351d449",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "active": "false"
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "statusCondition": "failsIfAnyFails",
+                              "retryPolicy": "propagateToRunning"
+                            },
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op2": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op": "=="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "",
+                                      "op": {
+                                        "type": "string",
+                                        "value": ""
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "f9d701d0-077a-4d72-837a-9a4a232cec08",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "cb43870e-4ddc-4547-a53f-66ad44d414ac",
+                                "type": "condition"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op2": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op": "=="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "",
+                                      "op": {
+                                        "type": "string",
+                                        "value": ""
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "5b363074-a521-47f4-81eb-d5b2b4a36830",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "3d146223-3451-4233-a053-420b7a431523",
+                                "type": "condition"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op2": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op": "=="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "",
+                                      "op": {
+                                        "type": "string",
+                                        "value": ""
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "7f18f282-5272-464c-b7f8-a7ef923314a8",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "0689f303-89af-40dc-b238-80d085176cb8",
+                                "type": "condition"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op2": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op": "=="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "",
+                                      "op": {
+                                        "type": "string",
+                                        "value": ""
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "173e92da-3a56-438f-8274-141ebe2eee1d",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "8aae2319-3734-464e-97e4-d4dc862b100b",
+                                "type": "condition"
+                              }
+                            ],
+                            "id": "264dc28e-f84c-4866-98d7-afdcaf26a4ce",
+                            "type": "parallel"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "",
+                                  "op": {
+                                    "type": "string",
+                                    "value": ""
+                                  }
+                                },
+                                "children": [],
+                                "id": "8338f689-f5f2-4e6e-8ed4-bf879f901d41",
+                                "type": "set"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "",
+                                  "op": {
+                                    "type": "string",
+                                    "value": ""
+                                  }
+                                },
+                                "children": [],
+                                "id": "8723b1a4-d711-4ba1-9aaa-7e7964680895",
+                                "type": "set"
+                              }
+                            ],
+                            "id": "395e8568-e1e6-4c49-b1b6-827d18da8d09",
+                            "type": "sequence"
+                          }
+                        ],
+                        "id": "24b18497-8dd2-4665-b19c-de46c179e4a1",
+                        "type": "priority"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "",
+                          "inputParams": [],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "d3e76488-f1b5-43f3-80d1-066fb0e505d2",
+                        "type": "action"
+                      }
+                    ],
+                    "id": "70792581-547d-4290-89b0-dd62f6aede38",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "5eca9651-c1c7-43ec-89ba-f6e3be1d8c60",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op2": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "",
+                          "inputParams": [],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "2fd0d6e0-e56e-490d-a4f0-85fb0d19445b",
+                        "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "",
+                          "op": {
+                            "type": "string",
+                            "value": ""
+                          }
+                        },
+                        "children": [],
+                        "id": "d592a0b8-7ea5-4920-9007-2456208c11dc",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "active": "false"
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op2": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op": "=="
+                            },
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {},
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "",
+                                      "op": {
+                                        "type": "string",
+                                        "value": ""
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "8a925465-8fa2-4442-b630-3c0b614be4e4",
+                                    "type": "set"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "",
+                                      "op": {
+                                        "type": "string",
+                                        "value": ""
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "38af87b4-bb72-4269-99af-9e1f9ad2f8b2",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "44fa55ea-9956-4b45-af25-12810eaa81bd",
+                                "type": "sequence"
+                              }
+                            ],
+                            "id": "1af02325-5c85-4fb6-a7fe-72d25c22055d",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [],
+                            "id": "a8c5262a-acd2-40b0-b50f-c85695cb9908",
+                            "type": "success"
+                          }
+                        ],
+                        "id": "fab8184f-f0c8-4421-a9a2-075c4708f972",
+                        "type": "priority"
+                      }
+                    ],
+                    "id": "58f59243-0307-446a-9614-ea4051cf5d25",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "28e912d0-8e99-41e3-a9b1-9c1fb9366c90",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [],
+                "id": "6b0e55a7-ab23-492e-9d0a-caa4e5e999c5",
+                "type": "success"
+              }
+            ],
+            "id": "d49561af-d22d-442f-8d3a-59887e555622",
+            "type": "priority"
+          }
+        ],
+        "id": "81f9974f-1a93-4d81-b2e0-baf8c4ce099b",
+        "type": "sequence"
+      }
+    ],
     "id": "e79392bb-9aeb-429e-842f-6e4f51ce022b"
   }
 ]
