@@ -228,7 +228,7 @@
                             {
                               "key": "MessageLog",
                               "type": "string",
-                              "value": "Temps activite terminé"
+                              "value": "Temps activite reveil terminé"
                             }
                           ],
                           "outputParams": []
