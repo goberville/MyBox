@@ -634,7 +634,7 @@
                           {
                             "activated": true,
                             "metadata": {
-                              "label": ""
+                              "label": "Remonte une alerte Problème capteur "
                             },
                             "properties": {},
                             "children": [
@@ -644,10 +644,10 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "",
+                                  "destination": "MessageAlerte",
                                   "op": {
                                     "type": "string",
-                                    "value": ""
+                                    "value": "0X02020F030303"
                                   }
                                 },
                                 "children": [],
@@ -684,8 +684,14 @@
                           "label": ""
                         },
                         "properties": {
-                          "name": "",
-                          "inputParams": [],
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Mamie a pris son diner"
+                            }
+                          ],
                           "outputParams": []
                         },
                         "children": [],
@@ -707,12 +713,12 @@
                 },
                 "properties": {
                   "op1": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "entityKnowledge",
+                    "value": "TaskActivityDiner"
                   },
                   "op2": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "integer",
+                    "value": "2"
                   },
                   "op": "=="
                 },
@@ -730,8 +736,14 @@
                           "label": ""
                         },
                         "properties": {
-                          "name": "",
-                          "inputParams": [],
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": ""
+                            }
+                          ],
                           "outputParams": []
                         },
                         "children": [],
@@ -744,10 +756,10 @@
                           "label": ""
                         },
                         "properties": {
-                          "destination": "",
+                          "destination": "TaskActivityDiner",
                           "op": {
-                            "type": "string",
-                            "value": ""
+                            "type": "integer",
+                            "value": "3"
                           }
                         },
                         "children": [],
