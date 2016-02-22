@@ -491,7 +491,7 @@
                                   },
                                   "op2": {
                                     "type": "entityKnowledge",
-                                    "value": "actuator_CaptChambrePrue"
+                                    "value": "actuator_CaptChambreP"
                                   },
                                   "op": "!="
                                 },
@@ -502,10 +502,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "current_CaptCuisineP",
+                                      "destination": "current_CaptChambreP",
                                       "op": {
                                         "type": "entityKnowledge",
-                                        "value": "actuator_CaptCuisineP"
+                                        "value": "actuator_CaptChambreP"
                                       }
                                     },
                                     "children": [],
