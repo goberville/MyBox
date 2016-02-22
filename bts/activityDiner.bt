@@ -343,12 +343,12 @@
                 },
                 "properties": {
                   "op1": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "entityKnowledge",
+                    "value": "TaskActivityPetitDejeuner"
                   },
                   "op2": {
-                    "type": "boolean",
-                    "value": "true"
+                    "type": "integer",
+                    "value": "1"
                   },
                   "op": "=="
                 },
@@ -486,14 +486,14 @@
                                 },
                                 "properties": {
                                   "op1": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptChambreP"
                                   },
                                   "op2": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptChambrePrue"
                                   },
-                                  "op": "=="
+                                  "op": "!="
                                 },
                                 "children": [
                                   {
@@ -502,10 +502,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "current_CaptCuisineP",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptCuisineP"
                                       }
                                     },
                                     "children": [],
@@ -523,14 +523,14 @@
                                 },
                                 "properties": {
                                   "op1": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptSalonP"
                                   },
                                   "op2": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptSalonP"
                                   },
-                                  "op": "=="
+                                  "op": "!="
                                 },
                                 "children": [
                                   {
@@ -539,10 +539,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "current_CaptSalonP",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptSalonP"
                                       }
                                     },
                                     "children": [],
@@ -560,14 +560,14 @@
                                 },
                                 "properties": {
                                   "op1": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptSDBP"
                                   },
                                   "op2": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptSDBP"
                                   },
-                                  "op": "=="
+                                  "op": "!="
                                 },
                                 "children": [
                                   {
@@ -576,10 +576,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "current_CaptSDBP",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptSDBP"
                                       }
                                     },
                                     "children": [],
@@ -597,14 +597,14 @@
                                 },
                                 "properties": {
                                   "op1": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptCouloirP"
                                   },
                                   "op2": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptCouloirP"
                                   },
-                                  "op": "=="
+                                  "op": "!="
                                 },
                                 "children": [
                                   {
@@ -613,10 +613,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "current_CaptCouloirP",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptCouloirP"
                                       }
                                     },
                                     "children": [],
