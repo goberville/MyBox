@@ -376,6 +376,43 @@
                       {
                         "activated": true,
                         "metadata": {
+                          "label": "Si pas present dans la chambre"
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "entityKnowledge",
+                            "value": "current_CaptChambreP"
+                          },
+                          "op2": {
+                            "type": "integer",
+                            "value": "1"
+                          },
+                          "op": "!="
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "destination": "TaskActivityReveil",
+                              "op": {
+                                "type": "integer",
+                                "value": "3"
+                              }
+                            },
+                            "children": [],
+                            "id": "3d04e7b6-f07e-4cc8-b71b-6a7af2b2fd2b",
+                            "type": "set"
+                          }
+                        ],
+                        "id": "cdfc34a7-f919-4dd0-a914-499f0d80a584",
+                        "type": "condition"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
                           "label": "Si capteur chambre à changé d'état"
                         },
                         "properties": {
