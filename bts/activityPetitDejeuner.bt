@@ -479,7 +479,7 @@
                               "label": ""
                             },
                             "properties": {
-                              "statusCondition": "failsIfAnyFails",
+                              "statusCondition": "succeedsIfAnySucceeds",
                               "retryPolicy": "propagateToRunning"
                             },
                             "children": [
