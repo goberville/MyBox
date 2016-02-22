@@ -387,7 +387,7 @@
                             "type": "entityKnowledge",
                             "value": "actuator_CaptChambreP"
                           },
-                          "op": "=="
+                          "op": "!="
                         },
                         "children": [
                           {
