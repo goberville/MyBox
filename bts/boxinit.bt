@@ -77,26 +77,10 @@
                   "label": ""
                 },
                 "properties": {
-                  "destination": "Activity_Reveil",
-                  "op": {
-                    "type": "boolean",
-                    "value": "false"
-                  }
-                },
-                "children": [],
-                "id": "d26694fa-1393-4ec3-9a9d-2530dba475ce",
-                "type": "set"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
                   "destination": "TaskActivityReveil",
                   "op": {
                     "type": "integer",
-                    "value": "0"
+                    "value": "3"
                   }
                 },
                 "children": [],
@@ -117,6 +101,22 @@
                 },
                 "children": [],
                 "id": "f5d7f1ed-9255-4448-9043-0be2dc9f1156",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Activity_Reveil",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "d26694fa-1393-4ec3-9a9d-2530dba475ce",
                 "type": "set"
               }
             ],
@@ -139,7 +139,7 @@
                   "destination": "TaskActivityDouche",
                   "op": {
                     "type": "integer",
-                    "value": "0"
+                    "value": "3"
                   }
                 },
                 "children": [],
@@ -198,7 +198,7 @@
                   "destination": "TaskActivityPetitDejeuner",
                   "op": {
                     "type": "integer",
-                    "value": "0"
+                    "value": "3"
                   }
                 },
                 "children": [],
@@ -257,7 +257,7 @@
                   "destination": "TaskActivityDejeuner",
                   "op": {
                     "type": "integer",
-                    "value": "0"
+                    "value": "3"
                   }
                 },
                 "children": [],
@@ -316,7 +316,7 @@
                   "destination": "TaskActivityDiner",
                   "op": {
                     "type": "integer",
-                    "value": "0"
+                    "value": "3"
                   }
                 },
                 "children": [],
@@ -375,7 +375,7 @@
                   "destination": "TaskActivityCoucher",
                   "op": {
                     "type": "integer",
-                    "value": "0"
+                    "value": "3"
                   }
                 },
                 "children": [],
@@ -434,7 +434,7 @@
                   "destination": "TaskActivitySieste",
                   "op": {
                     "type": "integer",
-                    "value": "0"
+                    "value": "3"
                   }
                 },
                 "children": [],
