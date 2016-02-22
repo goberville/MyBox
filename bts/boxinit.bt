@@ -14,10 +14,7 @@
         "metadata": {
           "label": ""
         },
-        "properties": {
-          "statusCondition": "failsIfAnyFails",
-          "retryPolicy": "propagateToRunning"
-        },
+        "properties": {},
         "children": [
           {
             "activated": true,
@@ -25,15 +22,15 @@
               "label": ""
             },
             "properties": {
-              "behavior": {
-                "type": "uriPath",
-                "value": "bts/activityreveil.bt"
-              },
-              "inputParams": []
+              "destination": "MessageAlerte",
+              "op": {
+                "type": "string",
+                "value": ""
+              }
             },
             "children": [],
-            "id": "207ee580-e9b4-47de-96e1-7f155ab1410d",
-            "type": "embedded"
+            "id": "94010477-ff34-4e90-8ec7-a8a49a151816",
+            "type": "set"
           },
           {
             "activated": true,
@@ -41,15 +38,15 @@
               "label": ""
             },
             "properties": {
-              "behavior": {
-                "type": "uriPath",
-                "value": "bts/activityPetitDejeuner.bt"
-              },
-              "inputParams": []
+              "destination": "BoolAlerteMessage",
+              "op": {
+                "type": "boolean",
+                "value": "false"
+              }
             },
             "children": [],
-            "id": "a57ec1eb-0845-475f-82af-38c094dc1964",
-            "type": "embedded"
+            "id": "d37dc09f-e4ff-4f68-a7ad-976d82cf5057",
+            "type": "set"
           },
           {
             "activated": true,
@@ -57,15 +54,481 @@
               "label": ""
             },
             "properties": {
-              "behavior": {
-                "type": "uriPath",
-                "value": "bts/activitydouche.bt"
-              },
-              "inputParams": []
+              "destination": "MessageLog",
+              "op": {
+                "type": "string",
+                "value": ""
+              }
             },
             "children": [],
-            "id": "0cf5b57d-c027-4ea5-971c-7e7805e03cf6",
-            "type": "embedded"
+            "id": "d0afa076-526a-42d5-99c3-d789070e4100",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Activity_Reveil",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "d26694fa-1393-4ec3-9a9d-2530dba475ce",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "TaskActivityReveil",
+                  "op": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                "children": [],
+                "id": "bb5fc673-13c6-4d36-9794-c829ced7adc6",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Check_Reveil",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "f5d7f1ed-9255-4448-9043-0be2dc9f1156",
+                "type": "set"
+              }
+            ],
+            "id": "dbdcc15a-7569-4226-9409-047b45ee5852",
+            "type": "sequence"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "TaskActivityDouche",
+                  "op": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                "children": [],
+                "id": "87d210dd-cf2e-4365-adc2-b216b11fc8d2",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Check_Douche",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "0b711472-d54b-4090-b8ca-72cba90d6033",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Activity_Douche",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "cd6d58c8-ad0c-4efa-a0da-78a5d869d576",
+                "type": "set"
+              }
+            ],
+            "id": "403a6576-127d-462f-9eec-a3fb0d1301f3",
+            "type": "sequence"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "TaskActivityPetitDejeuner",
+                  "op": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                "children": [],
+                "id": "6d596512-2f16-4af2-a60a-d54e32e55835",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Check_PetitDejeuner",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "9eb3d0f9-7d98-4ad6-ade6-45b9acdee124",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Activity_PetitDejeuner",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "3cdee39f-7a97-4f93-a243-3a04558f21e1",
+                "type": "set"
+              }
+            ],
+            "id": "7d7196a2-d6ed-4e18-ae4f-10da4c1238bd",
+            "type": "sequence"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "TaskActivityDejeuner",
+                  "op": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                "children": [],
+                "id": "a9a177df-4970-4e59-8b92-9c038a6334cc",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Check_Dejeuner",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "212190c5-ad1a-4bd7-a794-89eabd890c23",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Activity_Dejeuner",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "67da6644-18cf-4911-8c36-9f59ab75a4c9",
+                "type": "set"
+              }
+            ],
+            "id": "154394dc-c0a0-4483-97a9-e41d0e5e01b1",
+            "type": "sequence"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "TaskActivityDiner",
+                  "op": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                "children": [],
+                "id": "ca3d98e5-3c27-4119-8ff3-6bac2c785511",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Check_Diner",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "10d34247-217b-46cb-88d7-2afd5d9e8416",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Activity_Diner",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "fe8085c0-613c-435c-9ac8-54ba2e3db160",
+                "type": "set"
+              }
+            ],
+            "id": "f397f6c4-1836-4509-b365-c2b8c2cda8bc",
+            "type": "sequence"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "current_CaptCuisineP",
+                  "op": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                "children": [],
+                "id": "9a76f297-075e-411b-8147-317dab2461cc",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "current_CaptCuisineT",
+                  "op": {
+                    "type": "string",
+                    "value": ""
+                  }
+                },
+                "children": [],
+                "id": "da1980d9-504a-497c-94ec-212906df40b9",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "current_CaptSalonP",
+                  "op": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                "children": [],
+                "id": "f84b57e4-296c-4acb-911f-12f30beb456f",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "current_CaptSalonT",
+                  "op": {
+                    "type": "string",
+                    "value": ""
+                  }
+                },
+                "children": [],
+                "id": "bf7f77b2-8206-4c01-a946-6c3d0e0740d2",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "current_CaptSalonO",
+                  "op": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                "children": [],
+                "id": "b5ff7609-6d1f-4583-88a2-093717e2299d",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "current_CaptSDBP",
+                  "op": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                "children": [],
+                "id": "ca860140-2a0d-4174-97c0-d22f3cc6d86a",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "current_CaptChambreP",
+                  "op": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                "children": [],
+                "id": "7490432b-6827-46e0-ba15-ffbfdff5340e",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "current_CaptCouloirP",
+                  "op": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                "children": [],
+                "id": "59b8c781-b297-4a2c-b9b9-cec8eedc3c54",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "current_CaptCouloirO",
+                  "op": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                "children": [],
+                "id": "42322646-a99b-4833-b15a-941641a0b626",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "current_CaptChambreT",
+                  "op": {
+                    "type": "string",
+                    "value": ""
+                  }
+                },
+                "children": [],
+                "id": "7c91a6ec-3922-4494-854a-6140c7c2a879",
+                "type": "set"
+              }
+            ],
+            "id": "5e5bf1ec-51e4-44ab-b7d8-8fce73e72c82",
+            "type": "sequence"
           },
           {
             "activated": true,
@@ -73,101 +536,21 @@
               "label": ""
             },
             "properties": {
-              "behavior": {
-                "type": "uriPath",
-                "value": "bts/activityDejeuner.bt"
-              },
-              "inputParams": []
+              "destination": "InitPhase",
+              "op": {
+                "type": "boolean",
+                "value": "true"
+              }
             },
             "children": [],
-            "id": "393ba84a-471b-4b42-aad9-a84989915522",
-            "type": "embedded"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {
-              "behavior": {
-                "type": "uriPath",
-                "value": "bts/activityDiner.bt"
-              },
-              "inputParams": []
-            },
-            "children": [],
-            "id": "975916d5-83e0-40b1-aba9-6d5a4d2b5a02",
-            "type": "embedded"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {
-              "behavior": {
-                "type": "uriPath",
-                "value": "bts/activityCoucher.bt"
-              },
-              "inputParams": []
-            },
-            "children": [],
-            "id": "7e5662b3-c7dd-4035-8f02-a9cf6088e85c",
-            "type": "embedded"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {
-              "behavior": {
-                "type": "uriPath",
-                "value": "bts/activitySieste.bt"
-              },
-              "inputParams": []
-            },
-            "children": [],
-            "id": "824f78d9-b789-4df8-8ac5-d1837cc991c5",
-            "type": "embedded"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {
-              "behavior": {
-                "type": "uriPath",
-                "value": "bts/activitySortie.bt"
-              },
-              "inputParams": []
-            },
-            "children": [],
-            "id": "e212238e-dbee-460d-89f4-95cdd59c2c11",
-            "type": "embedded"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": "Nombre  Min / Max activté sante"
-            },
-            "properties": {
-              "behavior": {
-                "type": "uriPath",
-                "value": "bts/activityVisite.bt"
-              },
-              "inputParams": []
-            },
-            "children": [],
-            "id": "c870a879-6dba-4e77-9481-79d5327e58ad",
-            "type": "embedded"
+            "id": "737595f4-a5d5-4d67-ac44-1b63bf858a0e",
+            "type": "set"
           }
         ],
-        "id": "592a91dd-9404-4e17-b6a3-dfd6596f00d0",
-        "type": "parallel"
+        "id": "0188f464-1df0-4a65-93c6-8248d0b29031",
+        "type": "sequence"
       }
     ],
-    "id": "ca362e83-804e-4729-8d3b-ade300971a0d"
+    "id": "218463bd-dca2-4d47-a431-6994e66b3533"
   }
 ]
