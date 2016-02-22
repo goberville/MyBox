@@ -56,7 +56,13 @@
                         },
                         "properties": {
                           "name": "Log",
-                          "inputParams": [],
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Pas activité douche"
+                            }
+                          ],
                           "outputParams": []
                         },
                         "children": [],
