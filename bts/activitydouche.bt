@@ -55,8 +55,14 @@
                           "label": ""
                         },
                         "properties": {
-                          "name": "",
-                          "inputParams": [],
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Pas activité douche"
+                            }
+                          ],
                           "outputParams": []
                         },
                         "children": [],
@@ -238,12 +244,12 @@
                         },
                         "properties": {
                           "op1": {
-                            "type": "boolean",
-                            "value": "true"
+                            "type": "entityKnowledge",
+                            "value": "TaskActivityDouche"
                           },
                           "op2": {
-                            "type": "boolean",
-                            "value": "true"
+                            "type": "integer",
+                            "value": "1"
                           },
                           "op": "=="
                         },
@@ -281,7 +287,7 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "TaskActivityReveil",
+                                  "destination": "TaskActivityDouche",
                                   "op": {
                                     "type": "integer",
                                     "value": "2"
@@ -469,7 +475,7 @@
                               "label": ""
                             },
                             "properties": {
-                              "statusCondition": "failsIfAnyFails",
+                              "statusCondition": "succeedsIfAnySucceeds",
                               "retryPolicy": "propagateToRunning"
                             },
                             "children": [
