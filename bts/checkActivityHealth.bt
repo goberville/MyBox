@@ -27,7 +27,7 @@
             "properties": {
               "behavior": {
                 "type": "uriPath",
-                "value": ""
+                "value": "bts/activityreveil.bt"
               },
               "inputParams": []
             },
@@ -43,12 +43,12 @@
             "properties": {
               "behavior": {
                 "type": "uriPath",
-                "value": ""
+                "value": "bts/activityPetitDejeuner.bt"
               },
               "inputParams": []
             },
             "children": [],
-            "id": "393ba84a-471b-4b42-aad9-a84989915522",
+            "id": "a57ec1eb-0845-475f-82af-38c094dc1964",
             "type": "embedded"
           },
           {
@@ -59,7 +59,7 @@
             "properties": {
               "behavior": {
                 "type": "uriPath",
-                "value": ""
+                "value": "bts/activityDouche.bt"
               },
               "inputParams": []
             },
@@ -75,12 +75,28 @@
             "properties": {
               "behavior": {
                 "type": "uriPath",
-                "value": ""
+                "value": "bts/activityDejeuner.bt"
               },
               "inputParams": []
             },
             "children": [],
-            "id": "a57ec1eb-0845-475f-82af-38c094dc1964",
+            "id": "393ba84a-471b-4b42-aad9-a84989915522",
+            "type": "embedded"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/activityDiner.bt"
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "975916d5-83e0-40b1-aba9-6d5a4d2b5a02",
             "type": "embedded"
           }
         ],
