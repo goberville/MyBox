@@ -372,6 +372,124 @@
                   "label": ""
                 },
                 "properties": {
+                  "destination": "TaskActivityCoucher",
+                  "op": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                "children": [],
+                "id": "a056d31b-e5fa-4ed8-b7d5-b311d181ec1d",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Check_Coucher",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "3696f1b4-1b53-4a77-9039-0531813a6dcf",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Activity_Coucher",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "ce6cc0ee-f0a8-44dc-9670-b719e14c54ae",
+                "type": "set"
+              }
+            ],
+            "id": "21cbf7a6-8b35-460e-a8c7-5f6356dcc0d0",
+            "type": "sequence"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "TaskActivitySieste",
+                  "op": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                "children": [],
+                "id": "970ec61c-121a-4098-8a57-029ab09b64cc",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Check_Sieste",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "66dbc428-09a3-4f58-8145-4dd0fab9403a",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Activity_Sieste",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "0fff88ec-c096-448d-a72d-2e56ae09c182",
+                "type": "set"
+              }
+            ],
+            "id": "df9dc668-dc3a-4373-81a0-bc2142783905",
+            "type": "sequence"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
                   "destination": "current_CaptCuisineP",
                   "op": {
                     "type": "integer",
