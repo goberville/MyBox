@@ -50,7 +50,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": true,
+                        "activated": false,
                         "metadata": {
                           "label": ""
                         },
@@ -222,7 +222,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": true,
+                        "activated": false,
                         "metadata": {
                           "label": ""
                         },
@@ -276,7 +276,7 @@
                                     {
                                       "key": "MessageLog",
                                       "type": "string",
-                                      "value": ""
+                                      "value": "Activity petit Dejeuner terminée"
                                     }
                                   ],
                                   "outputParams": []
@@ -735,7 +735,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": true,
+                        "activated": false,
                         "metadata": {
                           "label": ""
                         },
