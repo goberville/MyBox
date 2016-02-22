@@ -549,7 +549,7 @@
           {
             "activated": true,
             "metadata": {
-              "label": "Nombre de minute Controle Min / Max activté sante"
+              "label": "Nombre de minutes Controle Min / Max activté sante"
             },
             "properties": {
               "destination": "NbreMinute",
