@@ -50,7 +50,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": true,
+                        "activated": false,
                         "metadata": {
                           "label": ""
                         },
@@ -222,7 +222,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": true,
+                        "activated": false,
                         "metadata": {
                           "label": ""
                         },
@@ -735,7 +735,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": true,
+                        "activated": false,
                         "metadata": {
                           "label": ""
                         },
@@ -763,7 +763,7 @@
                           "destination": "TaskActivityDejeuner",
                           "op": {
                             "type": "integer",
-                            "value": "2"
+                            "value": "3"
                           }
                         },
                         "children": [],
