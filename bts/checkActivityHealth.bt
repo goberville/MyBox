@@ -130,6 +130,22 @@
             "children": [],
             "id": "acb3f11a-ac3b-49ba-b4ec-3eb45da32095",
             "type": "embedded"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/activitySortie.bt"
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "6cb490aa-d863-4c1a-a90d-6282dc031063",
+            "type": "embedded"
           }
         ],
         "id": "592a91dd-9404-4e17-b6a3-dfd6596f00d0",
