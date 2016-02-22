@@ -363,16 +363,16 @@
                       {
                         "activated": true,
                         "metadata": {
-                          "label": "Si capteur chambre à changé d'état"
+                          "label": "Si capteur couloir à changé d'état"
                         },
                         "properties": {
                           "op1": {
                             "type": "entityKnowledge",
-                            "value": "current_CaptChambreP"
+                            "value": "current_CaptCouloirP"
                           },
                           "op2": {
                             "type": "entityKnowledge",
-                            "value": "actuator_CaptChambreP"
+                            "value": "actuator_CaptCouloirP"
                           },
                           "op": "=="
                         },
@@ -395,7 +395,7 @@
                                     {
                                       "key": "MessageLog",
                                       "type": "string",
-                                      "value": "Capteur chambre à changer 1 à 0"
+                                      "value": "Capteur couloir à changer 1 à 0"
                                     }
                                   ],
                                   "outputParams": []
@@ -410,10 +410,10 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "current_CaptChambreP",
+                                  "destination": "current_CaptCouloirP",
                                   "op": {
                                     "type": "entityKnowledge",
-                                    "value": "actuator_CaptChambreP"
+                                    "value": "actuator_CaptCouloirP"
                                   }
                                 },
                                 "children": [],
