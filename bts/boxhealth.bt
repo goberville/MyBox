@@ -19,18 +19,59 @@
           {
             "activated": true,
             "metadata": {
-              "label": "Init"
+              "label": ""
             },
             "properties": {
-              "behavior": {
-                "type": "uriPath",
-                "value": "bts/boxinit.bt"
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "InitPhase"
               },
-              "inputParams": []
+              "op2": {
+                "type": "boolean",
+                "value": "false"
+              },
+              "op": "=="
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": "Init"
+                },
+                "properties": {
+                  "behavior": {
+                    "type": "uriPath",
+                    "value": "bts/boxinit.bt"
+                  },
+                  "inputParams": []
+                },
+                "children": [],
+                "id": "824c535e-dc08-499b-b7e6-dbf4a1e8c165",
+                "type": "embedded"
+              }
+            ],
+            "id": "780fd3a0-cd8d-49c0-887e-e19356465cd2",
+            "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "Log",
+              "inputParams": [
+                {
+                  "key": "MessageLog",
+                  "type": "string",
+                  "value": "Initi terminé"
+                }
+              ],
+              "outputParams": []
             },
             "children": [],
-            "id": "824c535e-dc08-499b-b7e6-dbf4a1e8c165",
-            "type": "embedded"
+            "id": "018173d2-0a5d-4eb2-94f4-b05945907412",
+            "type": "action"
           },
           {
             "activated": true,
@@ -55,7 +96,7 @@
                   "label": ""
                 },
                 "properties": {
-                  "statusCondition": "failsIfAnyFails",
+                  "statusCondition": "succeedsIfAnySucceeds",
                   "retryPolicy": "propagateToRunning"
                 },
                 "children": [
@@ -76,9 +117,9 @@
                     "type": "embedded"
                   },
                   {
-                    "activated": true,
+                    "activated": false,
                     "metadata": {
-                      "label": "Check Activité Securite"
+                      "label": "Check Activité Securite "
                     },
                     "properties": {
                       "behavior": {
@@ -92,7 +133,7 @@
                     "type": "embedded"
                   },
                   {
-                    "activated": true,
+                    "activated": false,
                     "metadata": {
                       "label": "Check Activite Maintenance"
                     },

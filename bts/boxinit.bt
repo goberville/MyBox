@@ -19,113 +19,17 @@
           {
             "activated": true,
             "metadata": {
-              "label": "Capteur présence cuisine"
+              "label": ""
             },
             "properties": {
-              "destination": "current.captCusinieP",
+              "destination": "MessageAlerte",
               "op": {
-                "type": "entityKnowledge",
-                "value": "CaptCuisineP"
+                "type": "string",
+                "value": ""
               }
             },
             "children": [],
-            "id": "af67f2b8-0afc-4d95-bcfd-fdb0348cd465",
-            "type": "set"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": "Capteur présence Salon"
-            },
-            "properties": {
-              "destination": "current.captSalonP",
-              "op": {
-                "type": "entityKnowledge",
-                "value": "CaptSalonP"
-              }
-            },
-            "children": [],
-            "id": "234987d4-835b-45cc-8b1c-668413888505",
-            "type": "set"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": "Capteur présence chambre"
-            },
-            "properties": {
-              "destination": "current.captChambreP",
-              "op": {
-                "type": "entityKnowledge",
-                "value": "CaptChambreP"
-              }
-            },
-            "children": [],
-            "id": "3b65383f-90db-47c7-a627-fce08f75118c",
-            "type": "set"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": "Capteur présence Salle de bain"
-            },
-            "properties": {
-              "destination": "current.captSDBP",
-              "op": {
-                "type": "entityKnowledge",
-                "value": "CaptSDBP"
-              }
-            },
-            "children": [],
-            "id": "d301f379-d53f-4bde-b171-ecc4bb8d8df2",
-            "type": "set"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": "Capteur présence couloir"
-            },
-            "properties": {
-              "destination": "current.captCouloirP",
-              "op": {
-                "type": "entityKnowledge",
-                "value": "CaptCouloirP"
-              }
-            },
-            "children": [],
-            "id": "b458680d-08fd-44de-98f2-cfdf80e78c28",
-            "type": "set"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": "Capteur Ouverture Fenetre Salon"
-            },
-            "properties": {
-              "destination": "current.captSalonO",
-              "op": {
-                "type": "entityKnowledge",
-                "value": "CaptSalonO"
-              }
-            },
-            "children": [],
-            "id": "8df8b667-053d-4fad-b093-cdde79e8b4ef",
-            "type": "set"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": "Capteur ouverture Porte Couloir"
-            },
-            "properties": {
-              "destination": "current.captCouloirO",
-              "op": {
-                "type": "entityKnowledge",
-                "value": "CaptCouloirO"
-              }
-            },
-            "children": [],
-            "id": "b6e38206-2aee-4f89-9749-385fee299945",
+            "id": "94010477-ff34-4e90-8ec7-a8a49a151816",
             "type": "set"
           },
           {
@@ -141,7 +45,7 @@
               }
             },
             "children": [],
-            "id": "111fe741-3693-41b7-aed3-ec7cbd35cc83",
+            "id": "d37dc09f-e4ff-4f68-a7ad-976d82cf5057",
             "type": "set"
           },
           {
@@ -150,14 +54,238 @@
               "label": ""
             },
             "properties": {
-              "destination": "messageAlerte",
+              "destination": "Activity_Reveil",
+              "op": {
+                "type": "boolean",
+                "value": "false"
+              }
+            },
+            "children": [],
+            "id": "d26694fa-1393-4ec3-9a9d-2530dba475ce",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "TaskActivityReveil",
+              "op": {
+                "type": "integer",
+                "value": "0"
+              }
+            },
+            "children": [],
+            "id": "bb5fc673-13c6-4d36-9794-c829ced7adc6",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "Check_Reveil",
+              "op": {
+                "type": "boolean",
+                "value": "false"
+              }
+            },
+            "children": [],
+            "id": "f5d7f1ed-9255-4448-9043-0be2dc9f1156",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "current_CaptCuisineP",
+              "op": {
+                "type": "integer",
+                "value": "0"
+              }
+            },
+            "children": [],
+            "id": "9a76f297-075e-411b-8147-317dab2461cc",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "current_CaptCuisineT",
               "op": {
                 "type": "string",
                 "value": ""
               }
             },
             "children": [],
-            "id": "49bbc1e2-87a6-4e4d-8396-7a225e574582",
+            "id": "da1980d9-504a-497c-94ec-212906df40b9",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "current_CaptSalonP",
+              "op": {
+                "type": "integer",
+                "value": "0"
+              }
+            },
+            "children": [],
+            "id": "f84b57e4-296c-4acb-911f-12f30beb456f",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "current_CaptSalonT",
+              "op": {
+                "type": "string",
+                "value": ""
+              }
+            },
+            "children": [],
+            "id": "bf7f77b2-8206-4c01-a946-6c3d0e0740d2",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "current_CaptSalonO",
+              "op": {
+                "type": "integer",
+                "value": "0"
+              }
+            },
+            "children": [],
+            "id": "b5ff7609-6d1f-4583-88a2-093717e2299d",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "current_CaptSDBP",
+              "op": {
+                "type": "integer",
+                "value": "0"
+              }
+            },
+            "children": [],
+            "id": "ca860140-2a0d-4174-97c0-d22f3cc6d86a",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "current_CaptChambreP",
+              "op": {
+                "type": "integer",
+                "value": "0"
+              }
+            },
+            "children": [],
+            "id": "7490432b-6827-46e0-ba15-ffbfdff5340e",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "current_CaptChambreT",
+              "op": {
+                "type": "string",
+                "value": ""
+              }
+            },
+            "children": [],
+            "id": "7c91a6ec-3922-4494-854a-6140c7c2a879",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "current_CaptCouloirP",
+              "op": {
+                "type": "integer",
+                "value": "0"
+              }
+            },
+            "children": [],
+            "id": "59b8c781-b297-4a2c-b9b9-cec8eedc3c54",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "current_CaptCouloirO",
+              "op": {
+                "type": "integer",
+                "value": "0"
+              }
+            },
+            "children": [],
+            "id": "42322646-a99b-4833-b15a-941641a0b626",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "MessageLog",
+              "op": {
+                "type": "string",
+                "value": ""
+              }
+            },
+            "children": [],
+            "id": "d0afa076-526a-42d5-99c3-d789070e4100",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "InitPhase",
+              "op": {
+                "type": "boolean",
+                "value": "true"
+              }
+            },
+            "children": [],
+            "id": "737595f4-a5d5-4d67-ac44-1b63bf858a0e",
             "type": "set"
           },
           {
@@ -177,10 +305,10 @@
             "type": "set"
           }
         ],
-        "id": "b04701eb-8890-43e5-8c7b-c34e89b3f4ff",
+        "id": "0188f464-1df0-4a65-93c6-8248d0b29031",
         "type": "sequence"
       }
     ],
-    "id": "8536a707-309a-4713-9e75-b9c92a48f61a"
+    "id": "218463bd-dca2-4d47-a431-6994e66b3533"
   }
 ]
