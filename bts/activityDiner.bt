@@ -344,7 +344,7 @@
                 "properties": {
                   "op1": {
                     "type": "entityKnowledge",
-                    "value": "TaskActivityPetitDejeuner"
+                    "value": "TaskActivityDiner"
                   },
                   "op2": {
                     "type": "integer",
@@ -660,10 +660,10 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "",
+                                  "destination": "BoolAlerteMessage",
                                   "op": {
-                                    "type": "string",
-                                    "value": ""
+                                    "type": "boolean",
+                                    "value": "true"
                                   }
                                 },
                                 "children": [],
@@ -741,7 +741,7 @@
                             {
                               "key": "MessageLog",
                               "type": "string",
-                              "value": ""
+                              "value": "Task Diner  terminée"
                             }
                           ],
                           "outputParams": []
@@ -782,12 +782,12 @@
                             },
                             "properties": {
                               "op1": {
-                                "type": "boolean",
-                                "value": "true"
+                                "type": "entityKnowledge",
+                                "value": "Check_Diner"
                               },
                               "op2": {
                                 "type": "boolean",
-                                "value": "true"
+                                "value": "false"
                               },
                               "op": "=="
                             },
@@ -805,10 +805,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "MessageAlerte",
                                       "op": {
                                         "type": "string",
-                                        "value": ""
+                                        "value": "0302020F030303"
                                       }
                                     },
                                     "children": [],
@@ -821,10 +821,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "BoolAlerteMessage",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "boolean",
+                                        "value": "true"
                                       }
                                     },
                                     "children": [],
