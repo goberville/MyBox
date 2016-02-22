@@ -19,7 +19,7 @@
           {
             "activated": true,
             "metadata": {
-              "label": "CTRL si Periode Activity Reveil"
+              "label": "CTRL si Periode Activity Dejeuner"
             },
             "properties": {
               "active": "false"
@@ -60,7 +60,7 @@
                             {
                               "key": "MessageLog",
                               "type": "string",
-                              "value": "Pas Activité Petit Dejeuner"
+                              "value": "Pas Activité Dejeuner"
                             }
                           ],
                           "outputParams": []
@@ -156,7 +156,7 @@
                                     {
                                       "key": "MessageLog",
                                       "type": "string",
-                                      "value": "Debut Activité Petit Dejeuner"
+                                      "value": "Debut Activité Dejeuner"
                                     }
                                   ],
                                   "outputParams": []
@@ -232,7 +232,7 @@
                             {
                               "key": "MessageLog",
                               "type": "string",
-                              "value": "Temps activite petit dejeuner terminé"
+                              "value": "Temps activite dejeuner terminé"
                             }
                           ],
                           "outputParams": []
@@ -693,7 +693,7 @@
                             {
                               "key": "MessageLog",
                               "type": "string",
-                              "value": "Mamie a pris son petit dejeuner"
+                              "value": "Mamie a pris son dejeuner"
                             }
                           ],
                           "outputParams": []
@@ -745,7 +745,7 @@
                             {
                               "key": "MessageLog",
                               "type": "string",
-                              "value": "Task Petit Dejeuner terminée"
+                              "value": "Task Dejeuner terminée"
                             }
                           ],
                           "outputParams": []
