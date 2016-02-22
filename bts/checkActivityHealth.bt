@@ -98,6 +98,38 @@
             "children": [],
             "id": "975916d5-83e0-40b1-aba9-6d5a4d2b5a02",
             "type": "embedded"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/activityCoucher.bt"
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "f8f7961c-8e60-4a8f-ae35-41dcd9d095d5",
+            "type": "embedded"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/activitySieste.bt"
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "acb3f11a-ac3b-49ba-b4ec-3eb45da32095",
+            "type": "embedded"
           }
         ],
         "id": "592a91dd-9404-4e17-b6a3-dfd6596f00d0",
