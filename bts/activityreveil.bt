@@ -591,7 +591,7 @@
                                       "destination": "MessageAlerte",
                                       "op": {
                                         "type": "string",
-                                        "value": ""
+                                        "value": "0X02020F030303"
                                       }
                                     },
                                     "children": [],
@@ -604,10 +604,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "BoolAlerteMessage",
                                       "op": {
-                                        "type": "string",
-                                        "value": ""
+                                        "type": "boolean",
+                                        "value": "true"
                                       }
                                     },
                                     "children": [],
