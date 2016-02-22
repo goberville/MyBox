@@ -8,7 +8,866 @@
       "label": ""
     },
     "properties": {},
-    "children": [],
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": ""
+        },
+        "properties": {},
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": "CTRL si Periode Activity Diner"
+            },
+            "properties": {
+              "active": "false"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Time"
+                  },
+                  "op2": {
+                    "type": "entityKnowledge",
+                    "value": "Time_Diner_Min"
+                  },
+                  "op": "<"
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Pas Activité Diner"
+                            }
+                          ],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "52762635-5d34-4e96-a95a-f842b59c858d",
+                        "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TaskActivityDiner",
+                          "op": {
+                            "type": "integer",
+                            "value": "0"
+                          }
+                        },
+                        "children": [],
+                        "id": "bd8f811e-148c-4704-a93b-08c124ce4d67",
+                        "type": "set"
+                      }
+                    ],
+                    "id": "c47ea183-8e96-46ce-b763-a2ebd81e909f",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "02de14ee-f809-4284-93fd-0094005adc5d",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Time"
+                  },
+                  "op2": {
+                    "type": "entityKnowledge",
+                    "value": "Time_Diner_Min"
+                  },
+                  "op": ">="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "entityKnowledge",
+                            "value": "TaskActivityDiner"
+                          },
+                          "op2": {
+                            "type": "integer",
+                            "value": "0"
+                          },
+                          "op": "=="
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "name": "Log",
+                                  "inputParams": [
+                                    {
+                                      "key": "MessageLog",
+                                      "type": "string",
+                                      "value": "Debut Activité Diner"
+                                    }
+                                  ],
+                                  "outputParams": []
+                                },
+                                "children": [],
+                                "id": "705bb325-3c3a-4216-8b43-f7da0fb3c18d",
+                                "type": "action"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "TaskActivityDiner",
+                                  "op": {
+                                    "type": "integer",
+                                    "value": "1"
+                                  }
+                                },
+                                "children": [],
+                                "id": "f3dc4628-e631-42ee-9fb9-817f8e65d634",
+                                "type": "set"
+                              }
+                            ],
+                            "id": "cc11a0a6-036d-46d5-aea1-bf0ad4bdb01b",
+                            "type": "sequence"
+                          }
+                        ],
+                        "id": "325a50db-b661-46bf-8c48-3957332638a9",
+                        "type": "condition"
+                      }
+                    ],
+                    "id": "9063006d-405b-430d-8506-22406dbaa9d5",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "508e1402-1723-4b06-bed6-c61721d10d41",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Time"
+                  },
+                  "op2": {
+                    "type": "entityKnowledge",
+                    "value": "Time_Diner_Max"
+                  },
+                  "op": ">"
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Temps activite diner terminé"
+                            }
+                          ],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "ffa4519a-a951-4411-ac69-42d152bdc159",
+                        "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "entityKnowledge",
+                            "value": "TaskActivityDiner"
+                          },
+                          "op2": {
+                            "type": "integer",
+                            "value": "1"
+                          },
+                          "op": "=="
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "name": "Log",
+                                  "inputParams": [
+                                    {
+                                      "key": "MessageLog",
+                                      "type": "string",
+                                      "value": "Fin Activité Diner"
+                                    }
+                                  ],
+                                  "outputParams": []
+                                },
+                                "children": [],
+                                "id": "0502b034-e3de-48ac-b1dd-e3a990f454f5",
+                                "type": "action"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "TaskActivityDiner",
+                                  "op": {
+                                    "type": "integer",
+                                    "value": "2"
+                                  }
+                                },
+                                "children": [],
+                                "id": "06240019-7cfa-4f11-91e6-33b91ffca913",
+                                "type": "set"
+                              }
+                            ],
+                            "id": "a3191851-2fbb-4086-bb3a-f4b09a4e9daf",
+                            "type": "sequence"
+                          }
+                        ],
+                        "id": "3347e7f0-1067-475f-ad79-910c2860d58f",
+                        "type": "condition"
+                      }
+                    ],
+                    "id": "56466400-f0b0-494f-b9a7-e6ca62b6295c",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "5d4cc35f-b639-47f6-b81e-c1ebc77965f3",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [],
+                "id": "fbc5c0c9-2294-4b5a-a7c6-111d49f3d81d",
+                "type": "success"
+              }
+            ],
+            "id": "e3bb5645-d2b5-4ba6-bf8f-f60e4bd1b983",
+            "type": "priority"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "active": "false"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op2": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "entityKnowledge",
+                            "value": "current_CaptCuisineP"
+                          },
+                          "op2": {
+                            "type": "entityKnowledge",
+                            "value": "actuator_CaptCuisineP"
+                          },
+                          "op": "=="
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "name": "Log",
+                                  "inputParams": [
+                                    {
+                                      "key": "MessageLog",
+                                      "type": "string",
+                                      "value": "Capteur Cuisine à changer 1 à 0"
+                                    }
+                                  ],
+                                  "outputParams": []
+                                },
+                                "children": [],
+                                "id": "046974d8-bd10-406e-9c73-58fb0c6e4453",
+                                "type": "action"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "current_CaptCuisineP",
+                                  "op": {
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptCuisineP"
+                                  }
+                                },
+                                "children": [],
+                                "id": "dad8b46a-e949-4152-adf7-8e284324b533",
+                                "type": "set"
+                              }
+                            ],
+                            "id": "5940e455-b77c-4497-874a-c10416e8e8b4",
+                            "type": "sequence"
+                          }
+                        ],
+                        "id": "c903a39e-ddf6-4696-b966-832d18eae857",
+                        "type": "condition"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "Check_Diner",
+                          "op": {
+                            "type": "boolean",
+                            "value": "true"
+                          }
+                        },
+                        "children": [],
+                        "id": "5ffdd33b-48c5-4d77-bf93-0ac9f5bb7dd4",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TaskActivityDiner",
+                          "op": {
+                            "type": "integer",
+                            "value": "2"
+                          }
+                        },
+                        "children": [],
+                        "id": "ac01c750-a53e-440b-a912-548845b734c6",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "active": "false"
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "statusCondition": "succeedsIfAnySucceeds",
+                              "retryPolicy": "propagateToRunning"
+                            },
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op2": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op": "=="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "",
+                                      "op": {
+                                        "type": "string",
+                                        "value": ""
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "9b6e07b2-0052-4b9f-bf66-480d8fd69121",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "98efe7fb-7190-4478-9361-a22c38a998cb",
+                                "type": "condition"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op2": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op": "=="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "",
+                                      "op": {
+                                        "type": "string",
+                                        "value": ""
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "7ed7d76a-65a4-481c-8780-6b409aa81859",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "db3a860d-d2a7-40a1-93d0-70b82e3eb531",
+                                "type": "condition"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op2": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op": "=="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "",
+                                      "op": {
+                                        "type": "string",
+                                        "value": ""
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "413dc5a3-6f10-40e0-af5f-de4151d77c27",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "a8a8d6d6-e4a1-4058-af70-d861fac10444",
+                                "type": "condition"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op2": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op": "=="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "",
+                                      "op": {
+                                        "type": "string",
+                                        "value": ""
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "86eab1bb-2714-48d4-af31-c8dc355834be",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "cbb2445f-c649-4be3-a470-38b2639d4593",
+                                "type": "condition"
+                              }
+                            ],
+                            "id": "451ce787-1887-4b8a-b0cb-4babfccda069",
+                            "type": "parallel"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "",
+                                  "op": {
+                                    "type": "string",
+                                    "value": ""
+                                  }
+                                },
+                                "children": [],
+                                "id": "a1dd2173-4752-4ac2-935c-749591855592",
+                                "type": "set"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "",
+                                  "op": {
+                                    "type": "string",
+                                    "value": ""
+                                  }
+                                },
+                                "children": [],
+                                "id": "c47dc7eb-51d3-48d8-9392-e35bf8e4e43e",
+                                "type": "set"
+                              }
+                            ],
+                            "id": "da94b38d-3435-46e7-82ab-bedf1ad4e864",
+                            "type": "sequence"
+                          }
+                        ],
+                        "id": "353816f5-92f7-4d5f-a078-fc24cf930dc0",
+                        "type": "priority"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "",
+                          "inputParams": [],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "eecac391-cd4a-4104-a3ba-a97251d57d2a",
+                        "type": "action"
+                      }
+                    ],
+                    "id": "b7db043b-4424-4d20-99f4-c89e3ba6dccf",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "d2833348-f6ca-4464-b2f1-09249af4fc0d",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op2": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "",
+                          "inputParams": [],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "88f0758d-97d8-49d4-82d1-8305ad856604",
+                        "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "",
+                          "op": {
+                            "type": "string",
+                            "value": ""
+                          }
+                        },
+                        "children": [],
+                        "id": "8325a0c8-a5cd-49e8-99ac-60a51ac60945",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "active": "false"
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op2": {
+                                "type": "boolean",
+                                "value": "true"
+                              },
+                              "op": "=="
+                            },
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {},
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "",
+                                      "op": {
+                                        "type": "string",
+                                        "value": ""
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "6c6dc239-59c1-437f-ab3e-ece2bc46cdb3",
+                                    "type": "set"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "",
+                                      "op": {
+                                        "type": "string",
+                                        "value": ""
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "cce07384-e8aa-4763-b0d5-b1f3ad3dc559",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "5dbd122f-9a4b-4ff3-978a-ac98cc08c9d8",
+                                "type": "sequence"
+                              }
+                            ],
+                            "id": "41ea616c-eb21-4f1e-95f8-eb215cc60552",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [],
+                            "id": "fb6f08d4-4634-4278-9b00-14e6dcd7723b",
+                            "type": "success"
+                          }
+                        ],
+                        "id": "e48211d2-808c-4ba3-adc6-8f88cd37499f",
+                        "type": "priority"
+                      }
+                    ],
+                    "id": "8f1ae61d-d732-4fc7-ad5f-e393c8988ca3",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "debae5b0-718d-4410-9156-118d335f5496",
+                "type": "condition"
+              }
+            ],
+            "id": "881e1125-b858-4c27-8218-8ecfc02965b1",
+            "type": "priority"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [],
+            "id": "10dfd0a5-96a1-4fe3-9c6a-d22a73d0b223",
+            "type": "success"
+          }
+        ],
+        "id": "9cf97891-ca62-4761-a49a-b1a870420c71",
+        "type": "sequence"
+      }
+    ],
     "id": "73251724-7f3b-4c43-a827-9d2843cf99c1"
   }
 ]
