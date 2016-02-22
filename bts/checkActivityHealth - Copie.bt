@@ -19,12 +19,50 @@
           {
             "activated": true,
             "metadata": {
-              "label": "CTRL si Periode Activity Dejeuner"
+<<<<<<< HEAD
+              "label": "Load Activity"
+            },
+            "properties": {
+              "name": "retrieveActivity",
+              "inputParams": [
+                {
+                  "key": "Time",
+                  "type": "entityKnowledge",
+                  "value": "Time"
+                }
+              ],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "4019b2b7-13ab-4932-9d2a-183ea5f78104",
+            "type": "action"
+=======
+              "label": "CTRL si Periode Activity Reveil"
             },
             "properties": {
               "active": "false"
             },
             "children": [
+              {
+                "activated": false,
+                "metadata": {
+                  "label": "Si pas présent dans la chambre"
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "actuator_CaptChambreP"
+                  },
+                  "op2": {
+                    "type": "integer",
+                    "value": "0"
+                  },
+                  "op": "=="
+                },
+                "children": [],
+                "id": "050350bd-10f3-4f63-beb9-618f15edc495",
+                "type": "condition"
+              },
               {
                 "activated": true,
                 "metadata": {
@@ -37,7 +75,7 @@
                   },
                   "op2": {
                     "type": "entityKnowledge",
-                    "value": "Time_Dejeuner_Min"
+                    "value": "Time_Reveil_Min"
                   },
                   "op": "<"
                 },
@@ -60,13 +98,13 @@
                             {
                               "key": "MessageLog",
                               "type": "string",
-                              "value": "Pas Activité Dejeuner"
+                              "value": "Pas Activité Reveil"
                             }
                           ],
                           "outputParams": []
                         },
                         "children": [],
-                        "id": "5d8661c5-8fd0-4d6b-b1b2-6457ee441d3d",
+                        "id": "50721670-6539-4e1d-8d6f-653bfc22e1ee",
                         "type": "action"
                       },
                       {
@@ -75,26 +113,22 @@
                           "label": ""
                         },
                         "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "TaskActivityDejeuner"
-                          },
-                          "op2": {
+                          "destination": "TaskActivityReveil",
+                          "op": {
                             "type": "integer",
                             "value": "0"
-                          },
-                          "op": "=="
+                          }
                         },
                         "children": [],
-                        "id": "9a0ad758-47a1-491f-b153-c74762ccc475",
-                        "type": "condition"
+                        "id": "c11472e1-1039-4ec6-998e-aee0d775b00f",
+                        "type": "set"
                       }
                     ],
-                    "id": "13aea8eb-56bb-4409-9db7-ff852f31d45f",
+                    "id": "a27b9425-dbd5-4776-ab29-2c2b65808a2c",
                     "type": "sequence"
                   }
                 ],
-                "id": "ef0ae1bd-6ff0-4861-93c1-1b197416d1a7",
+                "id": "6ead14dc-a40c-41ac-af64-b563204c119f",
                 "type": "condition"
               },
               {
@@ -109,7 +143,7 @@
                   },
                   "op2": {
                     "type": "entityKnowledge",
-                    "value": "Time_Dejeuner_Min"
+                    "value": "Time_Reveil_Min"
                   },
                   "op": ">="
                 },
@@ -129,7 +163,7 @@
                         "properties": {
                           "op1": {
                             "type": "entityKnowledge",
-                            "value": "TaskActivityDejeuner"
+                            "value": "TaskActivityReveil"
                           },
                           "op2": {
                             "type": "integer",
@@ -156,13 +190,13 @@
                                     {
                                       "key": "MessageLog",
                                       "type": "string",
-                                      "value": "Debut Activité Dejeuner"
+                                      "value": "Debut Activité Reveil"
                                     }
                                   ],
                                   "outputParams": []
                                 },
                                 "children": [],
-                                "id": "b836a707-791d-4f98-9c6f-208581ee702f",
+                                "id": "a94c84ca-eb57-4d7f-a67c-299c0da22597",
                                 "type": "action"
                               },
                               {
@@ -171,30 +205,30 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "TaskActivityDejeuner",
+                                  "destination": "TaskActivityReveil",
                                   "op": {
                                     "type": "integer",
                                     "value": "1"
                                   }
                                 },
                                 "children": [],
-                                "id": "fd6f90eb-4791-4233-895d-a39f5ee7e566",
+                                "id": "6ca6b7bf-048a-4b2c-a772-6851f9cb4566",
                                 "type": "set"
                               }
                             ],
-                            "id": "e15ef713-8d81-413c-87f8-57dcfe3f8578",
+                            "id": "2402a018-729a-478e-b9fc-17589b375d42",
                             "type": "sequence"
                           }
                         ],
-                        "id": "16d507fb-31da-46df-aee8-6f24fa6c2203",
+                        "id": "a4fbe23f-07df-49ad-b730-60b5dbd134d7",
                         "type": "condition"
                       }
                     ],
-                    "id": "d8086007-bf57-467f-83df-2357e39074a6",
+                    "id": "d9e0881f-a44f-4afe-b9a9-7d493ca31889",
                     "type": "sequence"
                   }
                 ],
-                "id": "7d6b81a3-2b9f-49ad-9ba0-f87418b789c1",
+                "id": "b9461643-2822-4f4c-9e66-afdb7309900d",
                 "type": "condition"
               },
               {
@@ -209,7 +243,7 @@
                   },
                   "op2": {
                     "type": "entityKnowledge",
-                    "value": "Time_Dejeuner_Max"
+                    "value": "Time_Reveil_Max"
                   },
                   "op": ">"
                 },
@@ -232,13 +266,13 @@
                             {
                               "key": "MessageLog",
                               "type": "string",
-                              "value": "Temps activite dejeuner terminé"
+                              "value": "Temps activite terminé"
                             }
                           ],
                           "outputParams": []
                         },
                         "children": [],
-                        "id": "06e4d74f-884b-42e8-a94d-9ad2ad13e1bf",
+                        "id": "7ee892c5-00da-413c-9a61-d90de65df990",
                         "type": "action"
                       },
                       {
@@ -249,7 +283,7 @@
                         "properties": {
                           "op1": {
                             "type": "entityKnowledge",
-                            "value": "TaskActivityDejeuner"
+                            "value": "TaskActivityReveil"
                           },
                           "op2": {
                             "type": "integer",
@@ -276,13 +310,13 @@
                                     {
                                       "key": "MessageLog",
                                       "type": "string",
-                                      "value": ""
+                                      "value": "Fin Activité Reveil"
                                     }
                                   ],
                                   "outputParams": []
                                 },
                                 "children": [],
-                                "id": "02800159-1314-4cb4-a321-56c1b3142812",
+                                "id": "bd0cc0f7-1858-4b69-9a1a-9700b3c7642e",
                                 "type": "action"
                               },
                               {
@@ -291,30 +325,30 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "TaskActivityDejeuner",
+                                  "destination": "TaskActivityReveil",
                                   "op": {
                                     "type": "integer",
                                     "value": "2"
                                   }
                                 },
                                 "children": [],
-                                "id": "6280f7cb-576d-422b-bcdc-8935a0f6bc8d",
+                                "id": "84876257-f7f0-43f3-83b1-2b300156bd76",
                                 "type": "set"
                               }
                             ],
-                            "id": "273197b8-a6ba-4c1e-b8f8-e6bb859b8cd9",
+                            "id": "aef2b327-c924-4db3-8081-43d02296b200",
                             "type": "sequence"
                           }
                         ],
-                        "id": "16c6d49f-49e6-4458-b0c2-f8a6dbc990e4",
+                        "id": "e12a92b6-23ee-4f96-a981-ba60fac000d8",
                         "type": "condition"
                       }
                     ],
-                    "id": "8bbb0003-2e38-4928-99d8-2709ddf4d429",
+                    "id": "869c11fe-876b-48e3-a276-9af0a620dc96",
                     "type": "sequence"
                   }
                 ],
-                "id": "7100501c-86f9-44e7-a90b-daf07f0c7084",
+                "id": "116db51d-9bfc-43f1-879e-846ebe35ad46",
                 "type": "condition"
               },
               {
@@ -324,12 +358,13 @@
                 },
                 "properties": {},
                 "children": [],
-                "id": "a17c87b8-b186-4780-b5ce-e249efeb1a12",
+                "id": "8e4da6a0-6097-4a06-bd70-22570b8105a7",
                 "type": "success"
               }
             ],
-            "id": "9bea3094-2b4c-4b32-8824-1d18ce3469e8",
+            "id": "3fe0822b-39b0-45b3-ad58-305b85d16c41",
             "type": "priority"
+>>>>>>> 72e3f2c66ce1b747f4806109b9f3ed64582806bb
           },
           {
             "activated": true,
@@ -337,7 +372,19 @@
               "label": ""
             },
             "properties": {
+<<<<<<< HEAD
+              "op1": {
+                "type": "boolean",
+                "value": "false"
+              },
+              "op2": {
+                "type": "boolean",
+                "value": "true"
+              },
+              "op": "=="
+=======
               "active": "false"
+>>>>>>> 72e3f2c66ce1b747f4806109b9f3ed64582806bb
             },
             "children": [
               {
@@ -346,9 +393,24 @@
                   "label": ""
                 },
                 "properties": {
+<<<<<<< HEAD
+                  "behavior": {
+                    "type": "entityKnowledge",
+                    "value": "ActivityHealth"
+                  },
+                  "inputParams": []
+                },
+                "children": [],
+                "id": "1d629864-b682-49d9-adb4-a38864240595",
+                "type": "embedded"
+              }
+            ],
+            "id": "84a86447-0ee3-4ada-b6a9-29baa457607b",
+            "type": "until"
+=======
                   "op1": {
                     "type": "entityKnowledge",
-                    "value": "TaskActivityDejeuner"
+                    "value": "TaskActivityReveil"
                   },
                   "op2": {
                     "type": "integer",
@@ -360,23 +422,23 @@
                   {
                     "activated": true,
                     "metadata": {
-                      "label": ""
+                      "label": "Si Periode Activity Reveil "
                     },
                     "properties": {},
                     "children": [
                       {
                         "activated": true,
                         "metadata": {
-                          "label": ""
+                          "label": "Si capteur chambre à changé d'état"
                         },
                         "properties": {
                           "op1": {
                             "type": "entityKnowledge",
-                            "value": "current_CaptCuisineP"
+                            "value": "current_CaptChambreP"
                           },
                           "op2": {
                             "type": "entityKnowledge",
-                            "value": "actuator_CaptCuisineP"
+                            "value": "actuator_CaptChambreP"
                           },
                           "op": "=="
                         },
@@ -399,13 +461,13 @@
                                     {
                                       "key": "MessageLog",
                                       "type": "string",
-                                      "value": "Capteur Cuisine à changer 1 à 0"
+                                      "value": "Capteur chambre à changer 1 à 0"
                                     }
                                   ],
                                   "outputParams": []
                                 },
                                 "children": [],
-                                "id": "5e12c3fd-2eee-4bb5-8c2d-e8bbfc45e131",
+                                "id": "26edc369-fe5b-43b0-a588-00071ee66a04",
                                 "type": "action"
                               },
                               {
@@ -414,38 +476,38 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "current_CaptCuisineP",
+                                  "destination": "current_CaptChambreP",
                                   "op": {
                                     "type": "entityKnowledge",
-                                    "value": "actuator_CaptCuisineP"
+                                    "value": "actuator_CaptChambreP"
                                   }
                                 },
                                 "children": [],
-                                "id": "f70510ff-689a-4095-ba6b-d9bf6781a903",
+                                "id": "c86a0784-9d21-4e15-afb8-b39f46ff94b3",
                                 "type": "set"
                               }
                             ],
-                            "id": "3f8ae674-ab40-4789-bb48-e167de55d23a",
+                            "id": "279526f0-0b2e-4a17-84c0-459acb4189e8",
                             "type": "sequence"
                           }
                         ],
-                        "id": "ad01b7ba-0e03-4ec7-a63f-3c83f92de4bb",
+                        "id": "bb67a1d7-3ca9-4c89-9bc0-a1b2a319e0d7",
                         "type": "condition"
                       },
                       {
                         "activated": true,
                         "metadata": {
-                          "label": ""
+                          "label": "Check_Reveil"
                         },
                         "properties": {
-                          "destination": "Check_Dejeuner",
+                          "destination": "Check_Reveil",
                           "op": {
                             "type": "boolean",
                             "value": "true"
                           }
                         },
                         "children": [],
-                        "id": "4a28d438-8973-4b03-82ff-d4f5bf60ec46",
+                        "id": "6b31585f-4dd5-4676-bce1-5566fa45e1aa",
                         "type": "set"
                       },
                       {
@@ -454,14 +516,14 @@
                           "label": ""
                         },
                         "properties": {
-                          "destination": "TaskActivityDejeuner",
+                          "destination": "TaskActivityReveil",
                           "op": {
                             "type": "integer",
                             "value": "2"
                           }
                         },
                         "children": [],
-                        "id": "ee97e0c6-ce73-4b43-8674-e1beb48004cb",
+                        "id": "11825882-4b4f-4952-973b-2a98314f7441",
                         "type": "set"
                       },
                       {
@@ -476,26 +538,26 @@
                           {
                             "activated": true,
                             "metadata": {
-                              "label": ""
+                              "label": "Ctrl  autre capteur à changé état"
                             },
                             "properties": {
-                              "statusCondition": "failsIfAnyFails",
+                              "statusCondition": "succeedsIfAnySucceeds",
                               "retryPolicy": "propagateToRunning"
                             },
                             "children": [
                               {
                                 "activated": true,
                                 "metadata": {
-                                  "label": ""
+                                  "label": "Ctrl changement état capteur cuisine"
                                 },
                                 "properties": {
                                   "op1": {
                                     "type": "entityKnowledge",
-                                    "value": "current_CaptChambreP"
+                                    "value": "current_CaptCuisineP"
                                   },
                                   "op2": {
                                     "type": "entityKnowledge",
-                                    "value": "actuator_CaptChambreP"
+                                    "value": "actuator_CaptCuisineP"
                                   },
                                   "op": "!="
                                 },
@@ -513,17 +575,17 @@
                                       }
                                     },
                                     "children": [],
-                                    "id": "3effa32a-587e-4604-b0d6-aa3b41de947d",
+                                    "id": "bf3202b2-378b-4745-b258-7640af0a456f",
                                     "type": "set"
                                   }
                                 ],
-                                "id": "c0cd2321-70ee-49db-bc8c-1895444098ff",
+                                "id": "7e4bb093-da9d-485c-8cca-3b78336979fc",
                                 "type": "condition"
                               },
                               {
                                 "activated": true,
                                 "metadata": {
-                                  "label": ""
+                                  "label": "Ctrl changement état capteur salon"
                                 },
                                 "properties": {
                                   "op1": {
@@ -550,17 +612,17 @@
                                       }
                                     },
                                     "children": [],
-                                    "id": "ce51f7f0-907a-4d1f-be9f-c69e4be75c53",
+                                    "id": "d6e1b5ab-ae1a-44be-a4ee-eb4821a93238",
                                     "type": "set"
                                   }
                                 ],
-                                "id": "4c79f084-b4d0-40f3-b5f5-e2de92cbf47b",
+                                "id": "bc3896fb-bb11-4924-b55d-f2f6a0555e04",
                                 "type": "condition"
                               },
                               {
                                 "activated": true,
                                 "metadata": {
-                                  "label": ""
+                                  "label": "Ctrl changement état capteur Salle de bain"
                                 },
                                 "properties": {
                                   "op1": {
@@ -587,17 +649,17 @@
                                       }
                                     },
                                     "children": [],
-                                    "id": "272f94b4-17e9-41e1-a971-2d7ceeae3c5e",
+                                    "id": "6f7c05cb-90f1-46c3-832b-7bdd10bc88b8",
                                     "type": "set"
                                   }
                                 ],
-                                "id": "9c16a0a6-61f0-48e7-9a2d-2b19ed0fd8c6",
+                                "id": "7c2a8207-d99f-4be7-b6b5-7fa13336d5a2",
                                 "type": "condition"
                               },
                               {
                                 "activated": true,
                                 "metadata": {
-                                  "label": ""
+                                  "label": "Ctrl changement état capteur Couloir"
                                 },
                                 "properties": {
                                   "op1": {
@@ -624,15 +686,15 @@
                                       }
                                     },
                                     "children": [],
-                                    "id": "e018e576-da97-4dfb-abab-6ad91a7e4877",
+                                    "id": "40d37350-2f85-423c-ad8e-71c1bb0129d7",
                                     "type": "set"
                                   }
                                 ],
-                                "id": "f3dc3887-df5e-4771-b871-1ccaf6223d43",
+                                "id": "47e5a2c7-2efa-4cd9-9d60-f2c6f630a08c",
                                 "type": "condition"
                               }
                             ],
-                            "id": "96fba232-d137-4a79-abd3-da95b611a53b",
+                            "id": "d9e7b00c-9ce2-476a-8bfb-3ffd4e25fe0c",
                             "type": "parallel"
                           },
                           {
@@ -655,7 +717,7 @@
                                   }
                                 },
                                 "children": [],
-                                "id": "a4c5f636-2fff-4cfb-89cf-619a54a6a166",
+                                "id": "63963793-9de4-450f-9304-f39bd3d0d1b2",
                                 "type": "set"
                               },
                               {
@@ -671,15 +733,15 @@
                                   }
                                 },
                                 "children": [],
-                                "id": "7b02c03a-7bbf-48b2-ac11-5b8622fc8de7",
+                                "id": "279f73a5-e020-4e17-9c41-916c9ef5782f",
                                 "type": "set"
                               }
                             ],
-                            "id": "8f1211d1-6dee-42ed-be54-d4283cf9bd1e",
+                            "id": "58153512-449e-4742-ae5f-6a40bfa76dfa",
                             "type": "sequence"
                           }
                         ],
-                        "id": "1f5985ad-15c8-4348-94c8-27bc90935837",
+                        "id": "5f37b20c-c64c-4c2d-8bd7-adcf5aaa243b",
                         "type": "priority"
                       },
                       {
@@ -693,21 +755,21 @@
                             {
                               "key": "MessageLog",
                               "type": "string",
-                              "value": "Mamie a pris son petit dejeuner"
+                              "value": "Mamie est reveillée"
                             }
                           ],
                           "outputParams": []
                         },
                         "children": [],
-                        "id": "23d7238e-7cda-4605-bddf-7c113dfb7c9b",
+                        "id": "16d6c5f5-ac02-4de5-8cff-c8a6405f3470",
                         "type": "action"
                       }
                     ],
-                    "id": "3666d332-dfd4-4ee7-8ff8-15b1fd3b651f",
+                    "id": "04b5e103-c4d5-4646-b173-3c483d91dc04",
                     "type": "sequence"
                   }
                 ],
-                "id": "575d635a-b2db-445b-a5c9-a4116a49c8c1",
+                "id": "ec1a3593-5e48-4f97-b3af-fea0ea1ad985",
                 "type": "condition"
               },
               {
@@ -718,7 +780,7 @@
                 "properties": {
                   "op1": {
                     "type": "entityKnowledge",
-                    "value": "TaskActivityDejeuner"
+                    "value": "TaskActivityReveil"
                   },
                   "op2": {
                     "type": "integer",
@@ -730,7 +792,7 @@
                   {
                     "activated": true,
                     "metadata": {
-                      "label": ""
+                      "label": "Gestion alerte "
                     },
                     "properties": {},
                     "children": [
@@ -745,13 +807,13 @@
                             {
                               "key": "MessageLog",
                               "type": "string",
-                              "value": ""
+                              "value": "Task Reveille terminée"
                             }
                           ],
                           "outputParams": []
                         },
                         "children": [],
-                        "id": "041c3282-79f8-445b-9223-19a413424a41",
+                        "id": "fecb9570-0811-45a9-a04d-5f155ccbe07e",
                         "type": "action"
                       },
                       {
@@ -760,14 +822,14 @@
                           "label": ""
                         },
                         "properties": {
-                          "destination": "TaskActivityDejeuner",
+                          "destination": "TaskActivityReveil",
                           "op": {
                             "type": "integer",
-                            "value": "2"
+                            "value": "3"
                           }
                         },
                         "children": [],
-                        "id": "c4996178-ec8f-480b-8356-151989981636",
+                        "id": "cae9b064-99d7-421c-a06e-655c4a1ed834",
                         "type": "set"
                       },
                       {
@@ -787,7 +849,7 @@
                             "properties": {
                               "op1": {
                                 "type": "entityKnowledge",
-                                "value": "Check_Dejeuner"
+                                "value": "Check_Reveil"
                               },
                               "op2": {
                                 "type": "boolean",
@@ -816,7 +878,7 @@
                                       }
                                     },
                                     "children": [],
-                                    "id": "4e426273-47cc-448c-9726-7a2a53da61c3",
+                                    "id": "edc954da-f915-4ba6-88de-ff32436eb58e",
                                     "type": "set"
                                   },
                                   {
@@ -832,15 +894,15 @@
                                       }
                                     },
                                     "children": [],
-                                    "id": "26e9e02e-ee60-4899-a215-37e6b6e784d3",
+                                    "id": "12243507-d292-437b-9961-732bef6e397f",
                                     "type": "set"
                                   }
                                 ],
-                                "id": "1eac20ea-5f42-4d79-abe8-7642e542183b",
+                                "id": "ea1ed208-ca73-403c-8297-b1ed67a3260c",
                                 "type": "sequence"
                               }
                             ],
-                            "id": "ae588862-602e-4d7b-9f0e-72994ac618d8",
+                            "id": "a5c4139c-177f-4175-8acc-a4da87769229",
                             "type": "condition"
                           },
                           {
@@ -850,19 +912,19 @@
                             },
                             "properties": {},
                             "children": [],
-                            "id": "5f4ec5fa-1d11-480b-8812-41c333869578",
+                            "id": "b2f47159-1d97-45ae-856b-ac38f55901b0",
                             "type": "success"
                           }
                         ],
-                        "id": "ecae30a9-170c-475d-ac4d-06926c6fca3c",
+                        "id": "132712a5-0a80-4c5e-8c54-21b59935fd52",
                         "type": "priority"
                       }
                     ],
-                    "id": "210128b0-be05-4a20-9b67-2e23c8a1ea0b",
+                    "id": "68e9f5a2-d034-4740-9fdf-7198d144cc91",
                     "type": "sequence"
                   }
                 ],
-                "id": "1f1155f2-3685-44e1-a264-847333587936",
+                "id": "9cfa8333-163d-4876-8387-7f1bf488c22c",
                 "type": "condition"
               },
               {
@@ -872,18 +934,19 @@
                 },
                 "properties": {},
                 "children": [],
-                "id": "4e2960b2-6749-43e7-ac02-66bee8619a03",
+                "id": "b35c573a-b2ef-4a20-9906-8a238b4651d9",
                 "type": "success"
               }
             ],
-            "id": "7fc697b1-143e-4e0f-aefe-6822c341a4d9",
+            "id": "e919678f-dad1-4d71-b8f0-0f9c06f7bd97",
             "type": "priority"
+>>>>>>> 72e3f2c66ce1b747f4806109b9f3ed64582806bb
           }
         ],
-        "id": "e535b5f8-ed9b-45f3-826b-99c56ea92804",
+        "id": "5fa336b7-59e6-46b2-b733-00bdfff36547",
         "type": "sequence"
       }
     ],
-    "id": "f5f2f3e9-fe21-41e3-9844-fb12dc7b91d7"
+    "id": "218463bd-dca2-4d47-a431-6994e66b3533"
   }
 ]
