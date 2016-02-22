@@ -15,7 +15,6 @@
           "label": ""
         },
         "properties": {},
-<<<<<<< HEAD
         "children": [
           {
             "activated": true,
@@ -552,14 +551,6 @@
         "type": "sequence"
       }
     ],
-    "id": "218463bd-dca2-4d47-a431-6994e66b3533"
-=======
-        "children": [],
-        "id": "f3909473-0ff6-459e-b48e-6423b209089b",
-        "type": "sequence"
-      }
-    ],
-    "id": "b612a5ab-b72d-483d-8164-d1b798d47924"
->>>>>>> 2db505c1be99908d31e60d60bb459dc8a2b6d0cd
+    "id": "95801ccb-feef-4a40-bfed-e21f77198e26"
   }
 ]
