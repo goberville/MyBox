@@ -588,7 +588,7 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "",
+                                      "destination": "MessageAlerte",
                                       "op": {
                                         "type": "string",
                                         "value": ""
