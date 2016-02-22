@@ -17,7 +17,250 @@
         "properties": {
           "active": "false"
         },
-        "children": [],
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "statusCondition": "failsIfAnyFails",
+              "retryPolicy": "propagateToRunning"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "current_CaptChambreP"
+                  },
+                  "op2": {
+                    "type": "entityKnowledge",
+                    "value": "actuator_CaptChambreP"
+                  },
+                  "op": "!="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "current_CaptChambreP",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptChambreP"
+                      }
+                    },
+                    "children": [],
+                    "id": "9360105a-bbb4-45f1-9d17-2f37a34ffd0b",
+                    "type": "set"
+                  }
+                ],
+                "id": "3d37d23e-f3f6-422f-8d27-bf528cb3b01b",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "current_CaptCuisineP"
+                  },
+                  "op2": {
+                    "type": "entityKnowledge",
+                    "value": "actuator_CaptCuisineP"
+                  },
+                  "op": "!="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "current_CaptCuisineP",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptCuisineP"
+                      }
+                    },
+                    "children": [],
+                    "id": "b8f07207-96e0-46fe-8c15-30dd831eee22",
+                    "type": "set"
+                  }
+                ],
+                "id": "9832a45a-6058-44e1-9c03-f459688f8a37",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "current_CaptSalonP"
+                  },
+                  "op2": {
+                    "type": "entityKnowledge",
+                    "value": "actuator_CaptSalonP"
+                  },
+                  "op": "!="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "current_CaptSalonP",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptSalonP"
+                      }
+                    },
+                    "children": [],
+                    "id": "fc84784f-97da-4038-ae75-9346152c647e",
+                    "type": "set"
+                  }
+                ],
+                "id": "dc03a25a-2aa0-47ba-8379-42cacaf18d2a",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "current_CaptSDBP"
+                  },
+                  "op2": {
+                    "type": "entityKnowledge",
+                    "value": "actuator_CaptSDBP"
+                  },
+                  "op": "!="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "current_CaptSDBP",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptSDBP"
+                      }
+                    },
+                    "children": [],
+                    "id": "793b17ae-1f9d-4bc0-b532-593eda80f5ae",
+                    "type": "set"
+                  }
+                ],
+                "id": "1099d0f2-54c5-409a-8087-ba205da1c123",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "current_CaptCouloirP"
+                  },
+                  "op2": {
+                    "type": "entityKnowledge",
+                    "value": "actuator_CaptCouloirP"
+                  },
+                  "op": "!="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "current_CaptCouloirP",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptCouloirP"
+                      }
+                    },
+                    "children": [],
+                    "id": "c9f46819-1ca6-4d61-92fe-af0484c5cd72",
+                    "type": "set"
+                  }
+                ],
+                "id": "81a60529-1a07-45ca-b103-a74b7550d091",
+                "type": "condition"
+              }
+            ],
+            "id": "3aa000e2-533c-4dbe-b4a3-b7f9758bf130",
+            "type": "parallel"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Remonte une alerte Problème capteur "
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "MessageAlerte",
+                  "op": {
+                    "type": "string",
+                    "value": "0X02020F030303"
+                  }
+                },
+                "children": [],
+                "id": "e4f6e51b-a6cd-4044-ad81-419162b108c7",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "BoolAlerteMessage",
+                  "op": {
+                    "type": "boolean",
+                    "value": "true"
+                  }
+                },
+                "children": [],
+                "id": "07b2732d-1c52-4c22-b476-7d0e378b546e",
+                "type": "set"
+              }
+            ],
+            "id": "77b3420a-5420-4c9e-bf7a-f1d8a9314509",
+            "type": "sequence"
+          }
+        ],
         "id": "1d0f028e-b794-4c19-b70f-f96d9e0a78d0",
         "type": "priority"
       }
