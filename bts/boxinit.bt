@@ -150,11 +150,7 @@
           {
             "activated": true,
             "metadata": {
-<<<<<<< HEAD
               "label": "Nombre  Min / Max activté sante"
-=======
-              "label": ""
->>>>>>> origin/master
             },
             "properties": {
               "behavior": {
