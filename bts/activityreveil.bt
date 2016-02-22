@@ -553,18 +553,74 @@
                           {
                             "activated": true,
                             "metadata": {
-                              "label": ""
+                              "label": "Ctrl si un autre capteur est passé en Presence"
                             },
                             "properties": {
-                              "behavior": {
-                                "type": "uriPath",
-                                "value": "bts/MajCurrentCapteurP.bt"
-                              },
-                              "inputParams": []
+                              "active": "false"
                             },
-                            "children": [],
-                            "id": "c1e63272-c3ce-4117-8457-60389eed1c62",
-                            "type": "embedded"
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "behavior": {
+                                    "type": "uriPath",
+                                    "value": "bts/MajCurrentCapteurP.bt"
+                                  },
+                                  "inputParams": []
+                                },
+                                "children": [],
+                                "id": "c1e63272-c3ce-4117-8457-60389eed1c62",
+                                "type": "embedded"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {},
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "",
+                                      "op": {
+                                        "type": "string",
+                                        "value": ""
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "7d052138-0298-4be1-84da-d2449fb39d1c",
+                                    "type": "set"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "",
+                                      "op": {
+                                        "type": "string",
+                                        "value": ""
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "6fa691b7-4643-418b-b980-94de0150c218",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "07953778-1176-412c-b0e3-29bac6f34a38",
+                                "type": "sequence"
+                              }
+                            ],
+                            "id": "4cbe9888-985f-49f2-a7ad-0536844f101b",
+                            "type": "priority"
                           },
                           {
                             "activated": true,
