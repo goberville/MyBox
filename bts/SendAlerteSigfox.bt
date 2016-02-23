@@ -25,12 +25,12 @@
             },
             "properties": {
               "op1": {
-                "type": "boolean",
-                "value": "true"
+                "type": "entityKnowledge",
+                "value": "BoolAlerteMessage"
               },
               "op2": {
                 "type": "boolean",
-                "value": "true"
+                "value": "false"
               },
               "op": "=="
             },
@@ -51,8 +51,14 @@
                   "label": ""
                 },
                 "properties": {
-                  "name": "",
-                  "inputParams": [],
+                  "name": "alerte",
+                  "inputParams": [
+                    {
+                      "key": "MessageAlerte",
+                      "type": "entityKnowledge",
+                      "value": "MessageAlerte"
+                    }
+                  ],
                   "outputParams": []
                 },
                 "children": [],
@@ -65,10 +71,10 @@
                   "label": ""
                 },
                 "properties": {
-                  "destination": "",
+                  "destination": "BoolAlerteMessage",
                   "op": {
-                    "type": "string",
-                    "value": ""
+                    "type": "boolean",
+                    "value": "false"
                   }
                 },
                 "children": [],
