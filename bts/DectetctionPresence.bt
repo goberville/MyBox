@@ -8,7 +8,122 @@
       "label": ""
     },
     "properties": {},
-    "children": [],
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": ""
+        },
+        "properties": {
+          "statusCondition": "succeedsIfAnySucceeds",
+          "retryPolicy": "propagateToAll"
+        },
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "current_CaptChambreP"
+              },
+              "op2": {
+                "type": "entityKnowledge",
+                "value": "actuator_CaptChambreP"
+              },
+              "op": "=="
+            },
+            "children": [],
+            "id": "1355d41e-e801-4d62-b750-c6cc3d9ffc1f",
+            "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "current_CaptCuisineP"
+              },
+              "op2": {
+                "type": "entityKnowledge",
+                "value": "actuator_CaptCuisineP"
+              },
+              "op": "!="
+            },
+            "children": [],
+            "id": "087e7232-3a98-4287-968d-607c413d7841",
+            "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "current_CaptSalonP"
+              },
+              "op2": {
+                "type": "entityKnowledge",
+                "value": "actuator_CaptSalonP"
+              },
+              "op": "!="
+            },
+            "children": [],
+            "id": "bd49422e-bd0b-4ad9-bd4f-3fe0911819f3",
+            "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "current_CaptSDBP"
+              },
+              "op2": {
+                "type": "entityKnowledge",
+                "value": "actuator_CaptSDBP"
+              },
+              "op": "!="
+            },
+            "children": [],
+            "id": "6dc0a5e8-9615-4679-8101-a090f4d9c185",
+            "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "current_CaptCouloirP"
+              },
+              "op2": {
+                "type": "entityKnowledge",
+                "value": "actuator_CaptCouloirP"
+              },
+              "op": "!="
+            },
+            "children": [],
+            "id": "20808562-5c5d-4c6e-8a2c-cb23ede9999c",
+            "type": "condition"
+          }
+        ],
+        "id": "09eed454-91ef-44bd-b445-9d6b66f2c9c6",
+        "type": "parallel"
+      }
+    ],
     "id": "2aec18d9-41df-4cad-9aac-d19e90c07871"
   }
 ]
