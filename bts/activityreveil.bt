@@ -613,6 +613,22 @@
                                     "children": [],
                                     "id": "6fa691b7-4643-418b-b980-94de0150c218",
                                     "type": "set"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "behavior": {
+                                        "type": "uriPath",
+                                        "value": "bts/SendAlerteSigfox.bt"
+                                      },
+                                      "inputParams": []
+                                    },
+                                    "children": [],
+                                    "id": "8688580c-17d9-4f4a-a55e-ee4f4d379dbe",
+                                    "type": "embedded"
                                   }
                                 ],
                                 "id": "07953778-1176-412c-b0e3-29bac6f34a38",
@@ -778,6 +794,22 @@
                                     "children": [],
                                     "id": "bb3f94d4-3847-4233-aeb6-26102919d46a",
                                     "type": "set"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "behavior": {
+                                        "type": "uriPath",
+                                        "value": "bts/SendAlerteSigfox.bt"
+                                      },
+                                      "inputParams": []
+                                    },
+                                    "children": [],
+                                    "id": "b3c17760-823c-4980-8a19-9f435f540508",
+                                    "type": "embedded"
                                   }
                                 ],
                                 "id": "2c3e27db-40a7-432c-b47c-8bfa65b7658e",
