@@ -95,62 +95,89 @@
                 "metadata": {
                   "label": ""
                 },
-                "properties": {
-                  "statusCondition": "succeedsIfAnySucceeds",
-                  "retryPolicy": "propagateToRunning"
-                },
+                "properties": {},
                 "children": [
                   {
                     "activated": true,
                     "metadata": {
-                      "label": "Check Activité Sante"
+                      "label": ""
                     },
                     "properties": {
-                      "behavior": {
-                        "type": "uriPath",
-                        "value": "bts/checkActivityHealth.bt"
-                      },
-                      "inputParams": []
+                      "statusCondition": "succeedsIfAnySucceeds",
+                      "retryPolicy": "propagateToAll"
                     },
-                    "children": [],
-                    "id": "481888e8-31b5-44d9-9a5f-efa1087185e7",
-                    "type": "embedded"
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": "Check Activité Sante"
+                        },
+                        "properties": {
+                          "behavior": {
+                            "type": "uriPath",
+                            "value": "bts/checkActivityHealth.bt"
+                          },
+                          "inputParams": []
+                        },
+                        "children": [],
+                        "id": "481888e8-31b5-44d9-9a5f-efa1087185e7",
+                        "type": "embedded"
+                      },
+                      {
+                        "activated": false,
+                        "metadata": {
+                          "label": "Check Activité Securite "
+                        },
+                        "properties": {
+                          "behavior": {
+                            "type": "uriPath",
+                            "value": "bts/checkActivitySecurity.bt"
+                          },
+                          "inputParams": []
+                        },
+                        "children": [],
+                        "id": "f105d183-0785-4af7-97a4-bfdbfa972112",
+                        "type": "embedded"
+                      },
+                      {
+                        "activated": false,
+                        "metadata": {
+                          "label": "Check Activite Maintenance"
+                        },
+                        "properties": {
+                          "behavior": {
+                            "type": "uriPath",
+                            "value": "bts/checkActivityMaintenance.bt"
+                          },
+                          "inputParams": []
+                        },
+                        "children": [],
+                        "id": "fe7724c8-ce3f-48d7-adf4-bed6adfca598",
+                        "type": "embedded"
+                      }
+                    ],
+                    "id": "75a0f639-7074-4130-bb28-f3821e60c883",
+                    "type": "parallel"
                   },
                   {
-                    "activated": false,
+                    "activated": true,
                     "metadata": {
-                      "label": "Check Activité Securite "
+                      "label": ""
                     },
                     "properties": {
                       "behavior": {
                         "type": "uriPath",
-                        "value": "bts/checkActivitySecurity.bt"
+                        "value": "bts/MajCurrentCapteurP.bt"
                       },
                       "inputParams": []
                     },
                     "children": [],
-                    "id": "f105d183-0785-4af7-97a4-bfdbfa972112",
-                    "type": "embedded"
-                  },
-                  {
-                    "activated": false,
-                    "metadata": {
-                      "label": "Check Activite Maintenance"
-                    },
-                    "properties": {
-                      "behavior": {
-                        "type": "uriPath",
-                        "value": "bts/checkActivityMaintenance.bt"
-                      },
-                      "inputParams": []
-                    },
-                    "children": [],
-                    "id": "fe7724c8-ce3f-48d7-adf4-bed6adfca598",
+                    "id": "cfa6d293-5738-4772-8804-018e5c39410e",
                     "type": "embedded"
                   }
                 ],
-                "id": "75a0f639-7074-4130-bb28-f3821e60c883",
-                "type": "parallel"
+                "id": "0ab0744f-d7e6-4549-8314-9bb229f0b421",
+                "type": "sequence"
               }
             ],
             "id": "7be7751a-66dd-48bd-b1d9-1fda3364d5f0",
