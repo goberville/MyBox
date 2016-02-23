@@ -180,6 +180,26 @@
                     "metadata": {
                       "label": ""
                     },
+                    "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Passage "
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "638280a9-350c-48e8-a30c-d3dc05e9a1b3",
+                    "type": "action"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
                     "properties": {},
                     "children": [],
                     "id": "c4e5d5e3-f3f7-4484-9c9c-ffc673054e02",
