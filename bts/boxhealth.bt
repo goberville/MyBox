@@ -174,6 +174,16 @@
                     "children": [],
                     "id": "cfa6d293-5738-4772-8804-018e5c39410e",
                     "type": "embedded"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [],
+                    "id": "c4e5d5e3-f3f7-4484-9c9c-ffc673054e02",
+                    "type": "success"
                   }
                 ],
                 "id": "0ab0744f-d7e6-4549-8314-9bb229f0b421",
