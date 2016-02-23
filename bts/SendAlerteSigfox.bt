@@ -17,7 +17,69 @@
         "properties": {
           "active": "false"
         },
-        "children": [],
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "boolean",
+                "value": "true"
+              },
+              "op2": {
+                "type": "boolean",
+                "value": "true"
+              },
+              "op": "=="
+            },
+            "children": [],
+            "id": "19a6229b-934b-4281-b6cd-710c1fba88ef",
+            "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "name": "",
+                  "inputParams": [],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "0723e585-e437-4ed3-bfde-624351a99e07",
+                "type": "action"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "",
+                  "op": {
+                    "type": "string",
+                    "value": ""
+                  }
+                },
+                "children": [],
+                "id": "2b15a189-b10e-488b-8711-35245630dce4",
+                "type": "set"
+              }
+            ],
+            "id": "6dc8b64d-cd28-49af-928e-0ae6818b5059",
+            "type": "sequence"
+          }
+        ],
         "id": "4d4592f6-bc3d-4fca-836e-282fbc952932",
         "type": "priority"
       }
