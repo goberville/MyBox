@@ -98,26 +98,6 @@
                 "properties": {},
                 "children": [
                   {
-                    "activated": false,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "name": "Log",
-                      "inputParams": [
-                        {
-                          "key": "MessageLog",
-                          "type": "string",
-                          "value": "Passage 1"
-                        }
-                      ],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "48ceb0f6-50c9-48c6-9eab-a409da9b9080",
-                    "type": "action"
-                  },
-                  {
                     "activated": true,
                     "metadata": {
                       "label": ""
@@ -144,7 +124,7 @@
                         "type": "embedded"
                       },
                       {
-                        "activated": false,
+                        "activated": true,
                         "metadata": {
                           "label": "Check Activité Securite "
                         },
@@ -160,7 +140,7 @@
                         "type": "embedded"
                       },
                       {
-                        "activated": false,
+                        "activated": true,
                         "metadata": {
                           "label": "Check Activite Maintenance"
                         },
@@ -180,26 +160,6 @@
                     "type": "parallel"
                   },
                   {
-                    "activated": false,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "name": "Log",
-                      "inputParams": [
-                        {
-                          "key": "MessageLog",
-                          "type": "string",
-                          "value": "Passage 2"
-                        }
-                      ],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "96b281c1-b300-4737-a84b-5d3e2303d1c0",
-                    "type": "action"
-                  },
-                  {
                     "activated": true,
                     "metadata": {
                       "label": ""
@@ -214,26 +174,6 @@
                     "children": [],
                     "id": "cfa6d293-5738-4772-8804-018e5c39410e",
                     "type": "embedded"
-                  },
-                  {
-                    "activated": false,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "name": "Log",
-                      "inputParams": [
-                        {
-                          "key": "MessageLog",
-                          "type": "string",
-                          "value": "Passage 3"
-                        }
-                      ],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "638280a9-350c-48e8-a30c-d3dc05e9a1b3",
-                    "type": "action"
                   },
                   {
                     "activated": true,
