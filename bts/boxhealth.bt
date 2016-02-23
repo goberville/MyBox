@@ -103,6 +103,26 @@
                       "label": ""
                     },
                     "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Passage 1"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "48ceb0f6-50c9-48c6-9eab-a409da9b9080",
+                    "type": "action"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
                       "statusCondition": "succeedsIfAnySucceeds",
                       "retryPolicy": "propagateToRunning"
                     },
@@ -165,6 +185,26 @@
                       "label": ""
                     },
                     "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Passage 2"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "96b281c1-b300-4737-a84b-5d3e2303d1c0",
+                    "type": "action"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
                       "behavior": {
                         "type": "uriPath",
                         "value": "bts/MajCurrentCapteurP.bt"
@@ -186,7 +226,7 @@
                         {
                           "key": "MessageLog",
                           "type": "string",
-                          "value": "Passage "
+                          "value": "Passage 3"
                         }
                       ],
                       "outputParams": []
