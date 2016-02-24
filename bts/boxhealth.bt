@@ -103,87 +103,90 @@
                       "label": ""
                     },
                     "properties": {
-                      "statusCondition": "succeedsIfAnySucceeds",
-                      "retryPolicy": "propagateToRunning"
+                      "active": "false"
                     },
                     "children": [
                       {
                         "activated": true,
                         "metadata": {
-                          "label": "Check Activité Sante"
+                          "label": ""
                         },
                         "properties": {
-                          "behavior": {
-                            "type": "uriPath",
-                            "value": "bts/checkActivityHealth.bt"
-                          },
-                          "inputParams": []
+                          "statusCondition": "succeedsIfAnySucceeds",
+                          "retryPolicy": "propagateToRunning"
                         },
-                        "children": [],
-                        "id": "481888e8-31b5-44d9-9a5f-efa1087185e7",
-                        "type": "embedded"
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Check Activité Sante"
+                            },
+                            "properties": {
+                              "behavior": {
+                                "type": "uriPath",
+                                "value": "bts/checkActivityHealth.bt"
+                              },
+                              "inputParams": []
+                            },
+                            "children": [],
+                            "id": "481888e8-31b5-44d9-9a5f-efa1087185e7",
+                            "type": "embedded"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Check Activité Securite "
+                            },
+                            "properties": {
+                              "behavior": {
+                                "type": "uriPath",
+                                "value": "bts/checkActivitySecurity.bt"
+                              },
+                              "inputParams": []
+                            },
+                            "children": [],
+                            "id": "f105d183-0785-4af7-97a4-bfdbfa972112",
+                            "type": "embedded"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Check Activite Maintenance"
+                            },
+                            "properties": {
+                              "behavior": {
+                                "type": "uriPath",
+                                "value": "bts/checkActivityMaintenance.bt"
+                              },
+                              "inputParams": []
+                            },
+                            "children": [],
+                            "id": "fe7724c8-ce3f-48d7-adf4-bed6adfca598",
+                            "type": "embedded"
+                          }
+                        ],
+                        "id": "75a0f639-7074-4130-bb28-f3821e60c883",
+                        "type": "parallel"
                       },
                       {
                         "activated": true,
                         "metadata": {
-                          "label": "Check Activité Securite "
+                          "label": ""
                         },
                         "properties": {
                           "behavior": {
                             "type": "uriPath",
-                            "value": "bts/checkActivitySecurity.bt"
+                            "value": "bts/MajCurrentCapteurP.bt"
                           },
                           "inputParams": []
                         },
                         "children": [],
-                        "id": "f105d183-0785-4af7-97a4-bfdbfa972112",
-                        "type": "embedded"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": "Check Activite Maintenance"
-                        },
-                        "properties": {
-                          "behavior": {
-                            "type": "uriPath",
-                            "value": "bts/checkActivityMaintenance.bt"
-                          },
-                          "inputParams": []
-                        },
-                        "children": [],
-                        "id": "fe7724c8-ce3f-48d7-adf4-bed6adfca598",
+                        "id": "cfa6d293-5738-4772-8804-018e5c39410e",
                         "type": "embedded"
                       }
                     ],
-                    "id": "75a0f639-7074-4130-bb28-f3821e60c883",
-                    "type": "parallel"
-                  },
-                  {
-                    "activated": false,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "behavior": {
-                        "type": "uriPath",
-                        "value": "bts/MajCurrentCapteurP.bt"
-                      },
-                      "inputParams": []
-                    },
-                    "children": [],
-                    "id": "cfa6d293-5738-4772-8804-018e5c39410e",
-                    "type": "embedded"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {},
-                    "children": [],
-                    "id": "c4e5d5e3-f3f7-4484-9c9c-ffc673054e02",
-                    "type": "success"
+                    "id": "1d813625-21a8-4da5-8423-d19c827f90e2",
+                    "type": "priority"
                   }
                 ],
                 "id": "0ab0744f-d7e6-4549-8314-9bb229f0b421",
