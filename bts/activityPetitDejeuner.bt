@@ -19,7 +19,7 @@
           {
             "activated": true,
             "metadata": {
-              "label": "CTRL si Periode Activity Reveil"
+              "label": "CTRL si Periode Activity PetitDejeuner"
             },
             "properties": {
               "active": "false"
@@ -37,7 +37,7 @@
                   },
                   "op2": {
                     "type": "entityKnowledge",
-                    "value": "Time_Reveil_Min"
+                    "value": "Time_PetitDejeuner_Min"
                   },
                   "op": "<"
                 },
@@ -60,7 +60,7 @@
                             {
                               "key": "MessageLog",
                               "type": "string",
-                              "value": "Pas Activité Reveil"
+                              "value": "Pas Activité PetitDejeuner"
                             }
                           ],
                           "outputParams": []
@@ -75,7 +75,7 @@
                           "label": ""
                         },
                         "properties": {
-                          "destination": "TaskActivityReveil",
+                          "destination": "TaskActivityPetitDejeuner",
                           "op": {
                             "type": "integer",
                             "value": "0"
@@ -114,7 +114,7 @@
                       },
                       "op2": {
                         "type": "entityKnowledge",
-                        "value": "Time_Reveil_Max"
+                        "value": "Time_PetitDejeuner_Max"
                       },
                       "op": "<"
                     },
@@ -134,7 +134,7 @@
                             "properties": {
                               "op1": {
                                 "type": "entityKnowledge",
-                                "value": "TaskActivityReveil"
+                                "value": "TaskActivityPetitDejeuner"
                               },
                               "op2": {
                                 "type": "integer",
@@ -161,7 +161,7 @@
                                         {
                                           "key": "MessageLog",
                                           "type": "string",
-                                          "value": "Debut Activité Reveil"
+                                          "value": "Debut Activité PetitDejeuner"
                                         }
                                       ],
                                       "outputParams": []
@@ -176,7 +176,7 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "TaskActivityReveil",
+                                      "destination": "TaskActivityPetitDejeuner",
                                       "op": {
                                         "type": "integer",
                                         "value": "1"
@@ -214,7 +214,7 @@
                       },
                       "op2": {
                         "type": "entityKnowledge",
-                        "value": "Time_Reveil_Max"
+                        "value": "Time_PetitDejeuner_Max"
                       },
                       "op": ">"
                     },
@@ -237,7 +237,7 @@
                                 {
                                   "key": "MessageLog",
                                   "type": "string",
-                                  "value": "Temps activite reveil terminé"
+                                  "value": "Temps activite PetitDejeuner terminé"
                                 }
                               ],
                               "outputParams": []
@@ -254,7 +254,7 @@
                             "properties": {
                               "op1": {
                                 "type": "entityKnowledge",
-                                "value": "TaskActivityReveil"
+                                "value": "TaskActivityPetitDejeuner"
                               },
                               "op2": {
                                 "type": "integer",
@@ -281,7 +281,7 @@
                                         {
                                           "key": "MessageLog",
                                           "type": "string",
-                                          "value": "Fin Activité Reveil"
+                                          "value": "Fin Activité PetitDejeuner"
                                         }
                                       ],
                                       "outputParams": []
@@ -296,7 +296,7 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "TaskActivityReveil",
+                                      "destination": "TaskActivityPetitDejeuner",
                                       "op": {
                                         "type": "integer",
                                         "value": "2"
@@ -357,7 +357,7 @@
                 "properties": {
                   "op1": {
                     "type": "entityKnowledge",
-                    "value": "TaskActivityReveil"
+                    "value": "TaskActivityPetitDejeuner"
                   },
                   "op2": {
                     "type": "integer",
@@ -425,7 +425,7 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "destination": "TaskActivityReveil",
+                                  "destination": "TaskActivityPetitDejeuner",
                                   "op": {
                                     "type": "integer",
                                     "value": "3"
@@ -446,7 +446,7 @@
                       {
                         "activated": true,
                         "metadata": {
-                          "label": "Si Periode Activity Reveil "
+                          "label": "Si Periode Activity PetitDejeuner "
                         },
                         "properties": {},
                         "children": [
@@ -521,10 +521,10 @@
                           {
                             "activated": true,
                             "metadata": {
-                              "label": "Check_Reveil"
+                              "label": "Check_PetitDejeuner"
                             },
                             "properties": {
-                              "destination": "Check_Reveil",
+                              "destination": "Check_PetitDejeuner",
                               "op": {
                                 "type": "boolean",
                                 "value": "true"
@@ -540,7 +540,7 @@
                               "label": ""
                             },
                             "properties": {
-                              "destination": "TaskActivityReveil",
+                              "destination": "TaskActivityPetitDejeuner",
                               "op": {
                                 "type": "integer",
                                 "value": "2"
@@ -649,7 +649,7 @@
                                 {
                                   "key": "MessageLog",
                                   "type": "string",
-                                  "value": "Mamie est reveillée"
+                                  "value": "Mamie est PetitDejeunerlée"
                                 }
                               ],
                               "outputParams": []
@@ -678,7 +678,7 @@
                 "properties": {
                   "op1": {
                     "type": "entityKnowledge",
-                    "value": "TaskActivityReveil"
+                    "value": "TaskActivityPetitDejeuner"
                   },
                   "op2": {
                     "type": "integer",
@@ -705,7 +705,7 @@
                             {
                               "key": "MessageLog",
                               "type": "string",
-                              "value": "Task Reveille terminée"
+                              "value": "Task PetitDejeunerle terminée"
                             }
                           ],
                           "outputParams": []
@@ -720,7 +720,7 @@
                           "label": ""
                         },
                         "properties": {
-                          "destination": "TaskActivityReveil",
+                          "destination": "TaskActivityPetitDejeuner",
                           "op": {
                             "type": "integer",
                             "value": "3"
@@ -747,7 +747,7 @@
                             "properties": {
                               "op1": {
                                 "type": "entityKnowledge",
-                                "value": "Check_Reveil"
+                                "value": "Check_PetitDejeuner"
                               },
                               "op2": {
                                 "type": "boolean",
@@ -858,7 +858,7 @@
                     "properties": {
                       "op1": {
                         "type": "entityKnowledge",
-                        "value": "TaskActivityReveil"
+                        "value": "TaskActivityPetitDejeuner"
                       },
                       "op2": {
                         "type": "integer",
