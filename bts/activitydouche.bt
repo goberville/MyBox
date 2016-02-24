@@ -14,331 +14,26 @@
         "metadata": {
           "label": ""
         },
-        "properties": {},
+        "properties": {
+          "statusCondition": "succeedsIfAnySucceeds",
+          "retryPolicy": "propagateToRunning"
+        },
         "children": [
           {
             "activated": true,
             "metadata": {
-              "label": "CTRL si Periode Activity Douche"
+              "label": ""
             },
             "properties": {
-              "active": "false"
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/activityreveil.bt"
+              },
+              "inputParams": []
             },
-            "children": [
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "Time"
-                  },
-                  "op2": {
-                    "type": "entityKnowledge",
-                    "value": "Time_Douche_Min"
-                  },
-                  "op": "<"
-                },
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {},
-                    "children": [
-                      {
-                        "activated": false,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "Log",
-                          "inputParams": [
-                            {
-                              "key": "MessageLog",
-                              "type": "string",
-                              "value": "Pas activité douche"
-                            }
-                          ],
-                          "outputParams": []
-                        },
-                        "children": [],
-                        "id": "ae48c36f-0ab9-43e3-baef-bce347d6f970",
-                        "type": "action"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "TaskActivityDouche",
-                          "op": {
-                            "type": "integer",
-                            "value": "0"
-                          }
-                        },
-                        "children": [],
-                        "id": "7f4aa5f1-fa99-4752-822d-86e89880981e",
-                        "type": "set"
-                      }
-                    ],
-                    "id": "db8df1df-ca34-4df8-8d27-e9f6a985c015",
-                    "type": "sequence"
-                  }
-                ],
-                "id": "709980df-3bb5-4a4c-a8bd-17ec3ecedcf6",
-                "type": "condition"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "active": "false"
-                },
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "op1": {
-                        "type": "entityKnowledge",
-                        "value": "Time"
-                      },
-                      "op2": {
-                        "type": "entityKnowledge",
-                        "value": "Time_Douche_Min"
-                      },
-                      "op": ">="
-                    },
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {},
-                        "children": [
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "entityKnowledge",
-                                "value": "TaskActivityDouche"
-                              },
-                              "op2": {
-                                "type": "integer",
-                                "value": "0"
-                              },
-                              "op": "=="
-                            },
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {},
-                                "children": [
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "name": "Log",
-                                      "inputParams": [
-                                        {
-                                          "key": "MessageLog",
-                                          "type": "string",
-                                          "value": "Debut Activité Douche"
-                                        }
-                                      ],
-                                      "outputParams": []
-                                    },
-                                    "children": [],
-                                    "id": "a4c1750c-f019-416d-83b5-a7ba99ed1cb1",
-                                    "type": "action"
-                                  },
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "destination": "TaskActivityDouche",
-                                      "op": {
-                                        "type": "integer",
-                                        "value": "1"
-                                      }
-                                    },
-                                    "children": [],
-                                    "id": "ed6e77b5-f819-4546-a120-61c9e2a8f895",
-                                    "type": "set"
-                                  }
-                                ],
-                                "id": "86e521a1-a115-4488-a74c-7e336f1e480c",
-                                "type": "sequence"
-                              }
-                            ],
-                            "id": "29e7a4a4-9910-4853-84d3-6e68d0014dee",
-                            "type": "condition"
-                          }
-                        ],
-                        "id": "857bd5d7-36bb-4457-98f9-f2ad26172e3a",
-                        "type": "sequence"
-                      }
-                    ],
-                    "id": "455ee409-411c-446b-a246-d7c58459d012",
-                    "type": "condition"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "op1": {
-                        "type": "entityKnowledge",
-                        "value": "Time"
-                      },
-                      "op2": {
-                        "type": "entityKnowledge",
-                        "value": "Time_Douche_Max"
-                      },
-                      "op": ">"
-                    },
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {},
-                        "children": [
-                          {
-                            "activated": false,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "name": "Log",
-                              "inputParams": [
-                                {
-                                  "key": "MessageLog",
-                                  "type": "string",
-                                  "value": "Temps activite Douche terminé"
-                                }
-                              ],
-                              "outputParams": []
-                            },
-                            "children": [],
-                            "id": "e9d62492-caad-4130-a41c-f32326d08d40",
-                            "type": "action"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "entityKnowledge",
-                                "value": "TaskActivityDouche"
-                              },
-                              "op2": {
-                                "type": "integer",
-                                "value": "1"
-                              },
-                              "op": "=="
-                            },
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {},
-                                "children": [
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "name": "Log",
-                                      "inputParams": [
-                                        {
-                                          "key": "MessageLog",
-                                          "type": "string",
-                                          "value": "Fin Activité Douche"
-                                        }
-                                      ],
-                                      "outputParams": []
-                                    },
-                                    "children": [],
-                                    "id": "bca474d9-676c-4f51-b229-f50de6afda17",
-                                    "type": "action"
-                                  },
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "destination": "TaskActivityDouche",
-                                      "op": {
-                                        "type": "integer",
-                                        "value": "2"
-                                      }
-                                    },
-                                    "children": [],
-                                    "id": "f3ae77c0-4a09-4cb4-a515-7dada5ea3e10",
-                                    "type": "set"
-                                  }
-                                ],
-                                "id": "29daa449-0679-41e5-8c4c-9ca3c41e89d7",
-                                "type": "sequence"
-                              }
-                            ],
-                            "id": "4cbf2780-bde5-499e-a7b8-8b3f7eef14a3",
-                            "type": "condition"
-                          }
-                        ],
-                        "id": "e29e91c0-7d38-4339-bb8c-2fec579080fe",
-                        "type": "sequence"
-                      }
-                    ],
-                    "id": "e964e42a-9f47-405e-9007-524da3108105",
-                    "type": "condition"
-                  }
-                ],
-                "id": "0468b530-86f5-4288-8008-99faf5eee10d",
-                "type": "priority"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {},
-                "children": [],
-                "id": "bb9be05a-9edd-4162-9c74-522231191431",
-                "type": "success"
-              }
-            ],
-            "id": "69e1e2b8-03f3-4532-bd73-676e2ebfb489",
-            "type": "priority"
+            "children": [],
+            "id": "207ee580-e9b4-47de-96e1-7f155ab1410d",
+            "type": "embedded"
           },
           {
             "activated": true,
@@ -346,483 +41,117 @@
               "label": ""
             },
             "properties": {
-              "active": "false"
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/activityPetitDejeuner.bt"
+              },
+              "inputParams": []
             },
-            "children": [
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "TaskActivityDouche"
-                  },
-                  "op2": {
-                    "type": "integer",
-                    "value": "1"
-                  },
-                  "op": "=="
-                },
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {},
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": "Si capteur douche à changé d'état"
-                        },
-                        "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "current_CaptSDBP"
-                          },
-                          "op2": {
-                            "type": "entityKnowledge",
-                            "value": "actuator_CaptSDBP"
-                          },
-                          "op": "=="
-                        },
-                        "children": [
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {},
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "name": "Log",
-                                  "inputParams": [
-                                    {
-                                      "key": "MessageLog",
-                                      "type": "string",
-                                      "value": "Capteur douche à changer 1 à 0"
-                                    }
-                                  ],
-                                  "outputParams": []
-                                },
-                                "children": [],
-                                "id": "f1bd56c2-85b1-4ee8-8ebc-4694ddccf5a1",
-                                "type": "action"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "destination": "current_CaptSDBP",
-                                  "op": {
-                                    "type": "entityKnowledge",
-                                    "value": "actuator_CaptSDBP"
-                                  }
-                                },
-                                "children": [],
-                                "id": "dc8226ff-f5e9-46b2-83c2-10cd840db23a",
-                                "type": "set"
-                              }
-                            ],
-                            "id": "b77895fc-30a0-42e6-af15-b3d576962d39",
-                            "type": "sequence"
-                          }
-                        ],
-                        "id": "42d738eb-1069-4218-98d0-f06b67c244e7",
-                        "type": "condition"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "Check_Douche",
-                          "op": {
-                            "type": "boolean",
-                            "value": "true"
-                          }
-                        },
-                        "children": [],
-                        "id": "e30b912f-7a31-4fcb-9ff3-ad01941754f1",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "TaskActivityDouche",
-                          "op": {
-                            "type": "integer",
-                            "value": "2"
-                          }
-                        },
-                        "children": [],
-                        "id": "775fc588-5c10-4d2e-9e7c-37e1e351d449",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "active": "false"
-                        },
-                        "children": [
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "behavior": {
-                                "type": "uriPath",
-                                "value": "bts/DectetctionPresence.bt"
-                              },
-                              "inputParams": []
-                            },
-                            "children": [],
-                            "id": "12e210e9-0e4e-4bc5-b76a-2ccbae89e0b3",
-                            "type": "embedded"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": "Remonte une alerte Problème capteur "
-                            },
-                            "properties": {},
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "destination": "MessageAlerte",
-                                  "op": {
-                                    "type": "string",
-                                    "value": "0X02020F030303"
-                                  }
-                                },
-                                "children": [],
-                                "id": "8338f689-f5f2-4e6e-8ed4-bf879f901d41",
-                                "type": "set"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "destination": "BoolAlerteMessage",
-                                  "op": {
-                                    "type": "boolean",
-                                    "value": "true"
-                                  }
-                                },
-                                "children": [],
-                                "id": "8723b1a4-d711-4ba1-9aaa-7e7964680895",
-                                "type": "set"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "behavior": {
-                                    "type": "uriPath",
-                                    "value": "bts/SendAlerteSigfox.bt"
-                                  },
-                                  "inputParams": []
-                                },
-                                "children": [],
-                                "id": "b3dec228-92b4-46f9-ac55-0eec4e7b3d0e",
-                                "type": "embedded"
-                              }
-                            ],
-                            "id": "395e8568-e1e6-4c49-b1b6-827d18da8d09",
-                            "type": "sequence"
-                          }
-                        ],
-                        "id": "24b18497-8dd2-4665-b19c-de46c179e4a1",
-                        "type": "priority"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "Log",
-                          "inputParams": [
-                            {
-                              "key": "MessageLog",
-                              "type": "string",
-                              "value": "Mamie est douchée"
-                            }
-                          ],
-                          "outputParams": []
-                        },
-                        "children": [],
-                        "id": "d3e76488-f1b5-43f3-80d1-066fb0e505d2",
-                        "type": "action"
-                      }
-                    ],
-                    "id": "70792581-547d-4290-89b0-dd62f6aede38",
-                    "type": "sequence"
-                  }
-                ],
-                "id": "5eca9651-c1c7-43ec-89ba-f6e3be1d8c60",
-                "type": "condition"
+            "children": [],
+            "id": "a57ec1eb-0845-475f-82af-38c094dc1964",
+            "type": "embedded"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/activitydouche.bt"
               },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "TaskActivityDouche"
-                  },
-                  "op2": {
-                    "type": "integer",
-                    "value": "2"
-                  },
-                  "op": "=="
-                },
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": "Gestion alerte "
-                    },
-                    "properties": {},
-                    "children": [
-                      {
-                        "activated": false,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "Log",
-                          "inputParams": [
-                            {
-                              "key": "MessageLog",
-                              "type": "string",
-                              "value": "Task Douche terminée"
-                            }
-                          ],
-                          "outputParams": []
-                        },
-                        "children": [],
-                        "id": "2fd0d6e0-e56e-490d-a4f0-85fb0d19445b",
-                        "type": "action"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "TaskActivityDouche",
-                          "op": {
-                            "type": "integer",
-                            "value": "3"
-                          }
-                        },
-                        "children": [],
-                        "id": "d592a0b8-7ea5-4920-9007-2456208c11dc",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "active": "false"
-                        },
-                        "children": [
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "op1": {
-                                "type": "entityKnowledge",
-                                "value": "Check_Douche"
-                              },
-                              "op2": {
-                                "type": "boolean",
-                                "value": "false"
-                              },
-                              "op": "=="
-                            },
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {},
-                                "children": [
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "destination": "MessageAlerte",
-                                      "op": {
-                                        "type": "string",
-                                        "value": "0302020F030303"
-                                      }
-                                    },
-                                    "children": [],
-                                    "id": "8a925465-8fa2-4442-b630-3c0b614be4e4",
-                                    "type": "set"
-                                  },
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "destination": "BoolAlerteMessage",
-                                      "op": {
-                                        "type": "boolean",
-                                        "value": "true"
-                                      }
-                                    },
-                                    "children": [],
-                                    "id": "38af87b4-bb72-4269-99af-9e1f9ad2f8b2",
-                                    "type": "set"
-                                  },
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "behavior": {
-                                        "type": "uriPath",
-                                        "value": "bts/SendAlerteSigfox.bt"
-                                      },
-                                      "inputParams": []
-                                    },
-                                    "children": [],
-                                    "id": "9f10b30b-0a6f-4e70-8d61-e914f6eae1d7",
-                                    "type": "embedded"
-                                  }
-                                ],
-                                "id": "44fa55ea-9956-4b45-af25-12810eaa81bd",
-                                "type": "sequence"
-                              }
-                            ],
-                            "id": "1af02325-5c85-4fb6-a7fe-72d25c22055d",
-                            "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {},
-                            "children": [],
-                            "id": "a8c5262a-acd2-40b0-b50f-c85695cb9908",
-                            "type": "success"
-                          }
-                        ],
-                        "id": "fab8184f-f0c8-4421-a9a2-075c4708f972",
-                        "type": "priority"
-                      }
-                    ],
-                    "id": "58f59243-0307-446a-9614-ea4051cf5d25",
-                    "type": "sequence"
-                  }
-                ],
-                "id": "28e912d0-8e99-41e3-a9b1-9c1fb9366c90",
-                "type": "condition"
+              "inputParams": []
+            },
+            "children": [],
+            "id": "0cf5b57d-c027-4ea5-971c-7e7805e03cf6",
+            "type": "embedded"
+          },
+          {
+            "activated": false,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/activityDejeuner.bt"
               },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": "Indique pas de traitement sur  activite"
-                },
-                "properties": {
-                  "active": "false"
-                },
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "op1": {
-                        "type": "entityKnowledge",
-                        "value": "TaskActivityDouche"
-                      },
-                      "op2": {
-                        "type": "integer",
-                        "value": "3"
-                      },
-                      "op": "=="
-                    },
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {},
-                        "children": [],
-                        "id": "17e96429-3873-42b9-bee2-c55405d681b3",
-                        "type": "failure"
-                      }
-                    ],
-                    "id": "f430355e-fa1f-4fc1-9cfe-c6032ddf9634",
-                    "type": "condition"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {},
-                    "children": [],
-                    "id": "6b0e55a7-ab23-492e-9d0a-caa4e5e999c5",
-                    "type": "success"
-                  }
-                ],
-                "id": "cd4ee1ac-497f-4d23-8afb-13b93a5ffc45",
-                "type": "priority"
-              }
-            ],
-            "id": "d49561af-d22d-442f-8d3a-59887e555622",
-            "type": "priority"
+              "inputParams": []
+            },
+            "children": [],
+            "id": "393ba84a-471b-4b42-aad9-a84989915522",
+            "type": "embedded"
+          },
+          {
+            "activated": false,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/activityDiner.bt"
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "975916d5-83e0-40b1-aba9-6d5a4d2b5a02",
+            "type": "embedded"
+          },
+          {
+            "activated": false,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/activityCoucher.bt"
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "f8f7961c-8e60-4a8f-ae35-41dcd9d095d5",
+            "type": "embedded"
+          },
+          {
+            "activated": false,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/activitySieste.bt"
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "acb3f11a-ac3b-49ba-b4ec-3eb45da32095",
+            "type": "embedded"
+          },
+          {
+            "activated": false,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/activitySortie.bt"
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "6cb490aa-d863-4c1a-a90d-6282dc031063",
+            "type": "embedded"
           }
         ],
-        "id": "81f9974f-1a93-4d81-b2e0-baf8c4ce099b",
-        "type": "sequence"
+        "id": "592a91dd-9404-4e17-b6a3-dfd6596f00d0",
+        "type": "parallel"
       }
     ],
-    "id": "e79392bb-9aeb-429e-842f-6e4f51ce022b"
+    "id": "0f8fb13f-fa9c-4675-94f9-514841a6d4f8"
   }
 ]
