@@ -169,7 +169,7 @@
                         "type": "parallel"
                       },
                       {
-                        "activated": true,
+                        "activated": false,
                         "metadata": {
                           "label": ""
                         },
