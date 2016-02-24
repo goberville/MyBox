@@ -33,7 +33,7 @@
                 "type": "entityKnowledge",
                 "value": "actuator_CaptChambreP"
               },
-              "op": "=="
+              "op": "!="
             },
             "children": [],
             "id": "1355d41e-e801-4d62-b750-c6cc3d9ffc1f",
