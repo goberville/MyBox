@@ -84,22 +84,6 @@
                         "children": [],
                         "id": "fd2ba51f-98e7-4314-ab60-b4fb372ed98d",
                         "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "TraitementEnCours",
-                          "op": {
-                            "type": "boolean",
-                            "value": "true"
-                          }
-                        },
-                        "children": [],
-                        "id": "a593a297-c3b9-44b7-a243-1e568505d0ed",
-                        "type": "set"
                       }
                     ],
                     "id": "d04624ba-4d9e-4359-8c6e-dafd80b4b0fb",
