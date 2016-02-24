@@ -99,15 +99,7 @@
                   "label": ""
                 },
                 "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "Time"
-                  },
-                  "op2": {
-                    "type": "entityKnowledge",
-                    "value": "Time_Douche_Min"
-                  },
-                  "op": ">="
+                  "active": "false"
                 },
                 "children": [
                   {
@@ -115,203 +107,224 @@
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {},
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "TaskActivityDouche"
-                          },
-                          "op2": {
-                            "type": "integer",
-                            "value": "0"
-                          },
-                          "op": "=="
-                        },
-                        "children": [
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {},
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "name": "Log",
-                                  "inputParams": [
-                                    {
-                                      "key": "MessageLog",
-                                      "type": "string",
-                                      "value": "Debut Activité Douche"
-                                    }
-                                  ],
-                                  "outputParams": []
-                                },
-                                "children": [],
-                                "id": "a4c1750c-f019-416d-83b5-a7ba99ed1cb1",
-                                "type": "action"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "destination": "TaskActivityDouche",
-                                  "op": {
-                                    "type": "integer",
-                                    "value": "1"
-                                  }
-                                },
-                                "children": [],
-                                "id": "ed6e77b5-f819-4546-a120-61c9e2a8f895",
-                                "type": "set"
-                              }
-                            ],
-                            "id": "86e521a1-a115-4488-a74c-7e336f1e480c",
-                            "type": "sequence"
-                          }
-                        ],
-                        "id": "29e7a4a4-9910-4853-84d3-6e68d0014dee",
-                        "type": "condition"
-                      }
-                    ],
-                    "id": "857bd5d7-36bb-4457-98f9-f2ad26172e3a",
-                    "type": "sequence"
-                  }
-                ],
-                "id": "455ee409-411c-446b-a246-d7c58459d012",
-                "type": "condition"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "Time"
-                  },
-                  "op2": {
-                    "type": "entityKnowledge",
-                    "value": "Time_Douche_Max"
-                  },
-                  "op": ">"
-                },
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {},
-                    "children": [
-                      {
-                        "activated": false,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "Log",
-                          "inputParams": [
-                            {
-                              "key": "MessageLog",
-                              "type": "string",
-                              "value": "Temps activite Douche terminé"
-                            }
-                          ],
-                          "outputParams": []
-                        },
-                        "children": [],
-                        "id": "e9d62492-caad-4130-a41c-f32326d08d40",
-                        "type": "action"
+                    "properties": {
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "Time"
                       },
+                      "op2": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Douche_Min"
+                      },
+                      "op": ">="
+                    },
+                    "children": [
                       {
                         "activated": true,
                         "metadata": {
                           "label": ""
                         },
-                        "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "TaskActivityDouche"
-                          },
-                          "op2": {
-                            "type": "integer",
-                            "value": "1"
-                          },
-                          "op": "=="
-                        },
+                        "properties": {},
                         "children": [
                           {
                             "activated": true,
                             "metadata": {
                               "label": ""
                             },
-                            "properties": {},
+                            "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "TaskActivityDouche"
+                              },
+                              "op2": {
+                                "type": "integer",
+                                "value": "0"
+                              },
+                              "op": "=="
+                            },
                             "children": [
                               {
                                 "activated": true,
                                 "metadata": {
                                   "label": ""
                                 },
-                                "properties": {
-                                  "name": "Log",
-                                  "inputParams": [
-                                    {
-                                      "key": "MessageLog",
-                                      "type": "string",
-                                      "value": "Fin Activité Douche"
-                                    }
-                                  ],
-                                  "outputParams": []
-                                },
-                                "children": [],
-                                "id": "bca474d9-676c-4f51-b229-f50de6afda17",
-                                "type": "action"
+                                "properties": {},
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "name": "Log",
+                                      "inputParams": [
+                                        {
+                                          "key": "MessageLog",
+                                          "type": "string",
+                                          "value": "Debut Activité Douche"
+                                        }
+                                      ],
+                                      "outputParams": []
+                                    },
+                                    "children": [],
+                                    "id": "a4c1750c-f019-416d-83b5-a7ba99ed1cb1",
+                                    "type": "action"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "TaskActivityDouche",
+                                      "op": {
+                                        "type": "integer",
+                                        "value": "1"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "ed6e77b5-f819-4546-a120-61c9e2a8f895",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "86e521a1-a115-4488-a74c-7e336f1e480c",
+                                "type": "sequence"
+                              }
+                            ],
+                            "id": "29e7a4a4-9910-4853-84d3-6e68d0014dee",
+                            "type": "condition"
+                          }
+                        ],
+                        "id": "857bd5d7-36bb-4457-98f9-f2ad26172e3a",
+                        "type": "sequence"
+                      }
+                    ],
+                    "id": "455ee409-411c-446b-a246-d7c58459d012",
+                    "type": "condition"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "Time"
+                      },
+                      "op2": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Douche_Max"
+                      },
+                      "op": ">"
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {},
+                        "children": [
+                          {
+                            "activated": false,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "Temps activite Douche terminé"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "e9d62492-caad-4130-a41c-f32326d08d40",
+                            "type": "action"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "TaskActivityDouche"
                               },
+                              "op2": {
+                                "type": "integer",
+                                "value": "1"
+                              },
+                              "op": "=="
+                            },
+                            "children": [
                               {
                                 "activated": true,
                                 "metadata": {
                                   "label": ""
                                 },
-                                "properties": {
-                                  "destination": "TaskActivityDouche",
-                                  "op": {
-                                    "type": "integer",
-                                    "value": "2"
+                                "properties": {},
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "name": "Log",
+                                      "inputParams": [
+                                        {
+                                          "key": "MessageLog",
+                                          "type": "string",
+                                          "value": "Fin Activité Douche"
+                                        }
+                                      ],
+                                      "outputParams": []
+                                    },
+                                    "children": [],
+                                    "id": "bca474d9-676c-4f51-b229-f50de6afda17",
+                                    "type": "action"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "TaskActivityDouche",
+                                      "op": {
+                                        "type": "integer",
+                                        "value": "2"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "f3ae77c0-4a09-4cb4-a515-7dada5ea3e10",
+                                    "type": "set"
                                   }
-                                },
-                                "children": [],
-                                "id": "f3ae77c0-4a09-4cb4-a515-7dada5ea3e10",
-                                "type": "set"
+                                ],
+                                "id": "29daa449-0679-41e5-8c4c-9ca3c41e89d7",
+                                "type": "sequence"
                               }
                             ],
-                            "id": "29daa449-0679-41e5-8c4c-9ca3c41e89d7",
-                            "type": "sequence"
+                            "id": "4cbf2780-bde5-499e-a7b8-8b3f7eef14a3",
+                            "type": "condition"
                           }
                         ],
-                        "id": "4cbf2780-bde5-499e-a7b8-8b3f7eef14a3",
-                        "type": "condition"
+                        "id": "e29e91c0-7d38-4339-bb8c-2fec579080fe",
+                        "type": "sequence"
                       }
                     ],
-                    "id": "e29e91c0-7d38-4339-bb8c-2fec579080fe",
-                    "type": "sequence"
+                    "id": "e964e42a-9f47-405e-9007-524da3108105",
+                    "type": "condition"
                   }
                 ],
-                "id": "e964e42a-9f47-405e-9007-524da3108105",
-                "type": "condition"
+                "id": "0468b530-86f5-4288-8008-99faf5eee10d",
+                "type": "priority"
               },
               {
                 "activated": true,
@@ -475,161 +488,15 @@
                               "label": ""
                             },
                             "properties": {
-                              "statusCondition": "succeedsIfAnySucceeds",
-                              "retryPolicy": "propagateToRunning"
+                              "behavior": {
+                                "type": "uriPath",
+                                "value": "bts/DectetctionPresence.bt"
+                              },
+                              "inputParams": []
                             },
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "op1": {
-                                    "type": "entityKnowledge",
-                                    "value": "current_CaptCuisineP"
-                                  },
-                                  "op2": {
-                                    "type": "entityKnowledge",
-                                    "value": "actuator_CaptCuisineP"
-                                  },
-                                  "op": "!="
-                                },
-                                "children": [
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "destination": "current_CaptCuisineP",
-                                      "op": {
-                                        "type": "entityKnowledge",
-                                        "value": "actuator_CaptCuisineP"
-                                      }
-                                    },
-                                    "children": [],
-                                    "id": "f9d701d0-077a-4d72-837a-9a4a232cec08",
-                                    "type": "set"
-                                  }
-                                ],
-                                "id": "cb43870e-4ddc-4547-a53f-66ad44d414ac",
-                                "type": "condition"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "op1": {
-                                    "type": "entityKnowledge",
-                                    "value": "current_CaptSalonP"
-                                  },
-                                  "op2": {
-                                    "type": "entityKnowledge",
-                                    "value": "actuator_CaptSalonP"
-                                  },
-                                  "op": "!="
-                                },
-                                "children": [
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "destination": "current_CaptSalonP",
-                                      "op": {
-                                        "type": "entityKnowledge",
-                                        "value": "actuator_CaptSalonP"
-                                      }
-                                    },
-                                    "children": [],
-                                    "id": "5b363074-a521-47f4-81eb-d5b2b4a36830",
-                                    "type": "set"
-                                  }
-                                ],
-                                "id": "3d146223-3451-4233-a053-420b7a431523",
-                                "type": "condition"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "op1": {
-                                    "type": "entityKnowledge",
-                                    "value": "current_CaptChambreP"
-                                  },
-                                  "op2": {
-                                    "type": "entityKnowledge",
-                                    "value": "actuator_CaptChambreP"
-                                  },
-                                  "op": "!="
-                                },
-                                "children": [
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "destination": "current_CaptChambreP",
-                                      "op": {
-                                        "type": "entityKnowledge",
-                                        "value": "actuator_CaptChambreP"
-                                      }
-                                    },
-                                    "children": [],
-                                    "id": "7f18f282-5272-464c-b7f8-a7ef923314a8",
-                                    "type": "set"
-                                  }
-                                ],
-                                "id": "0689f303-89af-40dc-b238-80d085176cb8",
-                                "type": "condition"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "op1": {
-                                    "type": "entityKnowledge",
-                                    "value": "current_CaptCouloirP"
-                                  },
-                                  "op2": {
-                                    "type": "entityKnowledge",
-                                    "value": "actuator_CaptCouloirP"
-                                  },
-                                  "op": "!="
-                                },
-                                "children": [
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "destination": "current_CaptCouloirP",
-                                      "op": {
-                                        "type": "entityKnowledge",
-                                        "value": "actuator_CaptCouloirP"
-                                      }
-                                    },
-                                    "children": [],
-                                    "id": "173e92da-3a56-438f-8274-141ebe2eee1d",
-                                    "type": "set"
-                                  }
-                                ],
-                                "id": "8aae2319-3734-464e-97e4-d4dc862b100b",
-                                "type": "condition"
-                              }
-                            ],
-                            "id": "264dc28e-f84c-4866-98d7-afdcaf26a4ce",
-                            "type": "parallel"
+                            "children": [],
+                            "id": "12e210e9-0e4e-4bc5-b76a-2ccbae89e0b3",
+                            "type": "embedded"
                           },
                           {
                             "activated": true,
@@ -669,6 +536,22 @@
                                 "children": [],
                                 "id": "8723b1a4-d711-4ba1-9aaa-7e7964680895",
                                 "type": "set"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "behavior": {
+                                    "type": "uriPath",
+                                    "value": "bts/SendAlerteSigfox.bt"
+                                  },
+                                  "inputParams": []
+                                },
+                                "children": [],
+                                "id": "b3dec228-92b4-46f9-ac55-0eec4e7b3d0e",
+                                "type": "embedded"
                               }
                             ],
                             "id": "395e8568-e1e6-4c49-b1b6-827d18da8d09",
@@ -830,6 +713,22 @@
                                     "children": [],
                                     "id": "38af87b4-bb72-4269-99af-9e1f9ad2f8b2",
                                     "type": "set"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "behavior": {
+                                        "type": "uriPath",
+                                        "value": "bts/SendAlerteSigfox.bt"
+                                      },
+                                      "inputParams": []
+                                    },
+                                    "children": [],
+                                    "id": "9f10b30b-0a6f-4e70-8d61-e914f6eae1d7",
+                                    "type": "embedded"
                                   }
                                 ],
                                 "id": "44fa55ea-9956-4b45-af25-12810eaa81bd",
@@ -864,12 +763,56 @@
               {
                 "activated": true,
                 "metadata": {
-                  "label": ""
+                  "label": "Indique pas de traitement sur  activite"
                 },
-                "properties": {},
-                "children": [],
-                "id": "6b0e55a7-ab23-492e-9d0a-caa4e5e999c5",
-                "type": "success"
+                "properties": {
+                  "active": "false"
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "TaskActivityDouche"
+                      },
+                      "op2": {
+                        "type": "integer",
+                        "value": "3"
+                      },
+                      "op": "=="
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {},
+                        "children": [],
+                        "id": "17e96429-3873-42b9-bee2-c55405d681b3",
+                        "type": "failure"
+                      }
+                    ],
+                    "id": "f430355e-fa1f-4fc1-9cfe-c6032ddf9634",
+                    "type": "condition"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [],
+                    "id": "6b0e55a7-ab23-492e-9d0a-caa4e5e999c5",
+                    "type": "success"
+                  }
+                ],
+                "id": "cd4ee1ac-497f-4d23-8afb-13b93a5ffc45",
+                "type": "priority"
               }
             ],
             "id": "d49561af-d22d-442f-8d3a-59887e555622",
