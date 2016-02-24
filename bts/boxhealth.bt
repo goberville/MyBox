@@ -113,7 +113,7 @@
                         },
                         "properties": {
                           "statusCondition": "succeedsIfAnySucceeds",
-                          "retryPolicy": "propagateToRunning"
+                          "retryPolicy": "propagateToAll"
                         },
                         "children": [
                           {
