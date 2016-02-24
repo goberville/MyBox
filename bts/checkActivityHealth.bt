@@ -36,7 +36,7 @@
             "type": "embedded"
           },
           {
-            "activated": false,
+            "activated": true,
             "metadata": {
               "label": ""
             },
@@ -52,7 +52,7 @@
             "type": "embedded"
           },
           {
-            "activated": false,
+            "activated": true,
             "metadata": {
               "label": ""
             },
