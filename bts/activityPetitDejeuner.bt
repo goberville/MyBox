@@ -391,7 +391,7 @@
                             "type": "entityKnowledge",
                             "value": "actuator_CaptCuisineP"
                           },
-                          "op": "=="
+                          "op": "!="
                         },
                         "children": [
                           {
