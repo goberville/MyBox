@@ -19,7 +19,7 @@
           {
             "activated": true,
             "metadata": {
-              "label": "CTRL si Periode Activity Reveil"
+              "label": "CTRL si Periode Activity Petit dejeuner"
             },
             "properties": {
               "active": "false"
@@ -50,7 +50,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": false,
+                        "activated": true,
                         "metadata": {
                           "label": ""
                         },
@@ -231,7 +231,7 @@
                         "properties": {},
                         "children": [
                           {
-                            "activated": false,
+                            "activated": true,
                             "metadata": {
                               "label": ""
                             },
@@ -391,7 +391,7 @@
                             "type": "entityKnowledge",
                             "value": "actuator_CaptCuisineP"
                           },
-                          "op": "=="
+                          "op": "!="
                         },
                         "children": [
                           {

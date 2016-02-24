@@ -84,22 +84,6 @@
                         "children": [],
                         "id": "fd2ba51f-98e7-4314-ab60-b4fb372ed98d",
                         "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "TraitementEnCours",
-                          "op": {
-                            "type": "boolean",
-                            "value": "true"
-                          }
-                        },
-                        "children": [],
-                        "id": "a593a297-c3b9-44b7-a243-1e568505d0ed",
-                        "type": "set"
                       }
                     ],
                     "id": "d04624ba-4d9e-4359-8c6e-dafd80b4b0fb",
@@ -394,74 +378,6 @@
                       {
                         "activated": true,
                         "metadata": {
-                          "label": "Si pas present dans la chambre"
-                        },
-                        "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "current_CaptChambreP"
-                          },
-                          "op2": {
-                            "type": "integer",
-                            "value": "1"
-                          },
-                          "op": "!="
-                        },
-                        "children": [
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {},
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "name": "Log",
-                                  "inputParams": [
-                                    {
-                                      "key": "MessageLog",
-                                      "type": "string",
-                                      "value": "Personne dans la chambre"
-                                    }
-                                  ],
-                                  "outputParams": []
-                                },
-                                "children": [],
-                                "id": "c76ca8ad-e76b-4973-9fea-525980c4906f",
-                                "type": "action"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "destination": "TaskActivityDouche",
-                                  "op": {
-                                    "type": "integer",
-                                    "value": "3"
-                                  }
-                                },
-                                "children": [],
-                                "id": "3d04e7b6-f07e-4cc8-b71b-6a7af2b2fd2b",
-                                "type": "set"
-                              }
-                            ],
-                            "id": "a471e78f-0e3d-40b0-bbd2-a7d76774c4d6",
-                            "type": "sequence"
-                          }
-                        ],
-                        "id": "cdfc34a7-f919-4dd0-a914-499f0d80a584",
-                        "type": "condition"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
                           "label": "Si Periode Activity Douche "
                         },
                         "properties": {},
@@ -474,11 +390,11 @@
                             "properties": {
                               "op1": {
                                 "type": "entityKnowledge",
-                                "value": "current_CaptChambreP"
+                                "value": "current_CaptSDBP"
                               },
                               "op2": {
                                 "type": "entityKnowledge",
-                                "value": "actuator_CaptChambreP"
+                                "value": "actuator_CaptSDBP"
                               },
                               "op": "!="
                             },
@@ -516,10 +432,10 @@
                                       "label": ""
                                     },
                                     "properties": {
-                                      "destination": "current_CaptChambreP",
+                                      "destination": "current_CaptSDBP",
                                       "op": {
                                         "type": "entityKnowledge",
-                                        "value": "actuator_CaptChambreP"
+                                        "value": "actuator_CaptSDBP"
                                       }
                                     },
                                     "children": [],
