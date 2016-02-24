@@ -561,6 +561,16 @@
                                     "children": [],
                                     "id": "8688580c-17d9-4f4a-a55e-ee4f4d379dbe",
                                     "type": "embedded"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {},
+                                    "children": [],
+                                    "id": "2be3411c-406c-4e5b-875a-667dc9ae2c5e",
+                                    "type": "failure"
                                   }
                                 ],
                                 "id": "07953778-1176-412c-b0e3-29bac6f34a38",
