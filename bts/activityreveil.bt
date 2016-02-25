@@ -50,7 +50,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": true,
+                        "activated": false,
                         "metadata": {
                           "label": ""
                         },
@@ -243,7 +243,7 @@
                         "properties": {},
                         "children": [
                           {
-                            "activated": true,
+                            "activated": false,
                             "metadata": {
                               "label": ""
                             },
@@ -622,22 +622,6 @@
                                 "children": [],
                                 "id": "c1e63272-c3ce-4117-8457-60389eed1c62",
                                 "type": "embedded"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "destination": "",
-                                  "op": {
-                                    "type": "string",
-                                    "value": ""
-                                  }
-                                },
-                                "children": [],
-                                "id": "8e01f3a3-8ec2-4933-a61f-960418fe0c0d",
-                                "type": "set"
                               },
                               {
                                 "activated": true,
