@@ -582,10 +582,10 @@
                                               "label": ""
                                             },
                                             "properties": {
-                                              "destination": "current_CaptCuisineP",
+                                              "destination": "current_CaptCouloirP",
                                               "op": {
                                                 "type": "entityKnowledge",
-                                                "value": "actuator_CaptCuisineP"
+                                                "value": "actuator_CaptCouloirP"
                                               }
                                             },
                                             "children": [],
