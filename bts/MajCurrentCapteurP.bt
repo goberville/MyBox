@@ -458,9 +458,40 @@
               "label": ""
             },
             "properties": {},
-            "children": [],
-            "id": "57215272-2eab-441d-b930-52d0f03b5c28",
-            "type": "success"
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "name": "Log",
+                  "inputParams": [
+                    {
+                      "key": "MessageLog",
+                      "type": "string",
+                      "value": "Sort de Maj capteur false"
+                    }
+                  ],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "559f13e9-eaf1-4a84-82e7-c3dc9115d9c4",
+                "type": "action"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [],
+                "id": "57215272-2eab-441d-b930-52d0f03b5c28",
+                "type": "success"
+              }
+            ],
+            "id": "f5603135-9f63-4d7a-adc9-2d92118a899f",
+            "type": "sequence"
           }
         ],
         "id": "161587fc-7f72-4d50-9893-b6c565efe5c6",
