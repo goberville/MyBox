@@ -334,6 +334,22 @@
                                         "children": [],
                                         "id": "6280f7cb-576d-422b-bcdc-8935a0f6bc8d",
                                         "type": "set"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "destination": "TraitementMajCapt",
+                                          "op": {
+                                            "type": "boolean",
+                                            "value": "false"
+                                          }
+                                        },
+                                        "children": [],
+                                        "id": "a77c0299-1f64-4230-a316-3abec40c043a",
+                                        "type": "set"
                                       }
                                     ],
                                     "id": "273197b8-a6ba-4c1e-b8f8-e6bb859b8cd9",
