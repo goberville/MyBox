@@ -818,6 +818,37 @@
                     "metadata": {
                       "label": ""
                     },
+                    "properties": {
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "TaskActivityDouche"
+                      },
+                      "op2": {
+                        "type": "integer",
+                        "value": "0"
+                      },
+                      "op": "=="
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {},
+                        "children": [],
+                        "id": "044fd33d-ae38-487a-9ed6-16b7524ebde4",
+                        "type": "failure"
+                      }
+                    ],
+                    "id": "099557ae-f3e1-44db-b4bc-7ef7172ea4d1",
+                    "type": "condition"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
                     "properties": {},
                     "children": [],
                     "id": "630371c2-3fb3-4d4f-8c3f-6c79087025fc",
