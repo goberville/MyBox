@@ -87,6 +87,22 @@
                         "children": [],
                         "id": "016737b6-d4a0-4e92-b00a-b5ae09916070",
                         "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TraitementMajCapt",
+                          "op": {
+                            "type": "boolean",
+                            "value": "false"
+                          }
+                        },
+                        "children": [],
+                        "id": "47d801ea-715f-4a49-bea2-5b3a2906f07f",
+                        "type": "set"
                       }
                     ],
                     "id": "ddef0821-599b-4bfa-b74b-7ea292a9f804",
@@ -139,6 +155,22 @@
                         "children": [],
                         "id": "3ffeb257-8450-4f7f-9a75-a4e89e419d26",
                         "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TraitementMajCapt",
+                          "op": {
+                            "type": "boolean",
+                            "value": "false"
+                          }
+                        },
+                        "children": [],
+                        "id": "3b7e703b-8438-4393-9632-76d0e0015491",
+                        "type": "set"
                       },
                       {
                         "activated": true,
@@ -214,6 +246,22 @@
                           "label": ""
                         },
                         "properties": {
+                          "destination": "TraitementMajCapt",
+                          "op": {
+                            "type": "boolean",
+                            "value": "false"
+                          }
+                        },
+                        "children": [],
+                        "id": "594b96d0-a893-4f0e-9187-172a765431bc",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
                           "destination": "current_CaptSalonP",
                           "op": {
                             "type": "entityKnowledge",
@@ -282,6 +330,22 @@
                           "label": ""
                         },
                         "properties": {
+                          "destination": "TraitementMajCapt",
+                          "op": {
+                            "type": "boolean",
+                            "value": "false"
+                          }
+                        },
+                        "children": [],
+                        "id": "1156d71b-544b-4796-a654-da8e05141c8f",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
                           "destination": "current_CaptSDBP",
                           "op": {
                             "type": "entityKnowledge",
@@ -343,6 +407,22 @@
                         "children": [],
                         "id": "5f000528-72f2-48a1-b1c1-73187bed7120",
                         "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TraitementMajCapt",
+                          "op": {
+                            "type": "boolean",
+                            "value": "false"
+                          }
+                        },
+                        "children": [],
+                        "id": "9c9c23c3-1e43-48c4-bfc2-81e8e4a5d82f",
+                        "type": "set"
                       },
                       {
                         "activated": true,
