@@ -174,16 +174,41 @@
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {
-                      "destination": "current_CaptSalonP",
-                      "op": {
-                        "type": "entityKnowledge",
-                        "value": "actuator_CaptSalonP"
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "",
+                          "inputParams": [],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "eed0b85d-718e-4a64-8abf-84d8ef6d5d78",
+                        "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "current_CaptSalonP",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "actuator_CaptSalonP"
+                          }
+                        },
+                        "children": [],
+                        "id": "fc84784f-97da-4038-ae75-9346152c647e",
+                        "type": "set"
                       }
-                    },
-                    "children": [],
-                    "id": "fc84784f-97da-4038-ae75-9346152c647e",
-                    "type": "set"
+                    ],
+                    "id": "7385c799-170e-41f0-9576-c2dff978e5e3",
+                    "type": "sequence"
                   }
                 ],
                 "id": "dc03a25a-2aa0-47ba-8379-42cacaf18d2a",
