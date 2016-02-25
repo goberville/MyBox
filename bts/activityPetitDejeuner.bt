@@ -818,6 +818,37 @@
                     "metadata": {
                       "label": ""
                     },
+                    "properties": {
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "TaskActivityPetitDejeuner"
+                      },
+                      "op2": {
+                        "type": "integer",
+                        "value": "0"
+                      },
+                      "op": "=="
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {},
+                        "children": [],
+                        "id": "f4ca85eb-6ee8-41b0-85d8-c48e5252fcdd",
+                        "type": "failure"
+                      }
+                    ],
+                    "id": "e5fc068b-7b88-463b-92bb-ad6e6c534c87",
+                    "type": "condition"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
                     "properties": {},
                     "children": [],
                     "id": "630371c2-3fb3-4d4f-8c3f-6c79087025fc",
