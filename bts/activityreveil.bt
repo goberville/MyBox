@@ -904,6 +904,16 @@
                 ],
                 "id": "fe6f566f-a502-4ccd-9309-536b0a57219b",
                 "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [],
+                "id": "d0262236-7eec-4191-97c0-57634f29f9d9",
+                "type": "success"
               }
             ],
             "id": "d14344bf-ef45-4840-8581-8e539d7c5878",
