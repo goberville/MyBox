@@ -183,6 +183,16 @@
                         "children": [],
                         "id": "cfa6d293-5738-4772-8804-018e5c39410e",
                         "type": "embedded"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {},
+                        "children": [],
+                        "id": "8bddd394-c322-4e58-975b-e41abc3a0c92",
+                        "type": "success"
                       }
                     ],
                     "id": "1d813625-21a8-4da5-8423-d19c827f90e2",
