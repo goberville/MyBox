@@ -567,7 +567,7 @@
                                 "properties": {
                                   "behavior": {
                                     "type": "uriPath",
-                                    "value": "bts/DectetctionPresence.bt"
+                                    "value": "bts/MajCurrentCapteurP.bt"
                                   },
                                   "inputParams": []
                                 },
