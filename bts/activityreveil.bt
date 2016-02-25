@@ -550,22 +550,6 @@
                               "label": ""
                             },
                             "properties": {
-                              "destination": "TaskActivityReveil",
-                              "op": {
-                                "type": "integer",
-                                "value": "2"
-                              }
-                            },
-                            "children": [],
-                            "id": "c04598f6-2353-44bc-8498-2b5452061dc9",
-                            "type": "set"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
                               "name": "Log",
                               "inputParams": [
                                 {
@@ -735,6 +719,42 @@
                             ],
                             "id": "4cbe9888-985f-49f2-a7ad-0536844f101b",
                             "type": "priority"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "Mamie est reveillée 222"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "5f819194-1817-4d55-8623-41962b8cf1cf",
+                            "type": "action"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "destination": "TaskActivityReveil",
+                              "op": {
+                                "type": "integer",
+                                "value": "2"
+                              }
+                            },
+                            "children": [],
+                            "id": "c04598f6-2353-44bc-8498-2b5452061dc9",
+                            "type": "set"
                           }
                         ],
                         "id": "045764b1-c48d-4956-9d3b-6d52f8eca531",
