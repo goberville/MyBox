@@ -189,6 +189,22 @@
                                     "children": [],
                                     "id": "fd6f90eb-4791-4233-895d-a39f5ee7e566",
                                     "type": "set"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "TraitementMajCapt",
+                                      "op": {
+                                        "type": "boolean",
+                                        "value": "true"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "9b19485e-ae5f-42e4-9bf7-55011d222dfa",
+                                    "type": "set"
                                   }
                                 ],
                                 "id": "e15ef713-8d81-413c-87f8-57dcfe3f8578",
@@ -308,6 +324,22 @@
                                     },
                                     "children": [],
                                     "id": "6280f7cb-576d-422b-bcdc-8935a0f6bc8d",
+                                    "type": "set"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "TraitementMajCapt",
+                                      "op": {
+                                        "type": "boolean",
+                                        "value": "false"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "7d450222-91cb-469b-9e45-6b993d5a9953",
                                     "type": "set"
                                   }
                                 ],
@@ -763,60 +795,6 @@
                 ],
                 "id": "1f1155f2-3685-44e1-a264-847333587936",
                 "type": "condition"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": "Indique pas de traitement sur  activite"
-                },
-                "properties": {
-                  "active": "false"
-                },
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "op1": {
-                        "type": "entityKnowledge",
-                        "value": "TaskActivityDiner"
-                      },
-                      "op2": {
-                        "type": "integer",
-                        "value": "3"
-                      },
-                      "op": "=="
-                    },
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {},
-                        "children": [],
-                        "id": "ad16c68a-dc0c-4818-bc84-62fbc64c4980",
-                        "type": "failure"
-                      }
-                    ],
-                    "id": "9ca5c042-c457-4af4-8322-b872b71f6812",
-                    "type": "condition"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {},
-                    "children": [],
-                    "id": "4e2960b2-6749-43e7-ac02-66bee8619a03",
-                    "type": "success"
-                  }
-                ],
-                "id": "6cda90e9-4da8-4e35-a771-b89879a734d0",
-                "type": "priority"
               }
             ],
             "id": "7fc697b1-143e-4e0f-aefe-6822c341a4d9",
