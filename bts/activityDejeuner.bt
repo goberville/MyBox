@@ -804,6 +804,16 @@
                     ],
                     "id": "1f1155f2-3685-44e1-a264-847333587936",
                     "type": "condition"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [],
+                    "id": "f52210a0-85c5-4934-961e-b1d3c8206e1c",
+                    "type": "success"
                   }
                 ],
                 "id": "7fc697b1-143e-4e0f-aefe-6822c341a4d9",
