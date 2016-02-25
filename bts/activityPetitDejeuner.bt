@@ -535,6 +535,74 @@
                                   {
                                     "activated": true,
                                     "metadata": {
+                                      "label": "Si capteur Cuisine à changé d'état"
+                                    },
+                                    "properties": {
+                                      "op1": {
+                                        "type": "entityKnowledge",
+                                        "value": "current_CaptCouloirP"
+                                      },
+                                      "op2": {
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptCouloirP"
+                                      },
+                                      "op": "!="
+                                    },
+                                    "children": [
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {},
+                                        "children": [
+                                          {
+                                            "activated": true,
+                                            "metadata": {
+                                              "label": ""
+                                            },
+                                            "properties": {
+                                              "name": "Log",
+                                              "inputParams": [
+                                                {
+                                                  "key": "MessageLog",
+                                                  "type": "string",
+                                                  "value": "Capteur cuisine à changer 1 à 0"
+                                                }
+                                              ],
+                                              "outputParams": []
+                                            },
+                                            "children": [],
+                                            "id": "55de3408-46ce-4842-b55f-61d76b616e0e",
+                                            "type": "action"
+                                          },
+                                          {
+                                            "activated": true,
+                                            "metadata": {
+                                              "label": ""
+                                            },
+                                            "properties": {
+                                              "destination": "current_CaptCuisineP",
+                                              "op": {
+                                                "type": "entityKnowledge",
+                                                "value": "actuator_CaptCuisineP"
+                                              }
+                                            },
+                                            "children": [],
+                                            "id": "a9b5e5c9-e7e7-4cf8-a39e-a58caf2b2570",
+                                            "type": "set"
+                                          }
+                                        ],
+                                        "id": "d54285b0-7319-4656-90fb-c68ea16a5dd3",
+                                        "type": "sequence"
+                                      }
+                                    ],
+                                    "id": "d29781d0-8be6-43ac-8c69-60928124f045",
+                                    "type": "condition"
+                                  },
+                                  {
+                                    "activated": false,
+                                    "metadata": {
                                       "label": ""
                                     },
                                     "properties": {
