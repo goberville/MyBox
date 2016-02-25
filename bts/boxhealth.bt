@@ -124,7 +124,7 @@
                         "type": "embedded"
                       },
                       {
-                        "activated": false,
+                        "activated": true,
                         "metadata": {
                           "label": "Check Activité Securite "
                         },
@@ -140,7 +140,7 @@
                         "type": "embedded"
                       },
                       {
-                        "activated": false,
+                        "activated": true,
                         "metadata": {
                           "label": "Check Activite Maintenance"
                         },
