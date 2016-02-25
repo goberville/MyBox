@@ -15,7 +15,8 @@
           "label": ""
         },
         "properties": {
-          "active": "false"
+          "statusCondition": "succeedsIfAnySucceeds",
+          "retryPolicy": "propagateToAll"
         },
         "children": [
           {
@@ -24,8 +25,15 @@
               "label": ""
             },
             "properties": {
-              "statusCondition": "succeedsIfAnySucceeds",
-              "retryPolicy": "propagateToAll"
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "current_CaptChambreP"
+              },
+              "op2": {
+                "type": "entityKnowledge",
+                "value": "actuator_CaptChambreP"
+              },
+              "op": "!="
             },
             "children": [
               {
@@ -33,438 +41,407 @@
                 "metadata": {
                   "label": ""
                 },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "current_CaptChambreP"
-                  },
-                  "op2": {
-                    "type": "entityKnowledge",
-                    "value": "actuator_CaptChambreP"
-                  },
-                  "op": "!="
-                },
+                "properties": {},
                 "children": [
                   {
                     "activated": true,
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {},
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "current_CaptChambreP",
-                          "op": {
-                            "type": "entityKnowledge",
-                            "value": "actuator_CaptChambreP"
-                          }
-                        },
-                        "children": [],
-                        "id": "9360105a-bbb4-45f1-9d17-2f37a34ffd0b",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "Log",
-                          "inputParams": [
-                            {
-                              "key": "MessageLog",
-                              "type": "string",
-                              "value": "Current chambre == actuator chambre"
-                            }
-                          ],
-                          "outputParams": []
-                        },
-                        "children": [],
-                        "id": "016737b6-d4a0-4e92-b00a-b5ae09916070",
-                        "type": "action"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "TraitementMajCapt",
-                          "op": {
-                            "type": "boolean",
-                            "value": "false"
-                          }
-                        },
-                        "children": [],
-                        "id": "47d801ea-715f-4a49-bea2-5b3a2906f07f",
-                        "type": "set"
+                    "properties": {
+                      "destination": "current_CaptChambreP",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptChambreP"
                       }
-                    ],
-                    "id": "ddef0821-599b-4bfa-b74b-7ea292a9f804",
-                    "type": "sequence"
-                  }
-                ],
-                "id": "3d37d23e-f3f6-422f-8d27-bf528cb3b01b",
-                "type": "condition"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "current_CaptCuisineP"
+                    },
+                    "children": [],
+                    "id": "9360105a-bbb4-45f1-9d17-2f37a34ffd0b",
+                    "type": "set"
                   },
-                  "op2": {
-                    "type": "entityKnowledge",
-                    "value": "actuator_CaptCuisineP"
-                  },
-                  "op": "!="
-                },
-                "children": [
                   {
                     "activated": true,
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {},
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "Log",
-                          "inputParams": [
-                            {
-                              "key": "MessageLog",
-                              "type": "string",
-                              "value": "current cuisine == actuactor cusisine"
-                            }
-                          ],
-                          "outputParams": []
-                        },
-                        "children": [],
-                        "id": "3ffeb257-8450-4f7f-9a75-a4e89e419d26",
-                        "type": "action"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "TraitementMajCapt",
-                          "op": {
-                            "type": "boolean",
-                            "value": "false"
-                          }
-                        },
-                        "children": [],
-                        "id": "3b7e703b-8438-4393-9632-76d0e0015491",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "current_CaptCuisineP",
-                          "op": {
-                            "type": "entityKnowledge",
-                            "value": "actuator_CaptCuisineP"
-                          }
-                        },
-                        "children": [],
-                        "id": "b8f07207-96e0-46fe-8c15-30dd831eee22",
-                        "type": "set"
-                      }
-                    ],
-                    "id": "b5c98546-96ee-4404-a5b7-c4d5b20d060e",
-                    "type": "sequence"
-                  }
-                ],
-                "id": "9832a45a-6058-44e1-9c03-f459688f8a37",
-                "type": "condition"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "current_CaptSalonP"
+                    "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Current chambre == actuator chambre"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "016737b6-d4a0-4e92-b00a-b5ae09916070",
+                    "type": "action"
                   },
-                  "op2": {
-                    "type": "entityKnowledge",
-                    "value": "actuator_CaptSalonP"
-                  },
-                  "op": "!="
-                },
-                "children": [
                   {
                     "activated": true,
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {},
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "Log",
-                          "inputParams": [
-                            {
-                              "key": "MessageLog",
-                              "type": "string",
-                              "value": "Current salon == actuator salon"
-                            }
-                          ],
-                          "outputParams": []
-                        },
-                        "children": [],
-                        "id": "eed0b85d-718e-4a64-8abf-84d8ef6d5d78",
-                        "type": "action"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "TraitementMajCapt",
-                          "op": {
-                            "type": "boolean",
-                            "value": "false"
-                          }
-                        },
-                        "children": [],
-                        "id": "594b96d0-a893-4f0e-9187-172a765431bc",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "current_CaptSalonP",
-                          "op": {
-                            "type": "entityKnowledge",
-                            "value": "actuator_CaptSalonP"
-                          }
-                        },
-                        "children": [],
-                        "id": "fc84784f-97da-4038-ae75-9346152c647e",
-                        "type": "set"
+                    "properties": {
+                      "destination": "TraitementMajCapt",
+                      "op": {
+                        "type": "boolean",
+                        "value": "false"
                       }
-                    ],
-                    "id": "7385c799-170e-41f0-9576-c2dff978e5e3",
-                    "type": "sequence"
-                  }
-                ],
-                "id": "dc03a25a-2aa0-47ba-8379-42cacaf18d2a",
-                "type": "condition"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "current_CaptSDBP"
-                  },
-                  "op2": {
-                    "type": "entityKnowledge",
-                    "value": "actuator_CaptSDBP"
-                  },
-                  "op": "!="
-                },
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
                     },
-                    "properties": {},
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "Log",
-                          "inputParams": [
-                            {
-                              "key": "MessageLog",
-                              "type": "string",
-                              "value": "Current SBD== actuator SDB"
-                            }
-                          ],
-                          "outputParams": []
-                        },
-                        "children": [],
-                        "id": "f351e2d4-d2ef-4aad-a9d0-c4f5c4536438",
-                        "type": "action"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "TraitementMajCapt",
-                          "op": {
-                            "type": "boolean",
-                            "value": "false"
-                          }
-                        },
-                        "children": [],
-                        "id": "1156d71b-544b-4796-a654-da8e05141c8f",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "current_CaptSDBP",
-                          "op": {
-                            "type": "entityKnowledge",
-                            "value": "actuator_CaptSDBP"
-                          }
-                        },
-                        "children": [],
-                        "id": "793b17ae-1f9d-4bc0-b532-593eda80f5ae",
-                        "type": "set"
-                      }
-                    ],
-                    "id": "d738d6a9-a65b-4ac4-b7a0-f105f0082004",
-                    "type": "sequence"
+                    "children": [],
+                    "id": "47d801ea-715f-4a49-bea2-5b3a2906f07f",
+                    "type": "set"
                   }
                 ],
-                "id": "1099d0f2-54c5-409a-8087-ba205da1c123",
-                "type": "condition"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "current_CaptCouloirP"
-                  },
-                  "op2": {
-                    "type": "entityKnowledge",
-                    "value": "actuator_CaptCouloirP"
-                  },
-                  "op": "!="
-                },
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {},
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "Log",
-                          "inputParams": [
-                            {
-                              "key": "MessageLog",
-                              "type": "string",
-                              "value": "Current couloir == actuator couloir"
-                            }
-                          ],
-                          "outputParams": []
-                        },
-                        "children": [],
-                        "id": "5f000528-72f2-48a1-b1c1-73187bed7120",
-                        "type": "action"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "TraitementMajCapt",
-                          "op": {
-                            "type": "boolean",
-                            "value": "false"
-                          }
-                        },
-                        "children": [],
-                        "id": "9c9c23c3-1e43-48c4-bfc2-81e8e4a5d82f",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "current_CaptCouloirP",
-                          "op": {
-                            "type": "entityKnowledge",
-                            "value": "actuator_CaptCouloirP"
-                          }
-                        },
-                        "children": [],
-                        "id": "c9f46819-1ca6-4d61-92fe-af0484c5cd72",
-                        "type": "set"
-                      }
-                    ],
-                    "id": "c8f4048b-9117-4f92-ad9f-a4ca4fd99d5f",
-                    "type": "sequence"
-                  }
-                ],
-                "id": "81a60529-1a07-45ca-b103-a74b7550d091",
-                "type": "condition"
+                "id": "ddef0821-599b-4bfa-b74b-7ea292a9f804",
+                "type": "sequence"
               }
             ],
-            "id": "c36c31b2-0fd5-426e-9255-5d1088d15586",
-            "type": "parallel"
+            "id": "3d37d23e-f3f6-422f-8d27-bf528cb3b01b",
+            "type": "condition"
           },
           {
-            "activated": false,
+            "activated": true,
             "metadata": {
               "label": ""
             },
-            "properties": {},
-            "children": [],
-            "id": "b21086e7-669b-4699-9aa7-e5a637aa9918",
-            "type": "success"
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "current_CaptCuisineP"
+              },
+              "op2": {
+                "type": "entityKnowledge",
+                "value": "actuator_CaptCuisineP"
+              },
+              "op": "!="
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "current cuisine == actuactor cusisine"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "3ffeb257-8450-4f7f-9a75-a4e89e419d26",
+                    "type": "action"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TraitementMajCapt",
+                      "op": {
+                        "type": "boolean",
+                        "value": "false"
+                      }
+                    },
+                    "children": [],
+                    "id": "3b7e703b-8438-4393-9632-76d0e0015491",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "current_CaptCuisineP",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptCuisineP"
+                      }
+                    },
+                    "children": [],
+                    "id": "b8f07207-96e0-46fe-8c15-30dd831eee22",
+                    "type": "set"
+                  }
+                ],
+                "id": "b5c98546-96ee-4404-a5b7-c4d5b20d060e",
+                "type": "sequence"
+              }
+            ],
+            "id": "9832a45a-6058-44e1-9c03-f459688f8a37",
+            "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "current_CaptSalonP"
+              },
+              "op2": {
+                "type": "entityKnowledge",
+                "value": "actuator_CaptSalonP"
+              },
+              "op": "!="
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Current salon == actuator salon"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "eed0b85d-718e-4a64-8abf-84d8ef6d5d78",
+                    "type": "action"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TraitementMajCapt",
+                      "op": {
+                        "type": "boolean",
+                        "value": "false"
+                      }
+                    },
+                    "children": [],
+                    "id": "594b96d0-a893-4f0e-9187-172a765431bc",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "current_CaptSalonP",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptSalonP"
+                      }
+                    },
+                    "children": [],
+                    "id": "fc84784f-97da-4038-ae75-9346152c647e",
+                    "type": "set"
+                  }
+                ],
+                "id": "7385c799-170e-41f0-9576-c2dff978e5e3",
+                "type": "sequence"
+              }
+            ],
+            "id": "dc03a25a-2aa0-47ba-8379-42cacaf18d2a",
+            "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "current_CaptSDBP"
+              },
+              "op2": {
+                "type": "entityKnowledge",
+                "value": "actuator_CaptSDBP"
+              },
+              "op": "!="
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Current SBD== actuator SDB"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "f351e2d4-d2ef-4aad-a9d0-c4f5c4536438",
+                    "type": "action"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TraitementMajCapt",
+                      "op": {
+                        "type": "boolean",
+                        "value": "false"
+                      }
+                    },
+                    "children": [],
+                    "id": "1156d71b-544b-4796-a654-da8e05141c8f",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "current_CaptSDBP",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptSDBP"
+                      }
+                    },
+                    "children": [],
+                    "id": "793b17ae-1f9d-4bc0-b532-593eda80f5ae",
+                    "type": "set"
+                  }
+                ],
+                "id": "d738d6a9-a65b-4ac4-b7a0-f105f0082004",
+                "type": "sequence"
+              }
+            ],
+            "id": "1099d0f2-54c5-409a-8087-ba205da1c123",
+            "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "current_CaptCouloirP"
+              },
+              "op2": {
+                "type": "entityKnowledge",
+                "value": "actuator_CaptCouloirP"
+              },
+              "op": "!="
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Current couloir == actuator couloir"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "5f000528-72f2-48a1-b1c1-73187bed7120",
+                    "type": "action"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TraitementMajCapt",
+                      "op": {
+                        "type": "boolean",
+                        "value": "false"
+                      }
+                    },
+                    "children": [],
+                    "id": "9c9c23c3-1e43-48c4-bfc2-81e8e4a5d82f",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "current_CaptCouloirP",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "actuator_CaptCouloirP"
+                      }
+                    },
+                    "children": [],
+                    "id": "c9f46819-1ca6-4d61-92fe-af0484c5cd72",
+                    "type": "set"
+                  }
+                ],
+                "id": "c8f4048b-9117-4f92-ad9f-a4ca4fd99d5f",
+                "type": "sequence"
+              }
+            ],
+            "id": "81a60529-1a07-45ca-b103-a74b7550d091",
+            "type": "condition"
           }
         ],
-        "id": "c53ff71a-bfe3-4249-a85c-5c9fb47844f1",
-        "type": "priority"
+        "id": "c36c31b2-0fd5-426e-9255-5d1088d15586",
+        "type": "parallel"
       }
     ],
     "id": "babec128-c81d-47a9-8975-041e98ddbcae"
