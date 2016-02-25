@@ -120,7 +120,7 @@
                         "type": "entityKnowledge",
                         "value": "Time_Dejeuner_Max"
                       },
-                      "op": "<"
+                      "op": "<="
                     },
                     "children": [
                       {
