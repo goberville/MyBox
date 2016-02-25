@@ -116,7 +116,7 @@
                         "type": "entityKnowledge",
                         "value": "Time_Douche_Max"
                       },
-                      "op": "<"
+                      "op": "<="
                     },
                     "children": [
                       {
