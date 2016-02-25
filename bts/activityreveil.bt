@@ -116,7 +116,7 @@
                         "type": "entityKnowledge",
                         "value": "Time_Reveil_Max"
                       },
-                      "op": "<"
+                      "op": "<="
                     },
                     "children": [
                       {
