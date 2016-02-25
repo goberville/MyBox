@@ -173,16 +173,47 @@
                         "metadata": {
                           "label": ""
                         },
-                        "properties": {
-                          "behavior": {
-                            "type": "uriPath",
-                            "value": "bts/MajCurrentCapteurP.bt"
+                        "properties": {},
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "Fait une mise à jour capteur"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "b099a344-45ef-405a-a437-36c6c160c5fc",
+                            "type": "action"
                           },
-                          "inputParams": []
-                        },
-                        "children": [],
-                        "id": "cfa6d293-5738-4772-8804-018e5c39410e",
-                        "type": "embedded"
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "behavior": {
+                                "type": "uriPath",
+                                "value": "bts/MajCurrentCapteurP.bt"
+                              },
+                              "inputParams": []
+                            },
+                            "children": [],
+                            "id": "cfa6d293-5738-4772-8804-018e5c39410e",
+                            "type": "embedded"
+                          }
+                        ],
+                        "id": "d5986166-1293-4531-ac3d-41da64be245b",
+                        "type": "sequence"
                       },
                       {
                         "activated": true,
@@ -190,9 +221,40 @@
                           "label": ""
                         },
                         "properties": {},
-                        "children": [],
-                        "id": "8bddd394-c322-4e58-975b-e41abc3a0c92",
-                        "type": "success"
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "Mise à jour capteur KO"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "6502569e-cad5-41bb-ad63-c43f7f1bd23c",
+                            "type": "action"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [],
+                            "id": "8bddd394-c322-4e58-975b-e41abc3a0c92",
+                            "type": "success"
+                          }
+                        ],
+                        "id": "d837a528-bece-4da6-beb7-e66ffa6ba591",
+                        "type": "sequence"
                       }
                     ],
                     "id": "1d813625-21a8-4da5-8423-d19c827f90e2",
