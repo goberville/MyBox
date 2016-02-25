@@ -185,6 +185,22 @@
                                     "children": [],
                                     "id": "ea3dc37d-4cd3-451e-932c-b6ad329ab846",
                                     "type": "set"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "TraitementMajCapt",
+                                      "op": {
+                                        "type": "boolean",
+                                        "value": "true"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "7c1cb685-0ce8-4036-be87-d56d665969f9",
+                                    "type": "set"
                                   }
                                 ],
                                 "id": "644ab51a-4860-4da6-a8c4-ff6976a071db",
@@ -574,6 +590,22 @@
                                 "children": [],
                                 "id": "c1e63272-c3ce-4117-8457-60389eed1c62",
                                 "type": "embedded"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "",
+                                  "op": {
+                                    "type": "string",
+                                    "value": ""
+                                  }
+                                },
+                                "children": [],
+                                "id": "8e01f3a3-8ec2-4933-a61f-960418fe0c0d",
+                                "type": "set"
                               },
                               {
                                 "activated": true,
