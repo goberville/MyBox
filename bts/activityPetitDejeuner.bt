@@ -510,22 +510,6 @@
                               {
                                 "activated": true,
                                 "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "destination": "TaskActivityPetitDejeuner",
-                                  "op": {
-                                    "type": "integer",
-                                    "value": "2"
-                                  }
-                                },
-                                "children": [],
-                                "id": "c04598f6-2353-44bc-8498-2b5452061dc9",
-                                "type": "set"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
                                   "label": "Ctrl si un autre capteur est passé en Presence"
                                 },
                                 "properties": {
@@ -698,6 +682,22 @@
                                 "children": [],
                                 "id": "9857f4d2-a4f4-40b8-8907-3fbdd664b0c5",
                                 "type": "action"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "TaskActivityPetitDejeuner",
+                                  "op": {
+                                    "type": "integer",
+                                    "value": "3"
+                                  }
+                                },
+                                "children": [],
+                                "id": "c04598f6-2353-44bc-8498-2b5452061dc9",
+                                "type": "set"
                               }
                             ],
                             "id": "045764b1-c48d-4956-9d3b-6d52f8eca531",
