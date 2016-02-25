@@ -572,6 +572,74 @@
                               {
                                 "activated": true,
                                 "metadata": {
+                                  "label": "Si capteur chambre à changé d'état"
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptCouloirP"
+                                  },
+                                  "op2": {
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptCouloirP"
+                                  },
+                                  "op": "!="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {},
+                                    "children": [
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "name": "Log",
+                                          "inputParams": [
+                                            {
+                                              "key": "MessageLog",
+                                              "type": "string",
+                                              "value": "Capteur couloir à changer 1 à 0"
+                                            }
+                                          ],
+                                          "outputParams": []
+                                        },
+                                        "children": [],
+                                        "id": "1532a6da-15d6-4409-b1a0-f14dcb5369a3",
+                                        "type": "action"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "destination": "current_CaptCouloirP",
+                                          "op": {
+                                            "type": "entityKnowledge",
+                                            "value": "actuator_CaptCouloirP"
+                                          }
+                                        },
+                                        "children": [],
+                                        "id": "de5f3414-3462-4d0e-adcc-4673bdea0824",
+                                        "type": "set"
+                                      }
+                                    ],
+                                    "id": "69f0e101-2486-4c45-84d1-8776d2386d1a",
+                                    "type": "sequence"
+                                  }
+                                ],
+                                "id": "b8c5c50e-d986-4cb3-a7c9-27db6d91c956",
+                                "type": "condition"
+                              },
+                              {
+                                "activated": false,
+                                "metadata": {
                                   "label": ""
                                 },
                                 "properties": {
