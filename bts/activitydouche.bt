@@ -458,7 +458,7 @@
                                             {
                                               "key": "MessageLog",
                                               "type": "string",
-                                              "value": "Capteur Salle de bain à changer 1 à 0"
+                                              "value": "Capteur Salle de bain à changer 0 à 1"
                                             }
                                           ],
                                           "outputParams": []
@@ -534,6 +534,74 @@
                                 "children": [
                                   {
                                     "activated": true,
+                                    "metadata": {
+                                      "label": "Si capteur chambre à changé d'état"
+                                    },
+                                    "properties": {
+                                      "op1": {
+                                        "type": "entityKnowledge",
+                                        "value": "current_CaptCuisineP"
+                                      },
+                                      "op2": {
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptCuisineP"
+                                      },
+                                      "op": "!="
+                                    },
+                                    "children": [
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {},
+                                        "children": [
+                                          {
+                                            "activated": true,
+                                            "metadata": {
+                                              "label": ""
+                                            },
+                                            "properties": {
+                                              "name": "Log",
+                                              "inputParams": [
+                                                {
+                                                  "key": "MessageLog",
+                                                  "type": "string",
+                                                  "value": "Capteur cuisine  à changer 1 à 0"
+                                                }
+                                              ],
+                                              "outputParams": []
+                                            },
+                                            "children": [],
+                                            "id": "6dc2573d-0b8a-4e9e-a413-1bc6f62fdcf9",
+                                            "type": "action"
+                                          },
+                                          {
+                                            "activated": true,
+                                            "metadata": {
+                                              "label": ""
+                                            },
+                                            "properties": {
+                                              "destination": "current_CaptSDBP",
+                                              "op": {
+                                                "type": "entityKnowledge",
+                                                "value": "actuator_CaptSDBP"
+                                              }
+                                            },
+                                            "children": [],
+                                            "id": "778331e0-1cbc-4e73-a788-0ed64a4858a8",
+                                            "type": "set"
+                                          }
+                                        ],
+                                        "id": "00e04591-b5f0-4509-ba85-26370d86e047",
+                                        "type": "sequence"
+                                      }
+                                    ],
+                                    "id": "c484c319-3f40-4205-ac75-daaa64e5c4bf",
+                                    "type": "condition"
+                                  },
+                                  {
+                                    "activated": false,
                                     "metadata": {
                                       "label": ""
                                     },
