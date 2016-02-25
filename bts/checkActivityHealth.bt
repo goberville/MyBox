@@ -52,7 +52,7 @@
             "type": "embedded"
           },
           {
-            "activated": false,
+            "activated": true,
             "metadata": {
               "label": ""
             },
