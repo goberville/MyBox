@@ -69,6 +69,22 @@
             "metadata": {
               "label": ""
             },
+            "properties": {
+              "destination": "TraitementMajCapt",
+              "op": {
+                "type": "boolean",
+                "value": "false"
+              }
+            },
+            "children": [],
+            "id": "ba6f02be-d74d-4646-90f4-98a6a13bdd7b",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
             "properties": {},
             "children": [
               {
