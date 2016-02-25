@@ -74,8 +74,14 @@
                           "label": ""
                         },
                         "properties": {
-                          "name": "",
-                          "inputParams": [],
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Current chambre == actuator chambre"
+                            }
+                          ],
                           "outputParams": []
                         },
                         "children": [],
@@ -120,8 +126,14 @@
                           "label": ""
                         },
                         "properties": {
-                          "name": "",
-                          "inputParams": [],
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "current cuisine == actuactor cusisine"
+                            }
+                          ],
                           "outputParams": []
                         },
                         "children": [],
@@ -182,8 +194,14 @@
                           "label": ""
                         },
                         "properties": {
-                          "name": "",
-                          "inputParams": [],
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Current salon == actuator salon"
+                            }
+                          ],
                           "outputParams": []
                         },
                         "children": [],
@@ -236,16 +254,47 @@
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {
-                      "destination": "current_CaptSDBP",
-                      "op": {
-                        "type": "entityKnowledge",
-                        "value": "actuator_CaptSDBP"
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Current SBD== actuator SDB"
+                            }
+                          ],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "f351e2d4-d2ef-4aad-a9d0-c4f5c4536438",
+                        "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "current_CaptSDBP",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "actuator_CaptSDBP"
+                          }
+                        },
+                        "children": [],
+                        "id": "793b17ae-1f9d-4bc0-b532-593eda80f5ae",
+                        "type": "set"
                       }
-                    },
-                    "children": [],
-                    "id": "793b17ae-1f9d-4bc0-b532-593eda80f5ae",
-                    "type": "set"
+                    ],
+                    "id": "d738d6a9-a65b-4ac4-b7a0-f105f0082004",
+                    "type": "sequence"
                   }
                 ],
                 "id": "1099d0f2-54c5-409a-8087-ba205da1c123",
@@ -273,16 +322,47 @@
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {
-                      "destination": "current_CaptCouloirP",
-                      "op": {
-                        "type": "entityKnowledge",
-                        "value": "actuator_CaptCouloirP"
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Current couloir == actuator couloir"
+                            }
+                          ],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "5f000528-72f2-48a1-b1c1-73187bed7120",
+                        "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "current_CaptCouloirP",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "actuator_CaptCouloirP"
+                          }
+                        },
+                        "children": [],
+                        "id": "c9f46819-1ca6-4d61-92fe-af0484c5cd72",
+                        "type": "set"
                       }
-                    },
-                    "children": [],
-                    "id": "c9f46819-1ca6-4d61-92fe-af0484c5cd72",
-                    "type": "set"
+                    ],
+                    "id": "c8f4048b-9117-4f92-ad9f-a4ca4fd99d5f",
+                    "type": "sequence"
                   }
                 ],
                 "id": "81a60529-1a07-45ca-b103-a74b7550d091",
