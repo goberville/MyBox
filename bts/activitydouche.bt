@@ -776,7 +776,7 @@
               {
                 "activated": true,
                 "metadata": {
-                  "label": "Indique pas de traitement sur  activite"
+                  "label": "CTRL si Activité en cours "
                 },
                 "properties": {
                   "active": "false"
@@ -794,7 +794,7 @@
                       },
                       "op2": {
                         "type": "integer",
-                        "value": "3"
+                        "value": "1"
                       },
                       "op": "=="
                     },
