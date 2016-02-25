@@ -335,6 +335,16 @@
                 ],
                 "id": "e58950a0-edf1-4f6a-b527-bdde8ea69119",
                 "type": "priority"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [],
+                "id": "f56bd027-d0b3-4566-b2dd-d37cc31cc471",
+                "type": "success"
               }
             ],
             "id": "884c216e-6309-4d7c-9667-dc20a3ce01f5",
