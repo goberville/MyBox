@@ -563,6 +563,26 @@
                           {
                             "activated": true,
                             "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "Mamie est reveillée"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "9857f4d2-a4f4-40b8-8907-3fbdd664b0c5",
+                            "type": "action"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
                               "label": "Ctrl si un autre capteur est passé en Presence"
                             },
                             "properties": {
@@ -715,26 +735,6 @@
                             ],
                             "id": "4cbe9888-985f-49f2-a7ad-0536844f101b",
                             "type": "priority"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "name": "Log",
-                              "inputParams": [
-                                {
-                                  "key": "MessageLog",
-                                  "type": "string",
-                                  "value": "Mamie est reveillée"
-                                }
-                              ],
-                              "outputParams": []
-                            },
-                            "children": [],
-                            "id": "9857f4d2-a4f4-40b8-8907-3fbdd664b0c5",
-                            "type": "action"
                           }
                         ],
                         "id": "045764b1-c48d-4956-9d3b-6d52f8eca531",
@@ -773,7 +773,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": false,
+                        "activated": true,
                         "metadata": {
                           "label": ""
                         },
