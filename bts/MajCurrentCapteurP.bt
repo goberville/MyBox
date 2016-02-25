@@ -50,16 +50,41 @@
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {
-                      "destination": "current_CaptChambreP",
-                      "op": {
-                        "type": "entityKnowledge",
-                        "value": "actuator_CaptChambreP"
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "current_CaptChambreP",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "actuator_CaptChambreP"
+                          }
+                        },
+                        "children": [],
+                        "id": "9360105a-bbb4-45f1-9d17-2f37a34ffd0b",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "",
+                          "inputParams": [],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "016737b6-d4a0-4e92-b00a-b5ae09916070",
+                        "type": "action"
                       }
-                    },
-                    "children": [],
-                    "id": "9360105a-bbb4-45f1-9d17-2f37a34ffd0b",
-                    "type": "set"
+                    ],
+                    "id": "ddef0821-599b-4bfa-b74b-7ea292a9f804",
+                    "type": "sequence"
                   }
                 ],
                 "id": "3d37d23e-f3f6-422f-8d27-bf528cb3b01b",
@@ -87,16 +112,41 @@
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {
-                      "destination": "current_CaptCuisineP",
-                      "op": {
-                        "type": "entityKnowledge",
-                        "value": "actuator_CaptCuisineP"
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "",
+                          "inputParams": [],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "3ffeb257-8450-4f7f-9a75-a4e89e419d26",
+                        "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "current_CaptCuisineP",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "actuator_CaptCuisineP"
+                          }
+                        },
+                        "children": [],
+                        "id": "b8f07207-96e0-46fe-8c15-30dd831eee22",
+                        "type": "set"
                       }
-                    },
-                    "children": [],
-                    "id": "b8f07207-96e0-46fe-8c15-30dd831eee22",
-                    "type": "set"
+                    ],
+                    "id": "b5c98546-96ee-4404-a5b7-c4d5b20d060e",
+                    "type": "sequence"
                   }
                 ],
                 "id": "9832a45a-6058-44e1-9c03-f459688f8a37",
