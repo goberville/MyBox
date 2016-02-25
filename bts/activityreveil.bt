@@ -194,6 +194,22 @@
                                         "children": [],
                                         "id": "ea3dc37d-4cd3-451e-932c-b6ad329ab846",
                                         "type": "set"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "destination": "TraitementMajCapt",
+                                          "op": {
+                                            "type": "boolean",
+                                            "value": "true"
+                                          }
+                                        },
+                                        "children": [],
+                                        "id": "8e641243-8cd9-4f99-80cb-8b71fab061e6",
+                                        "type": "set"
                                       }
                                     ],
                                     "id": "644ab51a-4860-4da6-a8c4-ff6976a071db",
