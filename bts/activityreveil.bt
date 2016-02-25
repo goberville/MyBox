@@ -604,7 +604,7 @@
                                             {
                                               "key": "MessageLog",
                                               "type": "string",
-                                              "value": "Capteur couloir à changer 1 à 0"
+                                              "value": "Capteur couloir à changer 0 à 1"
                                             }
                                           ],
                                           "outputParams": []
