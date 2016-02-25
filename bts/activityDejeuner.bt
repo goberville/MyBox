@@ -809,37 +809,6 @@
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {
-                      "op1": {
-                        "type": "entityKnowledge",
-                        "value": "TaskActivityDejeuner"
-                      },
-                      "op2": {
-                        "type": "integer",
-                        "value": "0"
-                      },
-                      "op": "=="
-                    },
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {},
-                        "children": [],
-                        "id": "1514138d-abfc-451b-8a6a-c37d4ef1185d",
-                        "type": "failure"
-                      }
-                    ],
-                    "id": "cfc2e8a0-0ff2-40a5-b733-6442622d64dc",
-                    "type": "condition"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
                     "properties": {},
                     "children": [],
                     "id": "4e2960b2-6749-43e7-ac02-66bee8619a03",
