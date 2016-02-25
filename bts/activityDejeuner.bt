@@ -198,6 +198,22 @@
                                         "children": [],
                                         "id": "fd6f90eb-4791-4233-895d-a39f5ee7e566",
                                         "type": "set"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "destination": "TraitementMajCapt",
+                                          "op": {
+                                            "type": "boolean",
+                                            "value": "true"
+                                          }
+                                        },
+                                        "children": [],
+                                        "id": "f9725399-5501-4850-b43d-ba250ff6c502",
+                                        "type": "set"
                                       }
                                     ],
                                     "id": "e15ef713-8d81-413c-87f8-57dcfe3f8578",
@@ -780,60 +796,6 @@
             ],
             "id": "e535b5f8-ed9b-45f3-826b-99c56ea92804",
             "type": "sequence"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": "Indique pas de traitement sur  activite"
-            },
-            "properties": {
-              "active": "false"
-            },
-            "children": [
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "TaskActivityDejeuner"
-                  },
-                  "op2": {
-                    "type": "integer",
-                    "value": "3"
-                  },
-                  "op": "=="
-                },
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {},
-                    "children": [],
-                    "id": "ad16c68a-dc0c-4818-bc84-62fbc64c4980",
-                    "type": "failure"
-                  }
-                ],
-                "id": "9ca5c042-c457-4af4-8322-b872b71f6812",
-                "type": "condition"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {},
-                "children": [],
-                "id": "4e2960b2-6749-43e7-ac02-66bee8619a03",
-                "type": "success"
-              }
-            ],
-            "id": "6cda90e9-4da8-4e35-a771-b89879a734d0",
-            "type": "priority"
           }
         ],
         "id": "12709403-d65b-4dfc-b5af-26922363f166",
