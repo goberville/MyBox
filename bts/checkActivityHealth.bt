@@ -68,7 +68,7 @@
             "type": "embedded"
           },
           {
-            "activated": true,
+            "activated": false,
             "metadata": {
               "label": ""
             },
