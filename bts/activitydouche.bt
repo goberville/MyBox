@@ -59,7 +59,7 @@
                         "properties": {},
                         "children": [
                           {
-                            "activated": false,
+                            "activated": true,
                             "metadata": {
                               "label": ""
                             },
@@ -160,7 +160,7 @@
                                     "properties": {},
                                     "children": [
                                       {
-                                        "activated": false,
+                                        "activated": true,
                                         "metadata": {
                                           "label": ""
                                         },
@@ -252,7 +252,7 @@
                             "properties": {},
                             "children": [
                               {
-                                "activated": false,
+                                "activated": true,
                                 "metadata": {
                                   "label": ""
                                 },
@@ -296,7 +296,7 @@
                                     "properties": {},
                                     "children": [
                                       {
-                                        "activated": false,
+                                        "activated": true,
                                         "metadata": {
                                           "label": ""
                                         },
@@ -448,7 +448,7 @@
                                     "properties": {},
                                     "children": [
                                       {
-                                        "activated": false,
+                                        "activated": true,
                                         "metadata": {
                                           "label": ""
                                         },
