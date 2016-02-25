@@ -458,7 +458,7 @@
                                             {
                                               "key": "MessageLog",
                                               "type": "string",
-                                              "value": "Capteur chambre à changer 1 à 0"
+                                              "value": "Capteur cuisine à changer 1 à 0"
                                             }
                                           ],
                                           "outputParams": []
@@ -622,7 +622,7 @@
                                     {
                                       "key": "MessageLog",
                                       "type": "string",
-                                      "value": "Mamie est PetitDejeunerlée"
+                                      "value": "Mamie a dejeuné"
                                     }
                                   ],
                                   "outputParams": []
