@@ -120,7 +120,7 @@
                         "type": "entityKnowledge",
                         "value": "Time_Diner_Max"
                       },
-                      "op": "<"
+                      "op": "<="
                     },
                     "children": [
                       {
