@@ -561,10 +561,10 @@
                                           "label": ""
                                         },
                                         "properties": {
-                                          "destination": "",
+                                          "destination": "current_CaptSalonP",
                                           "op": {
-                                            "type": "string",
-                                            "value": ""
+                                            "type": "entityKnowledge",
+                                            "value": "actuator_CaptSalonP"
                                           }
                                         },
                                         "children": [],
