@@ -508,22 +508,6 @@
                               "label": ""
                             },
                             "properties": {
-                              "destination": "TaskActivityDejeuner",
-                              "op": {
-                                "type": "integer",
-                                "value": "2"
-                              }
-                            },
-                            "children": [],
-                            "id": "ee97e0c6-ce73-4b43-8674-e1beb48004cb",
-                            "type": "set"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
                               "active": "false"
                             },
                             "children": [
@@ -625,6 +609,22 @@
                             "children": [],
                             "id": "23d7238e-7cda-4605-bddf-7c113dfb7c9b",
                             "type": "action"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "destination": "TaskActivityDejeuner",
+                              "op": {
+                                "type": "integer",
+                                "value": "2"
+                              }
+                            },
+                            "children": [],
+                            "id": "ee97e0c6-ce73-4b43-8674-e1beb48004cb",
+                            "type": "set"
                           }
                         ],
                         "id": "3666d332-dfd4-4ee7-8ff8-15b1fd3b651f",
