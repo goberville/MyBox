@@ -500,7 +500,7 @@
                                     "properties": {},
                                     "children": [
                                       {
-                                        "activated": true,
+                                        "activated": false,
                                         "metadata": {
                                           "label": ""
                                         },
@@ -633,7 +633,7 @@
                                 {
                                   "key": "MessageLog",
                                   "type": "string",
-                                  "value": "Mamie est à la Coucher"
+                                  "value": "Mamie est couchée"
                                 }
                               ],
                               "outputParams": []
