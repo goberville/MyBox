@@ -481,6 +481,68 @@
                                   "label": ""
                                 },
                                 "properties": {
+                                  "op1": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op2": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op": "=="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {},
+                                    "children": [
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "name": "",
+                                          "inputParams": [],
+                                          "outputParams": []
+                                        },
+                                        "children": [],
+                                        "id": "da4f1147-0ec8-43d3-9054-77aeb2cd644d",
+                                        "type": "action"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "destination": "",
+                                          "op": {
+                                            "type": "string",
+                                            "value": ""
+                                          }
+                                        },
+                                        "children": [],
+                                        "id": "b0c0289c-de9b-4c79-af72-498e12fd660c",
+                                        "type": "set"
+                                      }
+                                    ],
+                                    "id": "9b266127-49dd-4e74-b391-6b4a0aa2a506",
+                                    "type": "sequence"
+                                  }
+                                ],
+                                "id": "8c7f973e-40e5-41e3-9f9a-365cf1343caf",
+                                "type": "condition"
+                              },
+                              {
+                                "activated": false,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
                                   "behavior": {
                                     "type": "uriPath",
                                     "value": "bts/MajCurrentCapteurP.bt"
