@@ -508,6 +508,74 @@
                               "label": ""
                             },
                             "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "current_CaptSalonP"
+                              },
+                              "op2": {
+                                "type": "entityKnowledge",
+                                "value": "actuator_CaptSalonP"
+                              },
+                              "op": "!="
+                            },
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {},
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "name": "Log",
+                                      "inputParams": [
+                                        {
+                                          "key": "MessageLog",
+                                          "type": "string",
+                                          "value": "Capteur Salon passe de 1 à 0"
+                                        }
+                                      ],
+                                      "outputParams": []
+                                    },
+                                    "children": [],
+                                    "id": "03cd97a8-db9b-49d4-b7e6-081aadaec12e",
+                                    "type": "action"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "current_CaptSalonP",
+                                      "op": {
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptSalonP"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "8ae65600-a8f3-48b0-9ca2-2692d781f033",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "cf7952b1-d64f-45d0-813c-09013d2afc55",
+                                "type": "sequence"
+                              }
+                            ],
+                            "id": "217a14b1-055e-402c-bff1-e6bfc7390595",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": false,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
                               "behavior": {
                                 "type": "uriPath",
                                 "value": "bts/MajCurrentCapteurP.bt"
