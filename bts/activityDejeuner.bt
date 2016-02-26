@@ -541,8 +541,14 @@
                                           "label": ""
                                         },
                                         "properties": {
-                                          "name": "",
-                                          "inputParams": [],
+                                          "name": "Log",
+                                          "inputParams": [
+                                            {
+                                              "key": "MessageLog",
+                                              "type": "string",
+                                              "value": ""
+                                            }
+                                          ],
                                           "outputParams": []
                                         },
                                         "children": [],
