@@ -50,7 +50,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": true,
+                        "activated": false,
                         "metadata": {
                           "label": ""
                         },
@@ -116,7 +116,7 @@
                         "type": "entityKnowledge",
                         "value": "Time_Coucher_Max"
                       },
-                      "op": "<"
+                      "op": "<="
                     },
                     "children": [
                       {
@@ -151,7 +151,7 @@
                                 "properties": {},
                                 "children": [
                                   {
-                                    "activated": true,
+                                    "activated": false,
                                     "metadata": {
                                       "label": ""
                                     },
@@ -184,22 +184,6 @@
                                     },
                                     "children": [],
                                     "id": "ea3dc37d-4cd3-451e-932c-b6ad329ab846",
-                                    "type": "set"
-                                  },
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "destination": "TraitementMajCapt",
-                                      "op": {
-                                        "type": "boolean",
-                                        "value": "true"
-                                      }
-                                    },
-                                    "children": [],
-                                    "id": "e5fc535a-92be-434e-afac-5f55fe48a0ac",
                                     "type": "set"
                                   }
                                 ],
@@ -287,7 +271,7 @@
                                 "properties": {},
                                 "children": [
                                   {
-                                    "activated": true,
+                                    "activated": false,
                                     "metadata": {
                                       "label": ""
                                     },
@@ -320,22 +304,6 @@
                                     },
                                     "children": [],
                                     "id": "02ff3663-1367-4cd1-ac99-7cae7086ec84",
-                                    "type": "set"
-                                  },
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "destination": "TraitementMajCapt",
-                                      "op": {
-                                        "type": "boolean",
-                                        "value": "false"
-                                      }
-                                    },
-                                    "children": [],
-                                    "id": "bc7d720b-ac5a-4275-99fa-7a7dd2f9ed72",
                                     "type": "set"
                                   }
                                 ],
@@ -439,7 +407,7 @@
                                 "properties": {},
                                 "children": [
                                   {
-                                    "activated": true,
+                                    "activated": false,
                                     "metadata": {
                                       "label": ""
                                     },
@@ -548,7 +516,7 @@
                                           "outputParams": []
                                         },
                                         "children": [],
-                                        "id": "5ca17234-94df-4341-958b-fb16c6638948",
+                                        "id": "da4f1147-0ec8-43d3-9054-77aeb2cd644d",
                                         "type": "action"
                                       },
                                       {
@@ -564,15 +532,15 @@
                                           }
                                         },
                                         "children": [],
-                                        "id": "7bf6f12d-ac47-4db6-8229-bb45945d585c",
+                                        "id": "b0c0289c-de9b-4c79-af72-498e12fd660c",
                                         "type": "set"
                                       }
                                     ],
-                                    "id": "0561e22a-16b1-4592-bb47-08a38e9591a2",
+                                    "id": "9b266127-49dd-4e74-b391-6b4a0aa2a506",
                                     "type": "sequence"
                                   }
                                 ],
-                                "id": "36c9135d-e6e6-4e11-8fc0-81bee5d1b814",
+                                "id": "8c7f973e-40e5-41e3-9f9a-365cf1343caf",
                                 "type": "condition"
                               },
                               {
@@ -665,7 +633,7 @@
                                 {
                                   "key": "MessageLog",
                                   "type": "string",
-                                  "value": "Mamie est Couchée"
+                                  "value": "Mamie est à la Coucher"
                                 }
                               ],
                               "outputParams": []
@@ -727,7 +695,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": true,
+                        "activated": false,
                         "metadata": {
                           "label": ""
                         },
@@ -880,7 +848,7 @@
                 },
                 "properties": {},
                 "children": [],
-                "id": "3eee139a-8563-46b0-88c6-a32fab6ac09b",
+                "id": "506ea15d-7120-4404-848e-4b783b10780e",
                 "type": "success"
               }
             ],
