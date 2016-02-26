@@ -772,60 +772,6 @@
                 ],
                 "id": "fe6f566f-a502-4ccd-9309-536b0a57219b",
                 "type": "condition"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": "Indique pas de traitement sur  activite"
-                },
-                "properties": {
-                  "active": "false"
-                },
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "op1": {
-                        "type": "entityKnowledge",
-                        "value": "TaskActivitySieste"
-                      },
-                      "op2": {
-                        "type": "integer",
-                        "value": "3"
-                      },
-                      "op": "=="
-                    },
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {},
-                        "children": [],
-                        "id": "abb4c6dd-783f-4d11-856d-339f5f0cc239",
-                        "type": "failure"
-                      }
-                    ],
-                    "id": "c96bf20e-9256-4c52-8df8-f07f0b45c61f",
-                    "type": "condition"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {},
-                    "children": [],
-                    "id": "630371c2-3fb3-4d4f-8c3f-6c79087025fc",
-                    "type": "success"
-                  }
-                ],
-                "id": "68c2e46c-0d7c-4e1b-9c6c-c941089d0044",
-                "type": "priority"
               }
             ],
             "id": "d14344bf-ef45-4840-8581-8e539d7c5878",
