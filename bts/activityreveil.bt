@@ -603,22 +603,6 @@
                                           "label": ""
                                         },
                                         "properties": {
-                                          "destination": "current_CaptCouloirP",
-                                          "op": {
-                                            "type": "entityKnowledge",
-                                            "value": "actuator_CaptCouloirP"
-                                          }
-                                        },
-                                        "children": [],
-                                        "id": "de5f3414-3462-4d0e-adcc-4673bdea0824",
-                                        "type": "set"
-                                      },
-                                      {
-                                        "activated": true,
-                                        "metadata": {
-                                          "label": ""
-                                        },
-                                        "properties": {
                                           "name": "Log",
                                           "inputParams": [
                                             {
@@ -632,6 +616,22 @@
                                         "children": [],
                                         "id": "1532a6da-15d6-4409-b1a0-f14dcb5369a3",
                                         "type": "action"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "destination": "current_CaptCouloirP",
+                                          "op": {
+                                            "type": "entityKnowledge",
+                                            "value": "actuator_CaptCouloirP"
+                                          }
+                                        },
+                                        "children": [],
+                                        "id": "de5f3414-3462-4d0e-adcc-4673bdea0824",
+                                        "type": "set"
                                       }
                                     ],
                                     "id": "69f0e101-2486-4c45-84d1-8776d2386d1a",
