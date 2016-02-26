@@ -257,6 +257,26 @@
             ],
             "id": "7be7751a-66dd-48bd-b1d9-1fda3364d5f0",
             "type": "until"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "boolean",
+                "value": "false"
+              },
+              "op2": {
+                "type": "boolean",
+                "value": "true"
+              },
+              "op": "=="
+            },
+            "children": [],
+            "id": "0974231f-d2f2-4a76-adeb-b102fb156219",
+            "type": "until"
           }
         ],
         "id": "850b1858-3207-4e4c-a0be-71e26bb42c6f",
