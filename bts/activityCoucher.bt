@@ -524,13 +524,13 @@
                                     "properties": {
                                       "op1": {
                                         "type": "entityKnowledge",
-                                        "value": "true"
+                                        "value": "current_CaptSalonP"
                                       },
                                       "op2": {
                                         "type": "entityKnowledge",
-                                        "value": "true"
+                                        "value": "actuator_CaptSalonP"
                                       },
-                                      "op": "=="
+                                      "op": "!="
                                     },
                                     "children": [
                                       {
@@ -566,10 +566,10 @@
                                               "label": ""
                                             },
                                             "properties": {
-                                              "destination": "",
+                                              "destination": "current_CaptSalonP",
                                               "op": {
-                                                "type": "string",
-                                                "value": ""
+                                                "type": "entityKnowledge",
+                                                "value": "actuator_CaptSalonP"
                                               }
                                             },
                                             "children": [],
