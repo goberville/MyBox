@@ -518,11 +518,11 @@
                                 },
                                 "properties": {
                                   "op1": {
-                                    "type": "boolean",
-                                    "value": "true"
+                                    "type": "entityKnowledge",
+                                    "value": ""
                                   },
                                   "op2": {
-                                    "type": "boolean",
+                                    "type": "entityKnowledge",
                                     "value": "true"
                                   },
                                   "op": "=="
