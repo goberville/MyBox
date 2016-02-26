@@ -512,6 +512,68 @@
                             },
                             "children": [
                               {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op2": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op": "=="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {},
+                                    "children": [
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "name": "",
+                                          "inputParams": [],
+                                          "outputParams": []
+                                        },
+                                        "children": [],
+                                        "id": "b24e8315-75ef-417c-b6fa-ab87588f4530",
+                                        "type": "action"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "destination": "",
+                                          "op": {
+                                            "type": "string",
+                                            "value": ""
+                                          }
+                                        },
+                                        "children": [],
+                                        "id": "bae61670-9a8b-4b45-b2b2-35c0566a1cc2",
+                                        "type": "set"
+                                      }
+                                    ],
+                                    "id": "45dc1730-b232-4a7e-9ab5-7c943de03cac",
+                                    "type": "sequence"
+                                  }
+                                ],
+                                "id": "df3224ca-3ee1-4167-8bcc-17cbd190d0be",
+                                "type": "condition"
+                              },
+                              {
                                 "activated": false,
                                 "metadata": {
                                   "label": ""
