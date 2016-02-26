@@ -522,6 +522,74 @@
                                       "label": ""
                                     },
                                     "properties": {
+                                      "op1": {
+                                        "type": "entityKnowledge",
+                                        "value": "true"
+                                      },
+                                      "op2": {
+                                        "type": "entityKnowledge",
+                                        "value": "true"
+                                      },
+                                      "op": "=="
+                                    },
+                                    "children": [
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {},
+                                        "children": [
+                                          {
+                                            "activated": true,
+                                            "metadata": {
+                                              "label": ""
+                                            },
+                                            "properties": {
+                                              "name": "Log",
+                                              "inputParams": [
+                                                {
+                                                  "key": "MessageLog",
+                                                  "type": "string",
+                                                  "value": "Capteur salon passe de 1 à 0"
+                                                }
+                                              ],
+                                              "outputParams": []
+                                            },
+                                            "children": [],
+                                            "id": "5ca17234-94df-4341-958b-fb16c6638948",
+                                            "type": "action"
+                                          },
+                                          {
+                                            "activated": true,
+                                            "metadata": {
+                                              "label": ""
+                                            },
+                                            "properties": {
+                                              "destination": "",
+                                              "op": {
+                                                "type": "string",
+                                                "value": ""
+                                              }
+                                            },
+                                            "children": [],
+                                            "id": "7bf6f12d-ac47-4db6-8229-bb45945d585c",
+                                            "type": "set"
+                                          }
+                                        ],
+                                        "id": "0561e22a-16b1-4592-bb47-08a38e9591a2",
+                                        "type": "sequence"
+                                      }
+                                    ],
+                                    "id": "36c9135d-e6e6-4e11-8fc0-81bee5d1b814",
+                                    "type": "condition"
+                                  },
+                                  {
+                                    "activated": false,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
                                       "behavior": {
                                         "type": "uriPath",
                                         "value": "bts/MajCurrentCapteurP.bt"
