@@ -345,6 +345,22 @@
                     "children": [],
                     "id": "f0e7151b-93b4-408d-bbe9-a76567c2e9a6",
                     "type": "embedded"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "behavior": {
+                        "type": "uriPath",
+                        "value": "bts/MajCurrentCapteurP.bt"
+                      },
+                      "inputParams": []
+                    },
+                    "children": [],
+                    "id": "5fd9a4d4-5316-4603-8bdd-9dc1b21425c2",
+                    "type": "embedded"
                   }
                 ],
                 "id": "11a6d121-5310-4d02-81cb-c36f00536129",
