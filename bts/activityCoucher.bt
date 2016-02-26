@@ -353,20 +353,20 @@
                     ],
                     "id": "7ae1218c-3ead-4ac8-b3b4-604fd02b0d98",
                     "type": "condition"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {},
-                    "children": [],
-                    "id": "85e7b48d-e417-4164-9fde-a8b9c8fc4c62",
-                    "type": "success"
                   }
                 ],
                 "id": "e58950a0-edf1-4f6a-b527-bdde8ea69119",
                 "type": "priority"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [],
+                "id": "85e7b48d-e417-4164-9fde-a8b9c8fc4c62",
+                "type": "success"
               }
             ],
             "id": "884c216e-6309-4d7c-9667-dc20a3ce01f5",
