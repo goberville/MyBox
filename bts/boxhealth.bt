@@ -354,6 +354,54 @@
                     "properties": {
                       "behavior": {
                         "type": "uriPath",
+                        "value": "bts/activitySieste.bt"
+                      },
+                      "inputParams": []
+                    },
+                    "children": [],
+                    "id": "954e30ac-a93a-4e19-b1c6-2f1e882cb06c",
+                    "type": "embedded"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "behavior": {
+                        "type": "uriPath",
+                        "value": "bts/activityDiner.bt"
+                      },
+                      "inputParams": []
+                    },
+                    "children": [],
+                    "id": "115d0448-04b8-45bd-b63b-9c0cdd0bb452",
+                    "type": "embedded"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "behavior": {
+                        "type": "uriPath",
+                        "value": "bts/activityCoucher.bt"
+                      },
+                      "inputParams": []
+                    },
+                    "children": [],
+                    "id": "6ba0031e-beeb-4c89-adb2-e4ecd933f5ef",
+                    "type": "embedded"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "behavior": {
+                        "type": "uriPath",
                         "value": "bts/MajCurrentCapteurP.bt"
                       },
                       "inputParams": []
