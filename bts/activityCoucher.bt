@@ -872,6 +872,16 @@
                 ],
                 "id": "fe6f566f-a502-4ccd-9309-536b0a57219b",
                 "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [],
+                "id": "3eee139a-8563-46b0-88c6-a32fab6ac09b",
+                "type": "success"
               }
             ],
             "id": "d14344bf-ef45-4840-8581-8e539d7c5878",
