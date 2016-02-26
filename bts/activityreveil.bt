@@ -151,7 +151,7 @@
                                 "properties": {},
                                 "children": [
                                   {
-                                    "activated": true,
+                                    "activated": false,
                                     "metadata": {
                                       "label": ""
                                     },
@@ -271,7 +271,7 @@
                                 "properties": {},
                                 "children": [
                                   {
-                                    "activated": true,
+                                    "activated": false,
                                     "metadata": {
                                       "label": ""
                                     },
@@ -485,7 +485,7 @@
                                 "properties": {},
                                 "children": [
                                   {
-                                    "activated": true,
+                                    "activated": false,
                                     "metadata": {
                                       "label": ""
                                     },
@@ -547,26 +547,6 @@
                           {
                             "activated": true,
                             "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "name": "Log",
-                              "inputParams": [
-                                {
-                                  "key": "MessageLog",
-                                  "type": "string",
-                                  "value": "Mamie est reveillée"
-                                }
-                              ],
-                              "outputParams": []
-                            },
-                            "children": [],
-                            "id": "9857f4d2-a4f4-40b8-8907-3fbdd664b0c5",
-                            "type": "action"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
                               "label": "Ctrl si un autre capteur est passé en Presence"
                             },
                             "properties": {
@@ -598,7 +578,7 @@
                                     "properties": {},
                                     "children": [
                                       {
-                                        "activated": true,
+                                        "activated": false,
                                         "metadata": {
                                           "label": ""
                                         },
@@ -731,13 +711,13 @@
                                 {
                                   "key": "MessageLog",
                                   "type": "string",
-                                  "value": "Mamie est reveillée 222"
+                                  "value": "Mamie est reveillée"
                                 }
                               ],
                               "outputParams": []
                             },
                             "children": [],
-                            "id": "5f819194-1817-4d55-8623-41962b8cf1cf",
+                            "id": "9857f4d2-a4f4-40b8-8907-3fbdd664b0c5",
                             "type": "action"
                           },
                           {
