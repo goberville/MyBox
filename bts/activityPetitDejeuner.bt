@@ -160,7 +160,7 @@
                                     "properties": {},
                                     "children": [
                                       {
-                                        "activated": true,
+                                        "activated": false,
                                         "metadata": {
                                           "label": ""
                                         },
@@ -296,7 +296,7 @@
                                     "properties": {},
                                     "children": [
                                       {
-                                        "activated": true,
+                                        "activated": false,
                                         "metadata": {
                                           "label": ""
                                         },
@@ -448,7 +448,7 @@
                                     "properties": {},
                                     "children": [
                                       {
-                                        "activated": true,
+                                        "activated": false,
                                         "metadata": {
                                           "label": ""
                                         },
@@ -541,7 +541,7 @@
                                         "properties": {},
                                         "children": [
                                           {
-                                            "activated": true,
+                                            "activated": false,
                                             "metadata": {
                                               "label": ""
                                             },
