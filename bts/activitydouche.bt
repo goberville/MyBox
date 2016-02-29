@@ -510,16 +510,16 @@
                               {
                                 "activated": true,
                                 "metadata": {
-                                  "label": "Si capteur chambre à changé d'état"
+                                  "label": "Si capteur Salle de bain à changé d'état"
                                 },
                                 "properties": {
                                   "op1": {
                                     "type": "entityKnowledge",
-                                    "value": "current_CaptCuisineP"
+                                    "value": "current_CaptSDBP"
                                   },
                                   "op2": {
                                     "type": "entityKnowledge",
-                                    "value": "actuator_CaptCuisineP"
+                                    "value": "actuator_CaptSDBP"
                                   },
                                   "op": "!="
                                 },
@@ -557,10 +557,10 @@
                                           "label": ""
                                         },
                                         "properties": {
-                                          "destination": "current_CaptCuisineP",
+                                          "destination": "current_CaptSDBP",
                                           "op": {
                                             "type": "entityKnowledge",
-                                            "value": "actuator_CaptCuisineP"
+                                            "value": "actuator_CaptSDBP"
                                           }
                                         },
                                         "children": [],
