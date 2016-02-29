@@ -653,7 +653,7 @@
                                       "destination": "MessageAlerte",
                                       "op": {
                                         "type": "string",
-                                        "value": "Capetru NOK Reveil"
+                                        "value": "07010300060105"
                                       }
                                     },
                                     "children": [],
@@ -850,7 +850,7 @@
                                       "destination": "MessageAlerte",
                                       "op": {
                                         "type": "string",
-                                        "value": "0302020F030303"
+                                        "value": "04010100040103"
                                       }
                                     },
                                     "children": [],
