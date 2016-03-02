@@ -14,9 +14,7 @@
         "metadata": {
           "label": ""
         },
-        "properties": {
-          "active": "false"
-        },
+        "properties": {},
         "children": [
           {
             "activated": true,
@@ -24,8 +22,7 @@
               "label": ""
             },
             "properties": {
-              "statusCondition": "succeedsIfAnySucceeds",
-              "retryPolicy": "propagateToAll"
+              "active": "false"
             },
             "children": [
               {
@@ -69,7 +66,7 @@
                         "type": "set"
                       },
                       {
-                        "activated": false,
+                        "activated": true,
                         "metadata": {
                           "label": ""
                         },
@@ -117,6 +114,29 @@
                 "metadata": {
                   "label": ""
                 },
+                "properties": {},
+                "children": [],
+                "id": "f4fb32d9-d55e-42b6-958b-2990e9f878d9",
+                "type": "success"
+              }
+            ],
+            "id": "d1208046-62cd-47b9-991e-226658dc05ff",
+            "type": "priority"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "active": "false"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
                 "properties": {
                   "op1": {
                     "type": "entityKnowledge",
@@ -137,7 +157,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": false,
+                        "activated": true,
                         "metadata": {
                           "label": ""
                         },
@@ -201,6 +221,29 @@
                 "metadata": {
                   "label": ""
                 },
+                "properties": {},
+                "children": [],
+                "id": "175ac119-fc7b-4287-8401-182d3003b843",
+                "type": "success"
+              }
+            ],
+            "id": "e929b536-5670-489d-9f24-c7a42eafb076",
+            "type": "priority"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "active": "false"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
                 "properties": {
                   "op1": {
                     "type": "entityKnowledge",
@@ -221,7 +264,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": false,
+                        "activated": true,
                         "metadata": {
                           "label": ""
                         },
@@ -285,6 +328,29 @@
                 "metadata": {
                   "label": ""
                 },
+                "properties": {},
+                "children": [],
+                "id": "91b52669-4663-4e70-92b6-283cba9fac80",
+                "type": "success"
+              }
+            ],
+            "id": "19e8635b-ce2f-40ae-b44e-9f346772e912",
+            "type": "priority"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "active": "false"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
                 "properties": {
                   "op1": {
                     "type": "entityKnowledge",
@@ -305,7 +371,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": false,
+                        "activated": true,
                         "metadata": {
                           "label": ""
                         },
@@ -369,6 +435,29 @@
                 "metadata": {
                   "label": ""
                 },
+                "properties": {},
+                "children": [],
+                "id": "1b38f799-684b-4228-9d72-68df641f45ae",
+                "type": "success"
+              }
+            ],
+            "id": "04d00644-f3e9-4657-8ef7-3663a8d6a569",
+            "type": "priority"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "active": "false"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
                 "properties": {
                   "op1": {
                     "type": "entityKnowledge",
@@ -389,7 +478,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": false,
+                        "activated": true,
                         "metadata": {
                           "label": ""
                         },
@@ -447,37 +536,6 @@
                 ],
                 "id": "81a60529-1a07-45ca-b103-a74b7550d091",
                 "type": "condition"
-              }
-            ],
-            "id": "c36c31b2-0fd5-426e-9255-5d1088d15586",
-            "type": "parallel"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {},
-            "children": [
-              {
-                "activated": false,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "name": "Log",
-                  "inputParams": [
-                    {
-                      "key": "MessageLog",
-                      "type": "string",
-                      "value": "Sort de Maj capteur false"
-                    }
-                  ],
-                  "outputParams": []
-                },
-                "children": [],
-                "id": "559f13e9-eaf1-4a84-82e7-c3dc9115d9c4",
-                "type": "action"
               },
               {
                 "activated": true,
@@ -486,16 +544,16 @@
                 },
                 "properties": {},
                 "children": [],
-                "id": "57215272-2eab-441d-b930-52d0f03b5c28",
+                "id": "b78df582-0f3e-4bbf-89da-dbfbe5935447",
                 "type": "success"
               }
             ],
-            "id": "f5603135-9f63-4d7a-adc9-2d92118a899f",
-            "type": "sequence"
+            "id": "64b987d7-c37d-4c96-a5f3-e5e72e483475",
+            "type": "priority"
           }
         ],
-        "id": "161587fc-7f72-4d50-9893-b6c565efe5c6",
-        "type": "priority"
+        "id": "f5e062f6-e1ec-46a3-999a-ab3fdd3cd4ed",
+        "type": "sequence"
       }
     ],
     "id": "babec128-c81d-47a9-8975-041e98ddbcae"
