@@ -647,7 +647,7 @@
                                   "destination": "MessageAlerte",
                                   "op": {
                                     "type": "string",
-                                    "value": "0X02020F030303"
+                                    "value": "01020200030303"
                                   }
                                 },
                                 "children": [],
