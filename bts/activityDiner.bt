@@ -505,16 +505,47 @@
                                     "metadata": {
                                       "label": ""
                                     },
-                                    "properties": {
-                                      "behavior": {
-                                        "type": "uriPath",
-                                        "value": "bts/MajCurrentCapteurP.bt"
+                                    "properties": {},
+                                    "children": [
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "name": "Log",
+                                          "inputParams": [
+                                            {
+                                              "key": "MessageLog",
+                                              "type": "string",
+                                              "value": "Mise a Jour capteur 222222"
+                                            }
+                                          ],
+                                          "outputParams": []
+                                        },
+                                        "children": [],
+                                        "id": "03b9f51d-7261-4958-bdaf-2de4a86b607e",
+                                        "type": "action"
                                       },
-                                      "inputParams": []
-                                    },
-                                    "children": [],
-                                    "id": "f792879b-51bc-46ae-8974-8abebb3f0e0e",
-                                    "type": "embedded"
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "behavior": {
+                                            "type": "uriPath",
+                                            "value": "bts/MajCurrentCapteurP.bt"
+                                          },
+                                          "inputParams": []
+                                        },
+                                        "children": [],
+                                        "id": "f792879b-51bc-46ae-8974-8abebb3f0e0e",
+                                        "type": "embedded"
+                                      }
+                                    ],
+                                    "id": "09cea2a9-babe-4c92-8d02-557bb321ca2a",
+                                    "type": "sequence"
                                   }
                                 ],
                                 "id": "60277871-dc22-4a5d-8b51-ace8fd8845df",
