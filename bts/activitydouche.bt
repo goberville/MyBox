@@ -50,7 +50,7 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": true,
+                        "activated": false,
                         "metadata": {
                           "label": ""
                         },
@@ -415,35 +415,6 @@
                         "properties": {},
                         "children": [
                           {
-                            "activated": false,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
-                              "active": "false"
-                            },
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "behavior": {
-                                    "type": "uriPath",
-                                    "value": "bts/MajCurrentCapteurP.bt"
-                                  },
-                                  "inputParams": []
-                                },
-                                "children": [],
-                                "id": "c1e63272-c3ce-4117-8457-60389eed1c62",
-                                "type": "embedded"
-                              }
-                            ],
-                            "id": "a505240c-9161-4397-8672-050bb5946477",
-                            "type": "priority"
-                          },
-                          {
                             "activated": true,
                             "metadata": {
                               "label": "Si capteur chambre à changé d'état"
@@ -713,6 +684,47 @@
                   }
                 ],
                 "id": "0ff1a164-ec05-4c15-a57e-c5c13462d52e",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "TaskActivityDouche"
+                  },
+                  "op2": {
+                    "type": "integer",
+                    "value": "1"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "Log",
+                      "inputParams": [
+                        {
+                          "key": "MessageLog",
+                          "type": "string",
+                          "value": "Mise à jour capteur "
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "fa26012e-c250-4233-80ae-a6346c35488f",
+                    "type": "action"
+                  }
+                ],
+                "id": "15bfd000-eeb7-47d0-a1fe-948c8544ee23",
                 "type": "condition"
               },
               {
