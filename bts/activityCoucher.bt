@@ -832,7 +832,24 @@
                                   "label": ""
                                 },
                                 "properties": {},
-                                "children": [],
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": "Check_Coucher"
+                                    },
+                                    "properties": {
+                                      "destination": "Check_Coucher",
+                                      "op": {
+                                        "type": "boolean",
+                                        "value": "false"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "d2f8780a-36fa-49e4-b4e1-8ef658e5822c",
+                                    "type": "set"
+                                  }
+                                ],
                                 "id": "c50a028f-e9db-4544-a444-9f50912d58b3",
                                 "type": "success"
                               }
