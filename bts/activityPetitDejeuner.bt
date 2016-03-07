@@ -707,85 +707,75 @@
                 "metadata": {
                   "label": ""
                 },
-                "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "TaskActivityPetitDejeuner"
-                  },
-                  "op2": {
-                    "type": "integer",
-                    "value": "2"
-                  },
-                  "op": "=="
-                },
+                "properties": {},
                 "children": [
                   {
                     "activated": true,
                     "metadata": {
-                      "label": "Gestion alerte "
+                      "label": ""
                     },
-                    "properties": {},
+                    "properties": {
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "TaskActivityPetitDejeuner"
+                      },
+                      "op2": {
+                        "type": "integer",
+                        "value": "2"
+                      },
+                      "op": "=="
+                    },
                     "children": [
                       {
-                        "activated": false,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "Log",
-                          "inputParams": [
-                            {
-                              "key": "MessageLog",
-                              "type": "string",
-                              "value": "Task PetitDejeunerle terminée"
-                            }
-                          ],
-                          "outputParams": []
-                        },
-                        "children": [],
-                        "id": "0349e0df-9fe6-4cb5-ac0c-95edc7448990",
-                        "type": "action"
-                      },
-                      {
                         "activated": true,
                         "metadata": {
-                          "label": ""
+                          "label": "Gestion alerte "
                         },
-                        "properties": {
-                          "destination": "TaskActivityPetitDejeuner",
-                          "op": {
-                            "type": "integer",
-                            "value": "3"
-                          }
-                        },
-                        "children": [],
-                        "id": "26e4f877-9173-424e-980a-b8727b7ed13d",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "active": "false"
-                        },
+                        "properties": {},
                         "children": [
+                          {
+                            "activated": false,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "Task PetitDejeunerle terminée"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "0349e0df-9fe6-4cb5-ac0c-95edc7448990",
+                            "type": "action"
+                          },
                           {
                             "activated": true,
                             "metadata": {
                               "label": ""
                             },
                             "properties": {
-                              "op1": {
-                                "type": "entityKnowledge",
-                                "value": "Check_PetitDejeuner"
-                              },
-                              "op2": {
-                                "type": "boolean",
-                                "value": "false"
-                              },
-                              "op": "=="
+                              "destination": "TaskActivityPetitDejeuner",
+                              "op": {
+                                "type": "integer",
+                                "value": "3"
+                              }
+                            },
+                            "children": [],
+                            "id": "26e4f877-9173-424e-980a-b8727b7ed13d",
+                            "type": "set"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "active": "false"
                             },
                             "children": [
                               {
@@ -793,93 +783,104 @@
                                 "metadata": {
                                   "label": ""
                                 },
-                                "properties": {},
+                                "properties": {
+                                  "op1": {
+                                    "type": "entityKnowledge",
+                                    "value": "Check_PetitDejeuner"
+                                  },
+                                  "op2": {
+                                    "type": "boolean",
+                                    "value": "false"
+                                  },
+                                  "op": "=="
+                                },
                                 "children": [
                                   {
                                     "activated": true,
                                     "metadata": {
                                       "label": ""
                                     },
-                                    "properties": {
-                                      "destination": "MessageAlerte",
-                                      "op": {
-                                        "type": "string",
-                                        "value": "01020100010101"
-                                      }
-                                    },
-                                    "children": [],
-                                    "id": "8ea887e7-5f6b-4093-a9f6-d1b685fbcdcd",
-                                    "type": "set"
-                                  },
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "destination": "BoolAlerteMessage",
-                                      "op": {
-                                        "type": "boolean",
-                                        "value": "true"
-                                      }
-                                    },
-                                    "children": [],
-                                    "id": "bb3f94d4-3847-4233-aeb6-26102919d46a",
-                                    "type": "set"
-                                  },
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {
-                                      "behavior": {
-                                        "type": "uriPath",
-                                        "value": "bts/SendAlerteSigfox.bt"
+                                    "properties": {},
+                                    "children": [
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "destination": "MessageAlerte",
+                                          "op": {
+                                            "type": "string",
+                                            "value": "01020100010101"
+                                          }
+                                        },
+                                        "children": [],
+                                        "id": "8ea887e7-5f6b-4093-a9f6-d1b685fbcdcd",
+                                        "type": "set"
                                       },
-                                      "inputParams": []
-                                    },
-                                    "children": [],
-                                    "id": "b3c17760-823c-4980-8a19-9f435f540508",
-                                    "type": "embedded"
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "destination": "BoolAlerteMessage",
+                                          "op": {
+                                            "type": "boolean",
+                                            "value": "true"
+                                          }
+                                        },
+                                        "children": [],
+                                        "id": "bb3f94d4-3847-4233-aeb6-26102919d46a",
+                                        "type": "set"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "behavior": {
+                                            "type": "uriPath",
+                                            "value": "bts/SendAlerteSigfox.bt"
+                                          },
+                                          "inputParams": []
+                                        },
+                                        "children": [],
+                                        "id": "b3c17760-823c-4980-8a19-9f435f540508",
+                                        "type": "embedded"
+                                      }
+                                    ],
+                                    "id": "2c3e27db-40a7-432c-b47c-8bfa65b7658e",
+                                    "type": "sequence"
                                   }
                                 ],
-                                "id": "2c3e27db-40a7-432c-b47c-8bfa65b7658e",
-                                "type": "sequence"
+                                "id": "d5cb9276-2b13-4262-8b12-31eb8f6d15d0",
+                                "type": "condition"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {},
+                                "children": [],
+                                "id": "c50a028f-e9db-4544-a444-9f50912d58b3",
+                                "type": "success"
                               }
                             ],
-                            "id": "d5cb9276-2b13-4262-8b12-31eb8f6d15d0",
-                            "type": "condition"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {},
-                            "children": [],
-                            "id": "c50a028f-e9db-4544-a444-9f50912d58b3",
-                            "type": "success"
+                            "id": "0c0616df-d387-4aef-95ef-ee3774621149",
+                            "type": "priority"
                           }
                         ],
-                        "id": "0c0616df-d387-4aef-95ef-ee3774621149",
-                        "type": "priority"
+                        "id": "7c053205-95c1-446a-a3cd-494cd220908f",
+                        "type": "sequence"
                       }
                     ],
-                    "id": "7c053205-95c1-446a-a3cd-494cd220908f",
-                    "type": "sequence"
+                    "id": "fe6f566f-a502-4ccd-9309-536b0a57219b",
+                    "type": "condition"
                   }
                 ],
-                "id": "fe6f566f-a502-4ccd-9309-536b0a57219b",
-                "type": "condition"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {},
-                "children": [],
                 "id": "4611e31c-80cf-417d-9ee0-e0737e5fd0cd",
                 "type": "success"
               }
