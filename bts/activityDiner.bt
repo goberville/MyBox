@@ -919,7 +919,7 @@
                                 "type": "condition"
                               },
                               {
-                                "activated": true,
+                                "activated": false,
                                 "metadata": {
                                   "label": ""
                                 },
@@ -927,6 +927,33 @@
                                 "children": [],
                                 "id": "c50a028f-e9db-4544-a444-9f50912d58b3",
                                 "type": "success"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {},
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": "Check_Diner"
+                                    },
+                                    "properties": {
+                                      "destination": "Check_Diner",
+                                      "op": {
+                                        "type": "boolean",
+                                        "value": "false"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "6734d5ab-8c0f-47f4-84a2-9ae588b390f1",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "c425675b-0366-45af-a10b-cecc72c010d9",
+                                "type": "sequence"
                               }
                             ],
                             "id": "0c0616df-d387-4aef-95ef-ee3774621149",
