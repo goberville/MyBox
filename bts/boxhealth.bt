@@ -103,8 +103,8 @@
                       "label": ""
                     },
                     "properties": {
-                      "statusCondition": "succeedsIfAnySucceeds",
-                      "retryPolicy": "propagateToRunning"
+                      "statusCondition": "failsIfAnyFails",
+                      "retryPolicy": "propagateToAll"
                     },
                     "children": [
                       {
