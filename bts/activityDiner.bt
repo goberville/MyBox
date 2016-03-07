@@ -59,7 +59,7 @@
                         "properties": {},
                         "children": [
                           {
-                            "activated": true,
+                            "activated": false,
                             "metadata": {
                               "label": ""
                             },
@@ -160,7 +160,7 @@
                                     "properties": {},
                                     "children": [
                                       {
-                                        "activated": true,
+                                        "activated": false,
                                         "metadata": {
                                           "label": ""
                                         },
@@ -296,7 +296,7 @@
                                     "properties": {},
                                     "children": [
                                       {
-                                        "activated": true,
+                                        "activated": false,
                                         "metadata": {
                                           "label": ""
                                         },
@@ -424,7 +424,7 @@
                             "properties": {},
                             "children": [
                               {
-                                "activated": true,
+                                "activated": false,
                                 "metadata": {
                                   "label": ""
                                 },
@@ -435,80 +435,12 @@
                                   {
                                     "activated": true,
                                     "metadata": {
-                                      "label": "Si capteur Cuisine à changé d'état"
-                                    },
-                                    "properties": {
-                                      "op1": {
-                                        "type": "entityKnowledge",
-                                        "value": "current_CaptCuisineP"
-                                      },
-                                      "op2": {
-                                        "type": "entityKnowledge",
-                                        "value": "actuator_CaptCuisineP"
-                                      },
-                                      "op": "!="
-                                    },
-                                    "children": [
-                                      {
-                                        "activated": true,
-                                        "metadata": {
-                                          "label": ""
-                                        },
-                                        "properties": {},
-                                        "children": [
-                                          {
-                                            "activated": true,
-                                            "metadata": {
-                                              "label": ""
-                                            },
-                                            "properties": {
-                                              "name": "Log",
-                                              "inputParams": [
-                                                {
-                                                  "key": "MessageLog",
-                                                  "type": "string",
-                                                  "value": "Capteur cuisine à changer 0 à 1"
-                                                }
-                                              ],
-                                              "outputParams": []
-                                            },
-                                            "children": [],
-                                            "id": "a80cb09f-efe8-4598-b08f-5b052c98114b",
-                                            "type": "action"
-                                          },
-                                          {
-                                            "activated": true,
-                                            "metadata": {
-                                              "label": ""
-                                            },
-                                            "properties": {
-                                              "destination": "current_CaptCuisineP",
-                                              "op": {
-                                                "type": "entityKnowledge",
-                                                "value": "actuator_CaptCuisineP"
-                                              }
-                                            },
-                                            "children": [],
-                                            "id": "4b8176a5-5653-4873-bc4a-cdd8497d784d",
-                                            "type": "set"
-                                          }
-                                        ],
-                                        "id": "ba5657af-0df7-4916-8602-ee8f1fbf884f",
-                                        "type": "sequence"
-                                      }
-                                    ],
-                                    "id": "13bc80c4-2771-41df-bb4c-7b87d3e6308c",
-                                    "type": "condition"
-                                  },
-                                  {
-                                    "activated": true,
-                                    "metadata": {
                                       "label": ""
                                     },
                                     "properties": {},
                                     "children": [
                                       {
-                                        "activated": true,
+                                        "activated": false,
                                         "metadata": {
                                           "label": ""
                                         },
@@ -550,6 +482,74 @@
                                 ],
                                 "id": "60277871-dc22-4a5d-8b51-ace8fd8845df",
                                 "type": "priority"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": "Si capteur Cuisine à changé d'état"
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptCuisineP"
+                                  },
+                                  "op2": {
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptCuisineP"
+                                  },
+                                  "op": "!="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {},
+                                    "children": [
+                                      {
+                                        "activated": false,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "name": "Log",
+                                          "inputParams": [
+                                            {
+                                              "key": "MessageLog",
+                                              "type": "string",
+                                              "value": "Capteur cuisine à changer 0 à 1"
+                                            }
+                                          ],
+                                          "outputParams": []
+                                        },
+                                        "children": [],
+                                        "id": "a80cb09f-efe8-4598-b08f-5b052c98114b",
+                                        "type": "action"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "destination": "current_CaptCuisineP",
+                                          "op": {
+                                            "type": "entityKnowledge",
+                                            "value": "actuator_CaptCuisineP"
+                                          }
+                                        },
+                                        "children": [],
+                                        "id": "4b8176a5-5653-4873-bc4a-cdd8497d784d",
+                                        "type": "set"
+                                      }
+                                    ],
+                                    "id": "ba5657af-0df7-4916-8602-ee8f1fbf884f",
+                                    "type": "sequence"
+                                  }
+                                ],
+                                "id": "13bc80c4-2771-41df-bb4c-7b87d3e6308c",
+                                "type": "condition"
                               },
                               {
                                 "activated": true,
@@ -601,7 +601,7 @@
                                         "properties": {},
                                         "children": [
                                           {
-                                            "activated": true,
+                                            "activated": false,
                                             "metadata": {
                                               "label": ""
                                             },
