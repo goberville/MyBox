@@ -864,6 +864,33 @@
                                   "label": ""
                                 },
                                 "properties": {},
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": "Check_PetitDejeuner"
+                                    },
+                                    "properties": {
+                                      "destination": "Check_PetitDejeuner",
+                                      "op": {
+                                        "type": "boolean",
+                                        "value": "false"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "bda7484d-9d32-4687-b75e-d0b8d482ac60",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "9a75824c-a14b-43ab-83a5-6f853ef55958",
+                                "type": "sequence"
+                              },
+                              {
+                                "activated": false,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {},
                                 "children": [],
                                 "id": "c50a028f-e9db-4544-a444-9f50912d58b3",
                                 "type": "success"
