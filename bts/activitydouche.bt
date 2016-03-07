@@ -837,22 +837,6 @@
                                       {
                                         "activated": true,
                                         "metadata": {
-                                          "label": "Check_Douche"
-                                        },
-                                        "properties": {
-                                          "destination": "Check_Douche",
-                                          "op": {
-                                            "type": "boolean",
-                                            "value": "false"
-                                          }
-                                        },
-                                        "children": [],
-                                        "id": "ecf4c577-80f9-49ef-8b4d-7105db3b5182",
-                                        "type": "set"
-                                      },
-                                      {
-                                        "activated": true,
-                                        "metadata": {
                                           "label": ""
                                         },
                                         "properties": {},
@@ -894,6 +878,22 @@
                                     "children": [],
                                     "id": "7f9d04e5-a608-4ea8-b0b2-d2daba60acd3",
                                     "type": "action"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": "Check_Douche"
+                                    },
+                                    "properties": {
+                                      "destination": "Check_Douche",
+                                      "op": {
+                                        "type": "boolean",
+                                        "value": "false"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "ecf4c577-80f9-49ef-8b4d-7105db3b5182",
+                                    "type": "set"
                                   },
                                   {
                                     "activated": true,
