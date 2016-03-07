@@ -687,7 +687,7 @@
                 "type": "condition"
               },
               {
-                "activated": true,
+                "activated": false,
                 "metadata": {
                   "label": ""
                 },
