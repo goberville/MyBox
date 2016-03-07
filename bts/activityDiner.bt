@@ -626,10 +626,10 @@
                                               "label": ""
                                             },
                                             "properties": {
-                                              "destination": "current_CaptCouloirP",
+                                              "destination": "current_CaptSalonP",
                                               "op": {
                                                 "type": "entityKnowledge",
-                                                "value": "actuator_CaptCouloirP"
+                                                "value": "actuator_CaptSalonP"
                                               }
                                             },
                                             "children": [],
