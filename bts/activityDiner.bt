@@ -584,11 +584,11 @@
                                     "properties": {
                                       "op1": {
                                         "type": "entityKnowledge",
-                                        "value": "current_CaptCouloirP"
+                                        "value": "current_CaptSalonP"
                                       },
                                       "op2": {
                                         "type": "entityKnowledge",
-                                        "value": "actuator_CaptCouloirP"
+                                        "value": "actuator_CaptSalonP"
                                       },
                                       "op": "!="
                                     },
