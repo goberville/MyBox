@@ -723,26 +723,6 @@
                               "label": ""
                             },
                             "properties": {
-                              "name": "Log",
-                              "inputParams": [
-                                {
-                                  "key": "MessageLog",
-                                  "type": "string",
-                                  "value": "Task Douchele terminée"
-                                }
-                              ],
-                              "outputParams": []
-                            },
-                            "children": [],
-                            "id": "0349e0df-9fe6-4cb5-ac0c-95edc7448990",
-                            "type": "action"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {
                               "destination": "TaskActivityDouche",
                               "op": {
                                 "type": "integer",
@@ -752,6 +732,26 @@
                             "children": [],
                             "id": "26e4f877-9173-424e-980a-b8727b7ed13d",
                             "type": "set"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "Task Douche terminée"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "0349e0df-9fe6-4cb5-ac0c-95edc7448990",
+                            "type": "action"
                           },
                           {
                             "activated": true,
@@ -837,6 +837,22 @@
                                       {
                                         "activated": true,
                                         "metadata": {
+                                          "label": "Check_Douche"
+                                        },
+                                        "properties": {
+                                          "destination": "Check_Douche",
+                                          "op": {
+                                            "type": "boolean",
+                                            "value": "false"
+                                          }
+                                        },
+                                        "children": [],
+                                        "id": "ecf4c577-80f9-49ef-8b4d-7105db3b5182",
+                                        "type": "set"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
                                           "label": ""
                                         },
                                         "properties": {},
@@ -858,9 +874,40 @@
                                   "label": ""
                                 },
                                 "properties": {},
-                                "children": [],
-                                "id": "c50a028f-e9db-4544-a444-9f50912d58b3",
-                                "type": "success"
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "name": "Log",
+                                      "inputParams": [
+                                        {
+                                          "key": "MessageLog",
+                                          "type": "string",
+                                          "value": "Task Douche terminée check douche à true"
+                                        }
+                                      ],
+                                      "outputParams": []
+                                    },
+                                    "children": [],
+                                    "id": "7f9d04e5-a608-4ea8-b0b2-d2daba60acd3",
+                                    "type": "action"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {},
+                                    "children": [],
+                                    "id": "c50a028f-e9db-4544-a444-9f50912d58b3",
+                                    "type": "success"
+                                  }
+                                ],
+                                "id": "9700b589-3639-4519-9914-d57ab669c47c",
+                                "type": "sequence"
                               }
                             ],
                             "id": "0c0616df-d387-4aef-95ef-ee3774621149",
