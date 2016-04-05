@@ -8,7 +8,934 @@
       "label": ""
     },
     "properties": {},
-    "children": [],
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": ""
+        },
+        "properties": {},
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": "CTRL si Periode Activity Diner"
+            },
+            "properties": {
+              "active": "false"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Time"
+                  },
+                  "op2": {
+                    "type": "entityKnowledge",
+                    "value": "Time_Diner_Min"
+                  },
+                  "op": "<"
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": false,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "Log",
+                          "inputParams": [
+                            {
+                              "key": "MessageLog",
+                              "type": "string",
+                              "value": "Pas Activité Diner"
+                            }
+                          ],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "c877c67c-624b-4922-9801-46ea5ed82062",
+                        "type": "action"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TaskActivityDiner",
+                          "op": {
+                            "type": "integer",
+                            "value": "0"
+                          }
+                        },
+                        "children": [],
+                        "id": "fd2ba51f-98e7-4314-ab60-b4fb372ed98d",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": "Check_Diner"
+                        },
+                        "properties": {
+                          "destination": "Check_Diner",
+                          "op": {
+                            "type": "boolean",
+                            "value": "false"
+                          }
+                        },
+                        "children": [],
+                        "id": "dfab9455-a945-40e6-b109-3661a7132168",
+                        "type": "set"
+                      }
+                    ],
+                    "id": "d04624ba-4d9e-4359-8c6e-dafd80b4b0fb",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "a4dc07a7-3fbe-4e4f-b7aa-e6ccab13c17d",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "active": "false"
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "Time"
+                      },
+                      "op2": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Diner_Max"
+                      },
+                      "op": "<="
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {},
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "TaskActivityDiner"
+                              },
+                              "op2": {
+                                "type": "integer",
+                                "value": "0"
+                              },
+                              "op": "=="
+                            },
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {},
+                                "children": [
+                                  {
+                                    "activated": false,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "name": "Log",
+                                      "inputParams": [
+                                        {
+                                          "key": "MessageLog",
+                                          "type": "string",
+                                          "value": "Debut Activité Diner"
+                                        }
+                                      ],
+                                      "outputParams": []
+                                    },
+                                    "children": [],
+                                    "id": "86b2d634-c8ab-4baf-b8eb-d99ee9067994",
+                                    "type": "action"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "TaskActivityDiner",
+                                      "op": {
+                                        "type": "integer",
+                                        "value": "1"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "ea3dc37d-4cd3-451e-932c-b6ad329ab846",
+                                    "type": "set"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "TraitementMajCapt",
+                                      "op": {
+                                        "type": "boolean",
+                                        "value": "true"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "97b305e5-43c8-479a-8ec0-8a4bb4778964",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "644ab51a-4860-4da6-a8c4-ff6976a071db",
+                                "type": "sequence"
+                              }
+                            ],
+                            "id": "9125a7a8-c86d-4832-a739-df81146204b5",
+                            "type": "condition"
+                          }
+                        ],
+                        "id": "2234a6ca-5976-492e-b114-ae51e164d637",
+                        "type": "sequence"
+                      }
+                    ],
+                    "id": "7d31e307-5012-427c-9246-17a52e24f1ce",
+                    "type": "condition"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "Time"
+                      },
+                      "op2": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Diner_Max"
+                      },
+                      "op": ">"
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {},
+                        "children": [
+                          {
+                            "activated": false,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "Temps activite Diner terminé"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "032966b4-aec8-41c6-976a-04d35ba54022",
+                            "type": "action"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "TaskActivityDiner"
+                              },
+                              "op2": {
+                                "type": "integer",
+                                "value": "1"
+                              },
+                              "op": "=="
+                            },
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {},
+                                "children": [
+                                  {
+                                    "activated": false,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "name": "Log",
+                                      "inputParams": [
+                                        {
+                                          "key": "MessageLog",
+                                          "type": "string",
+                                          "value": "Fin Activité Diner"
+                                        }
+                                      ],
+                                      "outputParams": []
+                                    },
+                                    "children": [],
+                                    "id": "62ccf83e-3ed9-4db3-b0fd-9ce9beb6cdac",
+                                    "type": "action"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "TaskActivityDiner",
+                                      "op": {
+                                        "type": "integer",
+                                        "value": "2"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "02ff3663-1367-4cd1-ac99-7cae7086ec84",
+                                    "type": "set"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "TraitementMajCapt",
+                                      "op": {
+                                        "type": "boolean",
+                                        "value": "false"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "0deb4439-50de-43a6-ba32-3f3d7519ed8a",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "b35be07f-93ee-4073-95ae-23500ed1a039",
+                                "type": "sequence"
+                              }
+                            ],
+                            "id": "d7bf0157-8e54-45b7-9665-acd2fe0ec027",
+                            "type": "condition"
+                          }
+                        ],
+                        "id": "31cce75d-cf09-40b2-85b4-dcccf8a8e4e4",
+                        "type": "sequence"
+                      }
+                    ],
+                    "id": "7ae1218c-3ead-4ac8-b3b4-604fd02b0d98",
+                    "type": "condition"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [],
+                    "id": "85e7b48d-e417-4164-9fde-a8b9c8fc4c62",
+                    "type": "success"
+                  }
+                ],
+                "id": "e58950a0-edf1-4f6a-b527-bdde8ea69119",
+                "type": "priority"
+              }
+            ],
+            "id": "884c216e-6309-4d7c-9667-dc20a3ce01f5",
+            "type": "priority"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "active": "false"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "TaskActivityDiner"
+                  },
+                  "op2": {
+                    "type": "integer",
+                    "value": "1"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "active": "false"
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": "Si Periode Activity Diner "
+                        },
+                        "properties": {},
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Si capteur Cuisine à changé d'état"
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "current_CaptCuisineP"
+                              },
+                              "op2": {
+                                "type": "entityKnowledge",
+                                "value": "actuator_CaptCuisineP"
+                              },
+                              "op": "!="
+                            },
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {},
+                                "children": [
+                                  {
+                                    "activated": false,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "name": "Log",
+                                      "inputParams": [
+                                        {
+                                          "key": "MessageLog",
+                                          "type": "string",
+                                          "value": "Capteur cuisine à changer 0 à 1"
+                                        }
+                                      ],
+                                      "outputParams": []
+                                    },
+                                    "children": [],
+                                    "id": "a80cb09f-efe8-4598-b08f-5b052c98114b",
+                                    "type": "action"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "current_CaptCuisineP",
+                                      "op": {
+                                        "type": "entityKnowledge",
+                                        "value": "actuator_CaptCuisineP"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "4b8176a5-5653-4873-bc4a-cdd8497d784d",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "ba5657af-0df7-4916-8602-ee8f1fbf884f",
+                                "type": "sequence"
+                              }
+                            ],
+                            "id": "13bc80c4-2771-41df-bb4c-7b87d3e6308c",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Check_Diner"
+                            },
+                            "properties": {
+                              "destination": "Check_Diner",
+                              "op": {
+                                "type": "boolean",
+                                "value": "true"
+                              }
+                            },
+                            "children": [],
+                            "id": "2a0a054e-0ead-4a7e-a0e4-9a514a0f9984",
+                            "type": "set"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Ctrl si un autre capteur est passé en Presence"
+                            },
+                            "properties": {
+                              "active": "false"
+                            },
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": "Si capteur Cuisine à changé d'état"
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "entityKnowledge",
+                                    "value": "current_CaptSalonP"
+                                  },
+                                  "op2": {
+                                    "type": "entityKnowledge",
+                                    "value": "actuator_CaptSalonP"
+                                  },
+                                  "op": "!="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {},
+                                    "children": [
+                                      {
+                                        "activated": false,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "name": "Log",
+                                          "inputParams": [
+                                            {
+                                              "key": "MessageLog",
+                                              "type": "string",
+                                              "value": "Capteur couloir à changer 1 à 0"
+                                            }
+                                          ],
+                                          "outputParams": []
+                                        },
+                                        "children": [],
+                                        "id": "55de3408-46ce-4842-b55f-61d76b616e0e",
+                                        "type": "action"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "destination": "current_CaptSalonP",
+                                          "op": {
+                                            "type": "entityKnowledge",
+                                            "value": "actuator_CaptSalonP"
+                                          }
+                                        },
+                                        "children": [],
+                                        "id": "a9b5e5c9-e7e7-4cf8-a39e-a58caf2b2570",
+                                        "type": "set"
+                                      }
+                                    ],
+                                    "id": "d54285b0-7319-4656-90fb-c68ea16a5dd3",
+                                    "type": "sequence"
+                                  }
+                                ],
+                                "id": "d29781d0-8be6-43ac-8c69-60928124f045",
+                                "type": "condition"
+                              },
+                              {
+                                "activated": false,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "behavior": {
+                                    "type": "uriPath",
+                                    "value": "bts/MajCurrentCapteurP.bt"
+                                  },
+                                  "inputParams": []
+                                },
+                                "children": [],
+                                "id": "c1e63272-c3ce-4117-8457-60389eed1c62",
+                                "type": "embedded"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {},
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "MessageAlerte",
+                                      "op": {
+                                        "type": "string",
+                                        "value": "05010100030120"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "7d052138-0298-4be1-84da-d2449fb39d1c",
+                                    "type": "set"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "destination": "BoolAlerteMessage",
+                                      "op": {
+                                        "type": "boolean",
+                                        "value": "true"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "6fa691b7-4643-418b-b980-94de0150c218",
+                                    "type": "set"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "behavior": {
+                                        "type": "uriPath",
+                                        "value": "bts/SendAlerteSigfox.bt"
+                                      },
+                                      "inputParams": []
+                                    },
+                                    "children": [],
+                                    "id": "8688580c-17d9-4f4a-a55e-ee4f4d379dbe",
+                                    "type": "embedded"
+                                  }
+                                ],
+                                "id": "07953778-1176-412c-b0e3-29bac6f34a38",
+                                "type": "sequence"
+                              }
+                            ],
+                            "id": "4cbe9888-985f-49f2-a7ad-0536844f101b",
+                            "type": "priority"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "Mamie a pris son diner"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "9857f4d2-a4f4-40b8-8907-3fbdd664b0c5",
+                            "type": "action"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "destination": "TaskActivityDiner",
+                              "op": {
+                                "type": "integer",
+                                "value": "2"
+                              }
+                            },
+                            "children": [],
+                            "id": "c04598f6-2353-44bc-8498-2b5452061dc9",
+                            "type": "set"
+                          }
+                        ],
+                        "id": "045764b1-c48d-4956-9d3b-6d52f8eca531",
+                        "type": "sequence"
+                      }
+                    ],
+                    "id": "a305180e-b148-460f-8f09-09c013d82a11",
+                    "type": "priority"
+                  }
+                ],
+                "id": "0ff1a164-ec05-4c15-a57e-c5c13462d52e",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "TaskActivityDiner"
+                      },
+                      "op2": {
+                        "type": "integer",
+                        "value": "2"
+                      },
+                      "op": "=="
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": "Gestion alerte "
+                        },
+                        "properties": {},
+                        "children": [
+                          {
+                            "activated": false,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "Task Dinerle terminée"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "0349e0df-9fe6-4cb5-ac0c-95edc7448990",
+                            "type": "action"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "destination": "TaskActivityDiner",
+                              "op": {
+                                "type": "integer",
+                                "value": "3"
+                              }
+                            },
+                            "children": [],
+                            "id": "26e4f877-9173-424e-980a-b8727b7ed13d",
+                            "type": "set"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "active": "false"
+                            },
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "entityKnowledge",
+                                    "value": "Check_Diner"
+                                  },
+                                  "op2": {
+                                    "type": "boolean",
+                                    "value": "false"
+                                  },
+                                  "op": "=="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {},
+                                    "children": [
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "destination": "MessageAlerte",
+                                          "op": {
+                                            "type": "string",
+                                            "value": "01010100010103"
+                                          }
+                                        },
+                                        "children": [],
+                                        "id": "8ea887e7-5f6b-4093-a9f6-d1b685fbcdcd",
+                                        "type": "set"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "destination": "BoolAlerteMessage",
+                                          "op": {
+                                            "type": "boolean",
+                                            "value": "true"
+                                          }
+                                        },
+                                        "children": [],
+                                        "id": "bb3f94d4-3847-4233-aeb6-26102919d46a",
+                                        "type": "set"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "behavior": {
+                                            "type": "uriPath",
+                                            "value": "bts/SendAlerteSigfox.bt"
+                                          },
+                                          "inputParams": []
+                                        },
+                                        "children": [],
+                                        "id": "b3c17760-823c-4980-8a19-9f435f540508",
+                                        "type": "embedded"
+                                      }
+                                    ],
+                                    "id": "2c3e27db-40a7-432c-b47c-8bfa65b7658e",
+                                    "type": "sequence"
+                                  }
+                                ],
+                                "id": "d5cb9276-2b13-4262-8b12-31eb8f6d15d0",
+                                "type": "condition"
+                              },
+                              {
+                                "activated": false,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {},
+                                "children": [],
+                                "id": "c50a028f-e9db-4544-a444-9f50912d58b3",
+                                "type": "success"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {},
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": "Check_Diner"
+                                    },
+                                    "properties": {
+                                      "destination": "Check_Diner",
+                                      "op": {
+                                        "type": "boolean",
+                                        "value": "false"
+                                      }
+                                    },
+                                    "children": [],
+                                    "id": "6734d5ab-8c0f-47f4-84a2-9ae588b390f1",
+                                    "type": "set"
+                                  }
+                                ],
+                                "id": "c425675b-0366-45af-a10b-cecc72c010d9",
+                                "type": "sequence"
+                              }
+                            ],
+                            "id": "0c0616df-d387-4aef-95ef-ee3774621149",
+                            "type": "priority"
+                          }
+                        ],
+                        "id": "7c053205-95c1-446a-a3cd-494cd220908f",
+                        "type": "sequence"
+                      }
+                    ],
+                    "id": "fe6f566f-a502-4ccd-9309-536b0a57219b",
+                    "type": "condition"
+                  }
+                ],
+                "id": "4611e31c-80cf-417d-9ee0-e0737e5fd0cd",
+                "type": "success"
+              }
+            ],
+            "id": "d14344bf-ef45-4840-8581-8e539d7c5878",
+            "type": "priority"
+          }
+        ],
+        "id": "e506e426-0e81-48b9-89fd-ea16b883add3",
+        "type": "sequence"
+      }
+    ],
     "id": "d93fedcc-40a5-47a7-8a8a-0ec17fb8cc1b"
   }
 ]
