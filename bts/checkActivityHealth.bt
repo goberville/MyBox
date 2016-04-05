@@ -15,7 +15,7 @@
           "label": ""
         },
         "properties": {
-          "statusCondition": "succeedsIfAnySucceeds",
+          "statusCondition": "failsIfAnyFails",
           "retryPolicy": "propagateToRunning"
         },
         "children": [
