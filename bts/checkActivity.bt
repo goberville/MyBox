@@ -8,7 +8,118 @@
       "label": ""
     },
     "properties": {},
-    "children": [],
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": ""
+        },
+        "properties": {
+          "statusCondition": "failsIfAnyFails",
+          "retryPolicy": "propagateToAll"
+        },
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/checkActivityReveil"
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "74931d3b-b418-49f8-99ee-4f541325df55",
+            "type": "embedded"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": ""
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "84b21002-e073-460e-8060-343d99aed109",
+            "type": "embedded"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": ""
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "c30eb3bc-2cfb-44b1-9c79-31fac02dfa05",
+            "type": "embedded"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": ""
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "956ce4c2-8bfb-49b5-a3e3-c133eb5d7ad8",
+            "type": "embedded"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": ""
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "d467cba1-8b83-4842-bd45-55f4625ff035",
+            "type": "embedded"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": ""
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "0cd16753-e3fd-427d-b2d6-e4170151a932",
+            "type": "embedded"
+          }
+        ],
+        "id": "67fa897d-5582-42a2-8ce3-fc5d6589b9fc",
+        "type": "parallel"
+      }
+    ],
     "id": "97ced4e3-3392-4aca-984a-d8612a13aeb5"
   }
 ]
