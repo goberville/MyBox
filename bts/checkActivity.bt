@@ -27,7 +27,7 @@
             "properties": {
               "behavior": {
                 "type": "uriPath",
-                "value": "bts/checkActivityReveil"
+                "value": "bts/checkActivityReveil.bt"
               },
               "inputParams": []
             },
