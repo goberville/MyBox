@@ -37,7 +37,7 @@
                   },
                   "op2": {
                     "type": "entityKnowledge",
-                    "value": "Time_Reveil_Min[0]"
+                    "value": "Time_Reveil_Min[AK.Day]"
                   },
                   "op": "<"
                 },
@@ -137,7 +137,7 @@
                           },
                           "op2": {
                             "type": "entityKnowledge",
-                            "value": "Time_Reveil_Max[0]"
+                            "value": "Time_Reveil_Max[AK.Day]"
                           },
                           "op": "<"
                         },
@@ -237,7 +237,7 @@
                           },
                           "op2": {
                             "type": "entityKnowledge",
-                            "value": "Time_Reveil_Max[0]"
+                            "value": "Time_Reveil_Max[AK.Day]"
                           },
                           "op": ">"
                         },
