@@ -152,7 +152,7 @@
                   "label": ""
                 },
                 "properties": {
-                  "destination": "TaskActivityDouche",
+                  "destination": "TaskActivityToilette",
                   "op": {
                     "type": "integer",
                     "value": "3"
@@ -168,7 +168,7 @@
                   "label": ""
                 },
                 "properties": {
-                  "destination": "Check_Douche",
+                  "destination": "Check_Toilette",
                   "op": {
                     "type": "boolean",
                     "value": "false"
@@ -184,7 +184,7 @@
                   "label": ""
                 },
                 "properties": {
-                  "destination": "Activity_Douche",
+                  "destination": "Activity_Toilette",
                   "op": {
                     "type": "boolean",
                     "value": "false"
@@ -491,6 +491,183 @@
               }
             ],
             "id": "df9dc668-dc3a-4373-81a0-bc2142783905",
+            "type": "sequence"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "TaskActivityLoisir",
+                  "op": {
+                    "type": "integer",
+                    "value": "3"
+                  }
+                },
+                "children": [],
+                "id": "f3752cc9-4d83-4f4c-bf2a-1be06a255e46",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Check_Loisir",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "e19a9b21-a45b-45ad-aa38-b44fcebf7645",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Activity_Loisir",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "cb95f414-4c34-4182-9d88-00152b234665",
+                "type": "set"
+              }
+            ],
+            "id": "93182abd-1e32-4291-b1f9-a92ba0c1f47a",
+            "type": "sequence"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "TaskActivityVisite",
+                  "op": {
+                    "type": "integer",
+                    "value": "3"
+                  }
+                },
+                "children": [],
+                "id": "0b52381f-bd0c-4a35-aca8-6e29a2f99b32",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Check_Visite",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "827c34a0-ab0a-4d84-94e1-ad98b6704cf9",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Activity_Visite",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "ff39425a-4c27-47a2-83d0-59da21758d2f",
+                "type": "set"
+              }
+            ],
+            "id": "3165de3e-e6f7-4d7d-b6cf-a7589745fad7",
+            "type": "sequence"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "TaskActivitySortie",
+                  "op": {
+                    "type": "integer",
+                    "value": "3"
+                  }
+                },
+                "children": [],
+                "id": "e94e8f81-2bd3-4ff8-8ec8-0f9de4ba0ddc",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Check_Sortie",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "c3d4dc4a-772d-4915-b342-18c1dd08d58a",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "Activity_Sortie",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "d3c1d37b-92dc-478d-9c1c-70b344012f16",
+                "type": "set"
+              }
+            ],
+            "id": "11ab1f90-b720-42f7-aaec-faea5f6199db",
             "type": "sequence"
           },
           {
