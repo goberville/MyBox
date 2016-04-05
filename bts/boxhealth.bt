@@ -147,6 +147,22 @@
                     "children": [],
                     "id": "fe7724c8-ce3f-48d7-adf4-bed6adfca598",
                     "type": "embedded"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "behavior": {
+                        "type": "uriPath",
+                        "value": "bts/MajCurrentCapteurP.bt"
+                      },
+                      "inputParams": []
+                    },
+                    "children": [],
+                    "id": "68756048-2228-4d76-8d8f-2043d12acae3",
+                    "type": "embedded"
                   }
                 ],
                 "id": "75a0f639-7074-4130-bb28-f3821e60c883",
@@ -259,7 +275,7 @@
             "type": "sequence"
           },
           {
-            "activated": true,
+            "activated": false,
             "metadata": {
               "label": ""
             },
