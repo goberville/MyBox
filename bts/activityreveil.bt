@@ -37,7 +37,7 @@
                   },
                   "op2": {
                     "type": "entityKnowledge",
-                    "value": "Time_Reveil_Min"
+                    "value": "Time_Reveil_Min[0]"
                   },
                   "op": "<"
                 },
