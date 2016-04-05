@@ -74,7 +74,7 @@
             "type": "action"
           },
           {
-            "activated": false,
+            "activated": true,
             "metadata": {
               "label": ""
             },
@@ -91,11 +91,86 @@
             },
             "children": [
               {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "statusCondition": "failsIfAnyFails",
+                  "retryPolicy": "propagateToAll"
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": "Check Activité Sante"
+                    },
+                    "properties": {
+                      "behavior": {
+                        "type": "uriPath",
+                        "value": "bts/checkActivityHealth.bt"
+                      },
+                      "inputParams": []
+                    },
+                    "children": [],
+                    "id": "481888e8-31b5-44d9-9a5f-efa1087185e7",
+                    "type": "embedded"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": "Check Activité Securite "
+                    },
+                    "properties": {
+                      "behavior": {
+                        "type": "uriPath",
+                        "value": "bts/checkActivitySecurity.bt"
+                      },
+                      "inputParams": []
+                    },
+                    "children": [],
+                    "id": "f105d183-0785-4af7-97a4-bfdbfa972112",
+                    "type": "embedded"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": "Check Activite Maintenance"
+                    },
+                    "properties": {
+                      "behavior": {
+                        "type": "uriPath",
+                        "value": "bts/checkActivityMaintenance.bt"
+                      },
+                      "inputParams": []
+                    },
+                    "children": [],
+                    "id": "fe7724c8-ce3f-48d7-adf4-bed6adfca598",
+                    "type": "embedded"
+                  }
+                ],
+                "id": "75a0f639-7074-4130-bb28-f3821e60c883",
+                "type": "parallel"
+              }
+            ],
+            "id": "7be7751a-66dd-48bd-b1d9-1fda3364d5f0",
+            "type": "until"
+          },
+          {
+            "activated": false,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [
+              {
                 "activated": false,
                 "metadata": {
                   "label": ""
                 },
-                "properties": {},
+                "properties": {
+                  "active": "false"
+                },
                 "children": [
                   {
                     "activated": true,
@@ -103,160 +178,85 @@
                       "label": ""
                     },
                     "properties": {
-                      "statusCondition": "failsIfAnyFails",
-                      "retryPolicy": "propagateToAll"
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "TraitementMajCapt"
+                      },
+                      "op2": {
+                        "type": "boolean",
+                        "value": "false"
+                      },
+                      "op": "=="
                     },
                     "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": "Check Activité Sante"
-                        },
-                        "properties": {
-                          "behavior": {
-                            "type": "uriPath",
-                            "value": "bts/checkActivityHealth.bt"
-                          },
-                          "inputParams": []
-                        },
-                        "children": [],
-                        "id": "481888e8-31b5-44d9-9a5f-efa1087185e7",
-                        "type": "embedded"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": "Check Activité Securite "
-                        },
-                        "properties": {
-                          "behavior": {
-                            "type": "uriPath",
-                            "value": "bts/checkActivitySecurity.bt"
-                          },
-                          "inputParams": []
-                        },
-                        "children": [],
-                        "id": "f105d183-0785-4af7-97a4-bfdbfa972112",
-                        "type": "embedded"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": "Check Activite Maintenance"
-                        },
-                        "properties": {
-                          "behavior": {
-                            "type": "uriPath",
-                            "value": "bts/checkActivityMaintenance.bt"
-                          },
-                          "inputParams": []
-                        },
-                        "children": [],
-                        "id": "fe7724c8-ce3f-48d7-adf4-bed6adfca598",
-                        "type": "embedded"
-                      }
-                    ],
-                    "id": "75a0f639-7074-4130-bb28-f3821e60c883",
-                    "type": "parallel"
-                  },
-                  {
-                    "activated": false,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "active": "false"
-                    },
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "TraitementMajCapt"
-                          },
-                          "op2": {
-                            "type": "boolean",
-                            "value": "false"
-                          },
-                          "op": "=="
-                        },
-                        "children": [
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {},
-                            "children": [
-                              {
-                                "activated": false,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "name": "Log",
-                                  "inputParams": [
-                                    {
-                                      "key": "MessageLog",
-                                      "type": "string",
-                                      "value": "Fait une mise à jour capteur"
-                                    }
-                                  ],
-                                  "outputParams": []
-                                },
-                                "children": [],
-                                "id": "b099a344-45ef-405a-a437-36c6c160c5fc",
-                                "type": "action"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "behavior": {
-                                    "type": "uriPath",
-                                    "value": "bts/MajCurrentCapteurP.bt"
-                                  },
-                                  "inputParams": []
-                                },
-                                "children": [],
-                                "id": "cfa6d293-5738-4772-8804-018e5c39410e",
-                                "type": "embedded"
-                              }
-                            ],
-                            "id": "d5986166-1293-4531-ac3d-41da64be245b",
-                            "type": "sequence"
-                          }
-                        ],
-                        "id": "5301f6ff-d6c0-4862-9e8b-4b2eb107c93e",
-                        "type": "condition"
-                      },
                       {
                         "activated": true,
                         "metadata": {
                           "label": ""
                         },
                         "properties": {},
-                        "children": [],
-                        "id": "3ab9d230-6cf0-459b-a9c9-c0118011f124",
-                        "type": "success"
+                        "children": [
+                          {
+                            "activated": false,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "Fait une mise à jour capteur"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "b099a344-45ef-405a-a437-36c6c160c5fc",
+                            "type": "action"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "behavior": {
+                                "type": "uriPath",
+                                "value": "bts/MajCurrentCapteurP.bt"
+                              },
+                              "inputParams": []
+                            },
+                            "children": [],
+                            "id": "cfa6d293-5738-4772-8804-018e5c39410e",
+                            "type": "embedded"
+                          }
+                        ],
+                        "id": "d5986166-1293-4531-ac3d-41da64be245b",
+                        "type": "sequence"
                       }
                     ],
-                    "id": "c4f373c5-b1a7-49eb-a3e3-2c4a1d72e956",
-                    "type": "priority"
+                    "id": "5301f6ff-d6c0-4862-9e8b-4b2eb107c93e",
+                    "type": "condition"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [],
+                    "id": "3ab9d230-6cf0-459b-a9c9-c0118011f124",
+                    "type": "success"
                   }
                 ],
-                "id": "0ab0744f-d7e6-4549-8314-9bb229f0b421",
-                "type": "sequence"
+                "id": "c4f373c5-b1a7-49eb-a3e3-2c4a1d72e956",
+                "type": "priority"
               }
             ],
-            "id": "7be7751a-66dd-48bd-b1d9-1fda3364d5f0",
-            "type": "until"
+            "id": "0ab0744f-d7e6-4549-8314-9bb229f0b421",
+            "type": "sequence"
           },
           {
             "activated": true,
