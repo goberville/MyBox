@@ -19,7 +19,7 @@
           {
             "activated": true,
             "metadata": {
-              "label": "CTRL si Periode Activity Reveil"
+              "label": ""
             },
             "properties": {
               "active": "false"
@@ -33,13 +33,13 @@
                 "properties": {
                   "op1": {
                     "type": "entityKnowledge",
-                    "value": "Time"
+                    "value": "Day"
                   },
                   "op2": {
-                    "type": "entityKnowledge",
-                    "value": "Time_Reveil_Min[AK.Day]"
+                    "type": "integer",
+                    "value": "1"
                   },
-                  "op": "<"
+                  "op": "=="
                 },
                 "children": [
                   {
@@ -50,63 +50,43 @@
                     "properties": {},
                     "children": [
                       {
-                        "activated": false,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "Log",
-                          "inputParams": [
-                            {
-                              "key": "MessageLog",
-                              "type": "string",
-                              "value": "Pas Activité Reveil"
-                            }
-                          ],
-                          "outputParams": []
-                        },
-                        "children": [],
-                        "id": "c877c67c-624b-4922-9801-46ea5ed82062",
-                        "type": "action"
-                      },
-                      {
                         "activated": true,
                         "metadata": {
                           "label": ""
                         },
                         "properties": {
-                          "destination": "TaskActivityReveil",
+                          "destination": "TimeReveilMin",
                           "op": {
-                            "type": "integer",
-                            "value": "0"
+                            "type": "entityKnowledge",
+                            "value": "Time_Reveil_Min[1]"
                           }
                         },
                         "children": [],
-                        "id": "fd2ba51f-98e7-4314-ab60-b4fb372ed98d",
+                        "id": "3c50bdb3-0f5b-4fb6-be5a-afd5a270729d",
                         "type": "set"
                       },
                       {
                         "activated": true,
                         "metadata": {
-                          "label": "Check_Reveil"
+                          "label": ""
                         },
                         "properties": {
-                          "destination": "Check_Reveil",
+                          "destination": "TimeReveilMax",
                           "op": {
-                            "type": "boolean",
-                            "value": "false"
+                            "type": "entityKnowledge",
+                            "value": "Time_Reveil_Max[1]"
                           }
                         },
                         "children": [],
-                        "id": "086072a8-f816-4888-beab-54c92b5f90ea",
+                        "id": "2c481226-8a8f-4513-816d-3ac980c71bbc",
                         "type": "set"
                       }
                     ],
-                    "id": "d04624ba-4d9e-4359-8c6e-dafd80b4b0fb",
+                    "id": "750d665e-6e17-4e49-ab1c-cd2ef938e54e",
                     "type": "sequence"
                   }
                 ],
-                "id": "a4dc07a7-3fbe-4e4f-b7aa-e6ccab13c17d",
+                "id": "47c8df11-ca92-40a5-9184-c74caaf26b2c",
                 "type": "condition"
               },
               {
@@ -114,16 +94,24 @@
                 "metadata": {
                   "label": ""
                 },
-                "properties": {},
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Day"
+                  },
+                  "op2": {
+                    "type": "integer",
+                    "value": "2"
+                  },
+                  "op": "=="
+                },
                 "children": [
                   {
                     "activated": true,
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {
-                      "active": "false"
-                    },
+                    "properties": {},
                     "children": [
                       {
                         "activated": true,
@@ -131,99 +119,15 @@
                           "label": ""
                         },
                         "properties": {
-                          "op1": {
+                          "destination": "TimeReveilMin",
+                          "op": {
                             "type": "entityKnowledge",
-                            "value": "Time"
-                          },
-                          "op2": {
-                            "type": "entityKnowledge",
-                            "value": "Time_Reveil_Max[AK.Day]"
-                          },
-                          "op": "<"
-                        },
-                        "children": [
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
-                            },
-                            "properties": {},
-                            "children": [
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "op1": {
-                                    "type": "entityKnowledge",
-                                    "value": "TaskActivityReveil"
-                                  },
-                                  "op2": {
-                                    "type": "integer",
-                                    "value": "0"
-                                  },
-                                  "op": "=="
-                                },
-                                "children": [
-                                  {
-                                    "activated": true,
-                                    "metadata": {
-                                      "label": ""
-                                    },
-                                    "properties": {},
-                                    "children": [
-                                      {
-                                        "activated": true,
-                                        "metadata": {
-                                          "label": ""
-                                        },
-                                        "properties": {
-                                          "name": "Log",
-                                          "inputParams": [
-                                            {
-                                              "key": "MessageLog",
-                                              "type": "string",
-                                              "value": "Debut Activité Reveil"
-                                            }
-                                          ],
-                                          "outputParams": []
-                                        },
-                                        "children": [],
-                                        "id": "86b2d634-c8ab-4baf-b8eb-d99ee9067994",
-                                        "type": "action"
-                                      },
-                                      {
-                                        "activated": true,
-                                        "metadata": {
-                                          "label": ""
-                                        },
-                                        "properties": {
-                                          "destination": "TaskActivityReveil",
-                                          "op": {
-                                            "type": "integer",
-                                            "value": "1"
-                                          }
-                                        },
-                                        "children": [],
-                                        "id": "ea3dc37d-4cd3-451e-932c-b6ad329ab846",
-                                        "type": "set"
-                                      }
-                                    ],
-                                    "id": "644ab51a-4860-4da6-a8c4-ff6976a071db",
-                                    "type": "sequence"
-                                  }
-                                ],
-                                "id": "9125a7a8-c86d-4832-a739-df81146204b5",
-                                "type": "condition"
-                              }
-                            ],
-                            "id": "2234a6ca-5976-492e-b114-ae51e164d637",
-                            "type": "sequence"
+                            "value": "Time_Reveil_Min[2]"
                           }
-                        ],
-                        "id": "7d31e307-5012-427c-9246-17a52e24f1ce",
-                        "type": "condition"
+                        },
+                        "children": [],
+                        "id": "6727a1b4-8da2-486f-a62d-4be53868c557",
+                        "type": "set"
                       },
                       {
                         "activated": true,
@@ -231,15 +135,462 @@
                           "label": ""
                         },
                         "properties": {
-                          "op1": {
+                          "destination": "TimeReveilMax",
+                          "op": {
                             "type": "entityKnowledge",
-                            "value": "Time"
-                          },
-                          "op2": {
+                            "value": "Time_Reveil_Max[2]"
+                          }
+                        },
+                        "children": [],
+                        "id": "202617d8-1bea-4ec8-b11d-3cf743b6540f",
+                        "type": "set"
+                      }
+                    ],
+                    "id": "92a7e818-ad59-4c6d-b985-8130d2d4a0a5",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "ec5bcd2e-13d6-49bf-aeb6-71032aa3c8bd",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Day"
+                  },
+                  "op2": {
+                    "type": "integer",
+                    "value": "3"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TimeReveilMin",
+                          "op": {
                             "type": "entityKnowledge",
-                            "value": "Time_Reveil_Max[AK.Day]"
+                            "value": "Time_Reveil_Min[3]"
+                          }
+                        },
+                        "children": [],
+                        "id": "aca1edab-d2c7-4eb0-bde9-1a268fbdf353",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TimeReveilMax",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "Time_Reveil_Max[3]"
+                          }
+                        },
+                        "children": [],
+                        "id": "63e69a33-f55c-464a-93c0-bc43b5df68ae",
+                        "type": "set"
+                      }
+                    ],
+                    "id": "057246f5-2d3e-4a23-9fa3-41b9eae5ccf9",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "9c84f2a2-6553-47f6-bea4-d42669f3b4d7",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Day"
+                  },
+                  "op2": {
+                    "type": "integer",
+                    "value": "4"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TimeReveilMin",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "Time_Reveil_Min[4]"
+                          }
+                        },
+                        "children": [],
+                        "id": "6960ef28-4c4a-46ec-a074-3794a3ab972a",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TimeReveilMax",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "Time_Reveil_Max[4]"
+                          }
+                        },
+                        "children": [],
+                        "id": "e45ae7ed-8b76-49f9-871e-64176ba56f5d",
+                        "type": "set"
+                      }
+                    ],
+                    "id": "f6df2ef9-7471-4eaf-9e98-73cadf34120d",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "ca8632e4-acc1-468b-9efb-c0202b511535",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Day"
+                  },
+                  "op2": {
+                    "type": "integer",
+                    "value": "5"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TimeReveilMin",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "Time_Reveil_Min[5]"
+                          }
+                        },
+                        "children": [],
+                        "id": "c3833587-e593-4ec1-ad80-1482534b386d",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TimeReveilMax",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "Time_Reveil_Max[5]"
+                          }
+                        },
+                        "children": [],
+                        "id": "7d8560e3-4b84-43b1-b1a9-233142b54ed1",
+                        "type": "set"
+                      }
+                    ],
+                    "id": "b9ede95d-7883-40a6-b276-cde806dfe613",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "0991dd8b-86a2-4c8b-abc8-90cbc668596e",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Day"
+                  },
+                  "op2": {
+                    "type": "integer",
+                    "value": "6"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TimeReveilMin",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "Time_Reveil_Min[6]"
+                          }
+                        },
+                        "children": [],
+                        "id": "8451006e-5094-417b-bd07-411547666872",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TimeReveilMax",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "Time_Reveil_Max[6]"
+                          }
+                        },
+                        "children": [],
+                        "id": "41935111-7389-4a5b-95de-b60dc6563b13",
+                        "type": "set"
+                      }
+                    ],
+                    "id": "ffe6ba6f-310f-4dc9-81f2-28d0d26bd396",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "90ce6134-bac6-4caf-bf1a-327ef6d78c50",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "Day"
+                  },
+                  "op2": {
+                    "type": "integer",
+                    "value": "7"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TimeReveilMin",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "Time_Reveil_Min[0]"
+                          }
+                        },
+                        "children": [],
+                        "id": "9ebcbfb7-e30a-4255-ab19-dcf156562dbc",
+                        "type": "set"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "destination": "TimeReveilMax",
+                          "op": {
+                            "type": "entityKnowledge",
+                            "value": "Time_Reveil_Max[0]"
+                          }
+                        },
+                        "children": [],
+                        "id": "10f09752-ac47-4c42-b996-a4e4b863b9c4",
+                        "type": "set"
+                      }
+                    ],
+                    "id": "4d3d3d7f-ae5d-41cf-b992-7ea851d5c1a5",
+                    "type": "sequence"
+                  }
+                ],
+                "id": "03213c8d-76ea-434e-bbf6-14f7eb326461",
+                "type": "condition"
+              }
+            ],
+            "id": "b6fc59f8-5a9c-4d90-a4c8-50b39a83f00c",
+            "type": "priority"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": "CTRL si Periode Activity Reveil"
+                },
+                "properties": {
+                  "active": "false"
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "Time"
+                      },
+                      "op2": {
+                        "type": "entityKnowledge",
+                        "value": "TimeReveilMin"
+                      },
+                      "op": "<"
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {},
+                        "children": [
+                          {
+                            "activated": false,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Log",
+                              "inputParams": [
+                                {
+                                  "key": "MessageLog",
+                                  "type": "string",
+                                  "value": "Pas Activité Reveil"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "c877c67c-624b-4922-9801-46ea5ed82062",
+                            "type": "action"
                           },
-                          "op": ">"
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "destination": "TaskActivityReveil",
+                              "op": {
+                                "type": "integer",
+                                "value": "0"
+                              }
+                            },
+                            "children": [],
+                            "id": "fd2ba51f-98e7-4314-ab60-b4fb372ed98d",
+                            "type": "set"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Check_Reveil"
+                            },
+                            "properties": {
+                              "destination": "Check_Reveil",
+                              "op": {
+                                "type": "boolean",
+                                "value": "false"
+                              }
+                            },
+                            "children": [],
+                            "id": "086072a8-f816-4888-beab-54c92b5f90ea",
+                            "type": "set"
+                          }
+                        ],
+                        "id": "d04624ba-4d9e-4359-8c6e-dafd80b4b0fb",
+                        "type": "sequence"
+                      }
+                    ],
+                    "id": "a4dc07a7-3fbe-4e4f-b7aa-e6ccab13c17d",
+                    "type": "condition"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "active": "false"
                         },
                         "children": [
                           {
@@ -247,119 +598,240 @@
                             "metadata": {
                               "label": ""
                             },
-                            "properties": {},
-                            "children": [
-                              {
-                                "activated": false,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "name": "Log",
-                                  "inputParams": [
-                                    {
-                                      "key": "MessageLog",
-                                      "type": "string",
-                                      "value": "Temps activite reveil terminé"
-                                    }
-                                  ],
-                                  "outputParams": []
-                                },
-                                "children": [],
-                                "id": "032966b4-aec8-41c6-976a-04d35ba54022",
-                                "type": "action"
+                            "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "Time"
                               },
+                              "op2": {
+                                "type": "entityKnowledge",
+                                "value": "TimeReveilMax"
+                              },
+                              "op": "<"
+                            },
+                            "children": [
                               {
                                 "activated": true,
                                 "metadata": {
                                   "label": ""
                                 },
-                                "properties": {
-                                  "op1": {
-                                    "type": "entityKnowledge",
-                                    "value": "TaskActivityReveil"
-                                  },
-                                  "op2": {
-                                    "type": "integer",
-                                    "value": "1"
-                                  },
-                                  "op": "=="
-                                },
+                                "properties": {},
                                 "children": [
                                   {
                                     "activated": true,
                                     "metadata": {
                                       "label": ""
                                     },
-                                    "properties": {},
+                                    "properties": {
+                                      "op1": {
+                                        "type": "entityKnowledge",
+                                        "value": "TaskActivityReveil"
+                                      },
+                                      "op2": {
+                                        "type": "integer",
+                                        "value": "0"
+                                      },
+                                      "op": "=="
+                                    },
                                     "children": [
                                       {
                                         "activated": true,
                                         "metadata": {
                                           "label": ""
                                         },
-                                        "properties": {
-                                          "name": "Log",
-                                          "inputParams": [
-                                            {
-                                              "key": "MessageLog",
-                                              "type": "string",
-                                              "value": "Fin Activité Reveil"
-                                            }
-                                          ],
-                                          "outputParams": []
-                                        },
-                                        "children": [],
-                                        "id": "62ccf83e-3ed9-4db3-b0fd-9ce9beb6cdac",
-                                        "type": "action"
+                                        "properties": {},
+                                        "children": [
+                                          {
+                                            "activated": true,
+                                            "metadata": {
+                                              "label": ""
+                                            },
+                                            "properties": {
+                                              "name": "Log",
+                                              "inputParams": [
+                                                {
+                                                  "key": "MessageLog",
+                                                  "type": "string",
+                                                  "value": "Debut Activité Reveil"
+                                                }
+                                              ],
+                                              "outputParams": []
+                                            },
+                                            "children": [],
+                                            "id": "86b2d634-c8ab-4baf-b8eb-d99ee9067994",
+                                            "type": "action"
+                                          },
+                                          {
+                                            "activated": true,
+                                            "metadata": {
+                                              "label": ""
+                                            },
+                                            "properties": {
+                                              "destination": "TaskActivityReveil",
+                                              "op": {
+                                                "type": "integer",
+                                                "value": "1"
+                                              }
+                                            },
+                                            "children": [],
+                                            "id": "ea3dc37d-4cd3-451e-932c-b6ad329ab846",
+                                            "type": "set"
+                                          }
+                                        ],
+                                        "id": "644ab51a-4860-4da6-a8c4-ff6976a071db",
+                                        "type": "sequence"
+                                      }
+                                    ],
+                                    "id": "9125a7a8-c86d-4832-a739-df81146204b5",
+                                    "type": "condition"
+                                  }
+                                ],
+                                "id": "2234a6ca-5976-492e-b114-ae51e164d637",
+                                "type": "sequence"
+                              }
+                            ],
+                            "id": "7d31e307-5012-427c-9246-17a52e24f1ce",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "Time"
+                              },
+                              "op2": {
+                                "type": "entityKnowledge",
+                                "value": "TimeReveilMax"
+                              },
+                              "op": ">"
+                            },
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {},
+                                "children": [
+                                  {
+                                    "activated": false,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "name": "Log",
+                                      "inputParams": [
+                                        {
+                                          "key": "MessageLog",
+                                          "type": "string",
+                                          "value": "Temps activite reveil terminé"
+                                        }
+                                      ],
+                                      "outputParams": []
+                                    },
+                                    "children": [],
+                                    "id": "032966b4-aec8-41c6-976a-04d35ba54022",
+                                    "type": "action"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "op1": {
+                                        "type": "entityKnowledge",
+                                        "value": "TaskActivityReveil"
                                       },
+                                      "op2": {
+                                        "type": "integer",
+                                        "value": "1"
+                                      },
+                                      "op": "=="
+                                    },
+                                    "children": [
                                       {
                                         "activated": true,
                                         "metadata": {
                                           "label": ""
                                         },
-                                        "properties": {
-                                          "destination": "TaskActivityReveil",
-                                          "op": {
-                                            "type": "integer",
-                                            "value": "2"
+                                        "properties": {},
+                                        "children": [
+                                          {
+                                            "activated": true,
+                                            "metadata": {
+                                              "label": ""
+                                            },
+                                            "properties": {
+                                              "name": "Log",
+                                              "inputParams": [
+                                                {
+                                                  "key": "MessageLog",
+                                                  "type": "string",
+                                                  "value": "Fin Activité Reveil"
+                                                }
+                                              ],
+                                              "outputParams": []
+                                            },
+                                            "children": [],
+                                            "id": "62ccf83e-3ed9-4db3-b0fd-9ce9beb6cdac",
+                                            "type": "action"
+                                          },
+                                          {
+                                            "activated": true,
+                                            "metadata": {
+                                              "label": ""
+                                            },
+                                            "properties": {
+                                              "destination": "TaskActivityReveil",
+                                              "op": {
+                                                "type": "integer",
+                                                "value": "2"
+                                              }
+                                            },
+                                            "children": [],
+                                            "id": "02ff3663-1367-4cd1-ac99-7cae7086ec84",
+                                            "type": "set"
                                           }
-                                        },
-                                        "children": [],
-                                        "id": "02ff3663-1367-4cd1-ac99-7cae7086ec84",
-                                        "type": "set"
+                                        ],
+                                        "id": "b35be07f-93ee-4073-95ae-23500ed1a039",
+                                        "type": "sequence"
                                       }
                                     ],
-                                    "id": "b35be07f-93ee-4073-95ae-23500ed1a039",
-                                    "type": "sequence"
+                                    "id": "d7bf0157-8e54-45b7-9665-acd2fe0ec027",
+                                    "type": "condition"
                                   }
                                 ],
-                                "id": "d7bf0157-8e54-45b7-9665-acd2fe0ec027",
-                                "type": "condition"
+                                "id": "31cce75d-cf09-40b2-85b4-dcccf8a8e4e4",
+                                "type": "sequence"
                               }
                             ],
-                            "id": "31cce75d-cf09-40b2-85b4-dcccf8a8e4e4",
-                            "type": "sequence"
+                            "id": "7ae1218c-3ead-4ac8-b3b4-604fd02b0d98",
+                            "type": "condition"
                           }
                         ],
-                        "id": "7ae1218c-3ead-4ac8-b3b4-604fd02b0d98",
-                        "type": "condition"
+                        "id": "e58950a0-edf1-4f6a-b527-bdde8ea69119",
+                        "type": "priority"
                       }
                     ],
-                    "id": "e58950a0-edf1-4f6a-b527-bdde8ea69119",
-                    "type": "priority"
+                    "id": "f56bd027-d0b3-4566-b2dd-d37cc31cc471",
+                    "type": "success"
                   }
                 ],
-                "id": "f56bd027-d0b3-4566-b2dd-d37cc31cc471",
-                "type": "success"
+                "id": "884c216e-6309-4d7c-9667-dc20a3ce01f5",
+                "type": "priority"
               }
             ],
-            "id": "884c216e-6309-4d7c-9667-dc20a3ce01f5",
-            "type": "priority"
+            "id": "85e7b48d-e417-4164-9fde-a8b9c8fc4c62",
+            "type": "success"
           }
         ],
-        "id": "85e7b48d-e417-4164-9fde-a8b9c8fc4c62",
-        "type": "success"
+        "id": "45366f88-1afe-4136-ad5a-15609ecff9be",
+        "type": "sequence"
       }
     ],
     "id": "12f150e4-75e9-456a-afea-122156895855"
