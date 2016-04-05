@@ -75,7 +75,7 @@
             "properties": {
               "behavior": {
                 "type": "uriPath",
-                "value": "bts/checkActivityLoisir.bt"
+                "value": "bts/checkActivtyLoisir.bt"
               },
               "inputParams": []
             },
