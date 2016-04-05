@@ -30,7 +30,7 @@
               },
               "op2": {
                 "type": "entityKnowledge",
-                "value": "Time_Diner_Min"
+                "value": "Time_Diner_Min[0]"
               },
               "op": "<"
             },
@@ -130,7 +130,7 @@
                       },
                       "op2": {
                         "type": "entityKnowledge",
-                        "value": "Time_Diner_Max"
+                        "value": "Time_Diner_Max[0]"
                       },
                       "op": "<="
                     },
@@ -167,7 +167,7 @@
                                 "properties": {},
                                 "children": [
                                   {
-                                    "activated": false,
+                                    "activated": true,
                                     "metadata": {
                                       "label": ""
                                     },
@@ -246,7 +246,7 @@
                       },
                       "op2": {
                         "type": "entityKnowledge",
-                        "value": "Time_Diner_Max"
+                        "value": "Time_Diner_Max[0]"
                       },
                       "op": ">"
                     },
@@ -303,7 +303,7 @@
                                 "properties": {},
                                 "children": [
                                   {
-                                    "activated": false,
+                                    "activated": true,
                                     "metadata": {
                                       "label": ""
                                     },
