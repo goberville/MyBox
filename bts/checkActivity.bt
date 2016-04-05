@@ -43,7 +43,7 @@
             "properties": {
               "behavior": {
                 "type": "uriPath",
-                "value": ""
+                "value": "bts/checkActivityPetitDejeuner.bt"
               },
               "inputParams": []
             },
@@ -59,7 +59,7 @@
             "properties": {
               "behavior": {
                 "type": "uriPath",
-                "value": ""
+                "value": "bts/checkActivityToilette.bt"
               },
               "inputParams": []
             },
@@ -75,7 +75,7 @@
             "properties": {
               "behavior": {
                 "type": "uriPath",
-                "value": ""
+                "value": "bts/checkActivityLoisir.bt"
               },
               "inputParams": []
             },
@@ -91,7 +91,7 @@
             "properties": {
               "behavior": {
                 "type": "uriPath",
-                "value": ""
+                "value": "bts/checkActivityVisite.bt"
               },
               "inputParams": []
             },
@@ -107,12 +107,76 @@
             "properties": {
               "behavior": {
                 "type": "uriPath",
-                "value": ""
+                "value": "bts/checkActivitySortie.bt"
               },
               "inputParams": []
             },
             "children": [],
             "id": "0cd16753-e3fd-427d-b2d6-e4170151a932",
+            "type": "embedded"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/checkActivityDejeuner.bt"
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "b19cc213-54c3-4ae0-ad38-1bd3def1c8d2",
+            "type": "embedded"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/checkActivityDiner.bt"
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "f8d4f3b2-29a7-4258-a5ad-c745f7c7a4c6",
+            "type": "embedded"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/checkActivityCoucher.bt"
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "ff90fcc0-425b-4e3f-ac31-082b1173281b",
+            "type": "embedded"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": "bts/checkActivitySieste.bt"
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "734ad425-8aa7-40b9-bd5c-9019c1f041a9",
             "type": "embedded"
           }
         ],
