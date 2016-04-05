@@ -108,7 +108,7 @@
                     "properties": {
                       "behavior": {
                         "type": "uriPath",
-                        "value": "bts/checkActivityHealth.bt"
+                        "value": "bts/checkActivity.bt"
                       },
                       "inputParams": []
                     },
