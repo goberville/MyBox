@@ -1297,6 +1297,966 @@
             ],
             "id": "4cf70857-876a-40a0-a43a-42e50262d8d7",
             "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "Day"
+              },
+              "op2": {
+                "type": "integer",
+                "value": "5"
+              },
+              "op": "=="
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeReveilMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Reveil_Min[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "241a20b9-b783-431c-b0ca-35164beb80e8",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeReveilMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Reveil_Max[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "ec844521-a965-42fb-b988-f45894d4558c",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimePetitDejeunerMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_PetitDejeuner_Min[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "d0957ced-4ea4-4316-8e0b-03814a7266b7",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimePetitDejeunerMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_PetitDejeuner_Max[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "e9c16c0a-4645-4559-94a4-8e993c08abe6",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeToiletteMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Toilette_Min[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "e4f71140-eb6e-468f-a5ba-226956709eac",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeToiletteMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Toilette_Max[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "6e379461-23d3-4c5e-a910-2651320b9a41",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeDejeunerMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Dejeuner_Min[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "9ac621bc-012c-4902-b828-8393308a47c9",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeDejeunerMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Dejeuner_Max[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "4c9e8551-48d4-4f0c-be8d-ae3c9de5396e",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeDinerMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Diner_Min[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "69144280-e7eb-43d4-a55e-f4bf5eec244c",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeDinerMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Diner_Max[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "e58e0df8-9245-4d06-8e21-ef25a74ddfc0",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeCoucherMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Coucher_Min[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "4ff43535-6bf4-4bb7-ab62-63d596226035",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeCoucherMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Coucher_Max[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "a8929fa7-2e30-4704-b0b4-0c1cc4c336b8",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeLoisirMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Loisir_Min[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "680bd8f5-7ee2-49e5-a7f3-06f5abe0a758",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeLoisirMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Loisir_Max[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "d33f3e5a-e492-4b4f-bcb5-c9120d19b516",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeVisiteMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Visite_Min[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "6855cc01-5b2c-4efb-9d68-3870e8f67a99",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeVisiteMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Visite_Max[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "338b2a68-792e-4fe7-bfa5-019d841dea0a",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeSortieMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Sortie_Min[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "f36a1e17-8b44-4806-bfa5-9bd3f87b8dbb",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeSortieMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Sortie_Max[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "a589b630-b6c0-42b2-9402-af7c4c95d128",
+                    "type": "set"
+                  }
+                ],
+                "id": "4a18f74f-ab3d-48cc-93ae-ae9b3a41e626",
+                "type": "sequence"
+              }
+            ],
+            "id": "2fe691cd-8d83-4757-ad06-506cce186a67",
+            "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "Day"
+              },
+              "op2": {
+                "type": "integer",
+                "value": "6"
+              },
+              "op": "=="
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeReveilMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Reveil_Min[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "301ed442-a8cd-4986-ad41-e0744763a264",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeReveilMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Reveil_Max[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "881f199c-e554-46f6-820b-30a10156f465",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimePetitDejeunerMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_PetitDejeuner_Min[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "bcd53e2f-750f-4ac1-8619-a26cbd67db34",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimePetitDejeunerMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_PetitDejeuner_Max[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "579e10e1-2840-45d3-ac7d-189572c38544",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeToiletteMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Toilette_Min[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "57578d7c-102b-4fa0-86bb-1446e4cdbc37",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeToiletteMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Toilette_Max[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "d2df21ac-87ca-409f-ad02-100938de97fa",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeDejeunerMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Dejeuner_Min[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "63c69687-6e33-447d-92c8-4f94df474d7a",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeDejeunerMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Dejeuner_Max[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "85c425a8-ade4-42c8-bb2b-ed7b179b20bd",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeDinerMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Diner_Min[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "c093282b-3f96-4711-94f0-9950ecacf459",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeDinerMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Diner_Max[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "e10ee434-e06d-4aad-9f92-2145c677dba6",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeCoucherMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Coucher_Min[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "bfb0d5a3-6f7f-4d7a-97e3-79032ca94203",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeCoucherMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Coucher_Max[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "bb2653ea-f269-41fc-89c9-ea663d466235",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeLoisirMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Loisir_Min[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "fd696cbd-6975-40dc-93ed-2ce3144a7cbd",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeLoisirMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Loisir_Max[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "e33d7158-3b31-4273-934a-6ee92bd26a23",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeVisiteMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Visite_Min[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "7e923dea-fa29-4805-926b-7a26f4aa700a",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeVisiteMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Visite_Max[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "7d1bc6f0-6613-45e5-904f-2331348e7f9d",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeSortieMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Sortie_Min[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "2e48d9bf-295a-45ad-9e02-9a19eaeb587b",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeSortieMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Sortie_Max[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "3dd16861-7f3e-4152-b293-8cdb7f46f4b2",
+                    "type": "set"
+                  }
+                ],
+                "id": "1193ad02-d02b-43a6-915a-a8a758e4906c",
+                "type": "sequence"
+              }
+            ],
+            "id": "952733f4-6dd0-4d94-b2f9-648dd6706c28",
+            "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "Day"
+              },
+              "op2": {
+                "type": "integer",
+                "value": "7"
+              },
+              "op": "=="
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeReveilMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Reveil_Min[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "c4c089d4-f371-442e-a43f-9f7110ff5b90",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeReveilMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Reveil_Max[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "73483c6e-d189-4255-9302-f1154e0fabcf",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimePetitDejeunerMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_PetitDejeuner_Min[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "6c8f5b0e-19f9-45d0-bb74-8556568e59e3",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimePetitDejeunerMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_PetitDejeuner_Max[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "3185f488-9ea6-4b13-8730-104c8684ab55",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeToiletteMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Toilette_Min[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "d6b6deff-f973-49f9-9080-53820b89653f",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeToiletteMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Toilette_Max[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "5ac1170e-50a6-46f6-9153-03b89af169fb",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeDejeunerMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Dejeuner_Min[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "37bb5682-0c3a-4950-8be5-242757afbbb8",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeDejeunerMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Dejeuner_Max[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "7828d881-390d-4e8f-8746-bf84064b8636",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeDinerMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Diner_Min[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "f814e26b-f75e-4d4b-b558-47f95fcd5533",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeDinerMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Diner_Max[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "09dd59ed-428a-4438-930c-bc04b0e5b3ef",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeCoucherMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Coucher_Min[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "b261b515-1212-408f-9a82-0632f22cd5ca",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeCoucherMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Coucher_Max[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "8ac66ab5-48de-45ad-bfdc-c9cf89318b27",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeLoisirMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Loisir_Min[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "e4b407b3-f1c2-4d6b-8946-411fe85629e9",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeLoisirMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Loisir_Max[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "4215acca-1eae-4b5d-ac46-88d8b3bf11e1",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeVisiteMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Visite_Min[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "138241ec-2232-4110-a862-94c1cacd00a7",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeVisiteMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Visite_Max[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "728a5ee2-c0f3-4bbe-a409-e42837af6e1b",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeSortieMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Sortie_Min[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "a4dae187-65ae-4ff9-adcf-57acf15bcd1b",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeSortieMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Sortie_Max[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "771c0f11-74d0-4879-a89e-af2b4bb003d9",
+                    "type": "set"
+                  }
+                ],
+                "id": "b19133d5-9194-4d58-b52c-bc1ad5ca27ef",
+                "type": "sequence"
+              }
+            ],
+            "id": "2a275559-6657-4719-9b57-4f06e2c21a9a",
+            "type": "condition"
           }
         ],
         "id": "3dc76de7-5290-41c2-98fc-fc40e2f03513",
