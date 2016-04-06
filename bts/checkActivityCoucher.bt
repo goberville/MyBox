@@ -30,7 +30,7 @@
               },
               "op2": {
                 "type": "entityKnowledge",
-                "value": "Time_Coucher_Min[0]"
+                "value": "TimeCoucherMin"
               },
               "op": "<"
             },
