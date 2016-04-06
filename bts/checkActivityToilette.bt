@@ -30,7 +30,7 @@
               },
               "op2": {
                 "type": "entityKnowledge",
-                "value": "Time_Toilette_Min[0]"
+                "value": "TimeToiletteMin"
               },
               "op": "<"
             },
@@ -130,7 +130,7 @@
                       },
                       "op2": {
                         "type": "entityKnowledge",
-                        "value": "Time_Toilette_Max[0]"
+                        "value": "TimeToiletteMax"
                       },
                       "op": "<="
                     },
@@ -230,7 +230,7 @@
                       },
                       "op2": {
                         "type": "entityKnowledge",
-                        "value": "Time_Toilette_Max[0]"
+                        "value": "TimeToiletteMax"
                       },
                       "op": ">"
                     },
