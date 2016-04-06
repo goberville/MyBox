@@ -48,7 +48,7 @@
                       "label": ""
                     },
                     "properties": {
-                      "destination": "TimeSIesteMin",
+                      "destination": "TimeSiesteMin",
                       "op": {
                         "type": "entityKnowledge",
                         "value": "Time_Sieste_Min[1]"
@@ -64,7 +64,7 @@
                       "label": ""
                     },
                     "properties": {
-                      "destination": "TimeSIesteMax",
+                      "destination": "TimeSiesteMax",
                       "op": {
                         "type": "entityKnowledge",
                         "value": "Time_Sieste_Max[1]"
@@ -403,7 +403,7 @@
                       "destination": "TimeSiesteMin",
                       "op": {
                         "type": "entityKnowledge",
-                        "value": "Time_SIeste_Min[2]"
+                        "value": "Time_Sieste_Min[2]"
                       }
                     },
                     "children": [],
@@ -416,10 +416,10 @@
                       "label": ""
                     },
                     "properties": {
-                      "destination": "TimeReveilMax",
+                      "destination": "TimeSiesteMax",
                       "op": {
                         "type": "entityKnowledge",
-                        "value": "Time_Reveil_Max[2]"
+                        "value": "Time_Sieste_Max[2]"
                       }
                     },
                     "children": [],
@@ -1120,7 +1120,7 @@
                       "label": ""
                     },
                     "properties": {
-                      "destination": "TimeSIesteMax",
+                      "destination": "TimeSiesteMax",
                       "op": {
                         "type": "entityKnowledge",
                         "value": "Time_Sieste_Max[4]"
@@ -1827,7 +1827,7 @@
                       "destination": "TimeSiesteMax",
                       "op": {
                         "type": "entityKnowledge",
-                        "value": "Time_SIeste_Max[6]"
+                        "value": "Time_Sieste_Max[6]"
                       }
                     },
                     "children": [],
@@ -2163,7 +2163,7 @@
                       "destination": "TimeSiesteMin",
                       "op": {
                         "type": "entityKnowledge",
-                        "value": "Time_SIeste_Min[0]"
+                        "value": "Time_Sieste_Min[0]"
                       }
                     },
                     "children": [],
@@ -2176,10 +2176,10 @@
                       "label": ""
                     },
                     "properties": {
-                      "destination": "TimeReveilMax",
+                      "destination": "TimeSiesteMax",
                       "op": {
                         "type": "entityKnowledge",
-                        "value": "Time_Reveil_Max[0]"
+                        "value": "Time_Sieste_Max[0]"
                       }
                     },
                     "children": [],
