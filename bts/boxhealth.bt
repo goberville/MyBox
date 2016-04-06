@@ -103,6 +103,82 @@
                   {
                     "activated": true,
                     "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "active": "false"
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "entityKnowledge",
+                            "value": "Day"
+                          },
+                          "op2": {
+                            "type": "entityKnowledge",
+                            "value": "Day_Current"
+                          },
+                          "op": "=="
+                        },
+                        "children": [],
+                        "id": "9533d293-7456-477f-9b27-52eb633d9810",
+                        "type": "condition"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {},
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "behavior": {
+                                "type": "uriPath",
+                                "value": "bts/LoadActivitiesOfDay.bt"
+                              },
+                              "inputParams": []
+                            },
+                            "children": [],
+                            "id": "6f3c8b48-6f58-4674-a5d8-3978974a9902",
+                            "type": "embedded"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "destination": "Day_Cirrent",
+                              "op": {
+                                "type": "entityKnowledge",
+                                "value": "Day"
+                              }
+                            },
+                            "children": [],
+                            "id": "9333a3fd-6312-4cfb-8878-adff26906cf4",
+                            "type": "set"
+                          }
+                        ],
+                        "id": "d02e113f-5216-41fa-b571-e4fe24cb26e7",
+                        "type": "sequence"
+                      }
+                    ],
+                    "id": "9819629b-c923-4437-82cc-f7857f55b45f",
+                    "type": "priority"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
                       "label": "Check Activité Sante"
                     },
                     "properties": {
