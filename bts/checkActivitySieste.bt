@@ -30,7 +30,7 @@
               },
               "op2": {
                 "type": "entityKnowledge",
-                "value": "Time_Sieste_Min[0]"
+                "value": "TimeSiesteMin"
               },
               "op": "<"
             },
@@ -130,7 +130,7 @@
                       },
                       "op2": {
                         "type": "entityKnowledge",
-                        "value": "Time_Sieste_Max[0]"
+                        "value": "TimeSiesteMax"
                       },
                       "op": "<="
                     },
@@ -230,7 +230,7 @@
                       },
                       "op2": {
                         "type": "entityKnowledge",
-                        "value": "Time_Sieste_Max[0]"
+                        "value": "TimeSiesteMax"
                       },
                       "op": ">"
                     },
