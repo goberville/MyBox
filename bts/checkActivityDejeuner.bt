@@ -30,7 +30,7 @@
               },
               "op2": {
                 "type": "entityKnowledge",
-                "value": "Time_Dejeuner_Min[0]"
+                "value": "TimeDejeunerMin"
               },
               "op": "<"
             },
