@@ -48,10 +48,10 @@
                       "label": ""
                     },
                     "properties": {
-                      "destination": "",
+                      "destination": "TimeReveilMin",
                       "op": {
-                        "type": "string",
-                        "value": ""
+                        "type": "entityKnowledge",
+                        "value": "TimeReveilMin"
                       }
                     },
                     "children": [],
