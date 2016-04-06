@@ -30,7 +30,7 @@
               },
               "op2": {
                 "type": "entityKnowledge",
-                "value": "Time_Diner_Min[0]"
+                "value": "TimeDinerMin"
               },
               "op": "<"
             },
@@ -130,7 +130,7 @@
                       },
                       "op2": {
                         "type": "entityKnowledge",
-                        "value": "Time_Diner_Max[0]"
+                        "value": "TimeDinerMax"
                       },
                       "op": "<="
                     },
@@ -246,7 +246,7 @@
                       },
                       "op2": {
                         "type": "entityKnowledge",
-                        "value": "Time_Diner_Max[0]"
+                        "value": "TimeDinerMax"
                       },
                       "op": ">"
                     },
