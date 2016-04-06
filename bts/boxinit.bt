@@ -85,6 +85,22 @@
             "metadata": {
               "label": ""
             },
+            "properties": {
+              "destination": "Day_Current",
+              "op": {
+                "type": "integer",
+                "value": "9"
+              }
+            },
+            "children": [],
+            "id": "b66f824d-41f9-466a-9bd5-d14bb433018a",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
             "properties": {},
             "children": [
               {
