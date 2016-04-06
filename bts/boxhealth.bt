@@ -103,7 +103,7 @@
                   {
                     "activated": true,
                     "metadata": {
-                      "label": ""
+                      "label": "CTRL si Date du jour Modifier"
                     },
                     "properties": {
                       "active": "false"
@@ -179,7 +179,7 @@
                   {
                     "activated": true,
                     "metadata": {
-                      "label": "Check Activité Sante"
+                      "label": "Check Activité Personne"
                     },
                     "properties": {
                       "behavior": {
