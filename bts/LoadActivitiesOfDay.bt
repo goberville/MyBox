@@ -48,6 +48,38 @@
                       "label": ""
                     },
                     "properties": {
+                      "destination": "TimeSIesteMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Sieste_Min[1]"
+                      }
+                    },
+                    "children": [],
+                    "id": "90907be7-b180-4169-889a-264968638b9b",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeSIesteMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Sieste_Max[1]"
+                      }
+                    },
+                    "children": [],
+                    "id": "b312bca7-1a37-4ba7-b25d-4b3f4999bd6b",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
                       "destination": "TimeReveilMin",
                       "op": {
                         "type": "entityKnowledge",
@@ -362,6 +394,38 @@
                 },
                 "properties": {},
                 "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeSiesteMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_SIeste_Min[2]"
+                      }
+                    },
+                    "children": [],
+                    "id": "f79286f9-b6b9-4364-b0ef-20280047e62d",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeReveilMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Reveil_Max[2]"
+                      }
+                    },
+                    "children": [],
+                    "id": "eb952943-35fc-4ebf-80f8-35660fa21df9",
+                    "type": "set"
+                  },
                   {
                     "activated": true,
                     "metadata": {
@@ -688,6 +752,38 @@
                       "label": ""
                     },
                     "properties": {
+                      "destination": "TimeSiesteMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Sieste_Min[3]"
+                      }
+                    },
+                    "children": [],
+                    "id": "524708ff-2912-456a-989c-ff78d3954932",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeSiesteMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Sieste_Max[3]"
+                      }
+                    },
+                    "children": [],
+                    "id": "d79f1ae5-2410-49e2-bd3e-efcb5e60910f",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
                       "destination": "TimeReveilMin",
                       "op": {
                         "type": "entityKnowledge",
@@ -1002,6 +1098,38 @@
                 },
                 "properties": {},
                 "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeSiesteMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Sieste_Min[4]"
+                      }
+                    },
+                    "children": [],
+                    "id": "23afa28c-e5e4-445a-958e-2119b24bcb5c",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeSIesteMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Sieste_Max[4]"
+                      }
+                    },
+                    "children": [],
+                    "id": "01baf167-804e-4c70-84e0-8d7cbb1a23cd",
+                    "type": "set"
+                  },
                   {
                     "activated": true,
                     "metadata": {
@@ -1328,6 +1456,38 @@
                       "label": ""
                     },
                     "properties": {
+                      "destination": "TimeSiesteMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Sieste_Min[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "422a9d8a-2657-48d3-ac66-ad8ed8107c66",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeSiesteMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Sieste_Max[5]"
+                      }
+                    },
+                    "children": [],
+                    "id": "d04d98fc-d416-47c6-89b6-cf358657584c",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
                       "destination": "TimeReveilMin",
                       "op": {
                         "type": "entityKnowledge",
@@ -1648,6 +1808,38 @@
                       "label": ""
                     },
                     "properties": {
+                      "destination": "TimeSiesteMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Sieste_Min[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "eeb4febc-725b-4dbd-9d34-f72343fdcdce",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeSiesteMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_SIeste_Max[6]"
+                      }
+                    },
+                    "children": [],
+                    "id": "3c3bd84c-19ca-4361-b04a-c7c71cef3b4d",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
                       "destination": "TimeReveilMin",
                       "op": {
                         "type": "entityKnowledge",
@@ -1962,6 +2154,38 @@
                 },
                 "properties": {},
                 "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeSiesteMin",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_SIeste_Min[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "3ec35252-3680-4e07-80a2-f748ea630005",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "TimeReveilMax",
+                      "op": {
+                        "type": "entityKnowledge",
+                        "value": "Time_Reveil_Max[0]"
+                      }
+                    },
+                    "children": [],
+                    "id": "6d6cc154-57d7-492d-9d7b-ece682c458aa",
+                    "type": "set"
+                  },
                   {
                     "activated": true,
                     "metadata": {
