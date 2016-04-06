@@ -158,7 +158,7 @@
                               "label": ""
                             },
                             "properties": {
-                              "destination": "Day_Cirrent",
+                              "destination": "Day_Current",
                               "op": {
                                 "type": "entityKnowledge",
                                 "value": "Day"
