@@ -130,7 +130,7 @@
                       },
                       "op2": {
                         "type": "entityKnowledge",
-                        "value": "Time_Dejeuner_Max[0]"
+                        "value": "TimeDejeunerMax"
                       },
                       "op": "<="
                     },
@@ -246,7 +246,7 @@
                       },
                       "op2": {
                         "type": "entityKnowledge",
-                        "value": "Time_Dejeuner_Max[0]"
+                        "value": "TimeDejeunerMax"
                       },
                       "op": ">"
                     },
