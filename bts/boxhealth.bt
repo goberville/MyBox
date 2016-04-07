@@ -79,6 +79,40 @@
               "label": ""
             },
             "properties": {
+              "name": "InitTreeDecsion",
+              "inputParams": [],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "3aaf6e34-2002-48d0-9d2c-8359d39f3524",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "Log",
+              "inputParams": [
+                {
+                  "key": "MessageLog",
+                  "type": "string",
+                  "value": "Init Tree Decision OK"
+                }
+              ],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "d9c47632-baaf-4f42-9736-c7a76b76d58b",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
               "op1": {
                 "type": "boolean",
                 "value": "false"
