@@ -75,7 +75,7 @@
               {
                 "activated": true,
                 "metadata": {
-                  "label": "Hello"
+                  "label": "Temperature"
                 },
                 "properties": {
                   "name": "hello",
